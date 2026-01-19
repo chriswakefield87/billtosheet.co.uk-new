@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+  background: linear-gradient(to right, #16a34a, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-md p-6 border border-gray-200;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-primary-600 to-emerald-600 text-white rounded-lg font-semibold hover:from-primary-700 hover:to-emerald-700 transition-all shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-primary-600 border-2 border-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-all;
+}

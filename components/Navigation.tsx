@@ -1,0 +1,89 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { useEffect, useState } from "react";
+
+export default function Navigation() {
+  const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
+  // Check if Clerk is available (preview mode)
+  const hasClerk = typeof window !== 'undefined' && 
+    process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY &&
+    process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY.length > 20;
+
+  const navLinks = [
+    { href: "/pricing", label: "Pricing" },
+    { href: "/invoice-to-csv", label: "Converters" },
+    { href: "/help/getting-started", label: "Help" },
+    { href: "/blog", label: "Blog" },
+  ];
+
+  return (
+    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center space-x-8">
+            <Link href="/" className="flex items-center space-x-2">
+              <div suppressHydrationWarning className="w-8 h-8 bg-gradient-to-r from-primary-600 to-emerald-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">B</span>
+              </div>
+              <span className="font-bold text-xl">BillToSheet</span>
+            </Link>
+
+            <div className="hidden md:flex space-x-6">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-sm font-medium transition-colors ${
+                    pathname === link.href
+                      ? "text-primary-600"
+                      : "text-gray-600 hover:text-primary-600"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+          </div>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          {!mounted ? (
+            <div className="w-32 h-9" />
+          ) : (
+            <>
+              <SignedOut>
+                <Link
+                  href="/sign-in"
+                  className="text-sm font-medium text-gray-600 hover:text-primary-600"
+                >
+                  Sign In
+                </Link>
+                <Link href="/sign-up" className="btn-primary text-sm py-2 px-4">
+                  Get Started
+                </Link>
+              </SignedOut>
+              <SignedIn>
+                <Link
+                  href="/dashboard"
+                  className="text-sm font-medium text-gray-600 hover:text-primary-600"
+                >
+                  Dashboard
+                </Link>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
+            </>
+          )}
+        </div>
+        </div>
+      </div>
+    </nav>
+  );
+}

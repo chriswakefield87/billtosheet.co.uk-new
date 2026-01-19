@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "invoice-data",
+    "title": "Extract Invoice Data",
+    "description": "Automatically extract data from PDF invoices including vendor information, dates, amounts, tax details, and line items into structured CSV and Excel formats.",
+    "metaTitle": "Extract Invoice Data from PDF | Invoice Data Extraction Tool",
+    "metaDescription": "Extract structured data from PDF invoices automatically. Get vendor details, dates, amounts, taxes, and line items in CSV and Excel format.",
+    "faqs": [
+      {
+        "question": "What invoice data can be extracted?",
+        "answer": "Our tool extracts vendor names, invoice numbers, dates, currency, subtotals, tax amounts, totals, and detailed line items including descriptions, quantities, unit prices, and line totals."
+      },
+      {
+        "question": "What file formats can I export extracted data to?",
+        "answer": "You can download your extracted invoice data in CSV format (invoice details and line items separately) or as a combined Excel workbook with multiple sheets."
+      }
+    ]
+  },
+  {
+    "slug": "vendor-information",
+    "title": "Extract Vendor Information",
+    "description": "Extract vendor and supplier information from invoices including company names, addresses, tax IDs, and contact details.",
+    "metaTitle": "Extract Vendor Information from Invoices | Vendor Data Parser",
+    "metaDescription": "Extract vendor information from PDF invoices. Get company names, addresses, tax IDs, and contact details automatically.",
+    "faqs": [
+      {
+        "question": "What vendor information can be extracted?",
+        "answer": "We extract vendor company names, business addresses, tax identification numbers, VAT numbers, and any contact information present on the invoice."
+      }
+    ]
+  },
+  {
+    "slug": "line-items",
+    "title": "Extract Invoice Line Items",
+    "description": "Extract individual line items from invoices including product descriptions, quantities, unit prices, taxes, and line totals.",
+    "metaTitle": "Extract Invoice Line Items | Invoice Item Data Extraction",
+    "metaDescription": "Extract line items from PDF invoices. Get product descriptions, quantities, prices, taxes, and totals in structured format.",
+    "faqs": [
+      {
+        "question": "How are line items structured in the output?",
+        "answer": "Each line item includes the description, quantity, unit price, tax amount, and line total, organized in a spreadsheet-friendly format."
+      }
+    ]
+  },
+  {
+    "slug": "tax-information",
+    "title": "Extract Tax Information",
+    "description": "Extract tax details from invoices including VAT, sales tax, tax rates, tax amounts, and tax identification numbers.",
+    "metaTitle": "Extract Tax Information from Invoices | Tax Data Extraction",
+    "metaDescription": "Extract tax information from PDF invoices. Get VAT amounts, tax rates, tax totals, and tax IDs automatically.",
+    "faqs": [
+      {
+        "question": "What tax information can be extracted?",
+        "answer": "We extract tax amounts, tax rates, VAT numbers, sales tax details, and calculate total tax amounts from your invoices."
+      }
+    ]
+  },
+  {
+    "slug": "payment-terms",
+    "title": "Extract Payment Terms",
+    "description": "Extract payment terms and due dates from invoices including payment deadlines, terms conditions, and payment methods.",
+    "metaTitle": "Extract Payment Terms from Invoices | Payment Data Parser",
+    "metaDescription": "Extract payment terms from PDF invoices. Get due dates, payment conditions, and accepted payment methods.",
+    "faqs": [
+      {
+        "question": "What payment information is extracted?",
+        "answer": "We extract payment due dates, payment terms (e.g., Net 30), accepted payment methods, and any early payment discounts mentioned."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-totals",
+    "title": "Extract Invoice Totals",
+    "description": "Extract total amounts from invoices including subtotals, tax totals, discounts, shipping costs, and final amounts.",
+    "metaTitle": "Extract Invoice Totals | Invoice Amount Extraction Tool",
+    "metaDescription": "Extract total amounts from PDF invoices. Get subtotals, taxes, discounts, shipping, and final totals automatically.",
+    "faqs": [
+      {
+        "question": "What totals are extracted from invoices?",
+        "answer": "We extract subtotals, individual tax amounts, total tax, shipping costs, any discounts applied, and the final total amount due."
+      }
+    ]
+  },
+  {
+    "slug": "dates-numbers",
+    "title": "Extract Invoice Dates and Numbers",
+    "description": "Extract key invoice identifiers including invoice numbers, dates, purchase order numbers, and reference codes.",
+    "metaTitle": "Extract Invoice Dates and Numbers | Invoice ID Extraction",
+    "metaDescription": "Extract invoice numbers, dates, PO numbers, and reference codes from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What dates and numbers are extracted?",
+        "answer": "We extract invoice numbers, invoice dates, due dates, purchase order numbers, and any other reference codes present on the invoice."
+      }
+    ]
+  },
+  {
+    "slug": "currency",
+    "title": "Extract Currency Information",
+    "description": "Extract currency codes and amounts from international invoices. Handle multiple currencies and foreign exchange details.",
+    "metaTitle": "Extract Currency from Invoices | Multi-Currency Invoice Parser",
+    "metaDescription": "Extract currency information from international invoices. Handle multiple currencies and get all amounts with proper currency codes.",
+    "faqs": [
+      {
+        "question": "Can the tool handle multiple currencies?",
+        "answer": "Yes, our tool identifies and preserves currency codes from invoices, correctly handling international invoices with various currencies."
+      }
+    ]
+  },
+  {
+    "slug": "customer-details",
+    "title": "Extract Customer Details",
+    "description": "Extract customer and billing information from invoices including names, addresses, and customer account numbers.",
+    "metaTitle": "Extract Customer Details from Invoices | Customer Data Parser",
+    "metaDescription": "Extract customer information from PDF invoices. Get customer names, billing addresses, and account numbers automatically.",
+    "faqs": [
+      {
+        "question": "What customer information can be extracted?",
+        "answer": "We extract customer names, billing addresses, shipping addresses, customer account numbers, and contact information."
+      }
+    ]
+  },
+  {
+    "slug": "batch-processing",
+    "title": "Batch Extract Invoice Data",
+    "description": "Process multiple invoices efficiently with our batch extraction tool. Convert multiple PDF invoices to CSV and Excel in bulk.",
+    "metaTitle": "Batch Invoice Data Extraction | Bulk Invoice Processing",
+    "metaDescription": "Extract data from multiple invoices at once. Batch process PDF invoices to CSV and Excel format efficiently.",
+    "faqs": [
+      {
+        "question": "How does batch processing work?",
+        "answer": "Purchase a credits pack and convert multiple invoices one after another. Each conversion uses one credit and your results are saved for 30 days."
+      }
+    ]
+  }
+]

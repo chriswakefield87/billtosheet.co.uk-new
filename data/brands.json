@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "amazon",
+    "name": "Amazon",
+    "category": "ecommerce",
+    "description": "Convert Amazon invoices to CSV or Excel format instantly. Extract order details, line items, and tax information from your Amazon business invoices.",
+    "metaTitle": "Amazon Invoice to CSV Converter | Free Amazon Invoice Parser",
+    "metaDescription": "Convert Amazon invoices to CSV and Excel format. Extract all order details, line items, and tax information from Amazon EU and US invoices automatically.",
+    "faqs": [
+      {
+        "question": "How do I convert Amazon invoices to CSV?",
+        "answer": "Simply upload your Amazon invoice PDF using our converter tool. Our system will automatically extract all relevant data including order numbers, dates, items, prices, and taxes, then generate downloadable CSV and Excel files."
+      },
+      {
+        "question": "Can I convert multiple Amazon invoices at once?",
+        "answer": "Currently, you can convert one invoice at a time. For bulk conversions, consider purchasing a credits pack which allows you to process multiple invoices efficiently."
+      },
+      {
+        "question": "What Amazon invoice formats are supported?",
+        "answer": "We support Amazon invoices from all regions including Amazon.com, Amazon.co.uk, Amazon.de, and other Amazon marketplaces in standard PDF format."
+      }
+    ]
+  },
+  {
+    "slug": "stripe",
+    "name": "Stripe",
+    "category": "payments",
+    "description": "Convert Stripe invoices to CSV or Excel. Extract payment details, subscription information, and transaction data from Stripe invoices effortlessly.",
+    "metaTitle": "Stripe Invoice to CSV Converter | Parse Stripe Invoices",
+    "metaDescription": "Convert Stripe invoices to CSV and Excel. Extract payment details, subscription data, and transaction information from Stripe invoices automatically.",
+    "faqs": [
+      {
+        "question": "How does the Stripe invoice converter work?",
+        "answer": "Upload your Stripe invoice PDF and our tool will extract all payment details, subscription information, line items, and tax data, converting it into structured CSV and Excel formats."
+      },
+      {
+        "question": "Is my Stripe invoice data secure?",
+        "answer": "Yes, we process invoices securely and don't store your original PDF files. Conversion results are retained for 30 days for logged-in users, then automatically deleted."
+      }
+    ]
+  },
+  {
+    "slug": "paypal",
+    "name": "PayPal",
+    "category": "payments",
+    "description": "Convert PayPal invoices and transaction receipts to CSV or Excel. Extract payment details, fees, and transaction data automatically.",
+    "metaTitle": "PayPal Invoice to CSV Converter | PayPal Invoice Parser",
+    "metaDescription": "Convert PayPal invoices to CSV and Excel format. Extract transaction details, fees, and payment information from PayPal invoices instantly.",
+    "faqs": [
+      {
+        "question": "Can I convert PayPal transaction history to CSV?",
+        "answer": "Yes, upload your PayPal invoice or transaction receipt PDF, and our tool will extract all transaction details including amounts, fees, dates, and payment methods."
+      }
+    ]
+  },
+  {
+    "slug": "quickbooks",
+    "name": "QuickBooks",
+    "category": "accounting",
+    "description": "Convert QuickBooks invoices to CSV or Excel. Extract invoice data, line items, and accounting details from QuickBooks PDFs.",
+    "metaTitle": "QuickBooks Invoice to CSV Converter | QuickBooks Parser",
+    "metaDescription": "Convert QuickBooks invoices to CSV and Excel. Extract all invoice details, line items, and accounting information from QuickBooks PDFs automatically.",
+    "faqs": [
+      {
+        "question": "How do I export QuickBooks invoices to CSV?",
+        "answer": "Simply upload your QuickBooks invoice PDF to our converter. We'll extract all relevant accounting data including invoice numbers, dates, items, amounts, and taxes."
+      }
+    ]
+  },
+  {
+    "slug": "xero",
+    "name": "Xero",
+    "category": "accounting",
+    "description": "Convert Xero invoices to CSV or Excel format. Extract invoice details, line items, and tax information from Xero accounting invoices.",
+    "metaTitle": "Xero Invoice to CSV Converter | Xero Invoice Parser",
+    "metaDescription": "Convert Xero invoices to CSV and Excel. Extract invoice details, line items, and tax information from Xero accounting software automatically.",
+    "faqs": [
+      {
+        "question": "Can I convert Xero invoices to Excel?",
+        "answer": "Yes, our tool converts Xero invoices to both CSV and Excel formats with separate sheets for invoice details and line items."
+      }
+    ]
+  },
+  {
+    "slug": "freshbooks",
+    "name": "FreshBooks",
+    "category": "accounting",
+    "description": "Convert FreshBooks invoices to CSV or Excel. Extract invoice data, client information, and line items from FreshBooks PDFs.",
+    "metaTitle": "FreshBooks Invoice to CSV Converter | FreshBooks Parser",
+    "metaDescription": "Convert FreshBooks invoices to CSV and Excel format. Extract invoice data, client details, and line items from FreshBooks automatically.",
+    "faqs": [
+      {
+        "question": "How do I parse FreshBooks invoices?",
+        "answer": "Upload your FreshBooks invoice PDF and our tool will automatically extract all invoice details, client information, line items, and totals."
+      }
+    ]
+  },
+  {
+    "slug": "ebay",
+    "name": "eBay",
+    "category": "ecommerce",
+    "description": "Convert eBay invoices and sales records to CSV or Excel. Extract order details, fees, and transaction data from eBay invoices.",
+    "metaTitle": "eBay Invoice to CSV Converter | eBay Invoice Parser",
+    "metaDescription": "Convert eBay invoices to CSV and Excel. Extract order details, seller fees, and transaction data from eBay invoices automatically.",
+    "faqs": [
+      {
+        "question": "Can I convert eBay sales reports to CSV?",
+        "answer": "Yes, upload your eBay invoice or sales report PDF and our tool will extract all transaction details including item descriptions, prices, fees, and totals."
+      }
+    ]
+  },
+  {
+    "slug": "shopify",
+    "name": "Shopify",
+    "category": "ecommerce",
+    "description": "Convert Shopify invoices and order receipts to CSV or Excel. Extract order details, product information, and transaction data.",
+    "metaTitle": "Shopify Invoice to CSV Converter | Shopify Invoice Parser",
+    "metaDescription": "Convert Shopify invoices to CSV and Excel format. Extract order details, product information, and customer data from Shopify invoices.",
+    "faqs": [
+      {
+        "question": "How do I convert Shopify invoices to CSV?",
+        "answer": "Upload your Shopify invoice PDF and we'll extract all order details, product line items, customer information, and payment data into CSV and Excel formats."
+      }
+    ]
+  },
+  {
+    "slug": "square",
+    "name": "Square",
+    "category": "payments",
+    "description": "Convert Square invoices and receipts to CSV or Excel. Extract transaction details, payment information, and itemized data.",
+    "metaTitle": "Square Invoice to CSV Converter | Square Invoice Parser",
+    "metaDescription": "Convert Square invoices to CSV and Excel. Extract transaction details, payment information, and itemized data from Square invoices.",
+    "faqs": [
+      {
+        "question": "Can I convert Square receipts to spreadsheet format?",
+        "answer": "Yes, upload your Square invoice or receipt PDF and our tool will convert it to CSV and Excel formats with all transaction details preserved."
+      }
+    ]
+  },
+  {
+    "slug": "sage",
+    "name": "Sage",
+    "category": "accounting",
+    "description": "Convert Sage invoices to CSV or Excel format. Extract invoice details, line items, and accounting data from Sage accounting software.",
+    "metaTitle": "Sage Invoice to CSV Converter | Sage Invoice Parser",
+    "metaDescription": "Convert Sage invoices to CSV and Excel. Extract invoice details, line items, and accounting data from Sage software automatically.",
+    "faqs": [
+      {
+        "question": "How do I export Sage invoices to CSV?",
+        "answer": "Simply upload your Sage invoice PDF and our converter will extract all invoice data including line items, dates, amounts, and tax information."
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "getting-started",
+    "title": "Getting Started with BillToSheet",
+    "description": "Learn how to convert your first invoice PDF to CSV or Excel format with BillToSheet. Step-by-step guide for beginners.",
+    "metaTitle": "Getting Started with BillToSheet | Invoice Converter Tutorial",
+    "metaDescription": "Learn how to convert invoice PDFs to CSV and Excel. Complete beginner's guide to using BillToSheet invoice converter.",
+    "faqs": [
+      {
+        "question": "How do I convert my first invoice?",
+        "answer": "Simply visit the homepage, click the upload area or drag and drop your PDF invoice. The conversion happens automatically and you'll be able to download CSV and Excel files within seconds."
+      },
+      {
+        "question": "Do I need to create an account?",
+        "answer": "No, you can convert one invoice for free without creating an account. For additional conversions and to save your conversion history, create a free account."
+      }
+    ]
+  },
+  {
+    "slug": "supported-formats",
+    "title": "Supported Invoice Formats",
+    "description": "Learn which invoice formats and types are supported by BillToSheet. Compatible with invoices from major platforms and accounting software.",
+    "metaTitle": "Supported Invoice Formats | BillToSheet Compatibility",
+    "metaDescription": "See which invoice formats BillToSheet supports. Compatible with invoices from Amazon, Stripe, QuickBooks, Xero, and more.",
+    "faqs": [
+      {
+        "question": "What invoice formats are supported?",
+        "answer": "BillToSheet supports standard PDF invoices from major platforms including Amazon, Stripe, PayPal, QuickBooks, Xero, FreshBooks, and most other business software."
+      },
+      {
+        "question": "Can I upload scanned invoices?",
+        "answer": "Yes, as long as the scanned invoice is in PDF format with readable text. For best results, use digital PDF invoices rather than low-quality scans."
+      }
+    ]
+  },
+  {
+    "slug": "credits-system",
+    "title": "Understanding Credits",
+    "description": "Learn how the BillToSheet credits system works. Information about free conversions, purchasing credits, and credit usage.",
+    "metaTitle": "BillToSheet Credits System | How Credits Work",
+    "metaDescription": "Understand how BillToSheet credits work. Learn about free conversions, purchasing credit packs, and managing your credit balance.",
+    "faqs": [
+      {
+        "question": "How many credits do I need?",
+        "answer": "Each invoice conversion uses 1 credit. You get 1 free conversion without an account. After signing in, purchase credit packs: 25 credits for £9, 100 for £19, or 500 for £49."
+      },
+      {
+        "question": "Do credits expire?",
+        "answer": "No, your purchased credits never expire. You can use them at any time, and they remain in your account until used."
+      }
+    ]
+  },
+  {
+    "slug": "downloading-files",
+    "title": "Downloading Your Converted Files",
+    "description": "Learn how to download your converted invoice files in CSV and Excel formats. Access your conversion history and re-download files.",
+    "metaTitle": "Download Converted Invoice Files | BillToSheet Guide",
+    "metaDescription": "Learn how to download your converted invoice files as CSV or Excel. Access your conversion history and re-download files.",
+    "faqs": [
+      {
+        "question": "What file formats can I download?",
+        "answer": "You can download three files for each conversion: invoice_details.csv, line_items.csv, and combined.xlsx (Excel with two sheets)."
+      },
+      {
+        "question": "How long are my files stored?",
+        "answer": "For logged-in users, converted files are stored for 30 days. Anonymous conversions are available only during your session."
+      }
+    ]
+  },
+  {
+    "slug": "data-security",
+    "title": "Data Security and Privacy",
+    "description": "Learn how BillToSheet protects your invoice data. Information about data storage, privacy, and security measures.",
+    "metaTitle": "BillToSheet Data Security | Privacy and Protection",
+    "metaDescription": "Learn how BillToSheet protects your invoice data. Information about encryption, storage, and privacy measures.",
+    "faqs": [
+      {
+        "question": "Is my invoice data secure?",
+        "answer": "Yes, we use industry-standard security measures. Your original PDF files are not stored after processing. Converted files are stored securely for 30 days then automatically deleted."
+      },
+      {
+        "question": "Who can access my converted invoices?",
+        "answer": "Only you can access your converted invoices. Each conversion has a unique ID and is accessible only through your account or session."
+      }
+    ]
+  },
+  {
+    "slug": "excel-formatting",
+    "title": "Excel File Format and Structure",
+    "description": "Understand the structure of Excel files generated by BillToSheet. Learn about sheets, columns, and data organization.",
+    "metaTitle": "BillToSheet Excel Format | Excel File Structure Guide",
+    "metaDescription": "Learn about the Excel file format generated by BillToSheet. Understand sheets structure, columns, and data organization.",
+    "faqs": [
+      {
+        "question": "How is the Excel file structured?",
+        "answer": "The Excel file contains two sheets: 'Invoice Details' with header information (vendor, date, totals) and 'Line Items' with individual product/service rows."
+      },
+      {
+        "question": "Can I customize the Excel format?",
+        "answer": "The current version uses a standardized format optimized for accounting software import. Custom formatting options may be added in future updates."
+      }
+    ]
+  },
+  {
+    "slug": "troubleshooting",
+    "title": "Troubleshooting Common Issues",
+    "description": "Solutions to common problems when converting invoices. Fix upload errors, conversion failures, and download issues.",
+    "metaTitle": "Troubleshooting BillToSheet | Fix Common Issues",
+    "metaDescription": "Solve common BillToSheet issues. Fix upload errors, conversion problems, and download issues with our troubleshooting guide.",
+    "faqs": [
+      {
+        "question": "Why won't my invoice upload?",
+        "answer": "Ensure your file is a PDF under 10MB. Check that you're using a supported browser. If the issue persists, try a different browser or contact support."
+      },
+      {
+        "question": "What if the extracted data is incorrect?",
+        "answer": "Our system is optimized for standard invoice formats. If data extraction is inaccurate, ensure your PDF is text-based (not a low-quality image scan)."
+      }
+    ]
+  },
+  {
+    "slug": "api-access",
+    "title": "API Access for Developers",
+    "description": "Information about BillToSheet API for developers. Integrate invoice conversion into your applications and workflows.",
+    "metaTitle": "BillToSheet API | Developer Documentation",
+    "metaDescription": "Access BillToSheet's invoice conversion API. Integrate PDF to CSV/Excel conversion into your applications and workflows.",
+    "faqs": [
+      {
+        "question": "Is there an API available?",
+        "answer": "API access is planned for future releases. Contact us if you're interested in early access or have specific integration requirements."
+      }
+    ]
+  },
+  {
+    "slug": "bulk-conversion",
+    "title": "Bulk Invoice Conversion",
+    "description": "Learn how to convert multiple invoices efficiently. Best practices for bulk processing and managing large conversion jobs.",
+    "metaTitle": "Bulk Invoice Conversion | Process Multiple Invoices",
+    "metaDescription": "Convert multiple invoices efficiently with BillToSheet. Learn bulk processing best practices and optimize your workflow.",
+    "faqs": [
+      {
+        "question": "Can I convert multiple invoices at once?",
+        "answer": "Currently, invoices are converted one at a time. For efficient bulk processing, purchase a credit pack and process invoices sequentially. Your results are saved in your dashboard."
+      }
+    ]
+  },
+  {
+    "slug": "refund-policy",
+    "title": "Refund and Credit Policy",
+    "description": "Information about BillToSheet's refund policy, credit adjustments, and satisfaction guarantee.",
+    "metaTitle": "BillToSheet Refund Policy | Credits and Refunds",
+    "metaDescription": "Learn about BillToSheet's refund policy, credit adjustments, and satisfaction guarantee.",
+    "faqs": [
+      {
+        "question": "What is your refund policy?",
+        "answer": "If you're not satisfied with a conversion, contact us within 7 days for a credit refund. We'll review the issue and refund credits if appropriate."
+      },
+      {
+        "question": "Can I get a refund on unused credits?",
+        "answer": "Credit purchases are generally non-refundable, but we'll consider refund requests on a case-by-case basis. Contact support to discuss your situation."
+      }
+    ]
+  }
+]
