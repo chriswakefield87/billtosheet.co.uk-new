@@ -2,7 +2,44 @@
 
 Complete guide to deploying BillToSheet on a Digital Ocean server.
 
-## Prerequisites
+## Local Development with Docker MySQL
+
+For local development, we use Docker to run MySQL:
+
+### Start MySQL Locally
+
+```bash
+docker-compose up -d
+```
+
+This starts MySQL on `localhost:3306` with:
+- Database: `billtosheet`
+- User: `billtosheet_user`
+- Password: `billtosheet_pass`
+
+### Stop MySQL
+
+```bash
+docker-compose down
+```
+
+### Reset Database (if needed)
+
+```bash
+docker-compose down -v  # Delete volumes
+docker-compose up -d    # Restart fresh
+npx prisma db push      # Recreate tables
+```
+
+### Add Credits to User
+
+```bash
+node scripts/add-credits.js your-email@example.com 100
+```
+
+---
+
+## Production Deployment Prerequisites
 
 - Digital Ocean Droplet (Ubuntu 22.04 LTS recommended)
 - Domain name pointed to your droplet's IP

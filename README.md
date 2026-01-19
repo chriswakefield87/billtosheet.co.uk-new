@@ -64,8 +64,11 @@ NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
 STRIPE_SECRET_KEY=sk_test_...
 STRIPE_WEBHOOK_SECRET=whsec_...
 
-# Database (SQLite - no changes needed)
-DATABASE_URL="file:./dev.db"
+# Database (MySQL via Docker)
+DATABASE_URL="mysql://billtosheet_user:billtosheet_pass@localhost:3306/billtosheet"
+
+# OpenAI (for PDF parsing)
+OPENAI_API_KEY=sk-...
 
 # App URL
 NEXT_PUBLIC_APP_URL=http://localhost:3000
@@ -84,15 +87,29 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 2. Copy your publishable key and secret key (use test mode keys)
 3. For webhook secret, see step 5 below
 
-### 3. Initialize Database
+#### Getting OpenAI API Key:
+
+1. Go to [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+2. Create a new API key
+3. Copy and paste into .env.local
+
+### 3. Start MySQL Database (Docker)
 
 ```bash
-npm run db:push
+docker-compose up -d
 ```
 
-This creates the SQLite database and applies the Prisma schema.
+This starts MySQL in a Docker container on `localhost:3306`.
 
-### 4. Start Development Server
+### 4. Initialize Database
+
+```bash
+npx prisma db push
+```
+
+This creates the tables in MySQL and generates the Prisma client.
+
+### 5. Start Development Server
 
 ```bash
 npm run dev
