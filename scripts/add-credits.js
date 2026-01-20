@@ -4,13 +4,14 @@ const prisma = new PrismaClient();
 
 async function addCredits(email, amount) {
   try {
-    const user = await prisma.user.findUnique({
+    // Find user by email (using findFirst since email is not unique in schema)
+    const user = await prisma.user.findFirst({
       where: { email: email },
     });
 
     if (user) {
       const updatedUser = await prisma.user.update({
-        where: { email: email },
+        where: { id: user.id },
         data: {
           creditsBalance: user.creditsBalance + amount,
         },

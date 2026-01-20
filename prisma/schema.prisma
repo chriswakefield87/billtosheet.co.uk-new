@@ -28,7 +28,7 @@ model Conversion {
   invoiceDate   String?
   currency      String?
   total         Float?
-  extractedData String
+  extractedData String    @db.Text
   status        String    @default("completed")
   createdAt     DateTime  @default(now())
 }
