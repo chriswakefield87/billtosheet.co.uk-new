@@ -1,17 +1,30 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
 
 export default function Navigation() {
   const pathname = usePathname();
+  const router = useRouter();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const handleDashboardClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Always do a full page reload when navigating to dashboard to ensure fresh data
+    e.preventDefault();
+    if (pathname === '/dashboard') {
+      // If already on dashboard, do a full reload
+      window.location.reload();
+    } else {
+      // Navigate to dashboard with full page load
+      window.location.href = '/dashboard';
+    }
+  };
   
   // Check if Clerk is available (preview mode)
   const hasClerk = typeof window !== 'undefined' && 
@@ -73,6 +86,7 @@ export default function Navigation() {
               <SignedIn>
                 <Link
                   href="/dashboard"
+                  onClick={handleDashboardClick}
                   className="text-sm font-medium text-gray-600 hover:text-primary-600"
                 >
                   Dashboard

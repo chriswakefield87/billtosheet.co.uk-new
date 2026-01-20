@@ -19,16 +19,6 @@ export async function POST(request: NextRequest) {
     const { userId } = await auth()
     const user = userId ? await currentUser() : null
 
-    // Check if user can convert
-    const { allowed, reason } = await canUserConvert(userId)
-
-    if (!allowed) {
-      return NextResponse.json(
-        { error: reason, requiresAuth: !userId },
-        { status: 403 }
-      )
-    }
-
     // Get or create anonymous ID for non-logged-in users
     let anonymousId: string | null = null
     if (!userId) {
@@ -42,6 +32,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Ensure user exists in database and give new users 1 free credit
+    // This must happen BEFORE checking if they can convert
     let dbUser = null
     if (userId && user) {
       dbUser = await prisma.user.upsert({
@@ -53,6 +44,16 @@ export async function POST(request: NextRequest) {
           creditsBalance: 1, // Give new users 1 free credit
         },
       })
+    }
+
+    // Check if user can convert (after ensuring user exists)
+    const { allowed, reason } = await canUserConvert(userId)
+
+    if (!allowed) {
+      return NextResponse.json(
+        { error: reason, requiresAuth: !userId },
+        { status: 403 }
+      )
     }
 
     // Convert file to buffer

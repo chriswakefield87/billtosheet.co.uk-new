@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: "View your invoice conversions and manage your account",
 };
 
+// Force dynamic rendering to always fetch fresh data
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default async function DashboardPage() {
   const { userId } = await auth();
   const clerkUser = await currentUser();
@@ -17,13 +21,14 @@ export default async function DashboardPage() {
     redirect("/sign-in");
   }
 
-  // Ensure user exists in database
+  // Ensure user exists in database and give new users 1 free credit
   const user = await prisma.user.upsert({
     where: { clerkUserId: userId },
     update: {},
     create: {
       clerkUserId: userId,
       email: clerkUser.emailAddresses[0]?.emailAddress || "",
+      creditsBalance: 1, // Give new users 1 free credit
     },
   });
 

@@ -10,10 +10,11 @@ const nextConfig = {
       // Externalize native modules to avoid webpack bundling issues
       config.externals = [...(config.externals || []), 'canvas', 'pdfjs-dist', 'pdf-poppler']
     }
-    // Ignore node-specific modules
+    // Ignore node-specific modules but preserve existing aliases
     config.resolve.alias = {
       ...config.resolve.alias,
       'canvas': false,
+      '@': __dirname,
     }
     return config
   },
