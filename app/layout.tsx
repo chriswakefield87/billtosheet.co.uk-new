@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from '@clerk/nextjs'
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import TelemetryProvider from "@/components/TelemetryProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -79,6 +80,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
+          <TelemetryProvider />
           <Navigation />
           <main className="min-h-screen">
             {children}

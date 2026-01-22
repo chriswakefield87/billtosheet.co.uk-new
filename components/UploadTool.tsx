@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
+import { sendSignal } from "@/lib/telemetry";
 
 export default function UploadTool() {
   const [uploading, setUploading] = useState(false);
@@ -51,9 +52,19 @@ export default function UploadTool() {
         throw new Error(data.error || "Upload failed");
       }
 
+      // Track successful conversion
+      await sendSignal('Conversion.Success', {
+        conversionId: data.conversionId,
+        isSignedIn: isSignedIn ? 'true' : 'false',
+      });
+
       // Redirect to results page
       router.push(`/convert/${data.conversionId}`);
     } catch (err) {
+      // Track conversion error
+      await sendSignal('Conversion.Error', {
+        error: err instanceof Error ? err.message : 'Upload failed',
+      });
       setError(err instanceof Error ? err.message : "Upload failed");
     } finally {
       setUploading(false);

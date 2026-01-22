@@ -6,7 +6,7 @@ export default function Footer() {
     Product: [
       { label: "Pricing", href: "/pricing" },
       { label: "Invoice to CSV", href: "/invoice-to-csv" },
-      { label: "Extract Data", href: "/extract/invoice-data" },
+      { label: "Extract Data", href: "/extract" },
       { label: "Dashboard", href: "/dashboard" },
     ],
     Converters: [
@@ -17,6 +17,7 @@ export default function Footer() {
     ],
     Resources: [
       { label: "Help Center", href: "/help/getting-started" },
+      { label: "Comparisons", href: "/compare" },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/contact" },
     ],

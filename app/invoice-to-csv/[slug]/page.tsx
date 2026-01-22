@@ -235,6 +235,18 @@ export default async function BrandPage({ params }: BrandPageProps) {
         {/* FAQ */}
         <FAQSection faqs={brand.faqs} />
 
+        {/* Back to Hub Link */}
+        <section className="py-12 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <Link
+              href="/invoice-to-csv"
+              className="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center"
+            >
+              ← Back to All Invoice Converters
+            </Link>
+          </div>
+        </section>
+
         {/* Related Converters */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

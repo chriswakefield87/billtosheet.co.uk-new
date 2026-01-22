@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import Link from "next/link";
 import { Metadata } from "next";
+import SignupTracker from "@/components/SignupTracker";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -32,15 +33,19 @@ export default async function DashboardPage() {
     },
   });
 
-  // Get conversions
+  // Check if this is a new signup (user created within last 30 seconds and has no conversions)
+  const isNewSignup = (Date.now() - new Date(user.createdAt).getTime()) < 30000;
   const conversions = await prisma.conversion.findMany({
     where: { userId: user.id },
     orderBy: { createdAt: "desc" },
     take: 50,
   });
+  const isActuallyNew = isNewSignup && conversions.length === 0;
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <>
+      <SignupTracker isNewSignup={isActuallyNew} />
+      <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8">
@@ -187,5 +192,6 @@ export default async function DashboardPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

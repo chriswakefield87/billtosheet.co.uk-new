@@ -46,7 +46,7 @@ export default async function ComparePage({ params }: ComparePageProps) {
   }
 
   const breadcrumbItems = [
-    { label: "Compare", href: "/compare/billtosheet-vs-manual-entry" },
+    { label: "Compare", href: "/compare" },
     { label: page.title, href: `/compare/${page.slug}` },
   ];
 
@@ -78,6 +78,18 @@ export default async function ComparePage({ params }: ComparePageProps) {
         </section>
 
         <FAQSection faqs={page.faqs} />
+
+        {/* Back to Hub Link */}
+        <section className="py-12 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <Link
+              href="/compare"
+              className="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center"
+            >
+              ← Back to All Comparisons
+            </Link>
+          </div>
+        </section>
 
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

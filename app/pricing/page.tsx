@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { auth } from "@clerk/nextjs/server";
 import { CREDIT_PACKS } from "@/lib/stripe";
+import CheckoutButton from "@/components/CheckoutButton";
 
 export const metadata: Metadata = {
   title: "Pricing - Credit Packs",
@@ -137,18 +138,14 @@ export default async function PricingPage() {
                 </li>
               </ul>
 
-              <form action="/api/checkout" method="POST">
-                <input type="hidden" name="packId" value={pack.id} />
-                <button
-                  type="submit"
-                  disabled={!userId}
-                  className={`w-full ${
-                    pack.popular ? "btn-primary" : "btn-secondary"
-                  } ${!userId ? "opacity-50 cursor-not-allowed" : ""}`}
-                >
-                  {userId ? "Purchase" : "Sign In to Purchase"}
-                </button>
-              </form>
+              <CheckoutButton
+                packId={pack.id}
+                packName={pack.name}
+                credits={pack.credits}
+                price={pack.price}
+                popular={pack.popular}
+                userId={userId}
+              />
             </div>
           ))}
         </div>

@@ -5,6 +5,22 @@ const nextConfig = {
       bodySizeLimit: '10mb',
     },
   },
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap-pages.xml',
+        destination: '/sitemap-pages',
+      },
+      {
+        source: '/sitemap-converters.xml',
+        destination: '/sitemap-converters',
+      },
+      {
+        source: '/sitemap-guides.xml',
+        destination: '/sitemap-guides',
+      },
+    ]
+  },
   webpack: (config, { isServer }) => {
     if (isServer) {
       // Externalize native modules to avoid webpack bundling issues
