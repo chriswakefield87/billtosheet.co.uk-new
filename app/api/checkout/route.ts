@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { auth } from '@clerk/nextjs/server'
+import { auth, currentUser } from '@clerk/nextjs/server'
 import { stripe, CREDIT_PACKS } from '@/lib/stripe'
 
 export async function POST(request: NextRequest) {
@@ -9,6 +9,10 @@ export async function POST(request: NextRequest) {
     if (!userId) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
+
+    // Get user email to pre-populate Stripe checkout
+    const user = await currentUser()
+    const userEmail = user?.emailAddresses[0]?.emailAddress
 
     const formData = await request.formData()
     const packId = formData.get('packId') as string
@@ -39,6 +43,7 @@ export async function POST(request: NextRequest) {
       success_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard?success=true`,
       cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/pricing?canceled=true`,
       client_reference_id: userId,
+      customer_email: userEmail, // Pre-populate email in checkout form
       metadata: {
         userId,
         credits: pack.credits.toString(),

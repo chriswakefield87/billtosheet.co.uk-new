@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const footerLinks = {
@@ -50,11 +51,15 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-emerald-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">B</span>
-              </div>
-              <span className="text-white font-bold text-xl">BillToSheet</span>
+            <div className="flex items-center mb-4 md:mb-0">
+              <Image
+                src="/logo.png"
+                alt="BillToSheet"
+                width={150}
+                height={40}
+                className="h-10 w-auto"
+                quality={100}
+              />
             </div>
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} BillToSheet. All rights reserved.

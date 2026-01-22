@@ -23,11 +23,25 @@ export const metadata: Metadata = {
     siteName: "BillToSheet",
     title: "BillToSheet - Convert Invoice PDF to CSV & Excel Instantly",
     description: "Convert invoice PDFs to CSV and Excel format instantly. Extract invoice data automatically.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "BillToSheet - Convert Invoice PDF to CSV & Excel",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "BillToSheet - Convert Invoice PDF to CSV & Excel",
     description: "Convert invoice PDFs to CSV and Excel format instantly.",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   robots: {
     index: true,
@@ -42,7 +56,8 @@ export default function RootLayout({
 }) {
   // Check if we have real Clerk keys (for local preview without keys)
   const hasRealClerkKeys = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && 
-    process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY.startsWith('pk_test_') && 
+    (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY.startsWith('pk_test_') || 
+     process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY.startsWith('pk_live_')) && 
     process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY.length > 20;
 
   if (!hasRealClerkKeys) {

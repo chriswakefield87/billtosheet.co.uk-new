@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
@@ -43,11 +44,16 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
-            <Link href="/" className="flex items-center space-x-2">
-              <div suppressHydrationWarning className="w-8 h-8 bg-gradient-to-r from-primary-600 to-emerald-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">B</span>
-              </div>
-              <span className="font-bold text-xl">BillToSheet</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="BillToSheet"
+                width={150}
+                height={40}
+                className="h-10 w-auto"
+                priority
+                quality={100}
+              />
             </Link>
 
             <div className="hidden md:flex space-x-6">

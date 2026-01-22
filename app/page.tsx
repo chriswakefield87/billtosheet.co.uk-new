@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
+import { generateOrganizationSchema } from "@/lib/seo-utils";
 
 const UploadTool = dynamic(() => import("@/components/UploadTool"), {
   ssr: false,
@@ -13,9 +14,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  openGraph: {
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "BillToSheet - Convert Invoice PDF to CSV & Excel",
+      },
+    ],
+  },
+  twitter: {
+    images: ["/og-image.png"],
+  },
 };
 
 export default function HomePage() {
+  const organizationSchema = generateOrganizationSchema();
   const features = [
     {
       title: "Instant Conversion",
@@ -50,6 +65,13 @@ export default function HomePage() {
 
   return (
     <>
+      {/* Organization Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
