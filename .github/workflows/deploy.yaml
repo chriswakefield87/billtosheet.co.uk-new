@@ -95,14 +95,20 @@ jobs:
               sudo tar -czf /var/backups/billtosheet/backup-$(date +%Y%m%d-%H%M%S).tar.gz -C /var/www/billtosheet.co.uk .
             fi
             
+            # Clean deployment directory (preserve .env.local with production secrets)
+            echo "Cleaning deployment directory..."
+            cd /var/www/billtosheet.co.uk
+            # Remove old files but preserve .env.local
+            find . -maxdepth 1 ! -name '.' ! -name '.env.local' ! -name '.env' -exec rm -rf {} + 2>/dev/null || true
+            
             # Extract new deployment
             echo "Extracting deployment archive..."
-            cd /var/www/billtosheet.co.uk
             tar -xzf /tmp/deployment.tar.gz
             
-            # Install dependencies
-            echo "Installing dependencies..."
-            npm ci --production=false
+            # Install dependencies (production only - build already happened on GitHub)
+            # This omits dev dependencies like TypeScript, ESLint, etc. that aren't needed at runtime
+            echo "Installing production dependencies..."
+            npm ci --omit=dev
             
             # Generate Prisma client (needed for runtime)
             echo "Generating Prisma client..."
