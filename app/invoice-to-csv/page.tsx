@@ -3,7 +3,7 @@ import Link from "next/link";
 import UploadTool from "@/components/UploadTool";
 import FAQSection from "@/components/FAQSection";
 import brandsData from "@/data/brands.json";
-import { generateFAQSchema } from "@/lib/seo-utils";
+import { generateFAQSchema, generateSoftwareApplicationSchema } from "@/lib/seo-utils";
 
 export const metadata: Metadata = {
   title: "Invoice to CSV Converter | Convert Invoice PDF to CSV Online",
@@ -58,6 +58,10 @@ export default function InvoiceToCSVHub() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateSoftwareApplicationSchema()) }}
       />
 
       <div className="min-h-screen bg-gray-50">

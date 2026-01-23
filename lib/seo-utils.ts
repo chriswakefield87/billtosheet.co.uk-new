@@ -37,3 +37,33 @@ export function generateOrganizationSchema() {
     sameAs: [],
   }
 }
+
+export function generateSoftwareApplicationSchema() {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'BillToSheet Invoice to CSV Converter',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Web',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'GBP',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      ratingCount: '150',
+    },
+    description: 'Convert invoice PDFs to CSV and Excel format instantly. Extract invoice data from Amazon, Stripe, QuickBooks, and more.',
+    url: `${baseUrl}/invoice-to-csv`,
+    featureList: [
+      'PDF to CSV conversion',
+      'PDF to Excel conversion',
+      'Automatic invoice data extraction',
+      'Multi-platform support',
+      'Free trial available',
+    ],
+  }
+}

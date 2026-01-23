@@ -6,6 +6,29 @@
     "description": "Convert Amazon invoices to CSV or Excel format instantly. Extract order details, line items, and tax information from your Amazon business invoices.",
     "metaTitle": "Amazon Invoice to CSV Converter | Free Amazon Invoice Parser",
     "metaDescription": "Convert Amazon invoices to CSV and Excel format. Extract all order details, line items, and tax information from Amazon EU and US invoices automatically.",
+    "exportSteps": [
+      "Log in to your Amazon Seller Central account",
+      "Navigate to Reports > Payments > Transaction View",
+      "Select the date range for your invoices",
+      "Click 'Download' to export invoices as PDF",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Amazon invoice date formats vary by region (DD/MM/YYYY vs MM/DD/YYYY)",
+      "Multi-currency invoices may show amounts in different currencies",
+      "Amazon Business invoices include additional tax breakdowns",
+      "FBA fees are sometimes listed separately from product costs",
+      "Refund invoices have negative amounts that need special handling"
+    ],
+    "uniqueFields": [
+      "Order ID and ASIN numbers",
+      "FBA fulfillment fees",
+      "Referral fees breakdown",
+      "Amazon marketplace fees",
+      "VAT/GST information by region",
+      "Shipping credits and charges",
+      "Promotional rebates"
+    ],
     "faqs": [
       {
         "question": "How do I convert Amazon invoices to CSV?",
@@ -18,6 +41,22 @@
       {
         "question": "What Amazon invoice formats are supported?",
         "answer": "We support Amazon invoices from all regions including Amazon.com, Amazon.co.uk, Amazon.de, and other Amazon marketplaces in standard PDF format."
+      },
+      {
+        "question": "How do I download invoices from Amazon Seller Central?",
+        "answer": "Go to Reports > Payments > Transaction View in Seller Central, select your date range, and click Download. The invoices will be in PDF format ready for conversion."
+      },
+      {
+        "question": "Does the converter handle Amazon FBA fees?",
+        "answer": "Yes, our converter extracts all FBA fees including fulfillment fees, storage fees, and removal order fees, and includes them as separate line items in your CSV output."
+      },
+      {
+        "question": "Can I convert Amazon Business invoices?",
+        "answer": "Yes, our tool supports both regular Amazon invoices and Amazon Business invoices, including the additional tax information and business-specific fields."
+      },
+      {
+        "question": "What if my Amazon invoice has multiple currencies?",
+        "answer": "Our converter preserves all currency information and creates separate line items for each currency, making it easy to reconcile multi-currency transactions."
       }
     ]
   },
@@ -28,6 +67,29 @@
     "description": "Convert Stripe invoices to CSV or Excel. Extract payment details, subscription information, and transaction data from Stripe invoices effortlessly.",
     "metaTitle": "Stripe Invoice to CSV Converter | Parse Stripe Invoices",
     "metaDescription": "Convert Stripe invoices to CSV and Excel. Extract payment details, subscription data, and transaction information from Stripe invoices automatically.",
+    "exportSteps": [
+      "Log in to your Stripe Dashboard",
+      "Navigate to Invoices in the left sidebar",
+      "Click on the invoice you want to export",
+      "Click the 'Download PDF' button",
+      "Upload the downloaded PDF to our converter above"
+    ],
+    "commonIssues": [
+      "Stripe invoice PDFs sometimes have subscription details split across pages",
+      "Tax calculations vary by country and may need manual verification",
+      "Failed payment invoices show different formatting",
+      "Subscription prorations can be complex to parse",
+      "Multi-currency invoices require currency conversion tracking"
+    ],
+    "uniqueFields": [
+      "Stripe invoice ID and charge ID",
+      "Subscription ID and billing period",
+      "Payment method details",
+      "Stripe fees breakdown",
+      "Tax rates by jurisdiction",
+      "Proration amounts for subscription changes",
+      "Discount codes and coupon information"
+    ],
     "faqs": [
       {
         "question": "How does the Stripe invoice converter work?",
@@ -36,6 +98,26 @@
       {
         "question": "Is my Stripe invoice data secure?",
         "answer": "Yes, we process invoices securely and don't store your original PDF files. Conversion results are retained for 30 days for logged-in users, then automatically deleted."
+      },
+      {
+        "question": "Can I convert Stripe subscription invoices?",
+        "answer": "Yes, our converter handles both one-time payment invoices and recurring subscription invoices, extracting subscription IDs, billing periods, and proration details."
+      },
+      {
+        "question": "How do I download invoices from Stripe?",
+        "answer": "In your Stripe Dashboard, go to Invoices, select the invoice you need, and click the Download PDF button. The PDF will be ready for conversion."
+      },
+      {
+        "question": "Does the converter extract Stripe fees?",
+        "answer": "Yes, our tool extracts all Stripe processing fees and displays them as separate line items, making it easy to track your payment processing costs."
+      },
+      {
+        "question": "Can I convert failed payment invoices?",
+        "answer": "Yes, our converter handles both successful and failed payment invoices, preserving all transaction details including failure reasons."
+      },
+      {
+        "question": "What if my Stripe invoice has prorations?",
+        "answer": "Our converter extracts proration amounts and explains them in the CSV output, showing both the original and prorated amounts for subscription changes."
       }
     ]
   },
@@ -46,10 +128,57 @@
     "description": "Convert PayPal invoices and transaction receipts to CSV or Excel. Extract payment details, fees, and transaction data automatically.",
     "metaTitle": "PayPal Invoice to CSV Converter | PayPal Invoice Parser",
     "metaDescription": "Convert PayPal invoices to CSV and Excel format. Extract transaction details, fees, and payment information from PayPal invoices instantly.",
+    "exportSteps": [
+      "Log in to your PayPal Business account",
+      "Go to Activity or Invoices section",
+      "Select the invoice or transaction you need",
+      "Click 'Download' or 'Print' to save as PDF",
+      "Upload the PDF file to our converter tool above"
+    ],
+    "commonIssues": [
+      "PayPal invoice formats differ between personal and business accounts",
+      "International transaction fees are sometimes shown separately",
+      "Currency conversion rates may not match current rates",
+      "Refund invoices have different formatting",
+      "PayPal fees are calculated differently for different transaction types"
+    ],
+    "uniqueFields": [
+      "PayPal transaction ID",
+      "PayPal fees breakdown",
+      "Currency conversion rates",
+      "Payment method (PayPal balance, card, bank)",
+      "Buyer protection information",
+      "Shipping address details",
+      "Merchant protection status"
+    ],
     "faqs": [
       {
         "question": "Can I convert PayPal transaction history to CSV?",
         "answer": "Yes, upload your PayPal invoice or transaction receipt PDF, and our tool will extract all transaction details including amounts, fees, dates, and payment methods."
+      },
+      {
+        "question": "How do I download PayPal invoices?",
+        "answer": "In your PayPal account, navigate to Activity or Invoices, select the transaction, and use the Download or Print option to save as PDF."
+      },
+      {
+        "question": "Does the converter handle PayPal fees?",
+        "answer": "Yes, our tool extracts all PayPal transaction fees, including fixed fees and percentage-based fees, and displays them clearly in the CSV output."
+      },
+      {
+        "question": "Can I convert international PayPal transactions?",
+        "answer": "Yes, our converter handles multi-currency PayPal transactions and extracts currency conversion rates and international transaction fees."
+      },
+      {
+        "question": "What if my PayPal invoice is for a refund?",
+        "answer": "Our converter handles refund invoices and clearly marks negative amounts, making it easy to track refunds in your accounting system."
+      },
+      {
+        "question": "Does the tool work with PayPal Business invoices?",
+        "answer": "Yes, our converter supports both PayPal Personal and Business account invoices, extracting all relevant business transaction details."
+      },
+      {
+        "question": "Can I convert PayPal subscription invoices?",
+        "answer": "Yes, recurring PayPal payments and subscription invoices are fully supported, with subscription IDs and billing cycle information extracted."
       }
     ]
   },
@@ -60,10 +189,57 @@
     "description": "Convert QuickBooks invoices to CSV or Excel. Extract invoice data, line items, and accounting details from QuickBooks PDFs.",
     "metaTitle": "QuickBooks Invoice to CSV Converter | QuickBooks Parser",
     "metaDescription": "Convert QuickBooks invoices to CSV and Excel. Extract all invoice details, line items, and accounting information from QuickBooks PDFs automatically.",
+    "exportSteps": [
+      "Open QuickBooks and navigate to Sales > Invoices",
+      "Select the invoice you want to export",
+      "Click 'Print' or 'Email' and choose 'Save as PDF'",
+      "Alternatively, use Reports > Transaction List > Invoices",
+      "Export as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "QuickBooks invoice templates vary by version and customization",
+      "Custom fields may not appear in standard PDF exports",
+      "Multi-currency invoices require special handling",
+      "Tax calculations depend on QuickBooks tax settings",
+      "Item descriptions can be truncated in PDF format"
+    ],
+    "uniqueFields": [
+      "QuickBooks invoice number",
+      "Customer PO number",
+      "Item codes and SKUs",
+      "Sales tax codes and rates",
+      "Payment terms and due dates",
+      "Class and location tracking",
+      "Custom fields (if present in PDF)"
+    ],
     "faqs": [
       {
         "question": "How do I export QuickBooks invoices to CSV?",
         "answer": "Simply upload your QuickBooks invoice PDF to our converter. We'll extract all relevant accounting data including invoice numbers, dates, items, amounts, and taxes."
+      },
+      {
+        "question": "Can I convert QuickBooks Online invoices?",
+        "answer": "Yes, our converter works with invoices from both QuickBooks Desktop and QuickBooks Online, extracting all standard invoice fields."
+      },
+      {
+        "question": "Does the converter handle QuickBooks custom fields?",
+        "answer": "Our tool extracts all visible fields from the PDF. If custom fields appear in the PDF, they will be included in the conversion output."
+      },
+      {
+        "question": "How do I export invoices from QuickBooks as PDF?",
+        "answer": "In QuickBooks, go to Sales > Invoices, select your invoice, and use Print > Save as PDF. Alternatively, use Reports > Transaction List to export multiple invoices."
+      },
+      {
+        "question": "Can I convert QuickBooks multi-currency invoices?",
+        "answer": "Yes, our converter handles multi-currency QuickBooks invoices and preserves currency information for each line item."
+      },
+      {
+        "question": "Does the tool extract QuickBooks tax information?",
+        "answer": "Yes, our converter extracts all tax details including tax codes, rates, and tax amounts, making it easy to reconcile with your accounting records."
+      },
+      {
+        "question": "What if my QuickBooks invoice has custom items?",
+        "answer": "Our converter extracts all line items including custom items, service items, and inventory items, preserving descriptions and quantities."
       }
     ]
   },
@@ -74,10 +250,57 @@
     "description": "Convert Xero invoices to CSV or Excel format. Extract invoice details, line items, and tax information from Xero accounting invoices.",
     "metaTitle": "Xero Invoice to CSV Converter | Xero Invoice Parser",
     "metaDescription": "Convert Xero invoices to CSV and Excel. Extract invoice details, line items, and tax information from Xero accounting software automatically.",
+    "exportSteps": [
+      "Log in to your Xero account",
+      "Navigate to Business > Invoices",
+      "Click on the invoice you want to export",
+      "Click 'More' > 'Download as PDF'",
+      "Upload the downloaded PDF to our converter above"
+    ],
+    "commonIssues": [
+      "Xero invoice layouts vary by template and customization",
+      "Multi-currency invoices show exchange rates that may need verification",
+      "Xero tax codes are region-specific and may require mapping",
+      "Recurring invoice templates can have different formatting",
+      "Branded invoice templates may have different field positions"
+    ],
+    "uniqueFields": [
+      "Xero invoice number",
+      "Contact name and reference",
+      "Xero item codes",
+      "Tax rates by line item",
+      "Currency exchange rates",
+      "Payment terms and due dates",
+      "Tracking categories (if enabled)"
+    ],
     "faqs": [
       {
         "question": "Can I convert Xero invoices to Excel?",
         "answer": "Yes, our tool converts Xero invoices to both CSV and Excel formats with separate sheets for invoice details and line items."
+      },
+      {
+        "question": "How do I download invoices from Xero?",
+        "answer": "In Xero, go to Business > Invoices, select the invoice, click 'More' > 'Download as PDF', and then upload the PDF to our converter."
+      },
+      {
+        "question": "Does the converter handle Xero multi-currency invoices?",
+        "answer": "Yes, our converter extracts currency information and exchange rates from Xero multi-currency invoices, preserving all currency details."
+      },
+      {
+        "question": "Can I convert Xero recurring invoices?",
+        "answer": "Yes, our tool handles both one-time and recurring Xero invoices, extracting all invoice details regardless of the invoice type."
+      },
+      {
+        "question": "Does the tool extract Xero tax codes?",
+        "answer": "Yes, our converter extracts tax codes, tax rates, and tax amounts from Xero invoices, making tax reconciliation straightforward."
+      },
+      {
+        "question": "What if my Xero invoice uses tracking categories?",
+        "answer": "If tracking categories appear in the PDF, our converter will include them in the extracted data, helping you maintain your tracking structure."
+      },
+      {
+        "question": "Can I convert Xero branded invoice templates?",
+        "answer": "Yes, our converter works with all Xero invoice templates, including custom branded templates, extracting all visible invoice data."
       }
     ]
   },
@@ -88,10 +311,57 @@
     "description": "Convert FreshBooks invoices to CSV or Excel. Extract invoice data, client information, and line items from FreshBooks PDFs.",
     "metaTitle": "FreshBooks Invoice to CSV Converter | FreshBooks Parser",
     "metaDescription": "Convert FreshBooks invoices to CSV and Excel format. Extract invoice data, client details, and line items from FreshBooks automatically.",
+    "exportSteps": [
+      "Log in to your FreshBooks account",
+      "Go to Invoices in the main menu",
+      "Click on the invoice you want to export",
+      "Click the 'Download PDF' button",
+      "Upload the PDF file to our converter tool above"
+    ],
+    "commonIssues": [
+      "FreshBooks invoice designs vary by subscription plan",
+      "Time tracking entries may appear differently than manual line items",
+      "Recurring invoices have subscription details that need parsing",
+      "Payment links and online payment information may clutter the PDF",
+      "Client portal information can affect PDF layout"
+    ],
+    "uniqueFields": [
+      "FreshBooks invoice number",
+      "Client name and email",
+      "Time entries with descriptions",
+      "Expense line items",
+      "Payment terms and late fee information",
+      "Online payment links",
+      "Client portal access information"
+    ],
     "faqs": [
       {
         "question": "How do I parse FreshBooks invoices?",
         "answer": "Upload your FreshBooks invoice PDF and our tool will automatically extract all invoice details, client information, line items, and totals."
+      },
+      {
+        "question": "How do I download invoices from FreshBooks?",
+        "answer": "In FreshBooks, navigate to Invoices, select the invoice you need, and click the Download PDF button. The PDF will be ready for conversion."
+      },
+      {
+        "question": "Does the converter handle FreshBooks time tracking entries?",
+        "answer": "Yes, our tool extracts time entries from FreshBooks invoices, including hours worked, rates, and descriptions, converting them to structured line items."
+      },
+      {
+        "question": "Can I convert FreshBooks recurring invoices?",
+        "answer": "Yes, our converter handles both one-time and recurring FreshBooks invoices, extracting subscription details and billing cycle information."
+      },
+      {
+        "question": "Does the tool work with FreshBooks expense invoices?",
+        "answer": "Yes, our converter extracts expense line items from FreshBooks invoices, including expense categories and amounts."
+      },
+      {
+        "question": "What if my FreshBooks invoice has payment links?",
+        "answer": "Our converter focuses on extracting invoice data and line items. Payment links and portal information are preserved in the metadata but don't interfere with data extraction."
+      },
+      {
+        "question": "Can I convert FreshBooks invoices with multiple currencies?",
+        "answer": "Yes, our converter handles multi-currency FreshBooks invoices and preserves currency information for accurate accounting."
       }
     ]
   },
@@ -102,10 +372,57 @@
     "description": "Convert eBay invoices and sales records to CSV or Excel. Extract order details, fees, and transaction data from eBay invoices.",
     "metaTitle": "eBay Invoice to CSV Converter | eBay Invoice Parser",
     "metaDescription": "Convert eBay invoices to CSV and Excel. Extract order details, seller fees, and transaction data from eBay invoices automatically.",
+    "exportSteps": [
+      "Log in to your eBay Seller Hub",
+      "Navigate to Payments > Transaction details",
+      "Select the invoice or transaction period",
+      "Click 'Download' to export as PDF",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "eBay invoice formats differ between eBay.com, eBay.co.uk, and other marketplaces",
+      "Final value fees are calculated differently for different categories",
+      "Promoted listing fees appear separately from final value fees",
+      "International selling fees can be complex to parse",
+      "eBay Managed Payments invoices have different structure than PayPal invoices"
+    ],
+    "uniqueFields": [
+      "eBay order ID and transaction ID",
+      "Final value fees by category",
+      "Promoted listing fees",
+      "International selling fees",
+      "Payment processing fees",
+      "Shipping label costs",
+      "eBay store subscription fees"
+    ],
     "faqs": [
       {
         "question": "Can I convert eBay sales reports to CSV?",
         "answer": "Yes, upload your eBay invoice or sales report PDF and our tool will extract all transaction details including item descriptions, prices, fees, and totals."
+      },
+      {
+        "question": "How do I download invoices from eBay?",
+        "answer": "In eBay Seller Hub, go to Payments > Transaction details, select your date range, and click Download to export invoices as PDF."
+      },
+      {
+        "question": "Does the converter handle eBay final value fees?",
+        "answer": "Yes, our tool extracts all eBay fees including final value fees, promoted listing fees, and payment processing fees, showing them as separate line items."
+      },
+      {
+        "question": "Can I convert eBay Managed Payments invoices?",
+        "answer": "Yes, our converter supports both traditional eBay invoices and eBay Managed Payments invoices, extracting all fee structures."
+      },
+      {
+        "question": "What if my eBay invoice has international fees?",
+        "answer": "Our converter extracts international selling fees, currency conversion fees, and cross-border transaction fees, making international sales tracking easier."
+      },
+      {
+        "question": "Does the tool work with eBay store subscription invoices?",
+        "answer": "Yes, our converter handles eBay store subscription invoices and extracts monthly subscription fees along with transaction details."
+      },
+      {
+        "question": "Can I convert eBay refund invoices?",
+        "answer": "Yes, our converter handles refund invoices and clearly marks fee reversals and negative amounts for accurate accounting."
       }
     ]
   },
@@ -116,10 +433,57 @@
     "description": "Convert Shopify invoices and order receipts to CSV or Excel. Extract order details, product information, and transaction data.",
     "metaTitle": "Shopify Invoice to CSV Converter | Shopify Invoice Parser",
     "metaDescription": "Convert Shopify invoices to CSV and Excel format. Extract order details, product information, and customer data from Shopify invoices.",
+    "exportSteps": [
+      "Log in to your Shopify admin panel",
+      "Go to Orders and select the order",
+      "Click 'More actions' > 'Print invoice'",
+      "Save the invoice as PDF",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Shopify invoice templates vary by theme and customization",
+      "Discount codes and promotions can affect line item calculations",
+      "Shipping costs may include multiple carriers",
+      "Tax calculations depend on Shopify tax settings",
+      "Gift cards and store credits appear differently in invoices"
+    ],
+    "uniqueFields": [
+      "Shopify order number",
+      "Product SKUs and variants",
+      "Discount codes and promotions",
+      "Shipping method and carrier",
+      "Tax rates by location",
+      "Gift card usage",
+      "Customer tags and notes"
+    ],
     "faqs": [
       {
         "question": "How do I convert Shopify invoices to CSV?",
         "answer": "Upload your Shopify invoice PDF and we'll extract all order details, product line items, customer information, and payment data into CSV and Excel formats."
+      },
+      {
+        "question": "How do I export invoices from Shopify?",
+        "answer": "In Shopify admin, go to Orders, select an order, click 'More actions' > 'Print invoice', and save as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Shopify product variants?",
+        "answer": "Yes, our tool extracts product variants, SKUs, and variant-specific information, making it easy to track inventory and sales by variant."
+      },
+      {
+        "question": "Can I convert Shopify invoices with discounts?",
+        "answer": "Yes, our converter extracts discount codes, promotion details, and discount amounts, showing both original and discounted prices."
+      },
+      {
+        "question": "Does the tool work with Shopify Plus invoices?",
+        "answer": "Yes, our converter works with all Shopify plans including Shopify Plus, extracting all invoice details regardless of subscription level."
+      },
+      {
+        "question": "What if my Shopify invoice has multiple shipping methods?",
+        "answer": "Our converter extracts all shipping information including shipping methods, carriers, and costs, even when multiple shipping options are used."
+      },
+      {
+        "question": "Can I convert Shopify gift card invoices?",
+        "answer": "Yes, our converter handles invoices that include gift card payments, extracting gift card usage and remaining balances."
       }
     ]
   },
@@ -130,10 +494,57 @@
     "description": "Convert Square invoices and receipts to CSV or Excel. Extract transaction details, payment information, and itemized data.",
     "metaTitle": "Square Invoice to CSV Converter | Square Invoice Parser",
     "metaDescription": "Convert Square invoices to CSV and Excel. Extract transaction details, payment information, and itemized data from Square invoices.",
+    "exportSteps": [
+      "Log in to your Square Dashboard",
+      "Navigate to Invoices or Transactions",
+      "Select the invoice you want to export",
+      "Click 'Download PDF' or 'Print'",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Square invoice formats vary between Square Invoices and Square POS receipts",
+      "Tip amounts may be included separately from transaction amounts",
+      "Refund receipts have different formatting",
+      "Multi-location businesses may have location-specific invoices",
+      "Square processing fees are calculated differently for different transaction types"
+    ],
+    "uniqueFields": [
+      "Square transaction ID",
+      "Payment method (card, cash, other)",
+      "Tip amounts",
+      "Square processing fees",
+      "Location information",
+      "Customer contact details",
+      "Receipt delivery method"
+    ],
     "faqs": [
       {
         "question": "Can I convert Square receipts to spreadsheet format?",
         "answer": "Yes, upload your Square invoice or receipt PDF and our tool will convert it to CSV and Excel formats with all transaction details preserved."
+      },
+      {
+        "question": "How do I download invoices from Square?",
+        "answer": "In your Square Dashboard, go to Invoices or Transactions, select the invoice, and click Download PDF or Print to save as PDF."
+      },
+      {
+        "question": "Does the converter handle Square processing fees?",
+        "answer": "Yes, our tool extracts Square processing fees and displays them clearly, making it easy to track your payment processing costs."
+      },
+      {
+        "question": "Can I convert Square invoices with tips?",
+        "answer": "Yes, our converter extracts tip amounts separately from transaction amounts, helping you track tips for reporting and tax purposes."
+      },
+      {
+        "question": "What if my Square invoice is from multiple locations?",
+        "answer": "Our converter extracts location information from Square invoices, making it easy to track sales and transactions by location."
+      },
+      {
+        "question": "Does the tool work with Square Invoices (not just POS)?",
+        "answer": "Yes, our converter handles both Square POS receipts and Square Invoices, extracting all relevant transaction and invoice details."
+      },
+      {
+        "question": "Can I convert Square refund receipts?",
+        "answer": "Yes, our converter handles refund receipts and clearly marks negative amounts and fee reversals for accurate accounting."
       }
     ]
   },
@@ -144,10 +555,57 @@
     "description": "Convert Sage invoices to CSV or Excel format. Extract invoice details, line items, and accounting data from Sage accounting software.",
     "metaTitle": "Sage Invoice to CSV Converter | Sage Invoice Parser",
     "metaDescription": "Convert Sage invoices to CSV and Excel. Extract invoice details, line items, and accounting data from Sage software automatically.",
+    "exportSteps": [
+      "Open Sage and navigate to Sales > Invoices",
+      "Select the invoice you want to export",
+      "Click 'Print' and choose 'Save as PDF'",
+      "Alternatively, use Reports > Sales > Invoice Register",
+      "Export as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Sage invoice formats vary significantly between Sage 50, Sage 200, and Sage X3",
+      "Custom invoice templates may have different field positions",
+      "Multi-company setups require careful invoice identification",
+      "Sage tax codes are complex and region-specific",
+      "Nominal codes may not appear in standard PDF exports"
+    ],
+    "uniqueFields": [
+      "Sage invoice number",
+      "Customer account code",
+      "Nominal codes (if visible in PDF)",
+      "Department and cost center codes",
+      "Sage tax codes and rates",
+      "Payment terms and settlement discounts",
+      "Project and job codes"
+    ],
     "faqs": [
       {
         "question": "How do I export Sage invoices to CSV?",
         "answer": "Simply upload your Sage invoice PDF and our converter will extract all invoice data including line items, dates, amounts, and tax information."
+      },
+      {
+        "question": "Which Sage versions are supported?",
+        "answer": "Our converter works with invoices from Sage 50, Sage 200, Sage X3, and Sage Business Cloud, extracting all standard invoice fields."
+      },
+      {
+        "question": "How do I export invoices from Sage as PDF?",
+        "answer": "In Sage, go to Sales > Invoices, select your invoice, and use Print > Save as PDF. You can also use Reports > Sales > Invoice Register for bulk exports."
+      },
+      {
+        "question": "Does the converter handle Sage tax codes?",
+        "answer": "Yes, our tool extracts Sage tax codes, tax rates, and tax amounts, making it easier to reconcile with your Sage accounting records."
+      },
+      {
+        "question": "Can I convert Sage invoices with project codes?",
+        "answer": "If project or job codes appear in the PDF, our converter will include them in the extracted data, helping you maintain project tracking."
+      },
+      {
+        "question": "What if my Sage invoice uses custom fields?",
+        "answer": "Our converter extracts all visible fields from the PDF. If custom fields are printed on the invoice, they will be included in the conversion."
+      },
+      {
+        "question": "Does the tool work with Sage multi-currency invoices?",
+        "answer": "Yes, our converter handles multi-currency Sage invoices and preserves currency information and exchange rates for accurate accounting."
       }
     ]
   }
