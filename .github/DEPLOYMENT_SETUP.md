@@ -43,7 +43,7 @@ Configure these secrets in your GitHub repository:
    - Example: `https://billtosheet.co.uk`
    - **Required**: Used in API routes and redirects, embedded at build time
 
-**Note:** Server-side secrets (`CLERK_SECRET_KEY`, `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`) are **NOT** needed in GitHub Secrets. They're only used at runtime on your server, which reads them from `.env.local`.
+**Note:** Server-side secrets (`CLERK_SECRET_KEY`, `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `RESEND_API_KEY`) are **NOT** needed in GitHub Secrets. They're only used at runtime on your server, which reads them from `.env.local`.
 
 ## Server Setup
 
@@ -94,6 +94,14 @@ nano .env.local
 ```
 
 Add all your production environment variables (same as the GitHub secrets, plus any additional ones).
+
+**Required server-side variables:**
+- `CLERK_SECRET_KEY`
+- `STRIPE_SECRET_KEY`
+- `STRIPE_WEBHOOK_SECRET`
+- `RESEND_API_KEY` - Get from [resend.com](https://resend.com) dashboard
+- `DATABASE_URL` (if not using GitHub secret)
+- `OPENAI_API_KEY` (if using OpenAI for PDF parsing)
 
 **Important:** The `.env.local` file on the server will NOT be overwritten during deployment (it's excluded from the archive).
 
