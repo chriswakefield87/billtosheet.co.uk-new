@@ -1,48 +1,23 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
 import Link from "next/link";
-import blogPostsData from "@/data/blog_posts.json";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import blogPostsData from "@/data/blog_posts.json";
 
-interface BlogPostProps {
-  params: Promise<{
-    slug: string;
-  }>;
+interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  category: string;
+  author?: string;
+  readTime?: string;
 }
 
-export async function generateStaticParams() {
-  return blogPostsData.map((post) => ({
-    slug: post.slug,
-  }));
+interface BlogPostLayoutProps {
+  post: BlogPost;
+  children: React.ReactNode;
 }
 
-export async function generateMetadata({ params }: BlogPostProps): Promise<Metadata> {
-  const { slug } = await params;
-  const post = blogPostsData.find((p) => p.slug === slug);
-
-  if (!post) {
-    return {
-      title: "Post Not Found",
-    };
-  }
-
-  return {
-    title: `${post.title} | BillToSheet Blog`,
-    description: post.excerpt,
-    alternates: {
-      canonical: `/blog/${slug}`,
-    },
-  };
-}
-
-export default async function BlogPostPage({ params }: BlogPostProps) {
-  const { slug } = await params;
-  const post = blogPostsData.find((p) => p.slug === slug);
-
-  if (!post) {
-    notFound();
-  }
-
+export default function BlogPostLayout({ post, children }: BlogPostLayoutProps) {
   const breadcrumbItems = [
     { label: "Blog", href: "/blog" },
     { label: post.title, href: `/blog/${post.slug}` },
@@ -81,13 +56,10 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
             )}
           </div>
 
-          {/* Article Content - Add your content here */}
+          {/* Article Content */}
           <div className="prose prose-lg max-w-none">
             <div className="text-gray-700 leading-relaxed space-y-6">
-              {/* 
-                Write your blog post content here.
-                You can use standard HTML elements, React components, or markdown.
-              */}
+              {children}
             </div>
           </div>
         </article>
@@ -102,7 +74,7 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
           </Link>
         </div>
 
-        {/* Related Posts (Optional) */}
+        {/* Related Posts */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold mb-6">More Articles</h2>
           <div className="grid md:grid-cols-2 gap-6">
