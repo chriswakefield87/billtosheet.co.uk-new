@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -51,85 +52,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-md p-8">
-          <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
-
-          <form className="space-y-6">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-700 mb-2"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent"
-                required
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700 mb-2"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent"
-                required
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="subject"
-                className="block text-sm font-medium text-gray-700 mb-2"
-              >
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent"
-                required
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-700 mb-2"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={6}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent"
-                required
-              />
-            </div>
-
-            <div>
-              <button type="submit" className="btn-primary w-full">
-                Send Message
-              </button>
-            </div>
-          </form>
-
-          <p className="text-sm text-gray-500 mt-6 text-center">
-            We typically respond within 24 hours during business days.
-          </p>
-        </div>
+        <ContactForm />
 
         <div className="mt-12 card bg-primary-50 border-primary-200">
           <h3 className="text-xl font-semibold mb-4">
