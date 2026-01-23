@@ -47,7 +47,7 @@ jobs:
 
       - name: Create deployment archive
         run: |
-          tar -czf deployment.tar.gz \
+          tar -czf /tmp/deployment.tar.gz \
             --exclude='node_modules' \
             --exclude='.git' \
             --exclude='.next/cache' \
@@ -60,6 +60,7 @@ jobs:
             --exclude='storage' \
             --exclude='prisma/dev.db*' \
             --exclude='.github' \
+            --exclude='deployment.tar.gz' \
             .
 
       - name: Setup SSH
@@ -74,7 +75,7 @@ jobs:
 
       - name: Transfer deployment archive
         run: |
-          scp deployment.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/tmp/
+          scp /tmp/deployment.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/tmp/
 
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.3
