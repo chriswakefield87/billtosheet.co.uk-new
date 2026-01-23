@@ -72,6 +72,14 @@ You'll need to get API keys from:
 2. Create a new API key
 3. Copy it to `OPENAI_API_KEY`
 
+#### Resend (Contact Form Emails)
+1. Go to [https://resend.com](https://resend.com) and sign up for a free account
+2. Navigate to API Keys in the dashboard
+3. Create a new API key
+4. Copy it to `RESEND_API_KEY`
+5. Verify your domain (or use the default `onboarding@resend.dev` for testing)
+6. Update the `from` email in `app/api/contact/route.ts` if using a custom domain
+
 ### 4. Initialize Database
 
 ```bash
