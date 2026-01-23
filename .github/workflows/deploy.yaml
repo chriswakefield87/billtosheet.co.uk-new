@@ -41,6 +41,8 @@ jobs:
           # STRIPE_SECRET_KEY needed during build for Next.js static analysis of API routes
           # Even though it's a server-side secret, Next.js analyzes the code during build
           STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          # OPENAI_API_KEY needed during build for Next.js static analysis of API routes
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           # CLERK_SECRET_KEY is NOT needed here - it's only used at runtime
 
       - name: Create deployment archive
