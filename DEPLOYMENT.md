@@ -174,6 +174,9 @@ STRIPE_WEBHOOK_SECRET=whsec_YOUR_PRODUCTION_WEBHOOK_SECRET
 # MySQL Database
 DATABASE_URL="mysql://username:password@host:port/billtosheet?ssl-mode=REQUIRED"
 
+# Resend (Email Service)
+RESEND_API_KEY=re_your_resend_api_key_here
+
 # App URL
 NEXT_PUBLIC_APP_URL=https://yourdomain.com
 ```
