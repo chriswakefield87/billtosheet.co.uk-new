@@ -103,8 +103,9 @@ jobs:
             # Clean deployment directory (preserve .env.local with production secrets)
             echo "Cleaning deployment directory..."
             cd /var/www/billtosheet.co.uk
-            # Remove old files but preserve .env.local
-            find . -maxdepth 1 ! -name '.' ! -name '.env.local' ! -name '.env' -exec rm -rf {} + 2>/dev/null || true
+            # Remove old files but preserve .env.local and .git (if it exists)
+            # Note: .git is excluded from deployment archive, but we preserve it here as a safety measure
+            find . -maxdepth 1 ! -name '.' ! -name '.env.local' ! -name '.env' ! -name '.git' -exec rm -rf {} + 2>/dev/null || true
             
             # Extract new deployment
             echo "Extracting deployment archive..."
