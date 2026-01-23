@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "how-to-convert-invoices-to-csv",
+    "title": "How to Convert Invoices to CSV: Complete Guide",
+    "excerpt": "Learn how to efficiently convert your invoice PDFs to CSV format for easy import into accounting software.",
+    "date": "2026-01-15",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "benefits-of-invoice-automation",
+    "title": "5 Benefits of Automating Invoice Data Entry",
+    "excerpt": "Discover how automating invoice data entry can save time, reduce errors, and improve your accounting workflow.",
+    "date": "2026-01-10",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "csv-vs-excel-for-invoices",
+    "title": "CSV vs Excel: Which Format is Best for Invoice Data?",
+    "excerpt": "Compare CSV and Excel formats for storing and managing invoice data. Learn which one suits your needs.",
+    "date": "2026-01-05",
+    "category": "Comparisons",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
+  }
+]
