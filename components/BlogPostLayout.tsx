@@ -57,8 +57,12 @@ export default function BlogPostLayout({ post, children }: BlogPostLayoutProps) 
           </div>
 
           {/* Article Content */}
-          <div className="prose prose-lg max-w-none">
-            <div className="text-gray-700 leading-relaxed space-y-6">
+          <div className="max-w-none">
+            <div className="text-gray-700 leading-relaxed space-y-6 
+              [&_a]:text-primary-600 [&_a]:font-medium [&_a]:hover:text-primary-700 [&_a]:hover:underline [&_a]:transition-colors [&_a]:underline-offset-2
+              [&_ol]:list-decimal [&_ol]:ml-8 [&_ol]:space-y-3 [&_ol]:my-4
+              [&_ul]:list-disc [&_ul]:ml-8 [&_ul]:space-y-3 [&_ul]:my-4
+              [&_li]:mb-2 [&_li]:pl-2">
               {children}
             </div>
           </div>
