@@ -106,9 +106,26 @@ All signals are sent to your TelemetryDeck dashboard:
 ## 📍 Current Implementation
 
 - **Pageviews**: Automatically tracked on every route change
-- **LandingPageView**: Fires once per session on the first page view (includes `path`)
+- **LandingPageView**: Fires once per session on the first page view (includes `path`, `referrer`, `referrerFull`)
+- **User.Country**: Fires once per session with the user's country code (e.g., "GB", "US", "DE")
 - **User Identification**: Uses email address (or Clerk user ID if no email)
 - **Conversion Tracking**: Already added to `UploadTool.tsx`
+
+### Referrer Tracking
+
+The `LandingPageView` signal automatically includes referrer information:
+- `referrer`: Simplified domain (e.g., "google", "facebook", "direct")
+- `referrerFull`: Full referrer URL (or "direct" if no referrer)
+
+Common referrer domains are simplified:
+- `google`, `bing`, `yahoo`, `duckduckgo` for search engines
+- `facebook`, `twitter`, `linkedin`, `reddit`, `youtube` for social media
+- Other domains are shown as-is (without www prefix)
+- `direct` for users who typed the URL or used a bookmark
+
+### Country Tracking
+
+The `User.Country` signal is sent once per session with the user's country code (ISO 3166-1 alpha-2 format, e.g., "GB", "US", "FR"). This uses a free IP geolocation service and may not be available in all cases (e.g., if the API is rate-limited or blocked).
 
 ## 🎯 Conversion Funnel Tracking
 
