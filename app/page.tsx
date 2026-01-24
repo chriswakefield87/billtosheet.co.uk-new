@@ -33,6 +33,11 @@ export default function HomePage() {
   const organizationSchema = generateOrganizationSchema();
   const features = [
     {
+      title: "Bulk Conversion",
+      description: "Convert multiple invoices at once with our powerful bulk upload feature",
+      icon: "📦",
+    },
+    {
       title: "Instant Conversion",
       description: "Upload your invoice PDF and get CSV + Excel files in seconds",
       icon: "⚡",
@@ -46,11 +51,6 @@ export default function HomePage() {
       title: "Secure & Private",
       description: "Your data is processed securely and never shared",
       icon: "🔒",
-    },
-    {
-      title: "Instant Access",
-      description: "Access your converted files immediately after conversion",
-      icon: "💾",
     },
   ];
 
@@ -82,6 +82,7 @@ export default function HomePage() {
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Extract invoice data, line items, and tax information automatically.
+              Convert single invoices or process hundreds at once with bulk conversion.
               Save hours of manual data entry with our intelligent converter.
             </p>
           </div>
@@ -139,6 +140,76 @@ export default function HomePage() {
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bulk Convert Feature */}
+      <section className="py-20 bg-gradient-to-br from-primary-50 to-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Convert <span className="gradient-text">Multiple Invoices</span> at Once
+              </h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Our powerful bulk conversion feature lets you upload and process dozens of invoices simultaneously. 
+                Perfect for monthly reconciliation, batch processing, or handling large volumes of invoices.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start">
+                  <svg className="w-6 h-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-gray-700">Process multiple PDFs concurrently for maximum speed</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-6 h-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-gray-700">Live progress tracking with real-time status updates</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-6 h-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-gray-700">Download all files individually or view in your dashboard</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-6 h-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-gray-700">Only pay for successful conversions - failed files don't use credits</span>
+                </li>
+              </ul>
+              <Link href="/sign-up" className="btn-primary">
+                Start Bulk Converting →
+              </Link>
+            </div>
+            <div className="bg-white rounded-xl shadow-xl p-8 border-2 border-primary-200">
+              <div className="text-center">
+                <div className="text-6xl mb-4">📦</div>
+                <h3 className="text-2xl font-bold mb-4">Bulk Conversion</h3>
+                <div className="space-y-4 text-left">
+                  <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                    <span className="text-sm font-medium">Upload Multiple PDFs</span>
+                    <span className="text-primary-600 font-bold">✓</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                    <span className="text-sm font-medium">Concurrent Processing</span>
+                    <span className="text-primary-600 font-bold">✓</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                    <span className="text-sm font-medium">Live Status Updates</span>
+                    <span className="text-primary-600 font-bold">✓</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                    <span className="text-sm font-medium">Individual Downloads</span>
+                    <span className="text-primary-600 font-bold">✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

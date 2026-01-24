@@ -10,7 +10,9 @@
     "postinstall": "prisma generate",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
-    "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/stripe"
+    "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/stripe",
+    "cleanup": "node scripts/cleanup-old-conversions.js",
+    "cleanup:dry-run": "node scripts/cleanup-old-conversions.js --dry-run"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.0.0",
