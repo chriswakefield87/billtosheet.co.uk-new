@@ -46,7 +46,7 @@
       },
       {
         "question": "What do I get with paid credits?",
-        "answer": "Paid users get: 30-day file retention, conversion history in dashboard, re-download capability, and support for multiple conversions."
+        "answer": "Paid users get: bulk conversion for processing multiple invoices at once, 30-day file retention, conversion history in dashboard, re-download capability, and support for multiple conversions."
       }
     ]
   },
@@ -59,7 +59,7 @@
     "faqs": [
       {
         "question": "What makes BillToSheet different?",
-        "answer": "BillToSheet offers instant conversion, both CSV and Excel outputs, 30-day file retention, affordable credit packs, and no subscription required."
+        "answer": "BillToSheet offers instant conversion, bulk processing for multiple invoices, both CSV and Excel outputs, 30-day file retention, affordable credit packs, and no subscription required."
       },
       {
         "question": "Is BillToSheet more affordable?",
@@ -76,7 +76,7 @@
     "faqs": [
       {
         "question": "Why use an online converter instead of software?",
-        "answer": "Online converters require no installation, work on any device, always have the latest features, and your data is accessible from anywhere."
+        "answer": "Online converters require no installation, work on any device, always have the latest features, bulk conversion for processing multiple invoices at once, and your data is accessible from anywhere."
       },
       {
         "question": "Is online conversion as fast as desktop software?",
@@ -149,7 +149,7 @@
       },
       {
         "question": "What does BillToSheet do differently?",
-        "answer": "BillToSheet is designed specifically for invoices, extracting vendor data, totals, tax fields, and line items into clean structured CSV/Excel."
+        "answer": "BillToSheet is designed specifically for invoices, extracting vendor data, totals, tax fields, and line items into clean structured CSV/Excel. Plus, bulk conversion lets you process multiple invoices simultaneously for maximum efficiency."
       }
     ]
   },
@@ -184,7 +184,7 @@
       },
       {
         "question": "Why choose BillToSheet instead?",
-        "answer": "BillToSheet is invoice-specific: it extracts structured invoice data (vendor, totals, tax, line items) and outputs clean CSV + Excel without manual cleanup."
+        "answer": "BillToSheet is invoice-specific: it extracts structured invoice data (vendor, totals, tax, line items) and outputs clean CSV + Excel without manual cleanup. Plus, bulk conversion processes multiple invoices concurrently for maximum speed."
       }
     ]
   },
@@ -201,7 +201,7 @@
       },
       {
         "question": "What makes BillToSheet better for invoices?",
-        "answer": "BillToSheet extracts invoice-specific structured fields and line item tables into ready-to-import CSV and Excel outputs."
+        "answer": "BillToSheet extracts invoice-specific structured fields and line item tables into ready-to-import CSV and Excel outputs. Bulk conversion lets you process dozens of invoices simultaneously with concurrent processing."
       }
     ]
   },
@@ -252,7 +252,7 @@
       },
       {
         "question": "When is BillToSheet a better fit?",
-        "answer": "BillToSheet is ideal when your primary goal is clean invoice-to-CSV/Excel exports for bookkeeping, with quick conversion and easy pay-as-you-go pricing."
+        "answer": "BillToSheet is ideal when your primary goal is clean invoice-to-CSV/Excel exports for bookkeeping, with quick conversion, bulk processing for multiple invoices, and easy pay-as-you-go pricing."
       }
     ]
   },

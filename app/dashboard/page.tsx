@@ -4,6 +4,7 @@ import { prisma } from "@/lib/db";
 import Link from "next/link";
 import { Metadata } from "next";
 import SignupTracker from "@/components/SignupTracker";
+import DataStorageNotice from "@/components/DataStorageNotice";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -48,11 +49,53 @@ export default async function DashboardPage() {
       <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">
-            Welcome back, <span className="gradient-text">{clerkUser.firstName || "there"}</span>
-          </h1>
-          <p className="text-gray-600">Manage your invoice conversions and credits</p>
+        <div className="mb-8 flex items-start justify-between">
+          <div>
+            <h1 className="text-3xl font-bold mb-2">
+              Welcome back, <span className="gradient-text">{clerkUser.firstName || "there"}</span>
+            </h1>
+            <p className="text-gray-600">Manage your invoice conversions and credits</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <Link 
+              href="/invoice-to-csv" 
+              className="btn-secondary inline-flex items-center gap-2 whitespace-nowrap"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Convert
+            </Link>
+            <Link 
+              href="/dashboard/bulk-convert" 
+              className="btn-primary inline-flex items-center gap-2 whitespace-nowrap"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                />
+              </svg>
+              Bulk Convert
+            </Link>
+          </div>
         </div>
 
         {/* Credits Card */}
@@ -85,35 +128,7 @@ export default async function DashboardPage() {
         </div>
 
         {/* Data Storage Info */}
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-8">
-          <div className="flex items-start">
-            <div className="flex-shrink-0">
-              <svg
-                className="h-6 w-6 text-blue-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </div>
-            <div className="ml-3">
-              <h3 className="text-sm font-medium text-blue-800">
-                Data Storage
-              </h3>
-              <p className="mt-1 text-sm text-blue-700">
-                We store your invoice data securely in our database. Files are generated
-                on-demand when you download them. Your data remains accessible as long as
-                your account is active.
-              </p>
-            </div>
-          </div>
-        </div>
+        <DataStorageNotice />
 
         {/* Conversions List */}
         <div className="bg-white rounded-xl shadow-md overflow-hidden">

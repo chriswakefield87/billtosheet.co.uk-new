@@ -32,6 +32,11 @@ export default function InvoiceToCSVHub() {
         "Yes! You can convert your first invoice for free without creating an account. For additional conversions, purchase affordable credit packs starting at £9 for 25 credits.",
     },
     {
+      question: "Can I convert multiple invoices at once?",
+      answer:
+        "Yes! Sign in to your dashboard and use our bulk conversion feature to upload and process multiple invoices simultaneously. All files process concurrently for maximum speed, with live progress tracking for each file.",
+    },
+    {
       question: "What data is extracted from my invoices?",
       answer:
         "We extract vendor information, invoice numbers, dates, currency, subtotals, taxes, totals, and detailed line items including descriptions, quantities, prices, and line totals.",
@@ -76,7 +81,7 @@ export default function InvoiceToCSVHub() {
               <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
                 Extract structured data from your invoice PDFs and convert to CSV
                 format. Works with invoices from any platform or accounting
-                software.
+                software. Convert single invoices or process multiple at once with bulk conversion.
               </p>
             </div>
 
@@ -127,7 +132,17 @@ export default function InvoiceToCSVHub() {
               Why Use Our <span className="gradient-text">CSV Converter</span>
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="card">
+                <div className="text-4xl mb-4">📦</div>
+                <h3 className="text-xl font-semibold mb-2">
+                  Bulk Conversion
+                </h3>
+                <p className="text-gray-600">
+                  Process multiple invoices simultaneously with concurrent processing. Perfect for monthly reconciliation and batch jobs.
+                </p>
+              </div>
+
               <div className="card">
                 <div className="text-4xl mb-4">📊</div>
                 <h3 className="text-xl font-semibold mb-2">

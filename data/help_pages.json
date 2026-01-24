@@ -133,14 +133,34 @@
   },
   {
     "slug": "bulk-conversion",
-    "title": "Bulk Invoice Conversion",
-    "description": "Learn how to convert multiple invoices efficiently. Best practices for bulk processing and managing large conversion jobs.",
-    "metaTitle": "Bulk Invoice Conversion | Process Multiple Invoices",
-    "metaDescription": "Convert multiple invoices efficiently with BillToSheet. Learn bulk processing best practices and optimize your workflow.",
+    "title": "Bulk Invoice Conversion Guide",
+    "description": "Learn how to convert multiple invoices at once with BillToSheet's bulk conversion feature. Process dozens of invoices simultaneously with live progress tracking.",
+    "metaTitle": "Bulk Invoice Conversion | Convert Multiple PDFs at Once",
+    "metaDescription": "Convert multiple invoices simultaneously with BillToSheet bulk conversion. Process dozens of PDFs at once with concurrent processing and live status updates.",
     "faqs": [
       {
-        "question": "Can I convert multiple invoices at once?",
-        "answer": "Currently, invoices are converted one at a time. For efficient bulk processing, purchase a credit pack and process invoices sequentially. Your results are saved in your dashboard."
+        "question": "How do I convert multiple invoices at once?",
+        "answer": "Sign in to your dashboard and click 'Bulk Convert' in the top right. You can drag and drop multiple PDF files or select them from your computer. All files will process concurrently, and you'll see live status updates for each file as it completes."
+      },
+      {
+        "question": "How many invoices can I convert at once?",
+        "answer": "You can upload as many invoices as you have credits for. There's no hard limit on the number of files - just make sure you have enough credits (1 credit per successful conversion)."
+      },
+      {
+        "question": "Do all files process at the same time?",
+        "answer": "Yes! BillToSheet processes all files concurrently, not one after another. This means if you upload 10 invoices, all 10 start processing immediately, dramatically reducing total processing time."
+      },
+      {
+        "question": "What happens if one file fails?",
+        "answer": "Failed conversions don't use credits and are clearly marked in the results table. You can see which files succeeded and which failed, with error messages for failed conversions. Only successful conversions are saved to your dashboard."
+      },
+      {
+        "question": "Can I download files individually from bulk conversion?",
+        "answer": "Yes! Each successful conversion in the bulk results table has download links for CSV, Line Items CSV, Excel, and a View link to see the full details. You can download files individually or access them all from your dashboard."
+      },
+      {
+        "question": "How much faster is bulk conversion?",
+        "answer": "Bulk conversion processes files concurrently, so 10 invoices take roughly the same time as 1 invoice (instead of 10x longer). This can save hours when processing monthly invoice batches."
       }
     ]
   },

@@ -341,6 +341,92 @@ crontab -e
 0 2 * * * /root/backup-db.sh
 ```
 
+## Automated Cleanup (30-Day Retention)
+
+BillToSheet automatically deletes conversion data older than 30 days (1 day for anonymous users) to protect privacy and comply with data retention policies.
+
+### Option 1: API Route with External Cron (Recommended)
+
+Use a service like [cron-job.org](https://cron-job.org) or [EasyCron](https://www.easycron.com) to call your cleanup endpoint:
+
+1. **Set up CRON_SECRET** in your `.env.local`:
+
+```bash
+CRON_SECRET=your-random-secret-key-here
+```
+
+2. **Create cron job** that calls:
+   ```
+   POST https://yourdomain.com/api/cleanup
+   Authorization: Bearer your-random-secret-key-here
+   ```
+
+3. **Schedule**: Run daily (e.g., 3 AM UTC)
+
+### Option 2: Server-Side Cron Job
+
+If deploying to a VPS, set up a cron job on the server:
+
+```bash
+# Create cleanup script
+nano /root/cleanup-conversions.sh
+```
+
+```bash
+#!/bin/bash
+cd /var/www/billtosheet
+node scripts/cleanup-old-conversions.js
+```
+
+```bash
+chmod +x /root/cleanup-conversions.sh
+
+# Add to crontab (daily at 3 AM)
+crontab -e
+# Add line:
+0 3 * * * /root/cleanup-conversions.sh >> /var/log/billtosheet-cleanup.log 2>&1
+```
+
+### Option 3: Vercel Cron (If Using Vercel)
+
+If deploying to Vercel, add to `vercel.json`:
+
+```json
+{
+  "crons": [
+    {
+      "path": "/api/cleanup",
+      "schedule": "0 3 * * *"
+    }
+  ]
+}
+```
+
+And set `CRON_SECRET` in Vercel environment variables.
+
+### Testing Cleanup
+
+Test the cleanup script manually:
+
+```bash
+# Preview what would be deleted (dry run)
+npm run cleanup:dry-run
+
+# Actually run cleanup
+npm run cleanup
+```
+
+Or test the API endpoint:
+
+```bash
+# Preview (development only)
+curl http://localhost:3000/api/cleanup
+
+# Run cleanup (production)
+curl -X POST https://yourdomain.com/api/cleanup \
+  -H "Authorization: Bearer your-cron-secret"
+```
+
 ## Security Hardening
 
 ### 1. Setup Firewall
