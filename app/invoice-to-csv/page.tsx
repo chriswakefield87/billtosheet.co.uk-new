@@ -6,9 +6,9 @@ import brandsData from "@/data/brands.json";
 import { generateFAQSchema, generateSoftwareApplicationSchema } from "@/lib/seo-utils";
 
 export const metadata: Metadata = {
-  title: "Invoice to CSV Converter | Convert Invoice PDF to CSV Online",
+  title: "Invoice to CSV Converter | Convert Invoice PDF to CSV & Excel Online",
   description:
-    "Convert invoice PDFs to CSV format instantly. Extract invoice data from Amazon, Stripe, QuickBooks, and more. Free trial available.",
+    "Convert invoice PDFs to CSV and Excel format instantly. Extract invoice data, line items, and tax information from Amazon, Stripe, QuickBooks, and more. Free trial available.",
   alternates: {
     canonical: "/invoice-to-csv",
   },
@@ -19,7 +19,12 @@ export default function InvoiceToCSVHub() {
     {
       question: "How do I convert an invoice PDF to CSV?",
       answer:
-        "Simply upload your invoice PDF using our converter tool. Our system automatically extracts all invoice data including vendor details, dates, line items, and totals, then generates downloadable CSV files.",
+        "Simply upload your invoice PDF using our converter tool. Our system automatically extracts all invoice data including vendor details, dates, line items, and totals, then generates downloadable CSV and Excel files ready for import into accounting software.",
+    },
+    {
+      question: "What's the difference between CSV and Excel output?",
+      answer:
+        "CSV files are simple text files that work with any spreadsheet or accounting software. Excel files (.xlsx) contain multiple sheets with formatting. We provide both formats - CSV for universal compatibility and Excel for detailed analysis with separate sheets for invoice details and line items.",
     },
     {
       question: "What invoice formats are supported?",
@@ -76,12 +81,11 @@ export default function InvoiceToCSVHub() {
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Convert Invoice PDF to{" "}
-                <span className="gradient-text">CSV Format</span>
+                <span className="gradient-text">CSV & Excel</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                Extract structured data from your invoice PDFs and convert to CSV
-                format. Works with invoices from any platform or accounting
-                software. Convert single invoices or process multiple at once with bulk conversion.
+                Extract structured data from your invoice PDFs and convert to CSV and Excel formats with full line items, totals, and VAT.
+                Works with invoices from any platform or accounting software. Convert single invoices or process multiple at once with bulk conversion.
               </p>
             </div>
 
@@ -180,11 +184,37 @@ export default function InvoiceToCSVHub() {
         {/* FAQ */}
         <FAQSection faqs={faqs} />
 
+        {/* Related Searches */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold mb-6">Related Searches</h2>
+            <div className="card">
+              <p className="text-gray-600 mb-4">You might also search for:</p>
+              <ul className="space-y-2 text-gray-700">
+                <li>• <Link href="/invoice-to-excel" className="text-primary-600 hover:underline">Convert invoice PDF to spreadsheet</Link></li>
+                <li>• <Link href="/invoice-to-excel" className="text-primary-600 hover:underline">PDF to Excel invoice converter</Link></li>
+                <li>• <Link href="/invoice-to-excel" className="text-primary-600 hover:underline">Invoice PDF to Excel online</Link></li>
+                <li>• <Link href="/invoice-to-excel" className="text-primary-600 hover:underline">Extract table from invoice to Excel</Link></li>
+                <li>• <Link href="/invoice-to-excel" className="text-primary-600 hover:underline">Invoice line items to Excel</Link></li>
+                <li>• <Link href="/invoice-to-csv" className="text-primary-600 hover:underline">Invoice PDF to CSV converter</Link></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Related Links */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold mb-6">Related Tools</h2>
             <div className="grid md:grid-cols-2 gap-4">
+              <Link
+                href="/invoice-to-excel"
+                className="p-4 border border-gray-200 rounded-lg hover:border-primary-600 transition-colors"
+              >
+                <span className="font-medium text-primary-600">
+                  Invoice to Excel Converter →
+                </span>
+              </Link>
               <Link
                 href="/extract/invoice-data"
                 className="p-4 border border-gray-200 rounded-lg hover:border-primary-600 transition-colors"
@@ -199,6 +229,14 @@ export default function InvoiceToCSVHub() {
               >
                 <span className="font-medium text-primary-600">
                   Getting Started Guide →
+                </span>
+              </Link>
+              <Link
+                href="/help/bulk-conversion"
+                className="p-4 border border-gray-200 rounded-lg hover:border-primary-600 transition-colors"
+              >
+                <span className="font-medium text-primary-600">
+                  Bulk Conversion Guide →
                 </span>
               </Link>
             </div>

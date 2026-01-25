@@ -4,7 +4,7 @@
     "name": "Amazon",
     "category": "ecommerce",
     "description": "Convert Amazon invoices to CSV or Excel format instantly. Extract order details, line items, and tax information from your Amazon business invoices.",
-    "metaTitle": "Amazon Invoice to CSV Converter | Free Amazon Invoice Parser",
+    "metaTitle": "Amazon Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert Amazon invoices to CSV and Excel format. Extract all order details, line items, and tax information from Amazon EU and US invoices automatically.",
     "exportSteps": [
       "Log in to your Amazon Seller Central account",
@@ -65,7 +65,7 @@
     "name": "Stripe",
     "category": "payments",
     "description": "Convert Stripe invoices to CSV or Excel. Extract payment details, subscription information, and transaction data from Stripe invoices effortlessly.",
-    "metaTitle": "Stripe Invoice to CSV Converter | Parse Stripe Invoices",
+    "metaTitle": "Stripe Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert Stripe invoices to CSV and Excel. Extract payment details, subscription data, and transaction information from Stripe invoices automatically.",
     "exportSteps": [
       "Log in to your Stripe Dashboard",
@@ -126,7 +126,7 @@
     "name": "PayPal",
     "category": "payments",
     "description": "Convert PayPal invoices and transaction receipts to CSV or Excel. Extract payment details, fees, and transaction data automatically.",
-    "metaTitle": "PayPal Invoice to CSV Converter | PayPal Invoice Parser",
+    "metaTitle": "PayPal Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert PayPal invoices to CSV and Excel format. Extract transaction details, fees, and payment information from PayPal invoices instantly.",
     "exportSteps": [
       "Log in to your PayPal Business account",
@@ -187,7 +187,7 @@
     "name": "QuickBooks",
     "category": "accounting",
     "description": "Convert QuickBooks invoices to CSV or Excel. Extract invoice data, line items, and accounting details from QuickBooks PDFs.",
-    "metaTitle": "QuickBooks Invoice to CSV Converter | QuickBooks Parser",
+    "metaTitle": "QuickBooks Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert QuickBooks invoices to CSV and Excel. Extract all invoice details, line items, and accounting information from QuickBooks PDFs automatically.",
     "exportSteps": [
       "Open QuickBooks and navigate to Sales > Invoices",
@@ -248,7 +248,7 @@
     "name": "Xero",
     "category": "accounting",
     "description": "Convert Xero invoices to CSV or Excel format. Extract invoice details, line items, and tax information from Xero accounting invoices.",
-    "metaTitle": "Xero Invoice to CSV Converter | Xero Invoice Parser",
+    "metaTitle": "Xero Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert Xero invoices to CSV and Excel. Extract invoice details, line items, and tax information from Xero accounting software automatically.",
     "exportSteps": [
       "Log in to your Xero account",
@@ -309,7 +309,7 @@
     "name": "FreshBooks",
     "category": "accounting",
     "description": "Convert FreshBooks invoices to CSV or Excel. Extract invoice data, client information, and line items from FreshBooks PDFs.",
-    "metaTitle": "FreshBooks Invoice to CSV Converter | FreshBooks Parser",
+    "metaTitle": "FreshBooks Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert FreshBooks invoices to CSV and Excel format. Extract invoice data, client details, and line items from FreshBooks automatically.",
     "exportSteps": [
       "Log in to your FreshBooks account",
@@ -370,7 +370,7 @@
     "name": "eBay",
     "category": "ecommerce",
     "description": "Convert eBay invoices and sales records to CSV or Excel. Extract order details, fees, and transaction data from eBay invoices.",
-    "metaTitle": "eBay Invoice to CSV Converter | eBay Invoice Parser",
+    "metaTitle": "eBay Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert eBay invoices to CSV and Excel. Extract order details, seller fees, and transaction data from eBay invoices automatically.",
     "exportSteps": [
       "Log in to your eBay Seller Hub",
@@ -431,7 +431,7 @@
     "name": "Shopify",
     "category": "ecommerce",
     "description": "Convert Shopify invoices and order receipts to CSV or Excel. Extract order details, product information, and transaction data.",
-    "metaTitle": "Shopify Invoice to CSV Converter | Shopify Invoice Parser",
+    "metaTitle": "Shopify Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert Shopify invoices to CSV and Excel format. Extract order details, product information, and customer data from Shopify invoices.",
     "exportSteps": [
       "Log in to your Shopify admin panel",
@@ -492,7 +492,7 @@
     "name": "Square",
     "category": "payments",
     "description": "Convert Square invoices and receipts to CSV or Excel. Extract transaction details, payment information, and itemized data.",
-    "metaTitle": "Square Invoice to CSV Converter | Square Invoice Parser",
+    "metaTitle": "Square Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert Square invoices to CSV and Excel. Extract transaction details, payment information, and itemized data from Square invoices.",
     "exportSteps": [
       "Log in to your Square Dashboard",
@@ -553,7 +553,7 @@
     "name": "Sage",
     "category": "accounting",
     "description": "Convert Sage invoices to CSV or Excel format. Extract invoice details, line items, and accounting data from Sage accounting software.",
-    "metaTitle": "Sage Invoice to CSV Converter | Sage Invoice Parser",
+    "metaTitle": "Sage Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
     "metaDescription": "Convert Sage invoices to CSV and Excel. Extract invoice details, line items, and accounting data from Sage software automatically.",
     "exportSteps": [
       "Open Sage and navigate to Sales > Invoices",
