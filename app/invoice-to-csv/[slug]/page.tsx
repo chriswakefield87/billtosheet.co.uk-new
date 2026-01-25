@@ -93,8 +93,8 @@ export default async function BrandPage({ params }: BrandPageProps) {
 
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                {brand.name} Invoice to{" "}
-                <span className="gradient-text">CSV Converter</span>
+                {brand.name} Invoice PDF to{" "}
+                <span className="gradient-text">Excel (Line Items Included)</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
                 {brand.description}
