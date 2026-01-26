@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import FAQSection from "@/components/FAQSection";
 import compareData from "@/data/compare_pages.json";
-import { generateFAQSchema } from "@/lib/seo-utils";
+import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo-utils";
 
 export const metadata: Metadata = {
   title: "Invoice Converter Comparisons | BillToSheet vs Alternatives",
@@ -37,11 +37,21 @@ export default function CompareHub() {
     },
   ];
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: baseUrl },
+    { name: "Compare", url: `${baseUrl}/compare` },
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <div className="min-h-screen bg-gray-50">

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import blogPostsData from "@/data/blog_posts.json";
+import { generateBreadcrumbSchema } from "@/lib/seo-utils";
 
 export const metadata: Metadata = {
   title: "Blog - Invoice Conversion Tips & News",
@@ -16,7 +17,18 @@ export default function BlogPage() {
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   });
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: baseUrl },
+    { name: "Blog", url: `${baseUrl}/blog` },
+  ]);
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     <div className="min-h-screen bg-gray-50 py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
@@ -89,5 +101,6 @@ export default function BlogPage() {
         )}
       </div>
     </div>
+    </>
   );
 }

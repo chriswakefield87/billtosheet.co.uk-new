@@ -67,3 +67,40 @@ export function generateSoftwareApplicationSchema() {
     ],
   }
 }
+
+export function generateArticleSchema(post: {
+  title: string
+  excerpt: string
+  date: string
+  author?: string
+  slug: string
+  category?: string
+}) {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Person',
+      name: post.author || 'BillToSheet Team',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'BillToSheet',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/logo.png`,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${baseUrl}/blog/${post.slug}`,
+    },
+    articleSection: post.category || 'Invoice Conversion',
+    url: `${baseUrl}/blog/${post.slug}`,
+  }
+}
