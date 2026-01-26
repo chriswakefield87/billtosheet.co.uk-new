@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import UploadTool from "@/components/UploadTool";
 import blogPostsData from "@/data/blog_posts.json";
 
 interface BlogPost {
@@ -28,8 +29,14 @@ export default function BlogPostLayout({ post, children }: BlogPostLayoutProps) 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbItems} />
 
-        {/* Article Header */}
-        <article className="bg-white rounded-xl shadow-md p-8 md:p-12">
+        {/* Article Card with Upload Tool */}
+        <article className="bg-white rounded-xl shadow-md p-8 md:p-12 mt-6">
+          {/* Upload Tool */}
+          <div className="mb-8">
+            <UploadTool />
+          </div>
+
+          {/* Article Header */}
           <div className="mb-6">
             <div className="flex items-center gap-3 mb-4 flex-wrap">
               <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-sm font-semibold rounded-full">

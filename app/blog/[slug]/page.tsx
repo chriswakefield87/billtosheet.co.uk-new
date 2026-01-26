@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import blogPostsData from "@/data/blog_posts.json";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import UploadTool from "@/components/UploadTool";
 import brandsData from "@/data/brands.json";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/seo-utils";
 
@@ -76,8 +77,14 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbItems} />
 
-        {/* Article Header */}
-        <article className="bg-white rounded-xl shadow-md p-8 md:p-12">
+        {/* Article Card with Upload Tool */}
+        <article className="bg-white rounded-xl shadow-md p-8 md:p-12 mt-6">
+          {/* Upload Tool */}
+          <div className="mb-8">
+            <UploadTool />
+          </div>
+
+          {/* Article Header */}
           <div className="mb-6">
             <div className="flex items-center gap-3 mb-4 flex-wrap">
               <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-sm font-semibold rounded-full">
