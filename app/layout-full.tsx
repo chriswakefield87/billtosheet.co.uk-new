@@ -7,8 +7,18 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// Helper to ensure HTTPS in production
+function getBaseUrl(): string {
+  const url = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+  // In production, force HTTPS if URL is provided
+  if (process.env.NODE_ENV === 'production' && url && !url.startsWith('https://')) {
+    return url.replace(/^http:/, 'https:');
+  }
+  return url;
+}
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
+  metadataBase: new URL(getBaseUrl()),
   title: {
     default: "BillToSheet - Convert Invoice PDF to CSV & Excel Instantly",
     template: "%s | BillToSheet"
