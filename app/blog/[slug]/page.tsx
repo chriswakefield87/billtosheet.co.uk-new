@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import blogPostsData from "@/data/blog_posts.json";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import brandsData from "@/data/brands.json";
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/seo-utils";
 
 interface BlogPostProps {
   params: Promise<{
@@ -48,7 +50,28 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
     { label: post.title, href: `/blog/${post.slug}` },
   ];
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: baseUrl },
+    { name: "Blog", url: `${baseUrl}/blog` },
+    { name: post.title, url: `${baseUrl}/blog/${post.slug}` },
+  ]);
+
+  const articleSchema = generateArticleSchema(post);
+
+  // Get 3 brand pages for internal linking (mix of categories)
+  const featuredBrands = brandsData.slice(0, 3);
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
     <div className="min-h-screen bg-gray-50 py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbItems} />
@@ -102,8 +125,29 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
           </Link>
         </div>
 
-        {/* Related Posts (Optional) */}
+        {/* Related Invoice Converters */}
         <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-6">Try Our Invoice Converters</h2>
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {featuredBrands.map((brand) => (
+              <Link
+                key={brand.slug}
+                href={`/invoice-to-csv/${brand.slug}`}
+                className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow block"
+              >
+                <h3 className="text-xl font-bold mb-2 hover:text-primary-600 transition-colors">
+                  {brand.name} Invoice Converter
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  Convert {brand.name} invoices to Excel with line items, totals, and tax information.
+                </p>
+                <span className="text-primary-600 font-medium text-sm">
+                  Convert {brand.name} Invoices →
+                </span>
+              </Link>
+            ))}
+          </div>
+
           <h2 className="text-2xl font-bold mb-6">More Articles</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {blogPostsData
@@ -129,7 +173,47 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
               ))}
           </div>
         </div>
+
+        {/* Related Tools */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-6">Related Tools</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link
+              href="/invoice-to-csv"
+              className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow block"
+            >
+              <span className="font-medium text-primary-600">
+                Invoice to CSV Converter →
+              </span>
+            </Link>
+            <Link
+              href="/invoice-to-excel"
+              className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow block"
+            >
+              <span className="font-medium text-primary-600">
+                Invoice to Excel Converter →
+              </span>
+            </Link>
+            <Link
+              href="/extract/invoice-data"
+              className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow block"
+            >
+              <span className="font-medium text-primary-600">
+                Extract Invoice Data →
+              </span>
+            </Link>
+            <Link
+              href="/help/getting-started"
+              className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow block"
+            >
+              <span className="font-medium text-primary-600">
+                Getting Started Guide →
+              </span>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
+    </>
   );
 }

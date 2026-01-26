@@ -3,7 +3,7 @@ import Link from "next/link";
 import UploadTool from "@/components/UploadTool";
 import FAQSection from "@/components/FAQSection";
 import brandsData from "@/data/brands.json";
-import { generateFAQSchema, generateSoftwareApplicationSchema } from "@/lib/seo-utils";
+import { generateFAQSchema, generateSoftwareApplicationSchema, generateBreadcrumbSchema } from "@/lib/seo-utils";
 
 export const metadata: Metadata = {
   title: "Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
@@ -63,6 +63,12 @@ export default function InvoiceToExcelHub() {
     accounting: "Accounting Software",
   };
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: baseUrl },
+    { name: "Invoice to Excel", url: `${baseUrl}/invoice-to-excel` },
+  ]);
+
   return (
     <>
       <script
@@ -72,6 +78,10 @@ export default function InvoiceToExcelHub() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(generateSoftwareApplicationSchema()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <div className="min-h-screen bg-gray-50">
@@ -322,7 +332,7 @@ export default function InvoiceToExcelHub() {
         {/* Related Links */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-6">Related Tools</h2>
+            <h2 className="text-2xl font-bold mb-6">Related Tools & Resources</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <Link
                 href="/invoice-to-csv"
@@ -354,6 +364,22 @@ export default function InvoiceToExcelHub() {
               >
                 <span className="font-medium text-primary-600">
                   Bulk Conversion Guide →
+                </span>
+              </Link>
+              <Link
+                href="/blog"
+                className="p-4 border border-gray-200 rounded-lg hover:border-primary-600 transition-colors"
+              >
+                <span className="font-medium text-primary-600">
+                  Blog & Guides →
+                </span>
+              </Link>
+              <Link
+                href="/compare"
+                className="p-4 border border-gray-200 rounded-lg hover:border-primary-600 transition-colors"
+              >
+                <span className="font-medium text-primary-600">
+                  Compare Options →
                 </span>
               </Link>
             </div>

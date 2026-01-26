@@ -4,7 +4,8 @@ import Link from "next/link";
 import FAQSection from "@/components/FAQSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import compareData from "@/data/compare_pages.json";
-import { generateFAQSchema } from "@/lib/seo-utils";
+import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo-utils";
+import brandsData from "@/data/brands.json";
 
 interface ComparePageProps {
   params: Promise<{
@@ -50,6 +51,16 @@ export default async function ComparePage({ params }: ComparePageProps) {
     { label: page.title, href: `/compare/${page.slug}` },
   ];
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: baseUrl },
+    { name: "Compare", url: `${baseUrl}/compare` },
+    { name: page.title, url: `${baseUrl}/compare/${page.slug}` },
+  ]);
+
+  // Get 3 brand pages for internal linking (mix of categories)
+  const featuredBrands = brandsData.slice(0, 3);
+
   return (
     <>
       <script
@@ -57,6 +68,10 @@ export default async function ComparePage({ params }: ComparePageProps) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(generateFAQSchema(page.faqs)),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <div className="min-h-screen bg-gray-50">
@@ -93,7 +108,25 @@ export default async function ComparePage({ params }: ComparePageProps) {
 
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-6">More Comparisons</h2>
+            <h2 className="text-2xl font-bold mb-6">Try Our Invoice Converters</h2>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              {featuredBrands.map((brand) => (
+                <Link
+                  key={brand.slug}
+                  href={`/invoice-to-csv/${brand.slug}`}
+                  className="card hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="font-semibold text-primary-600 mb-1">
+                    {brand.name} Invoice Converter
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Convert {brand.name} invoices to Excel with line items
+                  </p>
+                </Link>
+              ))}
+            </div>
+
+            <h2 className="text-2xl font-bold mb-6 mt-12">More Comparisons</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {compareData
                 .filter((p) => p.slug !== slug)

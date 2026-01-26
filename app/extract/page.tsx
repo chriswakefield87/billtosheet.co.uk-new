@@ -3,7 +3,7 @@ import Link from "next/link";
 import UploadTool from "@/components/UploadTool";
 import FAQSection from "@/components/FAQSection";
 import extractData from "@/data/extract_pages.json";
-import { generateFAQSchema } from "@/lib/seo-utils";
+import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo-utils";
 
 export const metadata: Metadata = {
   title: "Extract Invoice Data | Invoice Data Extraction Tool",
@@ -38,11 +38,21 @@ export default function ExtractHub() {
     },
   ];
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: baseUrl },
+    { name: "Extract", url: `${baseUrl}/extract` },
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <div className="min-h-screen bg-gray-50">

@@ -5,7 +5,8 @@ import UploadTool from "@/components/UploadTool";
 import FAQSection from "@/components/FAQSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import extractData from "@/data/extract_pages.json";
-import { generateFAQSchema } from "@/lib/seo-utils";
+import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo-utils";
+import brandsData from "@/data/brands.json";
 
 interface ExtractPageProps {
   params: Promise<{
@@ -51,6 +52,16 @@ export default async function ExtractPage({ params }: ExtractPageProps) {
     { label: page.title, href: `/extract/${page.slug}` },
   ];
 
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: baseUrl },
+    { name: "Extract", url: `${baseUrl}/extract` },
+    { name: page.title, url: `${baseUrl}/extract/${page.slug}` },
+  ]);
+
+  // Get 3 brand pages for internal linking (mix of categories)
+  const featuredBrands = brandsData.slice(0, 3);
+
   return (
     <>
       <script
@@ -58,6 +69,10 @@ export default async function ExtractPage({ params }: ExtractPageProps) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(generateFAQSchema(page.faqs)),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       <div className="min-h-screen bg-gray-50">
@@ -94,7 +109,25 @@ export default async function ExtractPage({ params }: ExtractPageProps) {
 
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-6">Related Resources</h2>
+            <h2 className="text-2xl font-bold mb-6">Related Invoice Converters</h2>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              {featuredBrands.map((brand) => (
+                <Link
+                  key={brand.slug}
+                  href={`/invoice-to-csv/${brand.slug}`}
+                  className="card hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="font-semibold text-primary-600 mb-1">
+                    {brand.name} Invoice Converter
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Convert {brand.name} invoices to Excel with line items
+                  </p>
+                </Link>
+              ))}
+            </div>
+
+            <h2 className="text-2xl font-bold mb-6 mt-8">Related Resources</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <Link
                 href="/invoice-to-csv"
@@ -105,11 +138,27 @@ export default async function ExtractPage({ params }: ExtractPageProps) {
                 </span>
               </Link>
               <Link
+                href="/invoice-to-excel"
+                className="card hover:shadow-lg transition-shadow"
+              >
+                <span className="font-medium text-primary-600">
+                  Invoice to Excel Converter →
+                </span>
+              </Link>
+              <Link
                 href="/help/getting-started"
                 className="card hover:shadow-lg transition-shadow"
               >
                 <span className="font-medium text-primary-600">
                   Help Center →
+                </span>
+              </Link>
+              <Link
+                href="/extract"
+                className="card hover:shadow-lg transition-shadow"
+              >
+                <span className="font-medium text-primary-600">
+                  All Extraction Guides →
                 </span>
               </Link>
             </div>
