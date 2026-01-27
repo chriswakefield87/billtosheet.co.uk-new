@@ -3,6 +3,7 @@ import { join } from 'path'
 import extractData from '@/data/extract_pages.json'
 import helpData from '@/data/help_pages.json'
 import compareData from '@/data/compare_pages.json'
+import blogPostsData from '@/data/blog_posts.json'
 
 // Get file modification time for JSON data files
 function getDataFileModTime(filename: string): Date {
@@ -23,6 +24,7 @@ export async function GET() {
   const extractModTime = getDataFileModTime('extract_pages.json')
   const helpModTime = getDataFileModTime('help_pages.json')
   const compareModTime = getDataFileModTime('compare_pages.json')
+  const blogModTime = getDataFileModTime('blog_posts.json')
 
   // Extract pages - use actual file modification time
   const extractPages = extractData.map((page) => ({
@@ -48,7 +50,15 @@ export async function GET() {
     priority: 0.5,
   }))
 
-  const allPages = [...extractPages, ...helpPages, ...comparePages]
+  // Blog posts - use actual file modification time
+  const blogPages = blogPostsData.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: blogModTime,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
+  const allPages = [...extractPages, ...helpPages, ...comparePages, ...blogPages]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
