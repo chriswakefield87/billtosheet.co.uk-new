@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ClerkProvider } from '@clerk/nextjs'
 import Navigation from "@/components/Navigation";
@@ -76,6 +77,19 @@ export default function RootLayout({
     return (
       <html lang="en">
         <body className={inter.className}>
+          {/* Google Analytics */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-K3R0K873LL"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-K3R0K873LL');
+            `}
+          </Script>
           <Navigation />
           <main className="min-h-screen">
             {children}
@@ -90,6 +104,19 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
+          {/* Google Analytics */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-K3R0K873LL"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-K3R0K873LL');
+            `}
+          </Script>
           <TelemetryProvider />
           <Navigation />
           <main className="min-h-screen">
