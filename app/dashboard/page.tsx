@@ -3,8 +3,10 @@ import { redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
 import Link from "next/link";
 import { Metadata } from "next";
+import { Suspense } from "react";
 import SignupTracker from "@/components/SignupTracker";
 import DataStorageNotice from "@/components/DataStorageNotice";
+import PurchaseTracker from "@/components/PurchaseTracker";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -46,6 +48,9 @@ export default async function DashboardPage() {
   return (
     <>
       <SignupTracker isNewSignup={isActuallyNew} />
+      <Suspense fallback={null}>
+        <PurchaseTracker />
+      </Suspense>
       <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

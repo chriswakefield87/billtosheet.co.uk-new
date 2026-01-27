@@ -53,6 +53,11 @@ export default function ConversionResultPage({
           setData(result.data);
           setIsLoggedIn(result.isLoggedIn);
           setIsAuthorized(true);
+          
+          // Track conversion viewed
+          if (typeof window !== 'undefined' && (window as any).gtag) {
+            (window as any).gtag('event', 'conversion_viewed');
+          }
         }
       })
       .catch(err => {
@@ -141,18 +146,33 @@ export default function ConversionResultPage({
             <a
               href={`/api/download/${params.id}/invoice-details`}
               className="btn-primary text-center"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'download_csv');
+                }
+              }}
             >
               📄 Invoice Details (CSV)
             </a>
             <a
               href={`/api/download/${params.id}/line-items`}
               className="btn-primary text-center"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'download_csv');
+                }
+              }}
             >
               📋 Line Items (CSV)
             </a>
             <a
               href={`/api/download/${params.id}/excel`}
               className="btn-primary text-center"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'download_excel');
+                }
+              }}
             >
               📊 Combined (Excel)
             </a>

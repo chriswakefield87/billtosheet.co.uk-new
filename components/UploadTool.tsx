@@ -29,6 +29,11 @@ export default function UploadTool() {
       return;
     }
 
+    // Track upload start
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'upload_started');
+    }
+
     setUploading(true);
     setError(null);
 
@@ -57,6 +62,11 @@ export default function UploadTool() {
         conversionId: data.conversionId,
         isSignedIn: isSignedIn ? 'true' : 'false',
       });
+
+      // Track upload success
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'upload_success');
+      }
 
       // Redirect to results page
       router.push(`/convert/${data.conversionId}`);
