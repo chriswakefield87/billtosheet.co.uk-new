@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
 
     // Send email to support@billtosheet.com
     const { data, error } = await resend.emails.send({
-      from: 'BillToSheet Contact Form <support@billtosheet.co.uk>',
+      from: 'BillToSheet Contact Form <support@billtosheet.com>',
       to: ['support@billtosheet.com'],
       replyTo: email,
       subject: `Contact Form: ${subject}`,
