@@ -359,6 +359,11 @@ export default function BulkConvertPage() {
                               href={`/api/download/${fileStatus.result.conversionId}/invoice-details`}
                               className="text-primary-600 hover:text-primary-700 font-medium"
                               download
+                              onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                  (window as any).gtag('event', 'download_csv');
+                                }
+                              }}
                             >
                               CSV
                             </a>
@@ -367,6 +372,11 @@ export default function BulkConvertPage() {
                               href={`/api/download/${fileStatus.result.conversionId}/line-items`}
                               className="text-primary-600 hover:text-primary-700 font-medium"
                               download
+                              onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                  (window as any).gtag('event', 'download_csv');
+                                }
+                              }}
                             >
                               Line Items
                             </a>
@@ -375,6 +385,11 @@ export default function BulkConvertPage() {
                               href={`/api/download/${fileStatus.result.conversionId}/excel`}
                               className="text-primary-600 hover:text-primary-700 font-medium"
                               download
+                              onClick={() => {
+                                if (typeof window !== 'undefined' && (window as any).gtag) {
+                                  (window as any).gtag('event', 'download_excel');
+                                }
+                              }}
                             >
                               Excel
                             </a>
