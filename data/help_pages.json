@@ -180,5 +180,150 @@
         "answer": "Credit purchases are generally non-refundable, but we'll consider refund requests on a case-by-case basis. Contact support to discuss your situation."
       }
     ]
+  },
+  {
+    "slug": "importing-into-accounting-software",
+    "title": "Importing CSV into Accounting Software",
+    "description": "Learn how to import your converted CSV files into popular accounting software like QuickBooks, Xero, Sage, and others. Step-by-step import instructions.",
+    "metaTitle": "Import CSV into Accounting Software | QuickBooks, Xero, Sage",
+    "metaDescription": "Learn how to import converted invoice CSV files into QuickBooks, Xero, Sage, and other accounting software. Step-by-step import guide.",
+    "faqs": [
+      {
+        "question": "How do I import CSV files into QuickBooks?",
+        "answer": "In QuickBooks, go to File > Import > Excel Files, select your CSV file, map the columns to QuickBooks fields, and complete the import. Our CSV format is optimized for QuickBooks import."
+      },
+      {
+        "question": "Can I import into Xero?",
+        "answer": "Yes, in Xero go to Accounting > Bank Accounts, select your account, click Import, and choose your CSV file. Xero will guide you through mapping the columns."
+      },
+      {
+        "question": "What about Sage?",
+        "answer": "In Sage, use File > Import > CSV to import your invoice data. Make sure to map invoice numbers, dates, and amounts to the correct Sage fields."
+      },
+      {
+        "question": "Do I need to format the CSV before importing?",
+        "answer": "Our CSV files are already formatted for accounting software import, but you may need to map columns to match your specific accounting software's requirements."
+      },
+      {
+        "question": "What if the import fails?",
+        "answer": "Check that date formats match your accounting software's requirements, ensure currency symbols are correct, and verify that required fields (like invoice numbers) are present."
+      }
+    ]
+  },
+  {
+    "slug": "multi-currency-invoices",
+    "title": "Handling Multi-Currency Invoices",
+    "description": "Learn how to convert invoices with multiple currencies. Tips for currency conversion, reconciliation, and handling international invoices.",
+    "metaTitle": "Convert Multi-Currency Invoices | Currency Conversion Guide",
+    "metaDescription": "Learn how to convert invoices with multiple currencies. Handle currency conversion, exchange rates, and international invoice reconciliation.",
+    "faqs": [
+      {
+        "question": "Can BillToSheet handle multiple currencies?",
+        "answer": "Yes, our converter extracts currency information from invoices and preserves currency codes. Each currency is clearly identified in the CSV output."
+      },
+      {
+        "question": "How do I reconcile multi-currency invoices?",
+        "answer": "Our converter creates separate line items for each currency. You can then use exchange rates to convert amounts to your base currency for accounting purposes."
+      },
+      {
+        "question": "What if an invoice has mixed currencies?",
+        "answer": "Our tool extracts all currency information and creates separate entries for each currency, making it easy to identify and convert amounts as needed."
+      },
+      {
+        "question": "Does the converter show exchange rates?",
+        "answer": "If exchange rates are present in the invoice PDF, our converter will extract them. Otherwise, you'll need to apply current exchange rates manually."
+      },
+      {
+        "question": "Can I convert invoices from different countries?",
+        "answer": "Yes, our converter works with invoices from any country and preserves currency codes, tax information, and regional formatting."
+      }
+    ]
+  },
+  {
+    "slug": "scanned-invoices",
+    "title": "Converting Scanned Invoices",
+    "description": "Best practices for scanning invoices before conversion. Tips for improving OCR accuracy and getting the best results from scanned PDF invoices.",
+    "metaTitle": "Convert Scanned Invoices | OCR Invoice Conversion Tips",
+    "metaDescription": "Learn best practices for scanning invoices before conversion. Improve OCR accuracy and get better results from scanned PDF invoices.",
+    "faqs": [
+      {
+        "question": "Can I convert scanned invoices?",
+        "answer": "Yes, but scanned invoices rely on OCR (optical character recognition) which may be less accurate than text-based PDFs. For best results, use high-quality scans."
+      },
+      {
+        "question": "How can I improve scan quality?",
+        "answer": "Use a resolution of at least 300 DPI, ensure the invoice is flat and straight, use good lighting, and avoid shadows or blur. Clean, high-contrast scans work best."
+      },
+      {
+        "question": "What if my scanned invoice has errors?",
+        "answer": "Review the extracted data carefully and manually correct any OCR errors. Consider re-scanning at higher quality if many errors occur."
+      },
+      {
+        "question": "Are digital PDFs better than scans?",
+        "answer": "Yes, digital PDFs (created directly from software) are more accurate because they contain actual text data rather than images that need OCR recognition."
+      },
+      {
+        "question": "Can I convert photos of invoices?",
+        "answer": "If the photo is saved as a PDF, yes. However, photos are usually less accurate than proper scans. Ensure good lighting and focus for best results."
+      }
+    ]
+  },
+  {
+    "slug": "conversion-history",
+    "title": "Managing Your Conversion History",
+    "description": "Learn how to access and re-download your previous conversions. Organize and track your converted invoices in your dashboard.",
+    "metaTitle": "Manage Conversion History | Re-download Converted Invoices",
+    "metaDescription": "Learn how to access and re-download your previous conversions. Organize and track converted invoices in your BillToSheet dashboard.",
+    "faqs": [
+      {
+        "question": "How do I access my conversion history?",
+        "answer": "Sign in to your dashboard to see all your previous conversions. Each conversion shows the date, invoice details, and download links."
+      },
+      {
+        "question": "Can I re-download converted files?",
+        "answer": "Yes, logged-in users can re-download their converted files for 30 days. Simply click the download links in your dashboard."
+      },
+      {
+        "question": "How long are conversions stored?",
+        "answer": "For logged-in users, conversions are stored for 30 days. After that, they're automatically deleted. Anonymous conversions are only available during your session."
+      },
+      {
+        "question": "Can I search my conversion history?",
+        "answer": "Your dashboard shows all conversions in chronological order. You can use your browser's search function (Ctrl+F or Cmd+F) to find specific invoices."
+      },
+      {
+        "question": "What if I need a file after 30 days?",
+        "answer": "You'll need to re-upload the original PDF and convert it again. Make sure to download important files within the 30-day window."
+      }
+    ]
+  },
+  {
+    "slug": "best-practices",
+    "title": "Invoice Conversion Best Practices",
+    "description": "Tips for getting the most accurate conversions. Learn common mistakes to avoid and how to prepare your invoices for the best results.",
+    "metaTitle": "Invoice Conversion Best Practices | Tips for Accurate Results",
+    "metaDescription": "Learn best practices for invoice conversion. Tips for accurate results and common mistakes to avoid when converting invoices to CSV/Excel.",
+    "faqs": [
+      {
+        "question": "What makes a good invoice for conversion?",
+        "answer": "Use text-based PDFs (not scanned images), ensure the invoice has clear structure with visible line items, and make sure all text is readable and not corrupted."
+      },
+      {
+        "question": "Should I clean up the PDF before uploading?",
+        "answer": "No need to clean up - our converter handles standard invoice formats. Just ensure the PDF is complete and not password-protected."
+      },
+      {
+        "question": "What are common mistakes to avoid?",
+        "answer": "Avoid uploading password-protected PDFs, corrupted files, or extremely low-quality scans. Also, make sure you're uploading actual invoices, not receipts or other documents."
+      },
+      {
+        "question": "How can I improve extraction accuracy?",
+        "answer": "Use digital PDFs when possible, ensure invoices have clear table structures, and verify that line items are properly formatted in the original document."
+      },
+      {
+        "question": "What if the conversion isn't perfect?",
+        "answer": "Review the extracted data and manually correct any errors. Our tool is optimized for standard formats, but some custom invoices may need minor adjustments."
+      }
+    ]
   }
 ]

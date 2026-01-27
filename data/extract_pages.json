@@ -132,5 +132,150 @@
         "answer": "Purchase a credits pack and convert multiple invoices one after another. Each conversion uses one credit and your results are saved for 30 days."
       }
     ]
+  },
+  {
+    "slug": "discounts-promotions",
+    "title": "Extract Discounts and Promotions",
+    "description": "Extract discount codes, promotional amounts, coupon information, and special pricing from invoices. Track discounts and promotions in your accounting data.",
+    "metaTitle": "Extract Discounts from Invoices | Promotional Data Extraction",
+    "metaDescription": "Extract discount codes, promotional amounts, and coupon information from PDF invoices. Track discounts and promotions automatically.",
+    "faqs": [
+      {
+        "question": "What discount information can be extracted?",
+        "answer": "Our tool extracts discount codes, promotional amounts, percentage discounts, coupon information, and any special pricing applied to invoices."
+      },
+      {
+        "question": "How are discounts shown in the CSV output?",
+        "answer": "Discounts appear as separate line items or as adjustments to line item prices, depending on how they're structured in the original invoice."
+      },
+      {
+        "question": "Can I track promotional codes?",
+        "answer": "Yes, if discount codes or promotional codes appear in the invoice PDF, our converter will extract them along with the discount amounts."
+      },
+      {
+        "question": "What if an invoice has multiple discounts?",
+        "answer": "Our converter extracts all discount information, showing each discount separately so you can track different types of promotions and discounts."
+      },
+      {
+        "question": "Does the tool extract early payment discounts?",
+        "answer": "Yes, if early payment discounts or settlement discounts are mentioned in the invoice, our converter will include them in the extracted data."
+      }
+    ]
+  },
+  {
+    "slug": "shipping-information",
+    "title": "Extract Shipping Information",
+    "description": "Extract shipping methods, carriers, tracking numbers, and shipping costs from invoices. Track shipping expenses and delivery information.",
+    "metaTitle": "Extract Shipping Information from Invoices | Shipping Data Parser",
+    "metaDescription": "Extract shipping methods, carriers, tracking numbers, and shipping costs from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What shipping information can be extracted?",
+        "answer": "We extract shipping methods, carrier names, tracking numbers, shipping costs, delivery addresses, and estimated delivery dates when present in the invoice."
+      },
+      {
+        "question": "How are shipping costs shown?",
+        "answer": "Shipping costs appear as separate line items in the CSV output, making it easy to track shipping expenses separately from product costs."
+      },
+      {
+        "question": "Can I extract tracking numbers?",
+        "answer": "Yes, if tracking numbers appear in the invoice PDF, our converter will extract them along with carrier information."
+      },
+      {
+        "question": "What if an invoice has multiple shipping methods?",
+        "answer": "Our converter extracts all shipping information, including multiple carriers or shipping methods, showing each separately in the output."
+      },
+      {
+        "question": "Does the tool extract delivery addresses?",
+        "answer": "Yes, if shipping or delivery addresses are present in the invoice, our converter will include them in the extracted data."
+      }
+    ]
+  },
+  {
+    "slug": "purchase-order-numbers",
+    "title": "Extract Purchase Order Numbers",
+    "description": "Extract purchase order numbers, reference codes, and order tracking information from invoices. Link invoices to purchase orders automatically.",
+    "metaTitle": "Extract Purchase Order Numbers | PO Number Extraction",
+    "metaDescription": "Extract purchase order numbers, reference codes, and order tracking information from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What PO information can be extracted?",
+        "answer": "We extract purchase order numbers, customer reference codes, order tracking numbers, and any other reference identifiers present on the invoice."
+      },
+      {
+        "question": "How are PO numbers shown in the output?",
+        "answer": "PO numbers appear in the invoice details section of the CSV, making it easy to match invoices with their corresponding purchase orders."
+      },
+      {
+        "question": "Can I extract customer reference codes?",
+        "answer": "Yes, if customer reference codes, order numbers, or other tracking identifiers appear in the invoice, our converter will extract them."
+      },
+      {
+        "question": "What if an invoice has multiple reference numbers?",
+        "answer": "Our converter extracts all reference numbers and codes present in the invoice, helping you maintain complete order tracking."
+      },
+      {
+        "question": "Does the tool work with different PO number formats?",
+        "answer": "Yes, our converter recognizes various PO number formats and reference code structures commonly used in business invoices."
+      }
+    ]
+  },
+  {
+    "slug": "skus-product-codes",
+    "title": "Extract Item SKUs and Product Codes",
+    "description": "Extract product SKUs, item codes, barcodes, and inventory identifiers from invoices. Track products by SKU for inventory management.",
+    "metaTitle": "Extract SKUs from Invoices | Product Code Extraction",
+    "metaDescription": "Extract product SKUs, item codes, barcodes, and inventory identifiers from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What product codes can be extracted?",
+        "answer": "We extract product SKUs, item codes, barcodes, part numbers, model numbers, and any other product identifiers present in the invoice line items."
+      },
+      {
+        "question": "How are SKUs shown in the CSV?",
+        "answer": "SKUs appear in the line items CSV, associated with each product line item, making it easy to track inventory by product code."
+      },
+      {
+        "question": "Can I extract barcodes?",
+        "answer": "Yes, if barcodes or product barcode numbers appear in the invoice, our converter will extract them along with product information."
+      },
+      {
+        "question": "What if an invoice has multiple product codes?",
+        "answer": "Our converter extracts all product codes and SKUs for each line item, preserving the complete product identification information."
+      },
+      {
+        "question": "Does the tool work with different SKU formats?",
+        "answer": "Yes, our converter recognizes various SKU and product code formats commonly used in ecommerce and retail invoices."
+      }
+    ]
+  },
+  {
+    "slug": "recurring-billing",
+    "title": "Extract Recurring Billing Details",
+    "description": "Extract subscription information, billing cycles, recurring payment details, and subscription IDs from invoices. Track recurring charges automatically.",
+    "metaTitle": "Extract Recurring Billing | Subscription Invoice Data",
+    "metaDescription": "Extract subscription information, billing cycles, and recurring payment details from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What recurring billing information can be extracted?",
+        "answer": "We extract subscription IDs, billing cycle information, recurring payment amounts, subscription start and end dates, and renewal details when present in invoices."
+      },
+      {
+        "question": "How are subscriptions shown in the output?",
+        "answer": "Subscription information appears in the invoice details section, with subscription IDs and billing cycle information clearly identified."
+      },
+      {
+        "question": "Can I track billing cycles?",
+        "answer": "Yes, if billing cycle information (monthly, annual, etc.) appears in the invoice, our converter will extract it along with subscription details."
+      },
+      {
+        "question": "What if an invoice has multiple subscriptions?",
+        "answer": "Our converter extracts all subscription information, showing each subscription separately so you can track multiple recurring charges."
+      },
+      {
+        "question": "Does the tool extract renewal dates?",
+        "answer": "Yes, if subscription renewal dates or next billing dates are present in the invoice, our converter will include them in the extracted data."
+      }
+    ]
   }
 ]
