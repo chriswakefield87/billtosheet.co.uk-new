@@ -248,6 +248,84 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 
 Follow the prompts. Certbot will automatically configure SSL and redirect HTTP to HTTPS.
 
+### 4. Canonical domain redirects (recommended for SEO)
+
+Google indexes `http://`, `https://`, `www`, and non-`www` as separate URLs. Use **one canonical** (e.g. `https://billtosheet.com`) and 301-redirect the rest so Search Console consolidates quicker.
+
+**Option A – Next.js (already in place)**  
+The app middleware redirects `http` → `https` and `www` → non-`www` in production. Ensure `NEXT_PUBLIC_APP_URL` is `https://billtosheet.com` (no `www`).
+
+**Option B – Apache**  
+Redirect at the edge before traffic hits Node. Enable `mod_rewrite`, `mod_proxy`, `mod_proxy_http`, and `mod_headers`:
+
+```bash
+sudo a2enmod rewrite proxy proxy_http headers
+```
+
+Create (or adjust) VirtualHosts so that:
+
+1. **HTTP (port 80)** → `301 https://billtosheet.com` + path + query.
+2. **HTTPS www** → `301 https://billtosheet.com` + path + query.
+3. **HTTPS non-www** → proxy to the app.
+
+Example (replace `billtosheet.com` with your domain; SSL paths assume Certbot `--apache`):
+
+```apache
+# HTTP → HTTPS non-www
+<VirtualHost *:80>
+    ServerName billtosheet.com
+    ServerAlias www.billtosheet.com
+    RewriteEngine On
+    RewriteRule ^ https://billtosheet.com%{REQUEST_URI} [R=301,L]
+</VirtualHost>
+
+# HTTPS www → non-www
+<VirtualHost *:443>
+    ServerName www.billtosheet.com
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/billtosheet.com/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/billtosheet.com/privkey.pem
+    Include /etc/letsencrypt/options-ssl-apache.conf
+    RewriteEngine On
+    RewriteRule ^ https://billtosheet.com%{REQUEST_URI} [R=301,L]
+</VirtualHost>
+
+# HTTPS non-www – main app (proxy to Next.js)
+<VirtualHost *:443>
+    ServerName billtosheet.com
+
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/billtosheet.com/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/billtosheet.com/privkey.pem
+    Include /etc/letsencrypt/options-ssl-apache.conf
+
+    ProxyPreserveHost On
+    RequestHeader set X-Forwarded-Proto "https"
+    RequestHeader set X-Forwarded-Port "443"
+    ProxyPass / http://127.0.0.1:3000/
+    ProxyPassReverse / http://127.0.0.1:3000/
+
+    LimitRequestBody 10485760
+</VirtualHost>
+```
+
+`LimitRequestBody 10485760` allows ~10 MB uploads. Then:
+
+```bash
+sudo apache2ctl configtest && sudo systemctl reload apache2
+```
+
+**Option C – Nginx**  
+If you use Nginx instead, configure:
+
+1. **HTTP** → `301 https://billtosheet.com$request_uri`
+2. **HTTPS www** → `301 https://billtosheet.com$request_uri`
+3. **HTTPS non-www** → `proxy_pass` to `http://localhost:3000` with `Host`, `X-Forwarded-Proto`, `X-Forwarded-For`.
+
+See the Nginx section elsewhere in this doc for a full `server { … }` example.
+
+**Search Console:** Add a property for `https://billtosheet.com` (no `www`) if you haven’t. Use *Settings → Preferred domain* only if you still use the legacy “Preferred domain” option; otherwise, canonicals and redirects are enough.
+
 ## Configure Stripe Webhooks
 
 ### 1. Create Webhook Endpoint in Stripe Dashboard
