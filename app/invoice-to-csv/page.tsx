@@ -61,6 +61,8 @@ export default function InvoiceToCSVHub() {
     ecommerce: "E-Commerce Platforms",
     payments: "Payment Processors",
     accounting: "Accounting Software",
+    advertising: "Advertising Platforms",
+    software: "Software & Cloud Services",
   };
 
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'

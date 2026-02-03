@@ -913,5 +913,310 @@
         "answer": "Yes, our converter handles BigCommerce subscription invoices and extracts recurring billing details and subscription information."
       }
     ]
+  },
+  {
+    "slug": "google-ads",
+    "name": "Google Ads",
+    "category": "advertising",
+    "description": "Convert Google Ads invoices to CSV or Excel format. Extract ad spend, campaign costs, tax information, and billing details from Google Ads invoices.",
+    "metaTitle": "Google Ads Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Google Ads invoices to CSV and Excel format. Extract ad spend, campaign costs, tax details, and billing information from Google Ads invoices automatically.",
+    "exportSteps": [
+      "Log in to your Google Ads account",
+      "Click on 'Tools & Settings' (wrench icon)",
+      "Navigate to 'Billing' > 'Documents'",
+      "Select the invoice you want to download",
+      "Click 'Download' to save as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Google Ads invoices show aggregated monthly spend rather than individual campaign costs",
+      "Tax calculations vary by country and may include VAT, GST, or sales tax",
+      "Currency conversions for international accounts may need verification",
+      "Promotional credits and adjustments appear as separate line items",
+      "Multiple account invoices may be consolidated into a single document"
+    ],
+    "uniqueFields": [
+      "Google Ads account ID and invoice number",
+      "Monthly ad spend by billing period",
+      "Tax breakdown by jurisdiction",
+      "Promotional credits and adjustments",
+      "Payment method details",
+      "Currency and exchange rate information",
+      "Service fees and charges"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Google Ads invoices to CSV?",
+        "answer": "Upload your Google Ads invoice PDF and our tool will extract all billing details including ad spend, taxes, and payment information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Google Ads?",
+        "answer": "In Google Ads, click Tools & Settings > Billing > Documents, select your invoice, and click Download to save as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Google Ads tax information?",
+        "answer": "Yes, our tool extracts tax details including VAT, GST, or sales tax, showing tax rates and amounts clearly in the CSV output."
+      },
+      {
+        "question": "Can I convert Google Ads invoices from multiple accounts?",
+        "answer": "Yes, upload each invoice separately or use bulk conversion to process invoices from multiple Google Ads accounts simultaneously."
+      },
+      {
+        "question": "What if my Google Ads invoice has promotional credits?",
+        "answer": "Our converter extracts promotional credits and adjustments as separate line items, making it easy to track discounts against your actual ad spend."
+      },
+      {
+        "question": "Does the tool work with different Google Ads billing currencies?",
+        "answer": "Yes, our converter handles Google Ads invoices in any currency and preserves currency information in the CSV output."
+      },
+      {
+        "question": "Can I convert historical Google Ads invoices?",
+        "answer": "Yes, any Google Ads invoice PDF can be converted regardless of age. Download historical invoices from your billing documents and upload them."
+      }
+    ]
+  },
+  {
+    "slug": "meta-ads",
+    "name": "Meta Ads (Facebook)",
+    "category": "advertising",
+    "description": "Convert Meta Ads (Facebook/Instagram) invoices to CSV or Excel format. Extract ad spend, campaign costs, and billing details from Meta advertising invoices.",
+    "metaTitle": "Meta Ads Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Meta Ads invoices to CSV and Excel format. Extract Facebook and Instagram ad spend, tax details, and billing information automatically.",
+    "exportSteps": [
+      "Log in to Meta Business Suite or Ads Manager",
+      "Navigate to 'Billing' in the settings menu",
+      "Click on 'Payment Activity' or 'Transaction History'",
+      "Select the invoice or receipt you need",
+      "Click 'Download' to save as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Meta Ads invoices combine Facebook and Instagram spend into single line items",
+      "Tax calculations vary significantly by country and business type",
+      "Ad account currency may differ from billing currency",
+      "Refunds and adjustments appear as separate transactions",
+      "Multiple ad accounts may generate separate invoices"
+    ],
+    "uniqueFields": [
+      "Meta ad account ID and invoice number",
+      "Combined Facebook and Instagram ad spend",
+      "Tax breakdown including VAT and local taxes",
+      "Billing threshold and payment schedule",
+      "Currency and conversion information",
+      "Prepaid balance usage",
+      "Promotional credits applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Meta Ads invoices to CSV?",
+        "answer": "Upload your Meta Ads invoice PDF and our tool will extract all billing details including ad spend, taxes, and account information into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Meta Ads Manager?",
+        "answer": "In Meta Business Suite, go to Billing > Payment Activity, select your transaction, and download the invoice as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter work with Facebook and Instagram ad invoices?",
+        "answer": "Yes, Meta combines Facebook and Instagram advertising into unified invoices, and our converter extracts all spend data regardless of platform."
+      },
+      {
+        "question": "Can I convert Meta Ads invoices from multiple ad accounts?",
+        "answer": "Yes, upload each invoice separately or use bulk conversion to process invoices from multiple Meta ad accounts at once."
+      },
+      {
+        "question": "What if my Meta Ads invoice has VAT charges?",
+        "answer": "Our converter extracts VAT and other tax charges as separate line items, making it easy to reclaim VAT or track tax expenses."
+      },
+      {
+        "question": "Does the tool handle prepaid Meta Ads accounts?",
+        "answer": "Yes, our converter extracts prepaid balance information and shows how credits were applied against your ad spend."
+      },
+      {
+        "question": "Can I convert old Facebook Ads invoices?",
+        "answer": "Yes, invoices from both the legacy Facebook Ads and current Meta Ads systems can be converted, including historical invoices."
+      }
+    ]
+  },
+  {
+    "slug": "microsoft-365",
+    "name": "Microsoft 365",
+    "category": "software",
+    "description": "Convert Microsoft 365 subscription invoices to CSV or Excel format. Extract license costs, subscription details, and billing information from Microsoft invoices.",
+    "metaTitle": "Microsoft 365 Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Microsoft 365 invoices to CSV and Excel format. Extract subscription costs, license details, and billing information automatically.",
+    "exportSteps": [
+      "Log in to the Microsoft 365 Admin Center",
+      "Navigate to 'Billing' > 'Bills & payments'",
+      "Click on the invoice you want to download",
+      "Select 'Download PDF' to save the invoice",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Microsoft 365 invoices list each license type as separate line items",
+      "Prorated charges appear when adding or removing licenses mid-cycle",
+      "Multi-year commitments show annual totals differently than monthly",
+      "Tax calculations vary by region and business status",
+      "Add-on services are billed separately from core subscriptions"
+    ],
+    "uniqueFields": [
+      "Microsoft invoice number and billing account ID",
+      "Subscription type and license count",
+      "Per-user pricing breakdown",
+      "Billing period dates",
+      "Prorated charges and adjustments",
+      "Tax by jurisdiction",
+      "Add-on services and extras"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Microsoft 365 invoices to CSV?",
+        "answer": "Upload your Microsoft 365 invoice PDF and our tool will extract subscription details, license counts, pricing, and tax information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Microsoft 365?",
+        "answer": "In Microsoft 365 Admin Center, go to Billing > Bills & payments, select your invoice, and click Download PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle different Microsoft 365 plans?",
+        "answer": "Yes, our tool works with all Microsoft 365 plans including Business Basic, Business Premium, E3, E5, and individual licenses like Visio or Project."
+      },
+      {
+        "question": "Can I convert invoices with multiple license types?",
+        "answer": "Yes, our converter extracts each license type as a separate line item with its own quantity and pricing, making it easy to track costs by license."
+      },
+      {
+        "question": "What about prorated charges?",
+        "answer": "Our converter extracts prorated charges from mid-cycle license changes, showing both the proration calculation and the adjusted amount."
+      },
+      {
+        "question": "Does the tool work with Microsoft Azure invoices too?",
+        "answer": "This converter is optimised for Microsoft 365 subscription invoices. Azure invoices have a different structure but can also be converted."
+      },
+      {
+        "question": "Can I convert invoices from different Microsoft billing accounts?",
+        "answer": "Yes, upload invoices from any Microsoft billing account. Use bulk conversion to process multiple invoices from different accounts simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "aws",
+    "name": "Amazon Web Services (AWS)",
+    "category": "software",
+    "description": "Convert AWS invoices to CSV or Excel format. Extract cloud service costs, usage charges, and detailed billing information from Amazon Web Services invoices.",
+    "metaTitle": "AWS Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert AWS invoices to CSV and Excel format. Extract cloud service costs, usage details, and billing information from Amazon Web Services automatically.",
+    "exportSteps": [
+      "Log in to your AWS Management Console",
+      "Navigate to 'Billing and Cost Management'",
+      "Click on 'Bills' in the left sidebar",
+      "Select the billing period and click 'Download CSV' or generate PDF",
+      "Upload the invoice PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "AWS invoices can be extremely detailed with hundreds of line items",
+      "Service charges are broken down by region and usage type",
+      "Reserved Instance and Savings Plan credits appear as adjustments",
+      "Tax calculations vary by service and region",
+      "Support plan charges are billed separately"
+    ],
+    "uniqueFields": [
+      "AWS account ID and invoice number",
+      "Service-by-service cost breakdown",
+      "Usage quantities and unit prices",
+      "Regional cost allocation",
+      "Reserved Instance and Savings Plan credits",
+      "Data transfer charges",
+      "Support plan costs"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert AWS invoices to CSV?",
+        "answer": "Upload your AWS invoice PDF and our tool will extract service costs, usage details, and billing information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from AWS?",
+        "answer": "In AWS Console, go to Billing and Cost Management > Bills, select your billing period, and download the invoice as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle detailed AWS line items?",
+        "answer": "Yes, our tool extracts all AWS service line items including EC2, S3, RDS, Lambda, and other services, with costs broken down by region and usage type."
+      },
+      {
+        "question": "Can I convert AWS invoices with Reserved Instances?",
+        "answer": "Yes, our converter extracts Reserved Instance charges and credits, showing both the upfront costs and the ongoing hourly charges."
+      },
+      {
+        "question": "What about AWS Marketplace charges?",
+        "answer": "AWS Marketplace purchases that appear on your AWS invoice are extracted as separate line items with vendor and product details."
+      },
+      {
+        "question": "Does the tool work with AWS Organizations consolidated billing?",
+        "answer": "Yes, our converter handles consolidated billing invoices and extracts costs for each linked account when itemised in the invoice."
+      },
+      {
+        "question": "Can I convert historical AWS invoices?",
+        "answer": "Yes, any AWS invoice PDF can be converted. Download historical invoices from the Bills section in AWS Console and upload them."
+      }
+    ]
+  },
+  {
+    "slug": "godaddy",
+    "name": "GoDaddy",
+    "category": "software",
+    "description": "Convert GoDaddy invoices to CSV or Excel format. Extract domain registrations, hosting charges, and renewal fees from GoDaddy billing invoices.",
+    "metaTitle": "GoDaddy Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert GoDaddy invoices to CSV and Excel format. Extract domain costs, hosting fees, and renewal charges from GoDaddy invoices automatically.",
+    "exportSteps": [
+      "Log in to your GoDaddy account",
+      "Click on your account name and select 'Order History'",
+      "Find the order or renewal you need",
+      "Click 'View Receipt' and download as PDF",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "GoDaddy invoices combine domains and hosting into single orders",
+      "Promotional pricing differs from renewal pricing significantly",
+      "Multi-year registrations show total cost rather than annual breakdown",
+      "Privacy and protection add-ons appear as separate line items",
+      "Automatic renewals may not match original purchase prices"
+    ],
+    "uniqueFields": [
+      "GoDaddy order number and customer ID",
+      "Domain names and registration periods",
+      "Hosting plan details",
+      "SSL certificate costs",
+      "Domain privacy protection",
+      "Renewal vs new purchase pricing",
+      "Promotional discounts applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert GoDaddy invoices to CSV?",
+        "answer": "Upload your GoDaddy receipt or invoice PDF and our tool will extract domain registrations, hosting charges, and other costs into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from GoDaddy?",
+        "answer": "In your GoDaddy account, go to Order History, find your purchase, click View Receipt, and save as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle domain renewals?",
+        "answer": "Yes, our tool extracts domain renewal charges including the domain name, registration period, and renewal price, making it easy to track domain costs."
+      },
+      {
+        "question": "Can I convert GoDaddy hosting invoices?",
+        "answer": "Yes, our converter works with all GoDaddy products including web hosting, WordPress hosting, VPS, and dedicated servers."
+      },
+      {
+        "question": "What about GoDaddy promotional discounts?",
+        "answer": "Our converter extracts promotional discounts and shows both the original price and the discounted amount you paid."
+      },
+      {
+        "question": "Does the tool handle multi-year domain registrations?",
+        "answer": "Yes, multi-year registrations are extracted with the full term and total cost, making it easy to amortise costs over the registration period."
+      },
+      {
+        "question": "Can I convert GoDaddy SSL certificate invoices?",
+        "answer": "Yes, SSL certificate purchases and renewals are extracted with certificate type, validity period, and pricing details."
+      }
+    ]
   }
 ]
