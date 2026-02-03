@@ -21,7 +21,7 @@ export default function BlogPostPage() {
     <BlogPostLayout post={post}>
       {/* Write your blog post content here */}
       <p>Invoice automation might sound a bit complicated, but <strong>it really doesn't have to be</strong>. And it can save you a lot of time and money.</p>
-      <p><img src="https://billtosheet.com/benefits-of-automating-invoice-data-entry.png" alt="benefits-of-automating-invoice-data-entry" /></p>
+      <p><img src="/benefits-of-automating-invoice-data-entry.png" alt="Benefits of automating invoice data entry" /></p>
       <h3 className="text-2xl font-bold mb-6">What is invoice automation?</h3>
       <p>Put simply, it can mean many things depending on your current workflow. Say, for example, you pay for a lot of business expenses online via PayPal, like ChatGPT subscriptions or material tools. These are all expenses that you can use to offset your business taxes.&nbsp;</p>
       <p>Downloading these invoice PDFs and converting them to CSV files means you can open them in one Excel file and count your totals for allowable expenses automatically.</p>

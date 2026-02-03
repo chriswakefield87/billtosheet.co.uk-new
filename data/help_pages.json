@@ -325,5 +325,150 @@
         "answer": "Review the extracted data and manually correct any errors. Our tool is optimized for standard formats, but some custom invoices may need minor adjustments."
       }
     ]
+  },
+  {
+    "slug": "file-size-limits",
+    "title": "File Size Limits and Large PDFs",
+    "description": "Learn about file size limits when uploading invoices. Tips for handling large PDF files and optimizing file size for conversion.",
+    "metaTitle": "Invoice File Size Limits | Large PDF Upload Guide",
+    "metaDescription": "Understand file size limits for invoice conversion. Learn how to handle large PDFs and optimize files for faster uploads.",
+    "faqs": [
+      {
+        "question": "What is the maximum file size for uploads?",
+        "answer": "You can upload PDF files up to 10MB in size. This covers the vast majority of invoice PDFs, which are typically under 1MB."
+      },
+      {
+        "question": "What if my PDF is too large?",
+        "answer": "Large PDFs are usually caused by embedded images or scans. Try compressing the PDF using free tools like Smallpdf or Adobe's online compressor before uploading."
+      },
+      {
+        "question": "Does file size affect conversion speed?",
+        "answer": "Larger files take slightly longer to upload and process, but the conversion itself is fast regardless of file size. Most invoices convert in seconds."
+      },
+      {
+        "question": "Can I upload multiple large files at once?",
+        "answer": "Yes, with bulk conversion you can upload multiple files. Each file must be under 10MB, but there's no limit on the total combined size of your batch."
+      },
+      {
+        "question": "Why are scanned invoices larger than digital PDFs?",
+        "answer": "Scanned invoices contain image data which takes more space than text-based digital PDFs. A scanned invoice might be 2-5MB while a digital PDF is often under 500KB."
+      }
+    ]
+  },
+  {
+    "slug": "password-protected-pdfs",
+    "title": "Password-Protected PDF Invoices",
+    "description": "Learn how to handle password-protected invoice PDFs. Steps to remove PDF protection before conversion.",
+    "metaTitle": "Password-Protected PDF Invoices | Remove PDF Password Guide",
+    "metaDescription": "Learn how to convert password-protected invoice PDFs. Steps to unlock protected documents before uploading to BillToSheet.",
+    "faqs": [
+      {
+        "question": "Can I convert password-protected PDFs?",
+        "answer": "No, password-protected PDFs cannot be processed directly. You'll need to remove the password protection first using Adobe Acrobat, an online PDF tool, or by requesting an unprotected version from the sender."
+      },
+      {
+        "question": "How do I remove PDF password protection?",
+        "answer": "If you know the password, open the PDF in Adobe Acrobat Reader, enter the password, then save a new copy without protection. Online tools like Smallpdf or iLovePDF can also help."
+      },
+      {
+        "question": "Why do some invoices come password-protected?",
+        "answer": "Some companies protect invoice PDFs for security, especially when they contain sensitive financial data or are sent via email. The password is usually provided separately."
+      },
+      {
+        "question": "What if I don't know the PDF password?",
+        "answer": "Contact the company that sent you the invoice and request either the password or an unprotected version of the PDF. Most businesses will provide this on request."
+      },
+      {
+        "question": "Is there a difference between password-protected and encrypted PDFs?",
+        "answer": "Password-protected PDFs require a password to open or edit. Encrypted PDFs use additional security. Both need to be unlocked before conversion."
+      }
+    ]
+  },
+  {
+    "slug": "csv-column-guide",
+    "title": "Understanding CSV Column Structure",
+    "description": "Complete guide to the CSV column structure and data fields exported by BillToSheet. Learn how to map columns for accounting software import.",
+    "metaTitle": "CSV Column Guide | Invoice Data Structure Explained",
+    "metaDescription": "Understand the CSV column structure from BillToSheet. Learn about invoice fields, line item columns, and how to map data for accounting software.",
+    "faqs": [
+      {
+        "question": "What columns are in the invoice details CSV?",
+        "answer": "The invoice details CSV includes: vendor name, invoice number, invoice date, due date, currency, subtotal, tax amount, total amount, and any additional metadata extracted from the invoice."
+      },
+      {
+        "question": "What columns are in the line items CSV?",
+        "answer": "The line items CSV includes: description, quantity, unit price, tax amount, and line total for each item. SKUs, product codes, and discounts are included when present in the original invoice."
+      },
+      {
+        "question": "How do I map columns when importing to accounting software?",
+        "answer": "Most accounting software has an import wizard that lets you match CSV columns to their fields. Match 'invoice number' to your invoice ID field, 'total amount' to your amount field, and so on."
+      },
+      {
+        "question": "Are column names consistent across different invoice types?",
+        "answer": "Yes, we use standardized column names regardless of the original invoice format. This makes it easy to import invoices from different sources into the same accounting system."
+      },
+      {
+        "question": "Can I customize which columns are exported?",
+        "answer": "Currently, all available columns are exported by default. You can delete unwanted columns in Excel or Google Sheets before importing to your accounting software."
+      }
+    ]
+  },
+  {
+    "slug": "date-format-handling",
+    "title": "Date Format Handling",
+    "description": "Learn how BillToSheet handles different date formats from international invoices. Tips for ensuring correct date parsing and formatting.",
+    "metaTitle": "Invoice Date Format Handling | International Date Formats",
+    "metaDescription": "Understand how BillToSheet handles different date formats. Learn about international date parsing and how to ensure correct date formatting.",
+    "faqs": [
+      {
+        "question": "What date formats are supported?",
+        "answer": "We support all common date formats including DD/MM/YYYY (UK/EU), MM/DD/YYYY (US), YYYY-MM-DD (ISO), and written formats like '15 January 2025'. Our system automatically detects the format."
+      },
+      {
+        "question": "How are dates formatted in the CSV output?",
+        "answer": "Dates are exported in ISO format (YYYY-MM-DD) by default, which is universally recognized by spreadsheets and accounting software. This prevents confusion between DD/MM and MM/DD formats."
+      },
+      {
+        "question": "What if a date is extracted incorrectly?",
+        "answer": "Occasionally, ambiguous dates like '01/02/2025' (which could be January 2nd or February 1st) may be misinterpreted. Review extracted dates and correct any errors before importing."
+      },
+      {
+        "question": "How do I change date format in Excel?",
+        "answer": "Select the date column, right-click, choose 'Format Cells', select 'Date', and choose your preferred format. Excel will automatically reformat all dates in that column."
+      },
+      {
+        "question": "Do you extract due dates as well as invoice dates?",
+        "answer": "Yes, when present in the invoice, we extract both the invoice date and the payment due date, displaying them in separate columns."
+      }
+    ]
+  },
+  {
+    "slug": "multi-page-invoices",
+    "title": "Converting Multi-Page Invoices",
+    "description": "Learn how BillToSheet handles invoices that span multiple pages. Tips for ensuring all line items and data are extracted correctly.",
+    "metaTitle": "Multi-Page Invoice Conversion | Extract Data from Long Invoices",
+    "metaDescription": "Learn how to convert invoices with multiple pages. Ensure all line items and data are extracted correctly from long invoice PDFs.",
+    "faqs": [
+      {
+        "question": "Can BillToSheet handle multi-page invoices?",
+        "answer": "Yes, our converter processes all pages of a PDF invoice. Line items that span multiple pages are combined into a single output, and header information is extracted from the relevant pages."
+      },
+      {
+        "question": "Are all line items from all pages extracted?",
+        "answer": "Yes, our system reads through all pages and extracts every line item, regardless of how many pages the invoice spans. The line items are combined into a single CSV file."
+      },
+      {
+        "question": "What if my invoice has summary pages?",
+        "answer": "Some invoices include summary pages with subtotals. Our converter distinguishes between line items and summaries, extracting individual line items while capturing totals from summary sections."
+      },
+      {
+        "question": "How are page headers handled?",
+        "answer": "Repeated headers (like company name and address on each page) are extracted once and not duplicated. We identify the main invoice information and avoid creating duplicate entries."
+      },
+      {
+        "question": "Is there a page limit for invoices?",
+        "answer": "There's no specific page limit. As long as the PDF is under 10MB, we can process invoices with any number of pages. Very long invoices (50+ pages) may take slightly longer to process."
+      }
+    ]
   }
 ]

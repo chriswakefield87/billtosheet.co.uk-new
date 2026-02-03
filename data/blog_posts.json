@@ -1,5 +1,14 @@
 [
   {
+    "slug": "import-invoice-csv-accounting-software",
+    "title": "How to Import Invoice CSV into QuickBooks, Xero & Sage",
+    "excerpt": "Step-by-step guide to importing your converted invoice CSV files into popular accounting software. Learn the exact process for QuickBooks, Xero, and Sage.",
+    "date": "2026-01-27",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "7 min read"
+  },
+  {
     "slug": "how-to-convert-invoices-to-csv",
     "title": "How to Convert Invoices to CSV: Complete Guide",
     "excerpt": "Learn how to efficiently convert your invoice PDFs to CSV format for easy import into accounting software.",

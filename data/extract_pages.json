@@ -277,5 +277,150 @@
         "answer": "Yes, if subscription renewal dates or next billing dates are present in the invoice, our converter will include them in the extracted data."
       }
     ]
+  },
+  {
+    "slug": "bank-details",
+    "title": "Extract Bank Payment Details",
+    "description": "Extract bank account information from invoices including account numbers, sort codes, IBAN, BIC/SWIFT codes, and payment references for bank transfers.",
+    "metaTitle": "Extract Bank Details from Invoices | Payment Information Extraction",
+    "metaDescription": "Extract bank payment details from PDF invoices. Get account numbers, sort codes, IBAN, SWIFT codes, and payment references automatically.",
+    "faqs": [
+      {
+        "question": "What bank details can be extracted?",
+        "answer": "We extract bank account numbers, sort codes, IBAN numbers, BIC/SWIFT codes, bank names, and payment reference numbers when present in the invoice."
+      },
+      {
+        "question": "How are bank details shown in the output?",
+        "answer": "Bank payment details appear in the invoice details section of the CSV, making it easy to set up bank transfers or verify payment information."
+      },
+      {
+        "question": "Can you extract IBAN from international invoices?",
+        "answer": "Yes, our converter recognizes IBAN formats from various countries and extracts them along with associated BIC/SWIFT codes for international payments."
+      },
+      {
+        "question": "What about payment references?",
+        "answer": "If the invoice includes a payment reference number that should be used when making bank transfers, our converter will extract and include it in the output."
+      },
+      {
+        "question": "Does the tool extract multiple bank account options?",
+        "answer": "Yes, if an invoice lists multiple payment options (different currencies or bank accounts), our converter extracts all available bank details."
+      }
+    ]
+  },
+  {
+    "slug": "contact-information",
+    "title": "Extract Contact Information",
+    "description": "Extract email addresses, phone numbers, and contact details from invoices. Get vendor and customer contact information automatically.",
+    "metaTitle": "Extract Contact Information from Invoices | Email & Phone Extraction",
+    "metaDescription": "Extract email addresses, phone numbers, and contact details from PDF invoices automatically. Get vendor and customer contact information.",
+    "faqs": [
+      {
+        "question": "What contact information can be extracted?",
+        "answer": "We extract email addresses, phone numbers, fax numbers, website URLs, and any other contact details present on the invoice."
+      },
+      {
+        "question": "Are vendor and customer contacts extracted separately?",
+        "answer": "Yes, when both vendor and customer contact details are present, we extract them into separate fields so you can easily identify each party's information."
+      },
+      {
+        "question": "Can you extract multiple email addresses?",
+        "answer": "Yes, if an invoice contains multiple email addresses (billing, support, accounts), our converter extracts all of them."
+      },
+      {
+        "question": "What about international phone numbers?",
+        "answer": "Our converter recognizes international phone number formats and preserves country codes, making it easy to contact vendors globally."
+      },
+      {
+        "question": "How are contact details shown in the CSV?",
+        "answer": "Contact information appears in dedicated columns in the invoice details CSV, separate from address information, for easy reference and CRM import."
+      }
+    ]
+  },
+  {
+    "slug": "billing-addresses",
+    "title": "Extract Billing Addresses",
+    "description": "Extract billing and invoice addresses from PDF invoices. Get complete address information including street, city, postcode, and country.",
+    "metaTitle": "Extract Billing Addresses from Invoices | Address Extraction Tool",
+    "metaDescription": "Extract billing addresses from PDF invoices. Get complete address information including street, city, postcode, and country automatically.",
+    "faqs": [
+      {
+        "question": "What address information can be extracted?",
+        "answer": "We extract full billing addresses including street address, city, state/region, postcode/ZIP, and country. Both vendor and customer addresses are captured."
+      },
+      {
+        "question": "Are shipping addresses extracted too?",
+        "answer": "Yes, when invoices include separate shipping/delivery addresses, we extract them alongside billing addresses and label them clearly in the output."
+      },
+      {
+        "question": "How are addresses formatted in the CSV?",
+        "answer": "Addresses can be extracted as a single field or split into components (street, city, postcode, country) depending on how clearly they're structured in the original invoice."
+      },
+      {
+        "question": "Can you extract addresses from different countries?",
+        "answer": "Yes, our converter handles address formats from around the world, including UK, US, European, and international address structures."
+      },
+      {
+        "question": "What if the billing and shipping addresses are the same?",
+        "answer": "If addresses are identical or only one address is shown, we extract what's available. You'll see the relevant address fields populated in your CSV output."
+      }
+    ]
+  },
+  {
+    "slug": "item-descriptions",
+    "title": "Extract Item Descriptions",
+    "description": "Extract detailed product and service descriptions from invoice line items. Get full item names, specifications, and details from your invoices.",
+    "metaTitle": "Extract Item Descriptions from Invoices | Product Detail Extraction",
+    "metaDescription": "Extract detailed item descriptions from PDF invoices. Get full product names, specifications, and service details from invoice line items.",
+    "faqs": [
+      {
+        "question": "How detailed are extracted item descriptions?",
+        "answer": "We extract the full item description as shown on the invoice, including product names, specifications, sizes, colours, and any other details present in the line item."
+      },
+      {
+        "question": "Are long descriptions preserved?",
+        "answer": "Yes, even lengthy descriptions that span multiple lines in the PDF are captured completely. We don't truncate or abbreviate your item descriptions."
+      },
+      {
+        "question": "Can you extract item codes alongside descriptions?",
+        "answer": "Yes, when SKUs, part numbers, or product codes appear with descriptions, we extract both and include them in separate columns for easy reference."
+      },
+      {
+        "question": "How are service descriptions handled?",
+        "answer": "Service invoices with descriptive line items (consulting hours, project work, etc.) are extracted with full detail, including dates and time periods when mentioned."
+      },
+      {
+        "question": "What if descriptions contain special characters?",
+        "answer": "Our converter handles special characters, currency symbols, and technical notation in descriptions, preserving them accurately in the CSV output."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-notes",
+    "title": "Extract Invoice Notes and Terms",
+    "description": "Extract additional notes, payment terms, and special instructions from invoices. Capture important information beyond line items and totals.",
+    "metaTitle": "Extract Invoice Notes and Terms | Additional Information Extraction",
+    "metaDescription": "Extract notes, payment terms, and special instructions from PDF invoices. Capture important additional information automatically.",
+    "faqs": [
+      {
+        "question": "What types of notes are extracted?",
+        "answer": "We extract payment terms, special instructions, delivery notes, warranty information, terms and conditions references, and any other notes present on the invoice."
+      },
+      {
+        "question": "Where do notes appear in the CSV?",
+        "answer": "Invoice notes and terms appear in a dedicated notes column in the invoice details CSV, separate from line items and totals."
+      },
+      {
+        "question": "Can you extract payment instructions?",
+        "answer": "Yes, payment instructions like 'Please quote invoice number when paying' or specific bank transfer requirements are captured in the notes field."
+      },
+      {
+        "question": "What about late payment warnings?",
+        "answer": "Late payment fees, interest charges, and payment deadline warnings that appear on invoices are extracted and included in the notes section."
+      },
+      {
+        "question": "Are terms and conditions extracted?",
+        "answer": "Brief terms mentioned on the invoice are captured. If the invoice references separate T&C documents, we note the reference rather than the full external terms."
+      }
+    ]
   }
 ]
