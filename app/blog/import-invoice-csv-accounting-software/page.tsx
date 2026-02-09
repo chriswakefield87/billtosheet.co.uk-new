@@ -36,7 +36,7 @@ export default function BlogPostPage() {
       
       <h3 className="text-2xl font-bold mb-6">Importing into QuickBooks</h3>
       
-      <p><a title="QuickBooks invoice converter" href="https://billtosheet.com/invoice-to-csv/quickbooks">QuickBooks</a> has slightly different import processes depending on whether you're using QuickBooks Online or QuickBooks Desktop.</p>
+      <p><a title="QuickBooks invoice converter" href="https://billtosheet.com/invoice-to-csv/quickbooks">QuickBooks</a> has slightly different import processes depending on whether you're using QuickBooks Online or QuickBooks Desktop. For more details, see <a href="https://quickbooks.intuit.com/learn-support/en-uk/help-article/import-transactions/manually-import-transactions-quickbooks-self/L1KiFIsJD_GB_en_GB" target="_blank" rel="noopener">Intuit's official guide to manually importing CSV transactions</a>.</p>
       
       <h4 className="text-xl font-semibold mb-4">QuickBooks Online</h4>
       
@@ -63,7 +63,7 @@ export default function BlogPostPage() {
       
       <h3 className="text-2xl font-bold mb-6">Importing into Xero</h3>
       
-      <p><a title="Xero invoice converter" href="https://billtosheet.com/invoice-to-csv/xero">Xero</a> makes CSV imports straightforward through the bank account import feature.</p>
+      <p><a title="Xero invoice converter" href="https://billtosheet.com/invoice-to-csv/xero">Xero</a> makes CSV imports straightforward through the bank account import feature. For comprehensive instructions, check <a href="https://central.xero.com/s/article/Import-a-bank-statement" target="_blank" rel="noopener">Xero's help center on importing bank statements</a>.</p>
       
       <ol>
         <li>Go to <strong>Accounting → Bank accounts</strong></li>
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
       
       <h3 className="text-2xl font-bold mb-6">Importing into Sage</h3>
       
-      <p><a title="Sage invoice converter" href="https://billtosheet.com/invoice-to-csv/sage">Sage</a> has different import processes depending on your version.</p>
+      <p><a title="Sage invoice converter" href="https://billtosheet.com/invoice-to-csv/sage">Sage</a> has different import processes depending on your version. Refer to <a href="https://help.sagesoftware.co.uk/sage50c/27.1/en-gb/Content/Basics/Import_Data.htm" target="_blank" rel="noopener">Sage's official documentation on importing data</a> for version-specific guidance.</p>
       
       <h4 className="text-xl font-semibold mb-4">Sage 50</h4>
       

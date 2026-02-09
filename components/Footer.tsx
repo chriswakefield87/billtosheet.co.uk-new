@@ -19,6 +19,7 @@ export default function Footer() {
       { label: "Help Center", href: "/help/getting-started" },
       { label: "Comparisons", href: "/compare" },
       { label: "Blog", href: "/blog" },
+      { label: "About the Team", href: "/about" },
       { label: "Contact", href: "/contact" },
     ],
     Legal: [

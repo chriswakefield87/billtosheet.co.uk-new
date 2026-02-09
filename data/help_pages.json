@@ -470,5 +470,150 @@
         "answer": "There's no specific page limit. As long as the PDF is under 10MB, we can process invoices with any number of pages. Very long invoices (50+ pages) may take slightly longer to process."
       }
     ]
+  },
+  {
+    "slug": "conversion-errors",
+    "title": "Common Conversion Errors and Fixes",
+    "description": "Troubleshoot invoice conversion errors. Learn why conversions fail and how to fix common issues with PDF uploads and data extraction.",
+    "metaTitle": "Invoice Conversion Errors | Troubleshooting Failed Conversions",
+    "metaDescription": "Fix common invoice conversion errors. Learn why conversions fail and how to resolve PDF upload issues and data extraction problems.",
+    "faqs": [
+      {
+        "question": "Why does my conversion say 'failed'?",
+        "answer": "Conversions fail for several reasons: corrupted PDF files, password-protected documents, unsupported file types, or PDFs with no extractable text. Check the error message for specific guidance."
+      },
+      {
+        "question": "What does 'no text found' mean?",
+        "answer": "This means the PDF appears to be an image with no selectable text. Scanned invoices need OCR processing. Try re-scanning at higher quality (300 DPI minimum) for better results."
+      },
+      {
+        "question": "Why are some fields blank in my CSV?",
+        "answer": "If certain fields like vendor name or invoice number are blank, they may not be clearly labeled in the PDF or the formatting makes them hard to detect. Check the original PDF for missing information."
+      },
+      {
+        "question": "How do I fix 'file too large' errors?",
+        "answer": "Compress your PDF to under 10MB using tools like Smallpdf or Adobe's online compressor. Large files are usually caused by high-resolution images embedded in the PDF."
+      },
+      {
+        "question": "What if line items are missing or incorrect?",
+        "answer": "This usually happens with complex table layouts. Check that the original PDF has a clear table structure. Some heavily customized invoice templates may need manual review after conversion."
+      }
+    ]
+  },
+  {
+    "slug": "browser-requirements",
+    "title": "Browser Requirements and Technical Specs",
+    "description": "Learn which browsers work best with BillToSheet. Technical requirements for optimal invoice conversion performance.",
+    "metaTitle": "Browser Requirements | BillToSheet Technical Specifications",
+    "metaDescription": "Learn which browsers and devices work with BillToSheet. Technical requirements for invoice conversion and optimal performance.",
+    "faqs": [
+      {
+        "question": "Which browsers are supported?",
+        "answer": "BillToSheet works with all modern browsers: Chrome, Firefox, Safari, and Edge (latest versions). We recommend Chrome or Firefox for the best experience."
+      },
+      {
+        "question": "Can I use BillToSheet on mobile devices?",
+        "answer": "Yes, our converter works on mobile phones and tablets. The upload interface is mobile-friendly, though we recommend using a desktop browser for reviewing and downloading large batches of conversions."
+      },
+      {
+        "question": "Do I need to install any software?",
+        "answer": "No installation required. BillToSheet is entirely web-based. Just visit the website in your browser and start converting immediately."
+      },
+      {
+        "question": "What internet speed do I need?",
+        "answer": "Any standard broadband connection works fine. Upload speeds matter more than download speeds. A typical invoice PDF (500KB-2MB) uploads in seconds on most connections."
+      },
+      {
+        "question": "Does BillToSheet work offline?",
+        "answer": "No, you need an internet connection to upload PDFs and process conversions. However, once you've downloaded your CSV files, you can work with them offline."
+      }
+    ]
+  },
+  {
+    "slug": "account-management",
+    "title": "Managing Your Account and Credits",
+    "description": "Learn how to manage your BillToSheet account, track credit usage, view billing history, and update payment methods.",
+    "metaTitle": "Account Management | BillToSheet Credits and Billing",
+    "metaDescription": "Manage your BillToSheet account, track credits, view conversion history, and update payment details. Complete account management guide.",
+    "faqs": [
+      {
+        "question": "How do I check my credit balance?",
+        "answer": "Sign in to your dashboard and your current credit balance is displayed at the top of the page. You can also see it before starting any conversion."
+      },
+      {
+        "question": "Can I see my credit usage history?",
+        "answer": "Yes, your dashboard shows all past conversions with the date, invoice name, and credits used. This helps you track monthly usage and plan future credit purchases."
+      },
+      {
+        "question": "How do I update my payment method?",
+        "answer": "Go to your account settings or click the payment method link in your dashboard. You can update card details or change to a different payment method at any time."
+      },
+      {
+        "question": "Can I get invoices for credit purchases?",
+        "answer": "Yes, you'll receive an email receipt for every credit purchase. You can also download past purchase receipts from your account billing history."
+      },
+      {
+        "question": "How do I delete my account?",
+        "answer": "Contact our support team to request account deletion. We'll remove your account and all associated data within 7 days. Note that unused credits cannot be refunded."
+      }
+    ]
+  },
+  {
+    "slug": "credit-packs-comparison",
+    "title": "Comparing Credit Pack Options",
+    "description": "Compare BillToSheet credit pack sizes and pricing. Choose the right credit pack for your invoice conversion needs and budget.",
+    "metaTitle": "Credit Pack Comparison | BillToSheet Pricing Guide",
+    "metaDescription": "Compare BillToSheet credit pack options and pricing. Find the best value pack for your invoice conversion volume and budget.",
+    "faqs": [
+      {
+        "question": "What credit packs are available?",
+        "answer": "We offer three packs: 25 credits for £9 (£0.36 per invoice), 100 credits for £19 (£0.19 per invoice), and 500 credits for £49 (£0.10 per invoice). Larger packs offer better value."
+      },
+      {
+        "question": "Which pack should I choose?",
+        "answer": "Choose based on your monthly volume. For occasional use (5-20 invoices/month), get 25 credits. For regular use (20-100 invoices/month), choose 100 credits. High-volume users (100+ invoices/month) save most with 500 credits."
+      },
+      {
+        "question": "Can I buy multiple packs?",
+        "answer": "Yes, you can purchase multiple packs and they'll stack. Credits never expire, so you can buy in bulk whenever there's a good deal and use them over time."
+      },
+      {
+        "question": "Is there a subscription option?",
+        "answer": "No, we only offer pay-as-you-go credit packs with no recurring fees. This gives you flexibility to use credits when you need them without monthly commitments."
+      },
+      {
+        "question": "Do you offer enterprise pricing?",
+        "answer": "For organizations converting 1000+ invoices per month, contact us for custom enterprise pricing. We can discuss volume discounts and dedicated support options."
+      }
+    ]
+  },
+  {
+    "slug": "export-formats-explained",
+    "title": "Understanding Export Formats and File Types",
+    "description": "Complete guide to BillToSheet export formats. Learn what's included in each CSV file and Excel workbook format.",
+    "metaTitle": "Export Formats Explained | CSV and Excel File Structure",
+    "metaDescription": "Understand BillToSheet export formats. Learn what's included in invoice details CSV, line items CSV, and Excel workbook files.",
+    "faqs": [
+      {
+        "question": "What files do I get after conversion?",
+        "answer": "You get three files: invoice_details.csv (header information like vendor, dates, totals), line_items.csv (individual products/services with quantities and prices), and combined.xlsx (Excel workbook with both as separate sheets)."
+      },
+      {
+        "question": "When should I use the CSV files vs Excel?",
+        "answer": "Use CSV files for importing into accounting software (better compatibility). Use the Excel file for review, analysis, or when you want everything in one file with multiple sheets."
+      },
+      {
+        "question": "Can I customize which fields are exported?",
+        "answer": "Currently, all available fields are exported automatically. You can delete unwanted columns in Excel or your accounting software before importing."
+      },
+      {
+        "question": "What's the difference between the two CSV files?",
+        "answer": "Invoice details CSV has one row per invoice with summary information. Line items CSV has multiple rows per invoice - one row for each product/service listed on the invoice."
+      },
+      {
+        "question": "Are the Excel sheets linked to the CSVs?",
+        "answer": "No, they contain the same data but are independent files. Changes in one file don't affect the others. This lets you work with whichever format suits your workflow best."
+      }
+    ]
   }
 ]

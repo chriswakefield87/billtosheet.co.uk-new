@@ -422,5 +422,150 @@
         "answer": "Brief terms mentioned on the invoice are captured. If the invoice references separate T&C documents, we note the reference rather than the full external terms."
       }
     ]
+  },
+  {
+    "slug": "credits-refunds",
+    "title": "Extract Credits and Refunds",
+    "description": "Extract credit notes, refund amounts, and adjustment information from invoices. Track credits applied and refunds issued automatically.",
+    "metaTitle": "Extract Credits and Refunds | Invoice Credit Note Extraction",
+    "metaDescription": "Extract credit notes, refund amounts, and adjustment information from PDF invoices automatically. Track credits and refunds easily.",
+    "faqs": [
+      {
+        "question": "Can you extract credit notes?",
+        "answer": "Yes, credit notes and credit memos are extracted with their amounts shown as negative values, making them easy to identify and track separately from regular invoices."
+      },
+      {
+        "question": "How are refunds shown in the CSV?",
+        "answer": "Refund amounts appear as negative values in the totals, and refund line items are clearly marked. This makes it easy to reconcile refunds against original purchases."
+      },
+      {
+        "question": "What about partial credits?",
+        "answer": "Partial credit amounts are extracted exactly as shown on the invoice, whether they're percentage-based or fixed amounts. Both the credit and remaining balance are captured when visible."
+      },
+      {
+        "question": "Can you extract the reason for credits?",
+        "answer": "If the credit note includes a reason or explanation (damaged goods, pricing error, etc.), we extract that text and include it in the notes or description field."
+      },
+      {
+        "question": "How do store credits appear?",
+        "answer": "Store credit balances, gift card credits, and account credits are extracted and shown in the payment details section, making it easy to track customer account balances."
+      }
+    ]
+  },
+  {
+    "slug": "service-periods",
+    "title": "Extract Service Periods and Contract Terms",
+    "description": "Extract billing periods, service dates, contract terms, and subscription periods from invoices. Track when services were provided.",
+    "metaTitle": "Extract Service Periods | Billing Period and Contract Extraction",
+    "metaDescription": "Extract service periods, billing dates, and contract terms from PDF invoices automatically. Track service delivery periods and contract details.",
+    "faqs": [
+      {
+        "question": "What service period information can be extracted?",
+        "answer": "We extract service start dates, end dates, billing period descriptions (monthly, quarterly, annual), and any specific date ranges mentioned for services provided."
+      },
+      {
+        "question": "How are recurring billing periods shown?",
+        "answer": "Recurring billing periods appear with both the period covered (e.g., January 2024) and the billing frequency (monthly, annual). This helps track subscription service billing."
+      },
+      {
+        "question": "Can you extract contract renewal dates?",
+        "answer": "Yes, if renewal dates or contract end dates are shown on the invoice, we extract them and include them in the invoice details, making it easy to track upcoming renewals."
+      },
+      {
+        "question": "What about service level terms?",
+        "answer": "When invoices reference service level agreements (SLAs) or support tiers, we extract those details along with the service period information."
+      },
+      {
+        "question": "How are multi-month contracts handled?",
+        "answer": "For contracts spanning multiple months (e.g., Q1 2024 or Jan-Mar 2024), we extract the full period and start/end dates when present, making it clear what timeframe the invoice covers."
+      }
+    ]
+  },
+  {
+    "slug": "attachments-references",
+    "title": "Extract Attachments and Document References",
+    "description": "Extract references to attached documents, supporting files, and related documentation mentioned in invoices.",
+    "metaTitle": "Extract Document References | Invoice Attachment Information",
+    "metaDescription": "Extract references to attachments, supporting documents, and related files mentioned in PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "Can you extract attachment references?",
+        "answer": "Yes, when invoices mention attached documents (timesheets, delivery notes, etc.), we extract those references. Note that we extract the reference text, not the actual attached files."
+      },
+      {
+        "question": "What about related document numbers?",
+        "answer": "Related document references like delivery note numbers, packing slip IDs, or quote references mentioned on the invoice are extracted and included in the invoice details."
+      },
+      {
+        "question": "How are supporting documents noted?",
+        "answer": "References to supporting documentation appear in a separate field or in the notes section, making it clear which additional documents relate to the invoice."
+      },
+      {
+        "question": "Can you extract linked invoice numbers?",
+        "answer": "Yes, when invoices reference previous invoices, amended invoices, or related billing documents, we extract those invoice numbers for easy cross-referencing."
+      },
+      {
+        "question": "What about external document links?",
+        "answer": "If invoices contain references to external systems (like 'See portal document #12345'), we extract those references. However, we don't access external systems or follow web links."
+      }
+    ]
+  },
+  {
+    "slug": "approval-signatures",
+    "title": "Extract Approval Workflows and Signatures",
+    "description": "Extract approval information, signature details, and authorization data from invoices. Track who approved and authorized invoices.",
+    "metaTitle": "Extract Approvals and Signatures | Invoice Authorization Details",
+    "metaDescription": "Extract approval signatures, authorization details, and workflow information from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "Can you extract signature information?",
+        "answer": "We extract signature metadata like authorized signatory names and approval dates when they appear as text on the invoice. Digital signature images themselves are not extracted."
+      },
+      {
+        "question": "What approval details are captured?",
+        "answer": "Approval stamps, authorized by names, approval dates, and approval reference numbers visible on the invoice are extracted into the invoice details."
+      },
+      {
+        "question": "How are authorization codes shown?",
+        "answer": "Authorization codes, approval IDs, and transaction authorization numbers are extracted and included in dedicated fields or in the notes section for easy reference."
+      },
+      {
+        "question": "Can you identify who signed the invoice?",
+        "answer": "If the signatory's name appears as text (e.g., 'Authorized by John Smith'), we extract it. Hand-drawn signatures in image form are not converted to text."
+      },
+      {
+        "question": "What about purchase order approvals?",
+        "answer": "PO approval references, approval workflow IDs, and buyer authorization details mentioned on the invoice are extracted alongside other invoice information."
+      }
+    ]
+  },
+  {
+    "slug": "custom-fields",
+    "title": "Extract Custom Fields and Additional Data",
+    "description": "Extract custom fields, special notes, and unique identifiers from invoices. Capture invoice-specific data beyond standard fields.",
+    "metaTitle": "Extract Custom Invoice Fields | Additional Data Extraction",
+    "metaDescription": "Extract custom fields, unique identifiers, and additional data from PDF invoices automatically. Capture all invoice information.",
+    "faqs": [
+      {
+        "question": "What custom fields can be extracted?",
+        "answer": "We extract any clearly labeled custom fields visible on the invoice, including project codes, department references, cost centers, custom IDs, and any other structured data fields."
+      },
+      {
+        "question": "How are custom fields shown in the CSV?",
+        "answer": "Custom fields appear in dedicated columns when they're consistently structured, or in the notes section when they're unique to specific invoices. Field labels and values are both preserved."
+      },
+      {
+        "question": "Can you extract internal reference codes?",
+        "answer": "Yes, internal reference codes, requisition numbers, budget codes, and similar custom identifiers are extracted when they appear on the invoice."
+      },
+      {
+        "question": "What about industry-specific fields?",
+        "answer": "Industry-specific fields (construction job numbers, medical procedure codes, legal matter references, etc.) are extracted as long as they're clearly labeled in the PDF."
+      },
+      {
+        "question": "How do you handle non-standard invoice layouts?",
+        "answer": "Our system adapts to different layouts and extracts all visible structured data. Very unusual custom formats may require manual review, but most custom fields are captured automatically."
+      }
+    ]
   }
 ]

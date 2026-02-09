@@ -23,9 +23,9 @@ export default function BlogPostPage() {
       
       <h3 className="text-2xl font-bold mb-6">What's the difference?</h3>
       
-      <p><strong>CSV (Comma-Separated Values)</strong> is basically a plain text file. It's super simple – just data separated by commas. Think of it as the universal language of spreadsheets. Almost every piece of software can read it: Excel, Google Sheets, accounting software, databases, you name it.</p>
+      <p><strong><a href="https://en.wikipedia.org/wiki/Comma-separated_values" target="_blank" rel="noopener">CSV (Comma-Separated Values)</a></strong> is basically a plain text file. It's super simple – just data separated by commas. Think of it as the universal language of spreadsheets. Almost every piece of software can read it: Excel, Google Sheets, accounting software, databases, you name it.</p>
       
-      <p><strong>Excel files (.xlsx)</strong> are more sophisticated. They can contain multiple sheets, formatting, formulas, charts, and all sorts of fancy features. They're like CSV's more capable cousin, but that also means they're not always compatible with every system.</p>
+      <p><strong><a href="https://support.microsoft.com/en-us/office/file-formats-that-are-supported-in-excel-0943ff2c-6014-4e8d-aaea-b83d51d46247" target="_blank" rel="noopener">Excel files (.xlsx)</a></strong> are more sophisticated. They can contain multiple sheets, formatting, formulas, charts, and all sorts of fancy features. They're like CSV's more capable cousin, but that also means they're not always compatible with every system.</p>
       
       <h3 className="text-2xl font-bold mb-6">When to use CSV</h3>
       
