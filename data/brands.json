@@ -1218,5 +1218,432 @@
         "answer": "Yes, SSL certificate purchases and renewals are extracted with certificate type, validity period, and pricing details."
       }
     ]
+  },
+  {
+    "slug": "linkedin-ads",
+    "name": "LinkedIn Ads",
+    "category": "advertising",
+    "description": "Convert LinkedIn Ads invoices to CSV or Excel format. Extract campaign costs, ad spend, and billing details from LinkedIn advertising invoices.",
+    "metaTitle": "LinkedIn Ads Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert LinkedIn Ads invoices to CSV and Excel format. Extract campaign spend, tax details, and billing information from LinkedIn advertising invoices automatically.",
+    "exportSteps": [
+      "Log in to LinkedIn Campaign Manager",
+      "Click on your account name and select 'Billing Center'",
+      "Navigate to 'Transaction History'",
+      "Select the invoice you want to download",
+      "Click 'Download invoice' to save as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "LinkedIn Ads invoices aggregate spend by billing period rather than campaign",
+      "Tax calculations vary by country and business registration type",
+      "Currency may differ between ad account and billing currency",
+      "Sponsored Content and Sponsored InMail appear as combined charges",
+      "Multiple campaign group costs are consolidated into totals"
+    ],
+    "uniqueFields": [
+      "LinkedIn ad account ID and invoice number",
+      "Advertising spend by billing period",
+      "Tax breakdown by jurisdiction",
+      "Campaign objective types (awareness, consideration, conversion)",
+      "Billing threshold and payment terms",
+      "Currency and any conversion rates",
+      "Service fees and platform charges"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert LinkedIn Ads invoices to CSV?",
+        "answer": "Upload your LinkedIn Ads invoice PDF and our tool will extract all advertising costs, tax details, and billing information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from LinkedIn Campaign Manager?",
+        "answer": "In Campaign Manager, go to Billing Center > Transaction History, select your invoice, and click Download invoice. Then upload the PDF to our converter."
+      },
+      {
+        "question": "Does the converter handle LinkedIn ad spend details?",
+        "answer": "Yes, our tool extracts monthly advertising spend, showing the billing period and total costs. Individual campaign details may not be itemized if LinkedIn provides only aggregate totals."
+      },
+      {
+        "question": "Can I convert LinkedIn Ads invoices from multiple accounts?",
+        "answer": "Yes, upload each account's invoice separately or use bulk conversion to process invoices from multiple LinkedIn ad accounts simultaneously."
+      },
+      {
+        "question": "What about LinkedIn tax information?",
+        "answer": "Our converter extracts VAT, GST, or sales tax as shown on the invoice, with tax rates and amounts displayed separately for easy reconciliation."
+      },
+      {
+        "question": "Does the tool work with different LinkedIn billing currencies?",
+        "answer": "Yes, our converter handles LinkedIn invoices in any currency and preserves currency codes in the CSV output."
+      },
+      {
+        "question": "Can I convert historical LinkedIn Ads invoices?",
+        "answer": "Yes, any LinkedIn Ads invoice PDF can be converted regardless of age. Download historical invoices from your billing center and upload them."
+      }
+    ]
+  },
+  {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "category": "software",
+    "description": "Convert Mailchimp subscription invoices to CSV or Excel format. Extract plan costs, contact billing, and add-on charges from Mailchimp invoices.",
+    "metaTitle": "Mailchimp Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Mailchimp invoices to CSV and Excel format. Extract subscription costs, contact billing, and add-on charges from Mailchimp automatically.",
+    "exportSteps": [
+      "Log in to your Mailchimp account",
+      "Click on your profile icon and select 'Account & billing'",
+      "Navigate to 'Billing history'",
+      "Click on the invoice you want to download",
+      "Select 'Download PDF' and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Mailchimp invoices show contact-based pricing which changes monthly",
+      "Add-on features like additional users or advanced segments appear as separate charges",
+      "Tax calculations vary by country and business registration",
+      "Credits from referrals or promotions may offset monthly costs",
+      "Overage charges for exceeding email send limits appear separately"
+    ],
+    "uniqueFields": [
+      "Mailchimp account ID and invoice number",
+      "Monthly plan level (Essentials, Standard, Premium)",
+      "Contact count and contact-based pricing",
+      "Email send volume and overage charges",
+      "Add-on features and costs",
+      "Tax breakdown by jurisdiction",
+      "Credits and promotional discounts applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Mailchimp invoices to CSV?",
+        "answer": "Upload your Mailchimp invoice PDF and our tool will extract plan costs, contact charges, add-ons, and tax information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Mailchimp?",
+        "answer": "In Mailchimp, go to Account & billing > Billing history, select your invoice, and click Download PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle contact-based pricing?",
+        "answer": "Yes, our tool extracts contact count and per-contact pricing when shown on the invoice, making it clear how your Mailchimp costs are calculated."
+      },
+      {
+        "question": "Can I convert invoices with overage charges?",
+        "answer": "Yes, email send overages and other usage-based charges are extracted as separate line items, making it easy to track variable costs month-to-month."
+      },
+      {
+        "question": "What about Mailchimp add-on features?",
+        "answer": "Add-on costs for features like additional users, advanced segmentation, or comparative reporting are extracted as individual line items with descriptions."
+      },
+      {
+        "question": "Does the tool work with Mailchimp credits?",
+        "answer": "Yes, referral credits, promotional credits, or account credits that offset your monthly invoice are extracted and shown clearly in the CSV output."
+      },
+      {
+        "question": "Can I convert Mailchimp annual invoices?",
+        "answer": "Yes, annual subscription invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual discount applied."
+      }
+    ]
+  },
+  {
+    "slug": "twilio",
+    "name": "Twilio",
+    "category": "software",
+    "description": "Convert Twilio invoices to CSV or Excel format. Extract usage charges, phone number costs, and API usage billing from Twilio invoices.",
+    "metaTitle": "Twilio Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Twilio invoices to CSV and Excel format. Extract usage charges, phone number costs, and messaging fees from Twilio invoices automatically.",
+    "exportSteps": [
+      "Log in to your Twilio Console",
+      "Navigate to 'Billing' in the main menu",
+      "Click on 'Invoices' or 'Billing history'",
+      "Select the invoice you want to download",
+      "Click 'Download PDF' and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Twilio invoices itemize usage by service type (SMS, voice, video, etc.)",
+      "Phone number rental charges appear separately from usage charges",
+      "International rates vary significantly by country",
+      "Tax calculations depend on service type and delivery location",
+      "Multiple subaccounts may generate consolidated invoices"
+    ],
+    "uniqueFields": [
+      "Twilio account SID and invoice number",
+      "Usage breakdown by service (SMS, voice, WhatsApp, etc.)",
+      "Phone number rental costs",
+      "Per-message or per-minute pricing",
+      "International usage surcharges",
+      "Tax by service type and location",
+      "Subaccount allocations"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Twilio invoices to CSV?",
+        "answer": "Upload your Twilio invoice PDF and our tool will extract usage charges, phone number costs, service breakdown, and tax information into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Twilio?",
+        "answer": "In Twilio Console, go to Billing > Invoices, select your invoice, and click Download PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle different Twilio services?",
+        "answer": "Yes, our tool extracts usage charges for SMS, voice calls, video, WhatsApp Business, and other Twilio services, showing each as separate line items."
+      },
+      {
+        "question": "Can I convert invoices with phone number rental charges?",
+        "answer": "Yes, phone number rental costs are extracted separately from usage charges, making it easy to track your fixed monthly costs vs variable usage."
+      },
+      {
+        "question": "What about international Twilio charges?",
+        "answer": "Our converter extracts international usage and shows country-specific rates when itemized on the invoice, helping you track global messaging and calling costs."
+      },
+      {
+        "question": "Does the tool work with Twilio subaccounts?",
+        "answer": "Yes, if your invoice breaks down costs by subaccount, our converter extracts those allocations, making it easy to track usage by project or department."
+      },
+      {
+        "question": "Can I convert Twilio tax invoices from different countries?",
+        "answer": "Yes, our converter handles Twilio invoices from any region and preserves tax information regardless of jurisdiction."
+      }
+    ]
+  },
+  {
+    "slug": "salesforce",
+    "name": "Salesforce",
+    "category": "software",
+    "description": "Convert Salesforce subscription invoices to CSV or Excel format. Extract license costs, user charges, and add-on features from Salesforce billing invoices.",
+    "metaTitle": "Salesforce Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Salesforce invoices to CSV and Excel format. Extract subscription costs, user licenses, and add-on charges from Salesforce automatically.",
+    "exportSteps": [
+      "Log in to Salesforce as an administrator",
+      "Click the gear icon and select 'Setup'",
+      "Navigate to 'Billing' under Company Settings",
+      "Click on 'Invoices' to view billing history",
+      "Download the invoice as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Salesforce invoices itemize by edition and number of users",
+      "Add-on products like Pardot or Marketing Cloud appear as separate lines",
+      "Annual contracts show full-year costs rather than monthly breakdown",
+      "Tax varies by region and service delivery location",
+      "Storage and data limits may incur additional charges"
+    ],
+    "uniqueFields": [
+      "Salesforce org ID and invoice number",
+      "Edition type (Essentials, Professional, Enterprise, Unlimited)",
+      "User license count and per-user pricing",
+      "Add-on products and features",
+      "Storage and data usage charges",
+      "Tax breakdown by jurisdiction",
+      "Contract term and billing period"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Salesforce invoices to CSV?",
+        "answer": "Upload your Salesforce invoice PDF and our tool will extract subscription details, user licenses, add-on costs, and tax information into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Salesforce?",
+        "answer": "In Salesforce Setup, go to Company Settings > Billing > Invoices, select your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle different Salesforce editions?",
+        "answer": "Yes, our tool works with invoices from all Salesforce editions including Essentials, Professional, Enterprise, and Unlimited, extracting pricing for each."
+      },
+      {
+        "question": "Can I convert invoices with add-on products?",
+        "answer": "Yes, add-on products like Sales Cloud, Service Cloud, Marketing Cloud, or Pardot are extracted as separate line items with their individual costs."
+      },
+      {
+        "question": "What about per-user licensing?",
+        "answer": "Our converter extracts user count and per-user pricing, making it clear how your Salesforce costs scale with team size."
+      },
+      {
+        "question": "Does the tool handle Salesforce storage charges?",
+        "answer": "Yes, additional storage fees or data usage charges that appear on your invoice are extracted as separate line items."
+      },
+      {
+        "question": "Can I convert annual Salesforce contracts?",
+        "answer": "Yes, annual contract invoices are fully supported. Our converter extracts the contract term, annual cost, and any annual payment discounts."
+      }
+    ]
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "category": "software",
+    "description": "Convert Notion subscription invoices to CSV or Excel format. Extract workspace costs, member charges, and add-on features from Notion billing invoices.",
+    "metaTitle": "Notion Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Notion invoices to CSV and Excel format. Extract subscription costs, member billing, and add-on charges from Notion automatically.",
+    "exportSteps": [
+      "Log in to your Notion workspace as an admin",
+      "Click 'Settings & members' in the sidebar",
+      "Navigate to 'Billing & plans'",
+      "Click on 'View billing history'",
+      "Download the invoice as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Notion invoices show per-member pricing that changes as team size changes",
+      "Annual subscriptions show full-year cost rather than monthly breakdown",
+      "Educational discounts may apply and appear as credits",
+      "Tax calculations vary by country and business status",
+      "Add-on features like AI credits appear as separate charges"
+    ],
+    "uniqueFields": [
+      "Notion workspace ID and invoice number",
+      "Plan type (Plus, Business, Enterprise)",
+      "Member count and per-member pricing",
+      "Billing period (monthly or annual)",
+      "AI add-on credits purchased",
+      "Tax breakdown by jurisdiction",
+      "Discounts applied (annual, educational, etc.)"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Notion invoices to CSV?",
+        "answer": "Upload your Notion invoice PDF and our tool will extract subscription costs, member charges, and billing details into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Notion?",
+        "answer": "In Notion, go to Settings & members > Billing & plans > View billing history, select your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle per-member pricing?",
+        "answer": "Yes, our tool extracts member count and per-member pricing when shown on the invoice, making it clear how costs scale with team size."
+      },
+      {
+        "question": "Can I convert Notion annual subscription invoices?",
+        "answer": "Yes, annual invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "What about Notion AI credits?",
+        "answer": "Add-on AI credits that appear on your invoice are extracted as separate line items, making it easy to track AI usage costs separately from base subscription."
+      },
+      {
+        "question": "Does the tool work with Notion educational discounts?",
+        "answer": "Yes, educational discounts and other promotional credits are extracted and shown in the CSV, along with the original and discounted prices."
+      },
+      {
+        "question": "Can I convert invoices from different Notion workspaces?",
+        "answer": "Yes, upload invoices from any Notion workspace. Use bulk conversion to process multiple workspace invoices simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "category": "software",
+    "description": "Convert Slack subscription invoices to CSV or Excel format. Extract workspace costs, user charges, and add-on features from Slack billing invoices.",
+    "metaTitle": "Slack Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Slack invoices to CSV and Excel format. Extract subscription costs, user billing, and add-on charges from Slack automatically.",
+    "exportSteps": [
+      "Log in to your Slack workspace as an admin",
+      "Click on your workspace name and select 'Settings & administration'",
+      "Navigate to 'Billing'",
+      "Click on 'View billing history' or 'Invoices'",
+      "Download the invoice as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Slack invoices show per-active-user pricing that varies monthly",
+      "Annual subscriptions show full-year cost rather than monthly breakdown",
+      "App marketplace purchases may appear on separate invoices",
+      "Tax calculations vary by country and registration type",
+      "Enterprise Grid invoices have complex multi-workspace billing"
+    ],
+    "uniqueFields": [
+      "Slack workspace ID and invoice number",
+      "Plan type (Pro, Business+, Enterprise Grid)",
+      "Active user count and per-user pricing",
+      "Billing period dates",
+      "App marketplace purchases",
+      "Tax breakdown by jurisdiction",
+      "Credits and discounts applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Slack invoices to CSV?",
+        "answer": "Upload your Slack invoice PDF and our tool will extract subscription costs, user charges, and billing details into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Slack?",
+        "answer": "In Slack, go to Settings & administration > Billing > View billing history, select your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle per-user pricing?",
+        "answer": "Yes, our tool extracts active user count and per-user pricing when shown on the invoice, making it clear how costs vary with team size."
+      },
+      {
+        "question": "Can I convert Slack annual subscription invoices?",
+        "answer": "Yes, annual invoices are fully supported. Our converter extracts the contract term, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "What about Slack app marketplace charges?",
+        "answer": "App purchases from the Slack marketplace that appear on your invoice are extracted as separate line items with app names and costs."
+      },
+      {
+        "question": "Does the tool work with Enterprise Grid invoices?",
+        "answer": "Yes, our converter handles Enterprise Grid invoices including multi-workspace billing and complex organizational structures."
+      },
+      {
+        "question": "Can I convert invoices from multiple Slack workspaces?",
+        "answer": "Yes, upload each workspace's invoice separately or use bulk conversion to process invoices from multiple workspaces at once."
+      }
+    ]
+  },
+  {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "category": "software",
+    "description": "Convert HubSpot subscription invoices to CSV or Excel format. Extract hub costs, contact tiers, and add-on features from HubSpot billing invoices.",
+    "metaTitle": "HubSpot Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert HubSpot invoices to CSV and Excel format. Extract Marketing Hub, Sales Hub, and Service Hub costs from HubSpot invoices automatically.",
+    "exportSteps": [
+      "Log in to your HubSpot account as a super admin",
+      "Click on the settings icon (gear) in the main navigation",
+      "Navigate to 'Account & billing' > 'Billing & subscriptions'",
+      "Click on 'View invoice history'",
+      "Download the invoice as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "HubSpot invoices combine multiple Hubs (Marketing, Sales, Service, CMS) into one bill",
+      "Contact tier pricing means costs change as contact database grows",
+      "Add-on features like additional users or API calls appear separately",
+      "Tax calculations vary by region and product type",
+      "Annual contracts show full-year amounts rather than monthly breakdown"
+    ],
+    "uniqueFields": [
+      "HubSpot portal ID and invoice number",
+      "Hub subscriptions (Marketing, Sales, Service, CMS, Operations)",
+      "Contact tier and tier-based pricing",
+      "Additional user seats",
+      "Add-on features and costs",
+      "Tax breakdown by jurisdiction",
+      "Annual vs monthly billing terms"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert HubSpot invoices to CSV?",
+        "answer": "Upload your HubSpot invoice PDF and our tool will extract Hub subscriptions, contact tier pricing, add-ons, and tax information into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from HubSpot?",
+        "answer": "In HubSpot, go to Settings > Account & billing > Billing & subscriptions > View invoice history, select your invoice, and download as PDF."
+      },
+      {
+        "question": "Does the converter handle multiple Hub subscriptions?",
+        "answer": "Yes, our tool extracts each Hub (Marketing, Sales, Service, etc.) as a separate line item with its tier level and cost."
+      },
+      {
+        "question": "Can I convert invoices with contact tier pricing?",
+        "answer": "Yes, contact tier information is extracted when shown on the invoice, making it clear which pricing tier you're on and what the tier includes."
+      },
+      {
+        "question": "What about HubSpot add-on users?",
+        "answer": "Additional user seats beyond what's included in your plan are extracted as separate line items with per-user pricing."
+      },
+      {
+        "question": "Does the tool work with HubSpot annual contracts?",
+        "answer": "Yes, annual contract invoices are fully supported. Our converter extracts the full contract value and billing period."
+      },
+      {
+        "question": "Can I convert HubSpot invoices from different portals?",
+        "answer": "Yes, upload invoices from any HubSpot portal. Use bulk conversion to process invoices from multiple portals simultaneously."
+      }
+    ]
   }
 ]

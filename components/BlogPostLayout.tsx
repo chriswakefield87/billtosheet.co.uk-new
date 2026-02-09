@@ -11,6 +11,7 @@ interface BlogPost {
   category: string;
   author?: string;
   readTime?: string;
+  updatedDate?: string;
 }
 
 interface BlogPostLayoutProps {
@@ -58,9 +59,22 @@ export default function BlogPostLayout({ post, children }: BlogPostLayoutProps) 
               <span className="gradient-text">{post.title}</span>
             </h1>
 
-            {post.author && (
-              <p className="text-gray-600">By {post.author}</p>
-            )}
+            <div className="text-gray-600 space-y-1">
+              {post.author && (
+                <p>
+                  By <Link href="/about" className="text-primary-600 hover:text-primary-700 font-medium">{post.author}</Link>
+                </p>
+              )}
+              {post.updatedDate && (
+                <p className="text-sm text-gray-500">
+                  Updated: {new Date(post.updatedDate).toLocaleDateString("en-GB", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Article Content */}

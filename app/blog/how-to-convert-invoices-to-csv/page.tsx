@@ -23,7 +23,7 @@ export default function BlogPostPage() {
       
       <h3 className="text-2xl font-bold mb-6">Why convert invoices to CSV?</h3>
       
-      <p>Before we dive into the how, let's talk about the why. CSV files are the gold standard for importing data into accounting software. They're simple, universal, and work with pretty much everything – QuickBooks, Xero, Sage, Excel, Google Sheets, you name it.</p>
+      <p>Before we dive into the how, let's talk about the why. <a href="https://en.wikipedia.org/wiki/Comma-separated_values" target="_blank" rel="noopener">CSV (Comma-Separated Values)</a> files are the gold standard for importing data into accounting software. They're simple, universal, and work with pretty much everything – QuickBooks, Xero, Sage, Excel, Google Sheets, you name it.</p>
       
       <p>Instead of manually typing invoice details into your accounting system (which takes forever and is prone to errors), you can convert a PDF to CSV and import it in seconds. It's a game-changer for anyone dealing with multiple invoices.</p>
       
@@ -70,7 +70,7 @@ export default function BlogPostPage() {
         <li>Review and confirm the import</li>
       </ol>
       
-      <p>Most modern accounting software makes this pretty intuitive. If you're not sure how to do it in your specific software, check their help documentation – they usually have step-by-step guides for CSV imports.</p>
+      <p>Most modern accounting software makes this pretty intuitive. For detailed guidance, see our <a title="Importing into accounting software" href="https://billtosheet.com/blog/import-invoice-csv-accounting-software">guide on importing CSV files into QuickBooks, Xero, and Sage</a>.</p>
       
       <h3 className="text-2xl font-bold mb-6">Tips for best results</h3>
       

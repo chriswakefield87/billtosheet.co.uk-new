@@ -1,5 +1,14 @@
 [
   {
+    "slug": "invoice-conversion-errors-fixes",
+    "title": "Common Invoice Conversion Errors and How to Fix Them",
+    "excerpt": "Troubleshoot PDF to CSV conversion issues with our comprehensive guide. Learn how to fix poor scan quality, missing data, formatting problems, and more.",
+    "date": "2026-02-09",
+    "category": "Troubleshooting",
+    "author": "BillToSheet Team",
+    "readTime": "8 min read"
+  },
+  {
     "slug": "import-invoice-csv-accounting-software",
     "title": "How to Import Invoice CSV into QuickBooks, Xero & Sage",
     "excerpt": "Step-by-step guide to importing your converted invoice CSV files into popular accounting software. Learn the exact process for QuickBooks, Xero, and Sage.",
@@ -15,7 +24,8 @@
     "date": "2026-01-15",
     "category": "Guides",
     "author": "BillToSheet Team",
-    "readTime": "8 min read"
+    "readTime": "8 min read",
+    "updatedDate": "2026-01-27"
   },
   {
     "slug": "benefits-of-invoice-automation",
@@ -24,7 +34,8 @@
     "date": "2026-01-10",
     "category": "Tips",
     "author": "BillToSheet Team",
-    "readTime": "6 min read"
+    "readTime": "6 min read",
+    "updatedDate": "2026-01-27"
   },
   {
     "slug": "csv-vs-excel-for-invoices",
@@ -33,6 +44,7 @@
     "date": "2026-01-05",
     "category": "Comparisons",
     "author": "BillToSheet Team",
-    "readTime": "5 min read"
+    "readTime": "5 min read",
+    "updatedDate": "2026-01-27"
   }
 ]

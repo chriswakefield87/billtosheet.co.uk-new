@@ -24,7 +24,7 @@ export default function BlogPostPage() {
       <p><img src="/benefits-of-automating-invoice-data-entry.png" alt="Benefits of automating invoice data entry" /></p>
       <h3 className="text-2xl font-bold mb-6">What is invoice automation?</h3>
       <p>Put simply, it can mean many things depending on your current workflow. Say, for example, you pay for a lot of business expenses online via PayPal, like ChatGPT subscriptions or material tools. These are all expenses that you can use to offset your business taxes.&nbsp;</p>
-      <p>Downloading these invoice PDFs and converting them to CSV files means you can open them in one Excel file and count your totals for allowable expenses automatically.</p>
+      <p>Downloading these invoice PDFs and converting them to CSV files means you can open them in one Excel file and count your totals for allowable expenses automatically. According to <a href="https://www.accountingtoday.com/news/automation-adoption-growing-in-accounting" target="_blank" rel="noopener">Accounting Today</a>, automation adoption in accounting workflows has significantly increased efficiency across the industry.</p>
       <p><em>This is the power of invoice automation</em></p>
       <div>
         <h3 className="text-2xl font-bold mb-6">5 Benefits of Automating Invoice Data Entry</h3>
@@ -33,7 +33,7 @@ export default function BlogPostPage() {
             <p data-start="114" data-end="278"><strong data-start="114" data-end="139">Saves time and labour</strong> &ndash; Automatically extracting invoice data eliminates manual keying, freeing staff to focus on higher-value work instead of repetitive admin.</p>
           </li>
           <li data-start="280" data-end="449">
-            <p data-start="282" data-end="449"><strong data-start="282" data-end="305">Reduces human error</strong> &ndash; OCR and structured extraction significantly cut down typos, missed fields, and inconsistent formatting that commonly occur with manual entry.</p>
+            <p data-start="282" data-end="449"><strong data-start="282" data-end="305">Reduces human error</strong> &ndash; <a href="https://en.wikipedia.org/wiki/Optical_character_recognition" target="_blank" rel="noopener">OCR (Optical Character Recognition)</a> and structured extraction significantly cut down typos, missed fields, and inconsistent formatting that commonly occur with manual entry.</p>
           </li>
           <li data-start="451" data-end="619">
             <p data-start="453" data-end="619"><strong data-start="453" data-end="487">Speeds up accounting workflows</strong> &ndash; CSV files can be imported directly into accounting, ERP, or spreadsheet systems, accelerating approvals, payments, and reporting.</p>
