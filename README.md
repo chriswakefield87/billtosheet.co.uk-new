@@ -337,7 +337,24 @@ For the MVP, invoice extraction is mocked with sample data. To implement real ex
 4. Extract actual fields from PDF content
 5. Return structured InvoiceData object
 
-## Deployment Considerations
+## Deployment
+
+BillToSheet supports deployment to **Digital Ocean** (VPS) and **Vercel**. Automated deployment via GitHub Actions is available for Digital Ocean.
+
+### Deployment Guides
+
+- **[DEPLOYMENT.md](./DEPLOYMENT.md)** – Complete Digital Ocean deployment guide: server setup, MySQL (managed or self-hosted), Nginx, SSL, PM2, cron jobs, and troubleshooting
+- **[.github/DEPLOYMENT_SETUP.md](./.github/DEPLOYMENT_SETUP.md)** – GitHub Actions CI/CD setup: SSH keys, secrets configuration, and automated deploy-on-push
+
+### Quick Start (Digital Ocean)
+
+1. Create a Digital Ocean Droplet (Ubuntu 22.04 LTS)
+2. Configure GitHub Actions secrets (`SSH_HOST`, `SSH_USER`, `SSH_PRIVATE_KEY`)
+3. Push to your main branch to trigger deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for full instructions.
+
+### Production Checklist
 
 When deploying to production:
 
