@@ -235,11 +235,11 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-8 space-x-4">
-            <Link href="/invoice-to-excel" className="btn-primary">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+            <Link href="/invoice-to-excel" className="btn-primary w-full sm:w-auto">
               Convert to Excel
             </Link>
-            <Link href="/invoice-to-csv" className="btn-secondary">
+            <Link href="/invoice-to-csv" className="btn-secondary w-full sm:w-auto">
               View All Converters
             </Link>
           </div>
