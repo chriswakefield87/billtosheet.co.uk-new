@@ -46,5 +46,50 @@
     "author": "BillToSheet Team",
     "readTime": "5 min read",
     "updatedDate": "2026-01-27"
+  },
+  {
+    "slug": "managing-multi-currency-invoices",
+    "title": "Managing Multi-Currency Invoices: A Practical Guide",
+    "excerpt": "Learn how to convert and reconcile invoices in multiple currencies. Handle exchange rates, VAT, and international supplier invoices with confidence.",
+    "date": "2026-02-12",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "bulk-invoice-conversion-best-practices",
+    "title": "Bulk Invoice Conversion: Best Practices for Monthly Processing",
+    "excerpt": "Streamline your monthly invoice processing with these bulk conversion tips. Learn how to organise files, track conversions, and import efficiently.",
+    "date": "2026-02-11",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "understanding-invoice-line-item-structure",
+    "title": "Understanding Invoice Line Item Structure",
+    "excerpt": "A guide to how invoice line items are structured in CSV and Excel output. Learn about quantities, unit prices, tax, and line totals.",
+    "date": "2026-02-10",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "preparing-scanned-invoices-for-conversion",
+    "title": "Preparing Scanned Invoices for Accurate Conversion",
+    "excerpt": "Get better results from scanned invoice PDFs. Tips on resolution, file size, and quality for optimal data extraction accuracy.",
+    "date": "2026-02-08",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "invoice-extraction-for-freelancers",
+    "title": "Invoice Data Extraction for Freelancers and Small Businesses",
+    "excerpt": "How freelancers and small businesses can use invoice conversion to automate expense tracking, client billing reconciliation, and tax preparation.",
+    "date": "2026-02-07",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
   }
 ]

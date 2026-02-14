@@ -615,5 +615,150 @@
         "answer": "No, they contain the same data but are independent files. Changes in one file don't affect the others. This lets you work with whichever format suits your workflow best."
       }
     ]
+  },
+  {
+    "slug": "mobile-usage",
+    "title": "Using BillToSheet on Mobile Devices",
+    "description": "Learn how to convert invoices on your phone or tablet. Tips for mobile uploads, downloads, and accessing your conversion history on the go.",
+    "metaTitle": "BillToSheet on Mobile | Convert Invoices on Phone or Tablet",
+    "metaDescription": "Use BillToSheet on mobile devices. Convert invoice PDFs on your phone or tablet. Tips for mobile uploads and accessing conversion history.",
+    "faqs": [
+      {
+        "question": "Does BillToSheet work on mobile phones?",
+        "answer": "Yes, BillToSheet is fully responsive and works in mobile browsers. You can upload PDFs, convert invoices, and download CSV/Excel files directly on your phone."
+      },
+      {
+        "question": "How do I upload invoices from my phone?",
+        "answer": "Tap the upload area and select a file from your device storage, or use 'Take photo' if your phone can save photos as PDF. You can also use cloud storage apps to access PDFs."
+      },
+      {
+        "question": "Can I access my conversion history on mobile?",
+        "answer": "Yes, sign in to your account and your dashboard with conversion history is available on mobile. You can re-download files from your phone or tablet."
+      },
+      {
+        "question": "Are there any mobile limitations?",
+        "answer": "Bulk conversion works on mobile, but uploading many files may be slower. For large batches (20+ invoices), a desktop browser is recommended for the best experience."
+      },
+      {
+        "question": "Can I use BillToSheet offline?",
+        "answer": "No, you need an internet connection to upload and convert. Once downloaded, you can view your CSV and Excel files offline in compatible apps."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-validation",
+    "title": "Validating Extracted Invoice Data",
+    "description": "Learn how to validate and verify extracted invoice data before importing into your accounting system. Spot and fix common extraction issues.",
+    "metaTitle": "Validate Invoice Data | Check Extracted Data Before Import",
+    "metaDescription": "Validate extracted invoice data before import. Learn how to verify totals, line items, and spot common extraction issues.",
+    "faqs": [
+      {
+        "question": "Why should I validate extracted data?",
+        "answer": "Validation catches any extraction errors before they enter your accounting system. Checking totals, line item sums, and key fields ensures data integrity."
+      },
+      {
+        "question": "What should I check before importing?",
+        "answer": "Verify that line item totals sum to the subtotal, tax amounts match expected rates, invoice numbers are correct, and dates are in the right format for your system."
+      },
+      {
+        "question": "How do I spot missing line items?",
+        "answer": "Compare the line item count and total from the CSV with the original PDF. If the subtotal doesn't match the sum of line totals, some items may be missing."
+      },
+      {
+        "question": "What if totals don't match?",
+        "answer": "Check for discounts, shipping, or rounding differences. Our converter extracts what's in the PDF - if the original has calculation errors, those will appear in the output."
+      },
+      {
+        "question": "Can I validate in Excel?",
+        "answer": "Yes, open the Excel file and use formulas to sum line items, check totals, and compare against the invoice details sheet. Excel is ideal for quick validation."
+      }
+    ]
+  },
+  {
+    "slug": "handling-duplicate-invoices",
+    "title": "Handling Duplicate and Amended Invoices",
+    "description": "Learn how to identify and handle duplicate invoices, credit notes, and amended invoices when converting and importing invoice data.",
+    "metaTitle": "Duplicate Invoices | Handling Credits and Amendments",
+    "metaDescription": "Handle duplicate invoices, credit notes, and amendments. Learn how to identify and process corrected or replacement invoices.",
+    "faqs": [
+      {
+        "question": "How do I identify duplicate invoices?",
+        "answer": "Check invoice numbers - duplicates often have the same number. Amended invoices may have a suffix (e.g., -R1) or reference the original. Our converter extracts invoice numbers for easy comparison."
+      },
+      {
+        "question": "How are credit notes shown in the output?",
+        "answer": "Credit notes are extracted with negative amounts. The invoice number and description will indicate it's a credit. Use the CSV to filter or sort by amount to find credits."
+      },
+      {
+        "question": "What about amended or replacement invoices?",
+        "answer": "Amended invoices are converted like any other. Check the invoice number and any 'replaces' or 'cancels' references. You may need to exclude the original when importing if the amended version supersedes it."
+      },
+      {
+        "question": "Can I convert both an invoice and its credit note?",
+        "answer": "Yes, convert each separately. Both will appear in your conversion history. The credit note will show negative amounts for easy reconciliation against the original invoice."
+      },
+      {
+        "question": "How do I avoid importing duplicates?",
+        "answer": "Before importing, sort your CSV by invoice number and remove or flag duplicates. Most accounting software will also warn or reject duplicate invoice numbers during import."
+      }
+    ]
+  },
+  {
+    "slug": "international-invoice-formats",
+    "title": "Working with International Invoice Formats",
+    "description": "Learn how BillToSheet handles invoices from different countries. Date formats, currency symbols, tax codes, and regional invoice structures.",
+    "metaTitle": "International Invoices | Multi-Country Invoice Formats",
+    "metaDescription": "Convert international invoices. Handle date formats, currencies, VAT codes, and regional invoice structures from around the world.",
+    "faqs": [
+      {
+        "question": "What international formats are supported?",
+        "answer": "BillToSheet works with invoices from any country. We handle various date formats (DD/MM/YYYY, MM/DD/YYYY, YYYY-MM-DD), currency symbols, and tax formats (VAT, GST, sales tax)."
+      },
+      {
+        "question": "How are dates formatted in the output?",
+        "answer": "Dates are exported in ISO format (YYYY-MM-DD) to avoid ambiguity. This works universally and can be reformatted in Excel for your region if needed."
+      },
+      {
+        "question": "Does the converter handle different tax systems?",
+        "answer": "Yes, we extract VAT numbers, tax rates, and tax amounts regardless of the tax system. EU VAT, UK VAT, US sales tax, Australian GST, and others are all supported."
+      },
+      {
+        "question": "What about non-Latin character sets?",
+        "answer": "Our converter handles UTF-8 encoding and can extract text in various languages. Invoice text in German, French, Spanish, and other languages is preserved in the output."
+      },
+      {
+        "question": "Are currency symbols preserved?",
+        "answer": "Yes, currency codes and symbols are extracted and preserved. Multi-currency invoices show each amount with its currency for accurate reconciliation."
+      }
+    ]
+  },
+  {
+    "slug": "saving-time-tips",
+    "title": "Quick Tips for Saving Time with Invoice Conversion",
+    "description": "Shortcuts and tips to speed up your invoice conversion workflow. Organise files, use bulk conversion effectively, and streamline your import process.",
+    "metaTitle": "Invoice Conversion Tips | Save Time with BillToSheet",
+    "metaDescription": "Quick tips to save time with invoice conversion. Organise files, use bulk conversion, and streamline your CSV import workflow.",
+    "faqs": [
+      {
+        "question": "What's the fastest way to convert multiple invoices?",
+        "answer": "Use bulk conversion - upload all your PDFs at once. BillToSheet processes them concurrently, so 20 invoices take roughly the same time as 1. Sign in first to access bulk conversion."
+      },
+      {
+        "question": "How should I organise files before converting?",
+        "answer": "Put all invoice PDFs in one folder. Use clear filenames (e.g., vendor_date.pdf) so you can easily match converted files to originals. Convert in batches by month or vendor for easier import."
+      },
+      {
+        "question": "Can I speed up the import process?",
+        "answer": "Save your accounting software's import column mapping after the first import. Subsequent imports will be faster. Our consistent CSV structure means mapping once works for all invoices."
+      },
+      {
+        "question": "Should I convert as soon as I receive invoices?",
+        "answer": "Converting promptly avoids backlog. Many users convert invoices the same day they receive them, keeping their books up to date with minimal effort."
+      },
+      {
+        "question": "What's the best way to handle recurring vendor invoices?",
+        "answer": "Convert them in a batch each month. Recurring vendors often have consistent formats, so validation is quick. Download all at once and import into your accounting software in one go."
+      }
+    ]
   }
 ]
