@@ -567,5 +567,150 @@
         "answer": "Our system adapts to different layouts and extracts all visible structured data. Very unusual custom formats may require manual review, but most custom fields are captured automatically."
       }
     ]
+  },
+  {
+    "slug": "delivery-dates",
+    "title": "Extract Delivery Dates and Expected Delivery",
+    "description": "Extract delivery dates, expected delivery windows, and shipping timelines from invoices. Track when orders were or will be delivered.",
+    "metaTitle": "Extract Delivery Dates from Invoices | Expected Delivery Extraction",
+    "metaDescription": "Extract delivery dates and expected delivery information from PDF invoices. Get shipping timelines and delivery windows automatically.",
+    "faqs": [
+      {
+        "question": "What delivery date information can be extracted?",
+        "answer": "We extract expected delivery dates, delivery windows, ship-by dates, and any delivery timeline information present on the invoice."
+      },
+      {
+        "question": "How are delivery dates shown in the output?",
+        "answer": "Delivery dates appear in the invoice details section of the CSV, making it easy to track order fulfillment and expected arrival times."
+      },
+      {
+        "question": "Can you extract multiple delivery dates?",
+        "answer": "Yes, if an invoice references multiple delivery dates (e.g., for split shipments), our converter extracts all of them."
+      },
+      {
+        "question": "What about delivery time windows?",
+        "answer": "When invoices include specific delivery windows (e.g., 'Delivery between 9am-12pm'), we extract that information when it appears as text."
+      },
+      {
+        "question": "Does the tool work with international date formats?",
+        "answer": "Yes, our converter recognizes various date formats (DD/MM/YYYY, MM/DD/YYYY, YYYY-MM-DD) and normalises them in the output."
+      }
+    ]
+  },
+  {
+    "slug": "unit-of-measure",
+    "title": "Extract Unit of Measure (UOM)",
+    "description": "Extract units of measure from invoice line items including each, kg, litres, hours, and other quantity units. Track product quantities by their measurement unit.",
+    "metaTitle": "Extract Unit of Measure from Invoices | UOM Data Extraction",
+    "metaDescription": "Extract units of measure (UOM) from PDF invoices. Get quantity units like each, kg, litres, hours from line items automatically.",
+    "faqs": [
+      {
+        "question": "What units of measure can be extracted?",
+        "answer": "We extract any unit of measure present in line items: each/ea, kg, g, litres, ml, hours, days, metres, boxes, packs, and other standard or custom UOMs."
+      },
+      {
+        "question": "How are UOMs shown in the line items CSV?",
+        "answer": "Units of measure appear in a dedicated column alongside quantity and unit price, making it easy to understand what each quantity represents."
+      },
+      {
+        "question": "Can you extract service hour units?",
+        "answer": "Yes, when line items show hours, days, or other time-based units (e.g., consulting hours), we extract them along with the quantity."
+      },
+      {
+        "question": "What about weight and volume units?",
+        "answer": "Weight units (kg, lb, g) and volume units (litres, gallons, ml) are extracted when they appear in the invoice line items."
+      },
+      {
+        "question": "Does the tool handle different UOM formats?",
+        "answer": "Yes, our converter recognises various UOM abbreviations and spellings commonly used in business invoices across different industries."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-payment-status",
+    "title": "Extract Invoice and Payment Status",
+    "description": "Extract payment status, paid/unpaid indicators, and invoice state from invoices. Track which invoices have been settled and which are outstanding.",
+    "metaTitle": "Extract Invoice Payment Status | Paid/Unpaid Extraction",
+    "metaDescription": "Extract payment status and invoice state from PDF invoices. Identify paid, unpaid, and partially paid invoices automatically.",
+    "faqs": [
+      {
+        "question": "What payment status information can be extracted?",
+        "answer": "We extract status indicators like 'Paid', 'Unpaid', 'Partially Paid', 'Overdue', payment dates, and any status text visible on the invoice."
+      },
+      {
+        "question": "How is payment status shown in the CSV?",
+        "answer": "Payment status appears in the invoice details section, making it easy to filter and report on outstanding vs settled invoices."
+      },
+      {
+        "question": "Can you extract payment dates?",
+        "answer": "Yes, when invoices show the date payment was received or processed, we extract that information into the invoice details."
+      },
+      {
+        "question": "What about overdue indicators?",
+        "answer": "Overdue notices, due date warnings, and late payment indicators that appear on the invoice are extracted and included in the output."
+      },
+      {
+        "question": "Does the tool work with statement invoices?",
+        "answer": "Yes, statement-style invoices that show multiple line items with paid/unpaid status are supported. We extract the status information for each item when visible."
+      }
+    ]
+  },
+  {
+    "slug": "supplier-vendor-codes",
+    "title": "Extract Supplier and Vendor Account Codes",
+    "description": "Extract supplier codes, vendor account numbers, and internal reference codes from invoices. Link invoices to your vendor master data.",
+    "metaTitle": "Extract Supplier Codes from Invoices | Vendor Account Extraction",
+    "metaDescription": "Extract supplier codes, vendor account numbers, and internal reference codes from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What supplier codes can be extracted?",
+        "answer": "We extract vendor account numbers, supplier codes, internal reference codes, and any identifiers used to link the invoice to your vendor or supplier records."
+      },
+      {
+        "question": "How are supplier codes shown in the output?",
+        "answer": "Supplier and vendor codes appear in the invoice details CSV, making it easy to match invoices to your vendor master file or accounting system."
+      },
+      {
+        "question": "Can you extract customer account codes?",
+        "answer": "Yes, when invoices include customer or buyer account codes (the recipient's reference), we extract those alongside vendor information."
+      },
+      {
+        "question": "What about GL or cost centre codes?",
+        "answer": "General ledger codes, cost centre references, and department codes that appear on the invoice are extracted when clearly labeled."
+      },
+      {
+        "question": "Does the tool work with different coding systems?",
+        "answer": "Yes, our converter recognises various account code formats including alphanumeric codes, numeric IDs, and custom vendor numbering systems."
+      }
+    ]
+  },
+  {
+    "slug": "batch-lot-numbers",
+    "title": "Extract Batch and Lot Numbers",
+    "description": "Extract batch numbers, lot numbers, and serial numbers from invoice line items. Track products by batch for traceability and quality control.",
+    "metaTitle": "Extract Batch Numbers from Invoices | Lot Number Extraction",
+    "metaDescription": "Extract batch numbers, lot numbers, and serial numbers from PDF invoices. Track product traceability and batch information automatically.",
+    "faqs": [
+      {
+        "question": "What batch information can be extracted?",
+        "answer": "We extract batch numbers, lot numbers, serial numbers, expiry dates, and manufacture dates when they appear in invoice line items."
+      },
+      {
+        "question": "How are batch numbers shown in the CSV?",
+        "answer": "Batch and lot numbers appear in the line items CSV, associated with each relevant product line, for traceability and inventory tracking."
+      },
+      {
+        "question": "Can you extract expiry dates?",
+        "answer": "Yes, when line items include expiry dates, best-before dates, or use-by dates, we extract them along with the batch information."
+      },
+      {
+        "question": "What about serial numbers?",
+        "answer": "Serial numbers for individual items are extracted when they appear in the invoice, useful for warranty tracking and asset management."
+      },
+      {
+        "question": "Does the tool work with pharmaceutical or food industry invoices?",
+        "answer": "Yes, our converter handles invoices from regulated industries where batch and lot tracking is common, extracting all visible traceability information."
+      }
+    ]
   }
 ]

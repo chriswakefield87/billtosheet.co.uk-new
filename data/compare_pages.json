@@ -707,5 +707,150 @@
         "answer": "Currently BillToSheet is web-only, but you can use Python to automate uploading PDFs and downloading CSVs via browser automation. API access for programmatic conversion may be available in future."
       }
     ]
+  },
+  {
+    "slug": "billtosheet-vs-rossum",
+    "title": "BillToSheet vs Rossum",
+    "description": "Compare BillToSheet with Rossum for invoice data extraction. See which tool is better for converting invoice PDFs to CSV and Excel.",
+    "metaTitle": "BillToSheet vs Rossum | Invoice Extraction Comparison",
+    "metaDescription": "Compare BillToSheet vs Rossum for invoice data extraction. See differences in pricing, setup, and ease of use for PDF to CSV conversion.",
+    "faqs": [
+      {
+        "question": "What is Rossum designed for?",
+        "answer": "Rossum is an AI-powered document processing platform focused on enterprise AP automation. It offers intelligent document capture with machine learning and integrates into ERP systems."
+      },
+      {
+        "question": "When is BillToSheet a better fit?",
+        "answer": "BillToSheet is ideal for quick invoice-to-CSV/Excel conversion without enterprise setup. No integration configuration needed - just upload and download. Perfect for small businesses and accountants."
+      },
+      {
+        "question": "Is BillToSheet more affordable than Rossum?",
+        "answer": "Yes, BillToSheet uses pay-as-you-go credits starting at £9. Rossum is enterprise-priced and typically requires annual contracts and higher minimum spend."
+      },
+      {
+        "question": "Does Rossum require implementation?",
+        "answer": "Yes, Rossum typically requires implementation, integration setup, and training. BillToSheet works immediately in your browser with no setup or onboarding."
+      },
+      {
+        "question": "Which is better for occasional invoice conversion?",
+        "answer": "BillToSheet is ideal for occasional or variable volumes with its credit-based pricing. Rossum is designed for high-volume enterprise AP departments with consistent processing needs."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-stampli",
+    "title": "BillToSheet vs Stampli",
+    "description": "Compare BillToSheet with Stampli for invoice processing. See which tool is better for extracting invoice data to CSV for your accounting workflow.",
+    "metaTitle": "BillToSheet vs Stampli | Invoice Processing Comparison",
+    "metaDescription": "Compare BillToSheet vs Stampli for invoice processing. See which is better for PDF to CSV extraction and bookkeeping workflows.",
+    "faqs": [
+      {
+        "question": "What is Stampli designed for?",
+        "answer": "Stampli is an accounts payable automation platform that handles invoice capture, approval workflows, and payment processing. It integrates with accounting systems like NetSuite and QuickBooks."
+      },
+      {
+        "question": "When should I choose BillToSheet?",
+        "answer": "BillToSheet is better when you need simple invoice-to-CSV/Excel conversion without full AP workflow. If you just need to extract data from PDFs for import elsewhere, BillToSheet is faster and more affordable."
+      },
+      {
+        "question": "Does Stampli require accounting software integration?",
+        "answer": "Stampli is built around integration with your existing accounting system. BillToSheet provides standalone CSV/Excel output that works with any software - no integration required."
+      },
+      {
+        "question": "Which is cheaper for invoice extraction only?",
+        "answer": "BillToSheet is significantly cheaper if you only need data extraction. Stampli's subscription includes full AP automation which may be unnecessary for basic conversion needs."
+      },
+      {
+        "question": "Does BillToSheet support bulk conversion?",
+        "answer": "Yes, BillToSheet's bulk conversion processes multiple invoices concurrently. Upload dozens of PDFs at once and download structured CSV/Excel files for each."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-kofax",
+    "title": "BillToSheet vs Kofax",
+    "description": "Compare BillToSheet with Kofax for invoice document capture. See which solution is better for extracting invoice data to CSV and Excel.",
+    "metaTitle": "BillToSheet vs Kofax | Invoice Document Capture Comparison",
+    "metaDescription": "Compare BillToSheet vs Kofax for invoice document capture. See differences in pricing, deployment, and ease of use for PDF invoice extraction.",
+    "faqs": [
+      {
+        "question": "What is Kofax?",
+        "answer": "Kofax is an enterprise document capture and process automation platform. It offers intelligent document processing, OCR, and workflow automation for large organizations."
+      },
+      {
+        "question": "When is BillToSheet better than Kofax?",
+        "answer": "BillToSheet is better for small and medium businesses that need quick invoice conversion without enterprise deployment. No servers, no IT involvement - just upload and convert in your browser."
+      },
+      {
+        "question": "Does Kofax require on-premise or cloud deployment?",
+        "answer": "Kofax typically requires deployment - either on-premise installation or cloud setup with configuration. BillToSheet is instantly available with no deployment - just visit the website."
+      },
+      {
+        "question": "How does pricing compare?",
+        "answer": "Kofax is enterprise-priced with significant licensing costs. BillToSheet offers pay-as-you-go credits from £9 for 25 conversions - accessible for any business size."
+      },
+      {
+        "question": "Which extracts invoice line items better?",
+        "answer": "Both extract invoice data, but BillToSheet is purpose-built for invoices with structured CSV/Excel output ready for accounting. Kofax is more general-purpose and may require configuration for optimal invoice extraction."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-soda-pdf",
+    "title": "BillToSheet vs Soda PDF",
+    "description": "Compare BillToSheet with Soda PDF for converting invoice PDFs to Excel. See which tool gives better results for invoice data extraction.",
+    "metaTitle": "BillToSheet vs Soda PDF | Invoice to Excel Conversion",
+    "metaDescription": "Compare BillToSheet vs Soda PDF for invoice PDF conversion. See which extracts line items, totals, and vendor data more accurately.",
+    "faqs": [
+      {
+        "question": "What is Soda PDF?",
+        "answer": "Soda PDF is a PDF editing and conversion suite. It can convert PDFs to Excel but is a general-purpose tool not specifically designed for invoice structure."
+      },
+      {
+        "question": "Why choose BillToSheet for invoices?",
+        "answer": "BillToSheet understands invoice structure - it extracts vendor details, line items, tax amounts, and totals into separate structured fields. Soda PDF does generic table extraction which may not map correctly to invoice fields."
+      },
+      {
+        "question": "Does Soda PDF preserve invoice line item structure?",
+        "answer": "Soda PDF extracts tables but may not distinguish between invoice headers and line items. BillToSheet creates separate invoice details and line items CSVs optimized for accounting import."
+      },
+      {
+        "question": "Which is easier to use?",
+        "answer": "BillToSheet is simpler - upload a PDF and get ready-to-use CSV/Excel. Soda PDF requires installing software and manually selecting/converting documents."
+      },
+      {
+        "question": "Does BillToSheet work in the browser?",
+        "answer": "Yes, BillToSheet is entirely web-based. No software to install. Soda PDF requires desktop installation or subscription to their online service."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-pdf-co",
+    "title": "BillToSheet vs PDF.co",
+    "description": "Compare BillToSheet with PDF.co for invoice data extraction. See which tool is better for converting invoice PDFs to CSV and Excel.",
+    "metaTitle": "BillToSheet vs PDF.co | Invoice Extraction Comparison",
+    "metaDescription": "Compare BillToSheet vs PDF.co for invoice PDF extraction. See differences in invoice focus, output format, and ease of use.",
+    "faqs": [
+      {
+        "question": "What is PDF.co?",
+        "answer": "PDF.co is an API and web-based PDF processing platform. It offers various PDF tools including table extraction, but is developer-focused with API-first approach."
+      },
+      {
+        "question": "When is BillToSheet better for invoices?",
+        "answer": "BillToSheet is purpose-built for invoices with no API or technical setup required. Accountants and business users can convert invoices immediately without coding or integration work."
+      },
+      {
+        "question": "Does PDF.co require API integration?",
+        "answer": "PDF.co is designed for developers with API integration. BillToSheet provides a simple web interface - upload PDF, download CSV/Excel - no technical setup needed."
+      },
+      {
+        "question": "Which produces better invoice output?",
+        "answer": "BillToSheet outputs invoice-specific structure: separate files for invoice details and line items, with vendor, dates, totals, and tax properly extracted. PDF.co does generic table extraction."
+      },
+      {
+        "question": "Is BillToSheet better for non-technical users?",
+        "answer": "Yes, BillToSheet is designed for accountants and business users. No API keys, no code - just drag and drop your invoice PDF and get structured data for your accounting software."
+      }
+    ]
   }
 ]

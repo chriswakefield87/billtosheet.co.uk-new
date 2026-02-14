@@ -1645,5 +1645,310 @@
         "answer": "Yes, upload invoices from any HubSpot portal. Use bulk conversion to process invoices from multiple portals simultaneously."
       }
     ]
+  },
+  {
+    "slug": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud",
+    "category": "software",
+    "description": "Convert Adobe Creative Cloud subscription invoices to CSV or Excel format. Extract plan costs, app subscriptions, and add-on charges from Adobe billing invoices.",
+    "metaTitle": "Adobe Creative Cloud Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Adobe Creative Cloud invoices to CSV and Excel format. Extract subscription costs, app plans, and billing details from Adobe invoices automatically.",
+    "exportSteps": [
+      "Log in to your Adobe account",
+      "Navigate to 'Plans & products' or 'Manage plan'",
+      "Click on 'Billing & payments'",
+      "Select the invoice you want to download",
+      "Click 'Download invoice' to save as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Adobe invoices list individual app subscriptions and bundles separately",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Student and teacher discounts appear as credits",
+      "Tax calculations vary by country and subscription type",
+      "Add-on storage and font subscriptions appear as separate line items"
+    ],
+    "uniqueFields": [
+      "Adobe subscription ID and invoice number",
+      "Individual app plans (Photoshop, Illustrator, etc.)",
+      "Creative Cloud All Apps bundle details",
+      "Storage add-on costs",
+      "Font licensing charges",
+      "Tax breakdown by jurisdiction",
+      "Promotional credits and discounts"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Adobe Creative Cloud invoices to CSV?",
+        "answer": "Upload your Adobe invoice PDF and our tool will extract subscription details, app plans, add-ons, and tax information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Adobe?",
+        "answer": "In your Adobe account, go to Billing & payments, select your invoice, and click Download invoice to save as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Adobe app bundles?",
+        "answer": "Yes, our tool extracts Creative Cloud All Apps and individual app subscriptions, showing each plan and its cost as separate line items."
+      },
+      {
+        "question": "Can I convert Adobe annual subscription invoices?",
+        "answer": "Yes, annual Adobe invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "What about Adobe storage add-ons?",
+        "answer": "Additional storage and font subscriptions that appear on your Adobe invoice are extracted as separate line items with their individual costs."
+      },
+      {
+        "question": "Does the tool work with Adobe student discounts?",
+        "answer": "Yes, student and teacher discounts are extracted and shown in the CSV output, along with the discounted amount you paid."
+      },
+      {
+        "question": "Can I convert invoices from different Adobe plans?",
+        "answer": "Yes, our converter works with all Adobe Creative Cloud plans including individual apps, All Apps, and Photography plans."
+      }
+    ]
+  },
+  {
+    "slug": "zoom",
+    "name": "Zoom",
+    "category": "software",
+    "description": "Convert Zoom subscription invoices to CSV or Excel format. Extract meeting room costs, host licenses, and add-on charges from Zoom billing invoices.",
+    "metaTitle": "Zoom Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Zoom invoices to CSV and Excel format. Extract subscription costs, host licenses, and add-on charges from Zoom billing automatically.",
+    "exportSteps": [
+      "Log in to your Zoom account as an admin",
+      "Navigate to 'Account Management' > 'Billing'",
+      "Click on 'Current Plans' or 'Billing History'",
+      "Select the invoice you want to download",
+      "Click 'Download' to save as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Zoom invoices show per-host pricing that varies by plan tier",
+      "Add-on products like Zoom Phone and Rooms appear separately",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Tax calculations vary by country and business registration",
+      "Usage-based add-ons like large meeting credits may appear as separate charges"
+    ],
+    "uniqueFields": [
+      "Zoom account ID and invoice number",
+      "Host count and per-host pricing",
+      "Plan type (Pro, Business, Enterprise)",
+      "Zoom Phone and Zoom Rooms add-ons",
+      "Large meeting and webinar add-ons",
+      "Tax breakdown by jurisdiction",
+      "Credits and promotional discounts"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Zoom invoices to CSV?",
+        "answer": "Upload your Zoom invoice PDF and our tool will extract subscription details, host licenses, add-ons, and tax information into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Zoom?",
+        "answer": "In Zoom, go to Account Management > Billing > Billing History, select your invoice, and click Download. Then upload the PDF to our converter."
+      },
+      {
+        "question": "Does the converter handle Zoom host licensing?",
+        "answer": "Yes, our tool extracts host count and per-host pricing when shown on the invoice, making it clear how costs scale with your team size."
+      },
+      {
+        "question": "Can I convert Zoom Phone add-on invoices?",
+        "answer": "Yes, Zoom Phone and other add-on products are extracted as separate line items with their individual subscription costs."
+      },
+      {
+        "question": "What about Zoom annual plans?",
+        "answer": "Annual Zoom invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount applied."
+      },
+      {
+        "question": "Does the tool work with Zoom Rooms?",
+        "answer": "Yes, Zoom Rooms and hardware-as-a-service charges are extracted when they appear on your Zoom invoice."
+      },
+      {
+        "question": "Can I convert invoices from multiple Zoom accounts?",
+        "answer": "Yes, upload invoices from any Zoom account. Use bulk conversion to process invoices from multiple accounts simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "category": "software",
+    "description": "Convert Dropbox subscription invoices to CSV or Excel format. Extract storage costs, team plan details, and add-on charges from Dropbox billing invoices.",
+    "metaTitle": "Dropbox Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Dropbox invoices to CSV and Excel format. Extract storage costs, team plans, and add-on charges from Dropbox billing automatically.",
+    "exportSteps": [
+      "Log in to your Dropbox account",
+      "Click on your avatar and select 'Settings'",
+      "Navigate to 'Billing' or 'Subscription'",
+      "Click on 'View invoice' or 'Billing history'",
+      "Download the invoice as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Dropbox invoices show storage-based pricing that changes with plan upgrades",
+      "Team and Business plans have different structures than individual plans",
+      "Annual billing shows full-year cost rather than monthly breakdown",
+      "Tax calculations vary by country and business type",
+      "Add-on storage and advanced features appear as separate line items"
+    ],
+    "uniqueFields": [
+      "Dropbox account ID and invoice number",
+      "Plan type (Plus, Professional, Business, Enterprise)",
+      "Storage allocation and usage",
+      "Team member count for Business plans",
+      "Add-on storage and advanced features",
+      "Tax breakdown by jurisdiction",
+      "Promotional credits and discounts"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Dropbox invoices to CSV?",
+        "answer": "Upload your Dropbox invoice PDF and our tool will extract subscription details, storage allocation, add-ons, and tax information into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Dropbox?",
+        "answer": "In Dropbox Settings, go to Billing or Subscription, select your invoice from billing history, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Dropbox storage plans?",
+        "answer": "Yes, our tool extracts storage allocation and plan type, making it easy to track your cloud storage costs over time."
+      },
+      {
+        "question": "Can I convert Dropbox Business team invoices?",
+        "answer": "Yes, our converter handles Dropbox Business and Team invoices, extracting per-seat pricing and team member counts when shown."
+      },
+      {
+        "question": "What about Dropbox add-on storage?",
+        "answer": "Additional storage beyond your plan limit is extracted as a separate line item with its cost and allocation."
+      },
+      {
+        "question": "Does the tool work with Dropbox annual billing?",
+        "answer": "Yes, annual Dropbox invoices are fully supported. Our converter extracts the billing period and total annual cost."
+      },
+      {
+        "question": "Can I convert invoices from different Dropbox plans?",
+        "answer": "Yes, our converter works with Dropbox Plus, Professional, Business, and Enterprise plan invoices."
+      }
+    ]
+  },
+  {
+    "slug": "github",
+    "name": "GitHub",
+    "category": "software",
+    "description": "Convert GitHub subscription invoices to CSV or Excel format. Extract plan costs, seat counts, and add-on charges from GitHub billing invoices.",
+    "metaTitle": "GitHub Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert GitHub invoices to CSV and Excel format. Extract subscription costs, seat counts, and add-on charges from GitHub billing automatically.",
+    "exportSteps": [
+      "Log in to your GitHub account",
+      "Click on your profile photo and select 'Settings'",
+      "Navigate to 'Billing & plans' for personal or 'Organization settings' > 'Billing' for orgs",
+      "Click on 'Payment information' or 'Invoices'",
+      "Download the invoice as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "GitHub invoices show per-seat pricing for Teams and Enterprise",
+      "Actions minutes and storage overages appear as separate charges",
+      "Annual billing shows full-year cost rather than monthly breakdown",
+      "Tax calculations vary by country and business registration",
+      "GitHub Copilot and other add-ons appear as separate line items"
+    ],
+    "uniqueFields": [
+      "GitHub account or org ID and invoice number",
+      "Plan type (Free, Pro, Team, Enterprise)",
+      "Seat count and per-seat pricing",
+      "Actions minutes and storage usage",
+      "GitHub Copilot and add-on costs",
+      "Tax breakdown by jurisdiction",
+      "Spend-based billing for Actions"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert GitHub invoices to CSV?",
+        "answer": "Upload your GitHub invoice PDF and our tool will extract subscription details, seat counts, Actions usage, and add-on costs into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from GitHub?",
+        "answer": "In GitHub Settings, go to Billing & plans (or Organization Billing), select Invoices, and download your invoice as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle GitHub Actions usage?",
+        "answer": "Yes, our tool extracts Actions minutes and storage usage charges when they appear on your GitHub invoice, including overage costs."
+      },
+      {
+        "question": "Can I convert GitHub Copilot invoices?",
+        "answer": "Yes, GitHub Copilot subscription charges are extracted as separate line items when they appear on your GitHub invoice."
+      },
+      {
+        "question": "What about GitHub Enterprise invoices?",
+        "answer": "Our converter handles GitHub Enterprise invoices, extracting per-seat pricing and any enterprise-specific add-ons."
+      },
+      {
+        "question": "Does the tool work with GitHub annual billing?",
+        "answer": "Yes, annual GitHub invoices are fully supported. Our converter extracts the billing period and total cost."
+      },
+      {
+        "question": "Can I convert invoices from GitHub organizations?",
+        "answer": "Yes, our converter works with both personal and organization GitHub billing invoices."
+      }
+    ]
+  },
+  {
+    "slug": "asana",
+    "name": "Asana",
+    "category": "software",
+    "description": "Convert Asana subscription invoices to CSV or Excel format. Extract plan costs, member counts, and add-on charges from Asana billing invoices.",
+    "metaTitle": "Asana Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Asana invoices to CSV and Excel format. Extract subscription costs, member billing, and add-on charges from Asana billing automatically.",
+    "exportSteps": [
+      "Log in to your Asana account as an admin",
+      "Click on your organization name and select 'Admin console'",
+      "Navigate to 'Billing' in the sidebar",
+      "Click on 'Billing history' or 'Invoices'",
+      "Download the invoice as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Asana invoices show per-member pricing that varies by plan",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Tax calculations vary by country and business type",
+      "Add-on features like Timeline and Portfolios appear separately",
+      "Guest member billing may be calculated differently"
+    ],
+    "uniqueFields": [
+      "Asana organization ID and invoice number",
+      "Plan type (Basic, Premium, Business, Enterprise)",
+      "Member count and per-member pricing",
+      "Add-on features (Timeline, Portfolios, etc.)",
+      "Tax breakdown by jurisdiction",
+      "Billing period dates",
+      "Credits and promotional discounts"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Asana invoices to CSV?",
+        "answer": "Upload your Asana invoice PDF and our tool will extract subscription details, member counts, add-ons, and tax information into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Asana?",
+        "answer": "In Asana Admin console, go to Billing > Billing history, select your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Asana per-member pricing?",
+        "answer": "Yes, our tool extracts member count and per-member pricing when shown on the invoice, making it clear how costs scale with team size."
+      },
+      {
+        "question": "Can I convert Asana add-on feature invoices?",
+        "answer": "Yes, add-ons like Asana Timeline and Portfolios are extracted as separate line items when they appear on your invoice."
+      },
+      {
+        "question": "What about Asana annual plans?",
+        "answer": "Annual Asana invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual discount."
+      },
+      {
+        "question": "Does the tool work with Asana Business plan?",
+        "answer": "Yes, our converter handles all Asana plan tiers including Basic, Premium, Business, and Enterprise."
+      },
+      {
+        "question": "Can I convert invoices from multiple Asana workspaces?",
+        "answer": "Yes, upload invoices from any Asana organization. Use bulk conversion to process invoices from multiple workspaces at once."
+      }
+    ]
   }
 ]

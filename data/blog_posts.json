@@ -46,5 +46,50 @@
     "author": "BillToSheet Team",
     "readTime": "5 min read",
     "updatedDate": "2026-01-27"
+  },
+  {
+    "slug": "handling-subscription-invoices",
+    "title": "How to Handle Subscription and SaaS Invoices",
+    "excerpt": "Convert recurring subscription invoices from platforms like Stripe, Adobe, and Microsoft 365. Extract billing cycles and plan details for accurate tracking.",
+    "date": "2026-02-12",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "monthly-invoice-processing-workflow",
+    "title": "Monthly Invoice Processing: A Step-by-Step Workflow",
+    "excerpt": "Streamline your month-end with an efficient invoice processing workflow. Batch convert, review, and import vendor invoices into your accounting system.",
+    "date": "2026-02-11",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "invoice-conversion-for-freelancers",
+    "title": "Invoice Conversion for Freelancers and Contractors",
+    "excerpt": "Essential guide for freelancers converting client invoices and expense receipts to CSV. Track project costs and simplify tax preparation.",
+    "date": "2026-02-10",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "understanding-invoice-line-items",
+    "title": "Understanding Invoice Line Item Structure",
+    "excerpt": "Learn how invoice line items are structured and extracted. Get the most from your converted data with proper column mapping and validation.",
+    "date": "2026-02-08",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "improving-conversion-accuracy",
+    "title": "5 Quick Tips for Better Invoice Conversion Results",
+    "excerpt": "Simple tips to improve extraction accuracy. From PDF quality to format choices, get cleaner CSV output from your invoice conversions.",
+    "date": "2026-02-07",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "4 min read"
   }
 ]

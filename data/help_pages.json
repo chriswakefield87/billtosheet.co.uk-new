@@ -615,5 +615,150 @@
         "answer": "No, they contain the same data but are independent files. Changes in one file don't affect the others. This lets you work with whichever format suits your workflow best."
       }
     ]
+  },
+  {
+    "slug": "platform-specific-invoices",
+    "title": "Converting Invoices from Specific Platforms",
+    "description": "Learn how to download and convert invoices from popular platforms like Amazon, Stripe, QuickBooks, and Xero. Platform-specific tips for best results.",
+    "metaTitle": "Platform-Specific Invoice Conversion | Amazon, Stripe, QuickBooks",
+    "metaDescription": "Convert invoices from Amazon, Stripe, QuickBooks, Xero, and other platforms. Platform-specific download and conversion tips for accurate extraction.",
+    "faqs": [
+      {
+        "question": "Where do I find platform-specific conversion guides?",
+        "answer": "Visit our brand pages (e.g. /convert/amazon-invoices, /convert/stripe-invoices) for step-by-step export instructions and platform-specific tips. Each guide shows exactly how to download invoices from that platform."
+      },
+      {
+        "question": "Do different platforms produce different results?",
+        "answer": "Invoice structure varies by platform, but BillToSheet extracts data from all of them. Our system recognises common formats from Amazon, Stripe, QuickBooks, Xero, Shopify, and 30+ other platforms."
+      },
+      {
+        "question": "What if my platform isn't listed?",
+        "answer": "BillToSheet works with any standard PDF invoice. If your platform exports PDFs, our converter will extract the data. Upload a sample to see the results."
+      },
+      {
+        "question": "Are subscription platform invoices supported?",
+        "answer": "Yes, we handle subscription invoices from Stripe, Adobe, Microsoft 365, Zoom, and similar platforms. Subscription IDs, billing periods, and plan details are extracted when present."
+      },
+      {
+        "question": "Can I convert ecommerce marketplace invoices?",
+        "answer": "Yes, invoices from Amazon, eBay, Etsy, Shopify, and WooCommerce are fully supported. We extract order IDs, fees, and line items specific to each marketplace."
+      }
+    ]
+  },
+  {
+    "slug": "handling-duplicate-invoices",
+    "title": "Handling Duplicate and Amended Invoices",
+    "description": "Learn how to identify and manage duplicate invoices, credit notes, and amended invoices in your conversion workflow. Avoid double-counting and reconcile correctly.",
+    "metaTitle": "Duplicate Invoice Handling | Credit Notes and Amendments",
+    "metaDescription": "Handle duplicate invoices, credit notes, and amended invoices. Tips for identifying and reconciling corrected or replacement invoices.",
+    "faqs": [
+      {
+        "question": "How do I identify duplicate invoices?",
+        "answer": "After conversion, use the invoice number and date columns to spot duplicates. Sort your CSV by vendor and invoice number to quickly find potential duplicates before importing."
+      },
+      {
+        "question": "What about amended or corrected invoices?",
+        "answer": "Amended invoices often have a reference to the original (e.g. 'Amendment to INV-001'). Our converter extracts these references. Check the notes field for amendment indicators."
+      },
+      {
+        "question": "How are credit notes handled?",
+        "answer": "Credit notes are extracted with negative amounts. They appear as separate conversions. Match them to original invoices using the reference number often included on credit notes."
+      },
+      {
+        "question": "Can I prevent importing duplicates into my accounting software?",
+        "answer": "Most accounting software checks for duplicate invoice numbers during import. Ensure invoice numbers are correctly extracted - they're in the invoice details CSV."
+      },
+      {
+        "question": "What if I accidentally convert the same invoice twice?",
+        "answer": "Each conversion uses one credit. If you convert the same PDF twice, you'll get two identical outputs. Delete the duplicate from your dashboard or simply don't import it."
+      }
+    ]
+  },
+  {
+    "slug": "exporting-to-google-sheets",
+    "title": "Using Converted Invoices with Google Sheets",
+    "description": "Import your BillToSheet CSV output into Google Sheets for analysis, sharing, and collaboration. Step-by-step guide for Google Sheets workflows.",
+    "metaTitle": "Import Invoice CSV to Google Sheets | BillToSheet Guide",
+    "metaDescription": "Import your converted invoice CSV files into Google Sheets. Analyse, share, and collaborate on invoice data with your team.",
+    "faqs": [
+      {
+        "question": "How do I import CSV files into Google Sheets?",
+        "answer": "In Google Sheets, go to File > Import > Upload, select your invoice_details.csv or line_items.csv, choose 'Replace spreadsheet' or 'Insert new sheet', and click Import data."
+      },
+      {
+        "question": "Can I import both CSV files at once?",
+        "answer": "Import each file as a separate sheet in the same spreadsheet. Name the sheets 'Invoice Details' and 'Line Items' for clarity. You can use VLOOKUP to link them by invoice number."
+      },
+      {
+        "question": "Do dates import correctly into Google Sheets?",
+        "answer": "Our ISO date format (YYYY-MM-DD) imports correctly. Google Sheets may auto-detect dates. If not, use Format > Number > Date to apply the correct format."
+      },
+      {
+        "question": "Can I share converted invoice data with my team?",
+        "answer": "Yes, once imported into Google Sheets you can share the spreadsheet with collaborators. Use the same sharing permissions you'd use for any Google Sheet."
+      },
+      {
+        "question": "What about currency formatting in Google Sheets?",
+        "answer": "Select the amount columns and apply Format > Number > Currency. Choose your preferred currency and locale. Our CSV preserves the original currency codes in a separate column."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-conversion-for-accountants",
+    "title": "Invoice Conversion for Accountants and Bookkeepers",
+    "description": "Optimise your practice workflow with BillToSheet. Process client invoices in bulk, maintain audit trails, and streamline month-end close.",
+    "metaTitle": "Invoice Conversion for Accountants | Practice Workflow Guide",
+    "metaDescription": "Invoice conversion workflow for accountants and bookkeepers. Bulk processing, client management, and integration with accounting software.",
+    "faqs": [
+      {
+        "question": "How can accountants use BillToSheet efficiently?",
+        "answer": "Use bulk conversion to process multiple client invoices at once. Each conversion is saved for 30 days, so you can batch monthly work and download all files when ready for client books."
+      },
+      {
+        "question": "Can I process invoices for multiple clients?",
+        "answer": "Yes. Organise your workflow by converting each client's invoices in a batch, then download and import to their accounting file. The 30-day retention lets you work through clients systematically."
+      },
+      {
+        "question": "Does BillToSheet integrate with practice management software?",
+        "answer": "BillToSheet outputs CSV and Excel files that can be imported into any system. There's no direct integration yet, but the standard format works with Xero, QuickBooks, Sage, and most accounting software."
+      },
+      {
+        "question": "How do I maintain an audit trail?",
+        "answer": "Keep your conversion history in the dashboard as a record. Downloaded files are timestamped. For full audit trails, import into your accounting software which maintains its own audit log."
+      },
+      {
+        "question": "What credit pack is best for accounting practices?",
+        "answer": "Practices processing 50-200 invoices per month typically find the 100-credit pack (£19) best value. High-volume practices should consider the 500-credit pack (£49) for maximum savings."
+      }
+    ]
+  },
+  {
+    "slug": "resolving-failed-conversions",
+    "title": "Resolving Failed Conversions and Extraction Issues",
+    "description": "Step-by-step troubleshooting when conversions fail or extraction is incomplete. Fix common issues and get successful results.",
+    "metaTitle": "Resolve Failed Conversions | Invoice Extraction Troubleshooting",
+    "metaDescription": "Fix failed invoice conversions and incomplete extraction. Troubleshooting guide for common PDF and extraction issues.",
+    "faqs": [
+      {
+        "question": "Do I lose credits when a conversion fails?",
+        "answer": "No. Failed conversions do not use credits. Only successful conversions deduct from your balance. You can retry with a corrected or different file at no extra cost."
+      },
+      {
+        "question": "What should I do if extraction is incomplete?",
+        "answer": "Check that your PDF is text-based (not a low-quality scan). Ensure the invoice has a clear structure. If some fields are missing, they may not be clearly labeled in the original - try a different PDF from the same vendor to compare."
+      },
+      {
+        "question": "Why does my PDF show 'unsupported format'?",
+        "answer": "This usually means the file is corrupted, password-protected, or not a valid PDF. Try opening it in a PDF reader first. If it won't open elsewhere, the file may be damaged."
+      },
+      {
+        "question": "Can I get help with a specific failed conversion?",
+        "answer": "Contact our support team with the error message and (if possible) a description of the invoice type. We can often suggest fixes. Do not send the actual PDF for privacy reasons - describe the format instead."
+      },
+      {
+        "question": "Should I retry after fixing the PDF?",
+        "answer": "Yes. Common fixes include: removing password protection, compressing oversized files, or re-scanning at higher quality. Then upload again - failed attempts don't use credits."
+      }
+    ]
   }
 ]
