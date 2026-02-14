@@ -615,5 +615,150 @@
         "answer": "No, they contain the same data but are independent files. Changes in one file don't affect the others. This lets you work with whichever format suits your workflow best."
       }
     ]
+  },
+  {
+    "slug": "csv-encoding",
+    "title": "CSV Encoding and Special Characters",
+    "description": "Learn how BillToSheet handles CSV encoding, special characters, and non-ASCII text. Ensure your invoice data displays correctly in Excel and accounting software.",
+    "metaTitle": "CSV Encoding | Special Characters in Invoice Data",
+    "metaDescription": "Understand CSV encoding and special characters in BillToSheet exports. Learn how to handle accented characters, currency symbols, and international text.",
+    "faqs": [
+      {
+        "question": "What encoding does BillToSheet use for CSV files?",
+        "answer": "Our CSV files use UTF-8 encoding, which supports all characters including accented letters (é, ñ, ü), currency symbols (€, £, ¥), and international text. This ensures your invoice data displays correctly regardless of origin."
+      },
+      {
+        "question": "Why do special characters appear incorrectly in Excel?",
+        "answer": "Excel may not always detect UTF-8 automatically. When opening a CSV, use Data > From Text/CSV and select UTF-8 encoding. Alternatively, open the Excel file (combined.xlsx) which handles encoding correctly."
+      },
+      {
+        "question": "Can I convert invoices in different languages?",
+        "answer": "Yes, our converter preserves text in any language. Invoice data in French, German, Spanish, Chinese, or other languages is extracted and exported with correct character encoding."
+      },
+      {
+        "question": "What about currency symbols and special formatting?",
+        "answer": "Currency symbols (€, £, $, ¥, etc.) and decimal separators are preserved in the output. We extract amounts as shown on the invoice for accurate representation."
+      },
+      {
+        "question": "How do I fix encoding issues when importing to accounting software?",
+        "answer": "Most modern accounting software (QuickBooks, Xero, Sage) supports UTF-8. If you encounter encoding issues, try importing the Excel file instead, or check your accounting software's import settings for encoding options."
+      }
+    ]
+  },
+  {
+    "slug": "organising-converted-files",
+    "title": "Organising Your Converted Invoice Files",
+    "description": "Tips for organising, naming, and storing your converted invoice files. Best practices for file management and workflow efficiency.",
+    "metaTitle": "Organising Converted Files | Invoice File Management",
+    "metaDescription": "Learn how to organise and manage your converted invoice files. Naming conventions, folder structure, and workflow tips.",
+    "faqs": [
+      {
+        "question": "How should I name my converted files?",
+        "answer": "Our default filenames include the invoice identifier. Consider adding the vendor name or date to your folder structure. For example: 2026-01_VendorName/ or Invoices/Amazon/2026-01/"
+      },
+      {
+        "question": "Can I download multiple files at once from bulk conversion?",
+        "answer": "Yes, each successful conversion in the bulk results has individual download links. You can download CSV, Line Items CSV, and Excel for each file. Alternatively, access all conversions from your dashboard."
+      },
+      {
+        "question": "How long should I keep converted files?",
+        "answer": "BillToSheet stores files for 30 days. For your own records, follow your business's document retention policy. Many businesses keep invoice data for 7 years for tax and compliance purposes."
+      },
+      {
+        "question": "Should I keep the original PDF with the converted file?",
+        "answer": "Yes, we recommend keeping the original PDF alongside your CSV/Excel files. This provides an audit trail and allows you to re-convert if needed."
+      },
+      {
+        "question": "How can I organise files for different accounting periods?",
+        "answer": "Create folders by month or quarter (e.g., 2026-Q1, Jan-2026). Download your converted files into the appropriate folder. The invoice date in the CSV helps with period-based organisation."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-quality-checklist",
+    "title": "Invoice Quality Checklist Before Conversion",
+    "description": "A pre-conversion checklist to ensure your invoices convert accurately. Tips for preparing PDFs and avoiding common extraction issues.",
+    "metaTitle": "Invoice Quality Checklist | Pre-Conversion Tips",
+    "metaDescription": "Checklist for invoice quality before conversion. Ensure your PDFs are ready for accurate data extraction.",
+    "faqs": [
+      {
+        "question": "What makes an invoice ideal for conversion?",
+        "answer": "Ideal invoices are text-based PDFs (not scanned), under 10MB, with clear structure including visible line items, vendor details, and totals. Avoid password-protected or corrupted files."
+      },
+      {
+        "question": "Should I merge multi-page invoices into one PDF?",
+        "answer": "Yes, keep multi-page invoices as a single PDF. Our converter processes all pages and extracts line items from every page automatically."
+      },
+      {
+        "question": "What if my invoice has an unusual layout?",
+        "answer": "BillToSheet handles most standard and many custom layouts. If you have a unique format, try converting first - our system adapts to different structures. Review the output and manually correct any issues if needed."
+      },
+      {
+        "question": "Can I convert invoices with handwritten notes?",
+        "answer": "Handwritten notes are not extracted as they're not machine-readable. The typed/printed invoice data will still be extracted. Consider adding important notes manually to your CSV after conversion."
+      },
+      {
+        "question": "How do I improve results for scanned invoices?",
+        "answer": "Use high-quality scans (300 DPI minimum), ensure the invoice is flat and straight, and avoid shadows or blur. Clean, high-contrast scans produce the best OCR results."
+      }
+    ]
+  },
+  {
+    "slug": "failed-conversion-troubleshooting",
+    "title": "Troubleshooting Failed Conversions",
+    "description": "Detailed guide to fixing failed invoice conversions. Understand error messages and resolve common conversion failures.",
+    "metaTitle": "Failed Conversion Troubleshooting | Fix Conversion Errors",
+    "metaDescription": "Troubleshoot failed invoice conversions. Fix upload errors, extraction failures, and understand conversion error messages.",
+    "faqs": [
+      {
+        "question": "What does 'Conversion failed' mean?",
+        "answer": "Conversion failed indicates our system couldn't extract data from the PDF. Common causes: corrupted file, password protection, image-only PDF with poor OCR, or unsupported file format. Check the error message for specific guidance."
+      },
+      {
+        "question": "Why does my PDF upload but fail to convert?",
+        "answer": "The PDF may contain only images with no extractable text, or the layout may be too complex. Try re-saving the PDF from the original source, or if it's a scan, ensure it's high quality (300 DPI) and try again."
+      },
+      {
+        "question": "Do failed conversions use credits?",
+        "answer": "No, failed conversions do not use credits. Only successful conversions deduct from your credit balance. You can retry failed files without additional cost."
+      },
+      {
+        "question": "What if one file fails in a bulk conversion?",
+        "answer": "Other files in the batch continue processing. Failed files are clearly marked in the results with an error message. You can download successful conversions and retry the failed ones separately."
+      },
+      {
+        "question": "When should I contact support about a failed conversion?",
+        "answer": "Contact support if you've tried the troubleshooting steps (checking file size, removing password protection, ensuring text is selectable) and conversion still fails. Include the error message and, if possible, a sample of the invoice format (with sensitive data redacted)."
+      }
+    ]
+  },
+  {
+    "slug": "enterprise-and-high-volume",
+    "title": "Enterprise and High-Volume Invoice Conversion",
+    "description": "Information for businesses processing large volumes of invoices. Volume discounts, batch processing tips, and enterprise support options.",
+    "metaTitle": "Enterprise Invoice Conversion | High-Volume Processing",
+    "metaDescription": "Enterprise invoice conversion with BillToSheet. Volume processing, batch conversion, and options for high-volume users.",
+    "faqs": [
+      {
+        "question": "How many invoices can I convert per month?",
+        "answer": "There's no monthly limit. Your conversion capacity depends on your credit balance. The 500-credit pack (£49) offers the best per-invoice rate (£0.10) for high-volume users. Credits never expire."
+      },
+      {
+        "question": "Is bulk conversion suitable for enterprise use?",
+        "answer": "Yes, bulk conversion processes multiple invoices concurrently - 10 invoices take roughly the same time as 1. This makes it efficient for monthly invoice batches, month-end processing, and high-volume workflows."
+      },
+      {
+        "question": "Do you offer enterprise pricing?",
+        "answer": "For organisations converting 1000+ invoices per month, contact us for custom enterprise pricing. We can discuss volume discounts, dedicated support, and tailored solutions."
+      },
+      {
+        "question": "Can multiple team members use the same account?",
+        "answer": "Credits are shared across the account. Team members can use the same login, or we can discuss multi-user arrangements for larger teams. Contact us for enterprise account options."
+      },
+      {
+        "question": "Is there an API for automated conversion?",
+        "answer": "API access is planned for future releases. Enterprise customers with high-volume automated needs can contact us to discuss early access or custom integration options."
+      }
+    ]
   }
 ]

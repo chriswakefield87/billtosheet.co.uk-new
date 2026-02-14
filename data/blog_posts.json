@@ -46,5 +46,50 @@
     "author": "BillToSheet Team",
     "readTime": "5 min read",
     "updatedDate": "2026-01-27"
+  },
+  {
+    "slug": "best-practices-for-invoice-data-quality",
+    "title": "Best Practices for Invoice Data Quality and Accuracy",
+    "excerpt": "Learn how to ensure high-quality invoice data extraction. Tips for preparing PDFs, verifying extracted data, and maintaining accuracy in your records.",
+    "date": "2026-02-01",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "handling-multi-currency-invoices",
+    "title": "Handling Multi-Currency Invoices: A Practical Guide",
+    "excerpt": "A comprehensive guide to converting and reconciling invoices in multiple currencies. Learn how to handle exchange rates, currency codes, and international billing.",
+    "date": "2026-01-20",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "invoice-automation-for-small-business",
+    "title": "Invoice Automation for Small Business: Where to Start",
+    "excerpt": "Discover how small businesses can benefit from invoice automation. Practical steps to reduce manual data entry and streamline your bookkeeping workflow.",
+    "date": "2026-01-12",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "ecommerce-seller-invoice-conversion",
+    "title": "Ecommerce Seller Invoice Conversion: Amazon, eBay & Shopify",
+    "excerpt": "Specialised guide for ecommerce sellers. Convert marketplace invoices, seller fees, and transaction reports from Amazon, eBay, and Shopify to CSV for accounting.",
+    "date": "2026-01-08",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "reducing-errors-in-invoice-entry",
+    "title": "Reducing Errors in Invoice Data Entry: Common Mistakes to Avoid",
+    "excerpt": "Identify and avoid the most common invoice data entry errors. Learn how automated extraction reduces transcription mistakes and improves reconciliation.",
+    "date": "2026-02-05",
+    "category": "Troubleshooting",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
   }
 ]
