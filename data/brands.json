@@ -1645,5 +1645,310 @@
         "answer": "Yes, upload invoices from any HubSpot portal. Use bulk conversion to process invoices from multiple portals simultaneously."
       }
     ]
+  },
+  {
+    "slug": "adobe",
+    "name": "Adobe",
+    "category": "software",
+    "description": "Convert Adobe Creative Cloud and Adobe subscription invoices to CSV or Excel format. Extract license costs, subscription tiers, and billing details from Adobe invoices.",
+    "metaTitle": "Adobe Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Adobe invoices to CSV and Excel format. Extract Creative Cloud subscription costs, license details, and billing information from Adobe invoices automatically.",
+    "exportSteps": [
+      "Log in to your Adobe account",
+      "Navigate to 'Plans & products' or 'Billing & payments'",
+      "Click on 'Billing history' or 'Invoices'",
+      "Select the invoice you want to download",
+      "Click 'Download PDF' and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Adobe invoices list each product (Photoshop, Illustrator, etc.) as separate line items",
+      "Creative Cloud All Apps vs individual app pricing differs significantly",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Tax calculations vary by region and business status",
+      "Adobe Stock and font licensing may appear as add-on charges"
+    ],
+    "uniqueFields": [
+      "Adobe subscription ID and invoice number",
+      "Product names (Photoshop, Illustrator, Acrobat, etc.)",
+      "Per-seat or per-user pricing",
+      "Billing cycle (monthly or annual)",
+      "Tax breakdown by jurisdiction",
+      "Promotional discounts and credits",
+      "Adobe Stock and font add-on charges"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Adobe Creative Cloud invoices to CSV?",
+        "answer": "Upload your Adobe invoice PDF and our tool will extract subscription details, product costs, and billing information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Adobe?",
+        "answer": "In your Adobe account, go to Plans & products > Billing history, select your invoice, and click Download PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle different Adobe products?",
+        "answer": "Yes, our tool extracts all Adobe products including Creative Cloud, Acrobat, Document Cloud, and individual app subscriptions as separate line items."
+      },
+      {
+        "question": "Can I convert Adobe annual subscription invoices?",
+        "answer": "Yes, annual invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount applied."
+      },
+      {
+        "question": "What about Adobe Stock and font charges?",
+        "answer": "Adobe Stock credits and font licensing charges that appear on your invoice are extracted as separate line items for accurate cost tracking."
+      },
+      {
+        "question": "Does the tool work with Adobe for Teams invoices?",
+        "answer": "Yes, our converter handles Adobe for Teams and enterprise invoices, extracting per-seat pricing and user counts when shown on the invoice."
+      },
+      {
+        "question": "Can I convert invoices from multiple Adobe accounts?",
+        "answer": "Yes, upload invoices from any Adobe account. Use bulk conversion to process multiple Adobe invoices simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "zoom",
+    "name": "Zoom",
+    "category": "software",
+    "description": "Convert Zoom subscription invoices to CSV or Excel format. Extract meeting room costs, license tiers, and add-on charges from Zoom billing invoices.",
+    "metaTitle": "Zoom Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Zoom invoices to CSV and Excel format. Extract subscription costs, license details, and add-on charges from Zoom video conferencing invoices automatically.",
+    "exportSteps": [
+      "Log in to your Zoom account as an admin",
+      "Navigate to 'Account Management' > 'Billing'",
+      "Click on 'Current Plans' or 'Billing History'",
+      "Select the invoice you want to download",
+      "Click 'Download invoice' and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Zoom invoices show per-host pricing that varies by plan tier",
+      "Add-on products like Zoom Phone and Zoom Rooms appear separately",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Tax calculations vary by country and business registration",
+      "Webinar and large meeting add-ons have different pricing structures"
+    ],
+    "uniqueFields": [
+      "Zoom account ID and invoice number",
+      "Plan type (Pro, Business, Enterprise)",
+      "Host count and per-host pricing",
+      "Zoom Phone and Zoom Rooms add-ons",
+      "Webinar and large meeting licenses",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Zoom invoices to CSV?",
+        "answer": "Upload your Zoom invoice PDF and our tool will extract subscription costs, host counts, add-on charges, and billing details into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Zoom?",
+        "answer": "In Zoom, go to Account Management > Billing > Billing History, select your invoice, and click Download invoice. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Zoom add-ons?",
+        "answer": "Yes, our tool extracts Zoom Phone, Zoom Rooms, Webinar, and large meeting add-ons as separate line items with their individual costs."
+      },
+      {
+        "question": "Can I convert Zoom annual subscription invoices?",
+        "answer": "Yes, annual invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "What about per-host pricing?",
+        "answer": "Our converter extracts host count and per-host pricing when shown on the invoice, making it clear how costs scale with your team size."
+      },
+      {
+        "question": "Does the tool work with Zoom enterprise invoices?",
+        "answer": "Yes, our converter handles Zoom enterprise and business plan invoices, including multi-account and consolidated billing."
+      },
+      {
+        "question": "Can I convert invoices from multiple Zoom accounts?",
+        "answer": "Yes, upload invoices from any Zoom account. Use bulk conversion to process multiple Zoom invoices simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "docusign",
+    "name": "DocuSign",
+    "category": "software",
+    "description": "Convert DocuSign subscription invoices to CSV or Excel format. Extract envelope costs, plan tiers, and usage-based charges from DocuSign billing invoices.",
+    "metaTitle": "DocuSign Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert DocuSign invoices to CSV and Excel format. Extract subscription costs, envelope usage, and billing details from DocuSign e-signature invoices automatically.",
+    "exportSteps": [
+      "Log in to your DocuSign account as an admin",
+      "Navigate to 'Settings' > 'Billing and payments'",
+      "Click on 'Billing history' or 'Invoices'",
+      "Select the invoice you want to download",
+      "Click 'Download PDF' and upload to our converter above"
+    ],
+    "commonIssues": [
+      "DocuSign invoices may include envelope usage overages as separate charges",
+      "Plan tiers (Personal, Standard, Business Pro) have different pricing",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Tax calculations vary by region and business type",
+      "Identity verification and other add-ons appear as separate line items"
+    ],
+    "uniqueFields": [
+      "DocuSign account ID and invoice number",
+      "Plan type and subscription tier",
+      "Envelope count and usage-based charges",
+      "Overage charges for exceeded limits",
+      "Add-on features (Identity Verification, etc.)",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert DocuSign invoices to CSV?",
+        "answer": "Upload your DocuSign invoice PDF and our tool will extract subscription costs, envelope usage, overage charges, and billing details into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from DocuSign?",
+        "answer": "In DocuSign, go to Settings > Billing and payments > Billing history, select your invoice, and click Download PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle DocuSign overage charges?",
+        "answer": "Yes, envelope overage charges and usage-based fees are extracted as separate line items, making it easy to track variable costs."
+      },
+      {
+        "question": "Can I convert DocuSign annual subscription invoices?",
+        "answer": "Yes, annual invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "What about DocuSign add-on features?",
+        "answer": "Add-on features like Identity Verification that appear on your invoice are extracted as separate line items with their individual costs."
+      },
+      {
+        "question": "Does the tool work with DocuSign enterprise invoices?",
+        "answer": "Yes, our converter handles DocuSign enterprise and business plan invoices, including multi-user and consolidated billing."
+      },
+      {
+        "question": "Can I convert invoices from multiple DocuSign accounts?",
+        "answer": "Yes, upload invoices from any DocuSign account. Use bulk conversion to process multiple DocuSign invoices simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "category": "software",
+    "description": "Convert Dropbox subscription invoices to CSV or Excel format. Extract storage costs, plan tiers, and add-on charges from Dropbox billing invoices.",
+    "metaTitle": "Dropbox Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Dropbox invoices to CSV and Excel format. Extract subscription costs, storage details, and billing information from Dropbox cloud storage invoices automatically.",
+    "exportSteps": [
+      "Log in to your Dropbox account",
+      "Navigate to 'Settings' > 'Billing'",
+      "Click on 'Billing history' or 'Invoices'",
+      "Select the invoice you want to download",
+      "Click 'Download invoice' and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Dropbox invoices show per-user pricing that varies by plan (Plus, Professional, Business)",
+      "Storage add-ons appear as separate line items",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Tax calculations vary by country and business status",
+      "Dropbox Sign (formerly HelloSign) may be billed separately"
+    ],
+    "uniqueFields": [
+      "Dropbox account ID and invoice number",
+      "Plan type and user count",
+      "Storage amount and add-on storage",
+      "Per-user pricing breakdown",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction",
+      "Dropbox Sign add-on charges"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Dropbox invoices to CSV?",
+        "answer": "Upload your Dropbox invoice PDF and our tool will extract subscription costs, user counts, storage details, and billing information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Dropbox?",
+        "answer": "In Dropbox, go to Settings > Billing > Billing history, select your invoice, and click Download invoice. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Dropbox storage add-ons?",
+        "answer": "Yes, additional storage and storage upgrade charges are extracted as separate line items, making it easy to track storage costs."
+      },
+      {
+        "question": "Can I convert Dropbox annual subscription invoices?",
+        "answer": "Yes, annual invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "What about Dropbox Sign (HelloSign) charges?",
+        "answer": "Dropbox Sign add-on charges that appear on your invoice are extracted as separate line items for accurate cost tracking."
+      },
+      {
+        "question": "Does the tool work with Dropbox Business invoices?",
+        "answer": "Yes, our converter handles Dropbox Business and Team plans, including per-user pricing and admin console billing."
+      },
+      {
+        "question": "Can I convert invoices from multiple Dropbox accounts?",
+        "answer": "Yes, upload invoices from any Dropbox account. Use bulk conversion to process multiple Dropbox invoices simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "vimeo",
+    "name": "Vimeo",
+    "category": "software",
+    "description": "Convert Vimeo subscription invoices to CSV or Excel format. Extract plan costs, storage charges, and add-on features from Vimeo video hosting invoices.",
+    "metaTitle": "Vimeo Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Vimeo invoices to CSV and Excel format. Extract subscription costs, storage details, and billing information from Vimeo video hosting invoices automatically.",
+    "exportSteps": [
+      "Log in to your Vimeo account",
+      "Navigate to 'Settings' > 'Billing' or 'Account'",
+      "Click on 'Billing history' or 'Invoices'",
+      "Select the invoice you want to download",
+      "Click 'Download PDF' and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Vimeo invoices show plan tiers (Plus, Pro, Business, Enterprise) with different pricing",
+      "Storage and bandwidth overages may appear as separate charges",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Tax calculations vary by region and business type",
+      "Live streaming and advanced features may have add-on pricing"
+    ],
+    "uniqueFields": [
+      "Vimeo account ID and invoice number",
+      "Plan type (Plus, Pro, Business, Enterprise)",
+      "Storage and bandwidth allocation",
+      "Overage charges for exceeded limits",
+      "Add-on features and live streaming",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Vimeo invoices to CSV?",
+        "answer": "Upload your Vimeo invoice PDF and our tool will extract subscription costs, storage details, overage charges, and billing information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Vimeo?",
+        "answer": "In Vimeo, go to Settings > Billing > Billing history, select your invoice, and click Download PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Vimeo overage charges?",
+        "answer": "Yes, storage and bandwidth overage charges are extracted as separate line items, making it easy to track variable costs."
+      },
+      {
+        "question": "Can I convert Vimeo annual subscription invoices?",
+        "answer": "Yes, annual invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "What about Vimeo live streaming add-ons?",
+        "answer": "Live streaming and advanced feature charges that appear on your invoice are extracted as separate line items."
+      },
+      {
+        "question": "Does the tool work with Vimeo Business invoices?",
+        "answer": "Yes, our converter handles Vimeo Business and Enterprise plans, including team and organization billing."
+      },
+      {
+        "question": "Can I convert invoices from multiple Vimeo accounts?",
+        "answer": "Yes, upload invoices from any Vimeo account. Use bulk conversion to process multiple Vimeo invoices simultaneously."
+      }
+    ]
   }
 ]

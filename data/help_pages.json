@@ -615,5 +615,150 @@
         "answer": "No, they contain the same data but are independent files. Changes in one file don't affect the others. This lets you work with whichever format suits your workflow best."
       }
     ]
+  },
+  {
+    "slug": "invoice-quality-check",
+    "title": "Checking Invoice Quality Before Conversion",
+    "description": "Learn how to verify your invoice PDF will convert well. Tips for identifying potential issues before uploading and improving conversion accuracy.",
+    "metaTitle": "Invoice Quality Check | Pre-Conversion Verification",
+    "metaDescription": "Check invoice quality before conversion. Learn how to verify your PDF will extract accurately and avoid common conversion issues.",
+    "faqs": [
+      {
+        "question": "How can I tell if my invoice will convert well?",
+        "answer": "Text-based PDFs with clear structure convert best. Check that text is selectable (not an image), line items are in a table format, and the invoice isn't password-protected or corrupted."
+      },
+      {
+        "question": "What makes an invoice difficult to convert?",
+        "answer": "Low-quality scans, heavily customised layouts, handwritten text, and invoices with complex multi-column designs can be harder to extract accurately. Digital PDFs from software usually work best."
+      },
+      {
+        "question": "Should I fix my PDF before uploading?",
+        "answer": "Generally no - our converter handles standard formats. If you have a poor-quality scan, consider re-scanning at 300 DPI or higher. Don't try to edit the PDF content."
+      },
+      {
+        "question": "Can I test with one invoice first?",
+        "answer": "Yes, use the free conversion (no account needed) to test a single invoice. If it converts well, you can proceed with bulk conversion for the rest."
+      },
+      {
+        "question": "What if my invoice has an unusual layout?",
+        "answer": "Upload it and see. Our converter handles many layouts. If results aren't perfect, you can manually adjust the CSV - it's often faster than manual entry from scratch."
+      }
+    ]
+  },
+  {
+    "slug": "recurring-subscription-invoices",
+    "title": "Converting Recurring and Subscription Invoices",
+    "description": "Learn how to convert recurring invoices, subscription bills, and monthly statements. Extract subscription IDs, billing periods, and recurring charge details.",
+    "metaTitle": "Recurring Invoice Conversion | Subscription Invoice Extraction",
+    "metaDescription": "Convert recurring and subscription invoices to CSV. Extract billing periods, subscription IDs, and recurring charge details automatically.",
+    "faqs": [
+      {
+        "question": "Can I convert subscription invoices?",
+        "answer": "Yes, our converter handles recurring invoices from SaaS, software subscriptions, and monthly services. Subscription IDs, billing periods, and recurring amounts are extracted when present."
+      },
+      {
+        "question": "What subscription details are extracted?",
+        "answer": "We extract subscription IDs, billing cycle dates, recurring amounts, plan names, and any proration or adjustment details when they appear on the invoice."
+      },
+      {
+        "question": "Do I need to convert each month's invoice separately?",
+        "answer": "Yes, each invoice PDF is converted individually. Use bulk conversion to process multiple months at once - upload all your subscription invoices and they'll process concurrently."
+      },
+      {
+        "question": "What about prorated charges?",
+        "answer": "Prorated amounts from mid-cycle upgrades or downgrades are extracted when they appear as line items on the invoice."
+      },
+      {
+        "question": "Can I convert invoices from different subscription services?",
+        "answer": "Yes, our converter works with subscription invoices from any provider - SaaS, cloud services, software, or recurring service invoices in standard PDF format."
+      }
+    ]
+  },
+  {
+    "slug": "team-and-shared-accounts",
+    "title": "Team and Shared Accounts",
+    "description": "Information about using BillToSheet with teams. Learn about account sharing, credit usage across team members, and collaborative invoice processing.",
+    "metaTitle": "Team Accounts | BillToSheet for Teams",
+    "metaDescription": "Use BillToSheet with your team. Learn about shared accounts, credit usage, and collaborative invoice conversion for businesses.",
+    "faqs": [
+      {
+        "question": "Can multiple people use the same BillToSheet account?",
+        "answer": "Yes, you can share login credentials with team members. All users will draw from the same credit balance and see the same conversion history."
+      },
+      {
+        "question": "How do credits work with team usage?",
+        "answer": "Credits are shared across all users of the account. Each conversion uses 1 credit regardless of who performs it. Monitor your dashboard to track usage."
+      },
+      {
+        "question": "Can team members see each other's conversions?",
+        "answer": "Yes, with a shared account, all conversions appear in the same dashboard. Everyone can access and re-download any converted file within the 30-day retention period."
+      },
+      {
+        "question": "Is there a separate team plan?",
+        "answer": "We use the same credit packs for all users. Purchase credits as needed - larger packs (100 or 500) offer better value for teams with higher volume."
+      },
+      {
+        "question": "How do I add or remove team members?",
+        "answer": "Simply share or revoke the account login credentials. There's no separate team management - use your normal account with your team."
+      }
+    ]
+  },
+  {
+    "slug": "mobile-and-tablet-usage",
+    "title": "Using BillToSheet on Mobile and Tablets",
+    "description": "Learn how to use BillToSheet on smartphones and tablets. Convert invoices on the go with mobile-friendly upload and download.",
+    "metaTitle": "BillToSheet Mobile | Invoice Conversion on Phone and Tablet",
+    "metaDescription": "Use BillToSheet on mobile devices. Convert invoice PDFs to CSV and Excel on your phone or tablet with our mobile-friendly interface.",
+    "faqs": [
+      {
+        "question": "Does BillToSheet work on mobile phones?",
+        "answer": "Yes, our web-based converter works on mobile browsers. You can upload PDFs (from email, cloud storage, or camera), convert them, and download CSV/Excel files on your phone."
+      },
+      {
+        "question": "Can I upload from my phone's camera?",
+        "answer": "If you can save a photo as PDF (many phones allow this), yes. For best results, use a PDF of the invoice - either from email or by converting a photo to PDF first."
+      },
+      {
+        "question": "Is the mobile experience the same as desktop?",
+        "answer": "Core features are the same. The interface adapts to smaller screens. For bulk conversion and reviewing many files, a desktop browser may be more convenient."
+      },
+      {
+        "question": "Do I need to install an app?",
+        "answer": "No, BillToSheet is web-based. Just visit the website in your mobile browser - no app installation required."
+      },
+      {
+        "question": "Can I access my conversion history on mobile?",
+        "answer": "Yes, sign in on your mobile browser to access your dashboard, conversion history, and re-download previous conversions."
+      }
+    ]
+  },
+  {
+    "slug": "duplicate-and-amended-invoices",
+    "title": "Handling Duplicate and Amended Invoices",
+    "description": "Learn how to handle duplicate invoices, amended invoices, and credit notes. Avoid double-counting and track corrections correctly.",
+    "metaTitle": "Duplicate and Amended Invoices | Invoice Correction Handling",
+    "metaDescription": "Handle duplicate and amended invoices correctly. Learn how to convert and track credit notes, corrections, and avoid double-counting.",
+    "faqs": [
+      {
+        "question": "Can I convert duplicate invoices?",
+        "answer": "Yes, you can convert any invoice PDF including duplicates. The converter extracts the data - you're responsible for identifying duplicates when importing into your accounting system."
+      },
+      {
+        "question": "How does the converter handle amended invoices?",
+        "answer": "Amended invoices convert like any other. The extracted data will reflect what's on the amended document. Use invoice numbers and dates to match amendments to originals in your records."
+      },
+      {
+        "question": "What about credit notes?",
+        "answer": "Credit notes are fully supported. Amounts are extracted as negative values where applicable, making it clear they're credits. This helps with reconciliation in your accounting software."
+      },
+      {
+        "question": "How do I avoid double-counting duplicates?",
+        "answer": "Check invoice numbers before importing. If you've already imported an invoice, don't import the duplicate. Many accounting systems will flag duplicate invoice numbers."
+      },
+      {
+        "question": "Can I convert both original and amended versions?",
+        "answer": "Yes, convert both if you need to track the changes. The amended invoice will show corrected amounts. Import the amended version and void or reverse the original in your accounting system."
+      }
+    ]
   }
 ]

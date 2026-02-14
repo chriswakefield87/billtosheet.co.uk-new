@@ -707,5 +707,150 @@
         "answer": "Currently BillToSheet is web-only, but you can use Python to automate uploading PDFs and downloading CSVs via browser automation. API access for programmatic conversion may be available in future."
       }
     ]
+  },
+  {
+    "slug": "billtosheet-vs-rossum",
+    "title": "BillToSheet vs Rossum",
+    "description": "Compare BillToSheet with Rossum for invoice data extraction. See which tool is better for converting invoice PDFs to CSV and Excel.",
+    "metaTitle": "BillToSheet vs Rossum | Invoice Extraction Comparison",
+    "metaDescription": "Compare BillToSheet vs Rossum for invoice PDF conversion. See differences in pricing, ease of use, and structured CSV/Excel output for bookkeeping.",
+    "faqs": [
+      {
+        "question": "What is Rossum designed for?",
+        "answer": "Rossum is an AI-powered document processing platform for enterprises, focusing on automated data capture from invoices, purchase orders, and other documents with API integration and workflow automation."
+      },
+      {
+        "question": "When is BillToSheet a better fit?",
+        "answer": "BillToSheet is ideal for quick, affordable invoice-to-CSV/Excel conversion without enterprise setup. No API or integration required - just upload and download. Perfect for small businesses and occasional use."
+      },
+      {
+        "question": "Is BillToSheet more affordable than Rossum?",
+        "answer": "Yes, BillToSheet uses pay-as-you-go credits with no minimum commitment. Rossum is enterprise-focused with custom pricing that typically requires higher volume commitments."
+      },
+      {
+        "question": "Which is faster to get started with?",
+        "answer": "BillToSheet works immediately - no setup, templates, or training. Rossum requires configuration and often AI model training for optimal results."
+      },
+      {
+        "question": "Does BillToSheet support bulk conversion?",
+        "answer": "Yes, BillToSheet's bulk conversion processes multiple invoices concurrently with live progress updates, making batch processing efficient without enterprise infrastructure."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-ocr-space",
+    "title": "BillToSheet vs OCR.space",
+    "description": "Compare BillToSheet with OCR.space for extracting data from invoice PDFs. See which approach gives better structured output for accounting.",
+    "metaTitle": "BillToSheet vs OCR.space | Invoice Data Extraction",
+    "metaDescription": "Compare BillToSheet vs OCR.space for invoice PDF extraction. See which produces better structured CSV/Excel output for bookkeeping workflows.",
+    "faqs": [
+      {
+        "question": "What is OCR.space?",
+        "answer": "OCR.space is a free OCR API service that extracts text from images and PDFs. It returns raw text or coordinates but doesn't understand invoice structure or produce ready-to-use CSV/Excel files."
+      },
+      {
+        "question": "Why choose BillToSheet for invoices?",
+        "answer": "BillToSheet is purpose-built for invoices - it extracts vendor, dates, line items, totals, and tax into structured CSV and Excel format. OCR.space returns raw text that requires manual parsing and formatting."
+      },
+      {
+        "question": "Does OCR.space produce CSV output?",
+        "answer": "OCR.space returns JSON or plain text. You'd need to write custom logic to parse that into invoice fields and CSV format. BillToSheet outputs ready-to-import CSV and Excel files directly."
+      },
+      {
+        "question": "Which handles invoice line items better?",
+        "answer": "BillToSheet automatically identifies and extracts line item tables with descriptions, quantities, prices, and totals. OCR.space extracts text but doesn't structure it into invoice fields."
+      },
+      {
+        "question": "Is BillToSheet easier for non-developers?",
+        "answer": "Yes, BillToSheet requires no API keys, no coding, and no post-processing. Upload a PDF and download CSV/Excel. OCR.space is API-based and requires technical integration."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-make",
+    "title": "BillToSheet vs Make (Integromat)",
+    "description": "Compare BillToSheet with Make for invoice processing automation. See which approach is simpler for converting invoice PDFs to structured data.",
+    "metaTitle": "BillToSheet vs Make | Invoice Automation Comparison",
+    "metaDescription": "Compare BillToSheet vs Make (Integromat) for invoice PDF processing. See which is easier and more cost-effective for invoice-to-CSV conversion.",
+    "faqs": [
+      {
+        "question": "What is Make?",
+        "answer": "Make (formerly Integromat) is a visual automation platform that connects apps and services. It can process documents but requires connecting to OCR or extraction services - it doesn't extract invoice data natively."
+      },
+      {
+        "question": "When is BillToSheet simpler?",
+        "answer": "BillToSheet works immediately with no workflow setup. Make requires building scenarios, connecting services, and often paying for third-party document processing modules. For direct PDF-to-CSV conversion, BillToSheet is simpler."
+      },
+      {
+        "question": "Does Make extract invoice data?",
+        "answer": "Make doesn't extract invoice data itself. You'd need to add a document processing module (like Google Cloud Vision, AWS Textract, or a paid OCR service) - each with its own costs and setup."
+      },
+      {
+        "question": "How does pricing compare?",
+        "answer": "BillToSheet uses simple pay-as-you-go credits (£0.10-£0.36 per invoice). Make requires a subscription plus any document processing service costs, which can add up for invoice extraction."
+      },
+      {
+        "question": "Can BillToSheet and Make work together?",
+        "answer": "Yes! Some users convert invoices with BillToSheet, then use Make to automatically import the resulting CSV files into their CRM, accounting software, or other systems."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-n8n",
+    "title": "BillToSheet vs n8n",
+    "description": "Compare BillToSheet with n8n for invoice processing workflows. See which tool is better for converting invoice PDFs to CSV and Excel.",
+    "metaTitle": "BillToSheet vs n8n | Invoice Automation Comparison",
+    "metaDescription": "Compare BillToSheet vs n8n for invoice PDF processing. See which is easier for invoice-to-CSV conversion and bookkeeping workflows.",
+    "faqs": [
+      {
+        "question": "What is n8n?",
+        "answer": "n8n is an open-source workflow automation tool that connects different apps and services. It can orchestrate document processing but doesn't natively extract structured data from invoice PDFs."
+      },
+      {
+        "question": "When is BillToSheet better for invoices?",
+        "answer": "BillToSheet is purpose-built for invoice extraction - upload a PDF and get structured CSV/Excel. n8n would need to integrate with an OCR or document AI service, adding complexity and potentially cost."
+      },
+      {
+        "question": "Does n8n have invoice extraction?",
+        "answer": "n8n has nodes for various services but no built-in invoice extraction. You'd need to add Google Document AI, AWS Textract, or similar - each requiring API setup and usage costs."
+      },
+      {
+        "question": "Which is easier for non-technical users?",
+        "answer": "BillToSheet requires no technical setup - just upload and download. n8n requires building workflows and configuring integrations, which needs technical knowledge."
+      },
+      {
+        "question": "Can I use both together?",
+        "answer": "Yes! Use BillToSheet for the invoice-to-CSV conversion, then n8n to automate importing the CSV into your systems, sending notifications, or triggering other workflows."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-ilovepdf",
+    "title": "BillToSheet vs iLovePDF",
+    "description": "Compare BillToSheet with iLovePDF for converting invoice PDFs to Excel and CSV. See which produces better structured data for accounting.",
+    "metaTitle": "BillToSheet vs iLovePDF | Invoice PDF Conversion",
+    "metaDescription": "Compare BillToSheet vs iLovePDF for invoice PDF conversion. See which extracts line items, totals, and tax data into usable CSV/Excel format.",
+    "faqs": [
+      {
+        "question": "What is iLovePDF best for?",
+        "answer": "iLovePDF is a general-purpose PDF tool for merging, splitting, compressing, and converting PDFs. Its PDF to Excel feature converts PDF content to spreadsheet format but isn't optimized for invoice structure."
+      },
+      {
+        "question": "Why choose BillToSheet for invoices?",
+        "answer": "BillToSheet is invoice-specific - it extracts vendor details, invoice numbers, line items, tax amounts, and totals into structured CSV and Excel format designed for accounting software import. iLovePDF does general PDF-to-Excel conversion."
+      },
+      {
+        "question": "Does iLovePDF extract invoice line items correctly?",
+        "answer": "iLovePDF's PDF to Excel converts table content but may not consistently separate invoice headers from line items or identify tax fields. BillToSheet understands invoice structure and produces accounting-ready output."
+      },
+      {
+        "question": "Which gives better results for bookkeeping?",
+        "answer": "BillToSheet produces separate invoice details and line items CSVs, optimized for accounting import. iLovePDF output often requires manual cleanup for bookkeeping workflows."
+      },
+      {
+        "question": "Does BillToSheet support bulk conversion?",
+        "answer": "Yes, BillToSheet's bulk conversion processes multiple invoices concurrently with live progress. iLovePDF processes files individually with limits on free tier."
+      }
+    ]
   }
 ]

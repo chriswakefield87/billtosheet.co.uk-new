@@ -46,5 +46,50 @@
     "author": "BillToSheet Team",
     "readTime": "5 min read",
     "updatedDate": "2026-01-27"
+  },
+  {
+    "slug": "handling-multi-currency-invoices",
+    "title": "How to Handle Multi-Currency Invoice Conversion",
+    "excerpt": "Learn how to convert and reconcile invoices in multiple currencies. Tips for exchange rates, currency codes, and accurate accounting.",
+    "date": "2026-02-12",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "scanned-invoice-best-practices",
+    "title": "Best Practices for Converting Scanned Invoices",
+    "excerpt": "Get better results from scanned invoice PDFs. Learn scan quality, resolution, and formatting tips for accurate data extraction.",
+    "date": "2026-02-11",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "invoice-extraction-ecommerce",
+    "title": "Invoice Data Extraction for E-commerce Businesses",
+    "excerpt": "How e-commerce sellers can extract order data, fees, and transaction details from marketplace invoices for accounting and reporting.",
+    "date": "2026-02-10",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "vat-tax-reconciliation-invoices",
+    "title": "VAT and Tax Reconciliation from Invoice Data",
+    "excerpt": "Use extracted invoice data for VAT returns and tax reconciliation. Track tax rates, amounts, and supplier VAT numbers efficiently.",
+    "date": "2026-02-08",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "invoice-workflow-small-business",
+    "title": "Automating Invoice Workflows for Small Business",
+    "excerpt": "Streamline your bookkeeping with automated invoice conversion. Reduce manual data entry and improve accuracy for small business accounting.",
+    "date": "2026-02-07",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
   }
 ]

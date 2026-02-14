@@ -567,5 +567,150 @@
         "answer": "Our system adapts to different layouts and extracts all visible structured data. Very unusual custom formats may require manual review, but most custom fields are captured automatically."
       }
     ]
+  },
+  {
+    "slug": "warranty-information",
+    "title": "Extract Warranty and Guarantee Information",
+    "description": "Extract warranty periods, guarantee terms, and product coverage information from invoices. Track warranty start dates and coverage details for asset management.",
+    "metaTitle": "Extract Warranty from Invoices | Warranty Data Extraction",
+    "metaDescription": "Extract warranty and guarantee information from PDF invoices. Get warranty periods, coverage terms, and product guarantee details automatically.",
+    "faqs": [
+      {
+        "question": "What warranty information can be extracted?",
+        "answer": "We extract warranty periods, guarantee terms, warranty start dates, coverage descriptions, and any warranty registration information present on the invoice."
+      },
+      {
+        "question": "How are warranty details shown in the output?",
+        "answer": "Warranty information appears in the invoice details or line items section, depending on whether it applies to the whole invoice or specific products. Each warranty period and term is captured separately."
+      },
+      {
+        "question": "Can you extract extended warranty charges?",
+        "answer": "Yes, extended warranty purchases and their costs are extracted as line items, with the warranty period and coverage details included when present."
+      },
+      {
+        "question": "What about manufacturer warranties?",
+        "answer": "Manufacturer warranty information mentioned on invoices, including standard warranty periods and conditions, is extracted and included in the output."
+      },
+      {
+        "question": "Does the tool extract warranty registration numbers?",
+        "answer": "Yes, warranty registration numbers, serial numbers linked to warranties, and warranty claim references are extracted when they appear on the invoice."
+      }
+    ]
+  },
+  {
+    "slug": "delivery-dates",
+    "title": "Extract Delivery Dates and Expected Dates",
+    "description": "Extract delivery dates, expected delivery windows, and shipment dates from invoices. Track when goods or services were or will be delivered.",
+    "metaTitle": "Extract Delivery Dates from Invoices | Delivery Date Extraction",
+    "metaDescription": "Extract delivery dates and expected delivery information from PDF invoices. Get shipment dates, delivery windows, and fulfilment dates automatically.",
+    "faqs": [
+      {
+        "question": "What delivery date information can be extracted?",
+        "answer": "We extract expected delivery dates, shipment dates, delivery windows, order fulfilment dates, and any date ranges mentioned for delivery when present on the invoice."
+      },
+      {
+        "question": "How are delivery dates shown in the CSV?",
+        "answer": "Delivery dates appear in the invoice details section, typically in a dedicated date field or in the notes section when they're part of delivery instructions."
+      },
+      {
+        "question": "Can you extract multiple delivery dates?",
+        "answer": "Yes, when an invoice references multiple delivery dates (e.g., for partial shipments or staged delivery), we extract each date separately."
+      },
+      {
+        "question": "What about estimated delivery dates?",
+        "answer": "Estimated delivery dates (ETD), expected ship dates, and delivery-by dates are all extracted when clearly indicated on the invoice."
+      },
+      {
+        "question": "Does the tool handle international date formats?",
+        "answer": "Yes, we recognise delivery dates in various formats (DD/MM/YYYY, MM/DD/YYYY, ISO format) and export them consistently in the CSV output."
+      }
+    ]
+  },
+  {
+    "slug": "serial-numbers",
+    "title": "Extract Serial Numbers from Invoices",
+    "description": "Extract serial numbers, asset identifiers, and equipment codes from invoice line items. Track individual items by serial number for inventory and asset management.",
+    "metaTitle": "Extract Serial Numbers from Invoices | Asset Identifier Extraction",
+    "metaDescription": "Extract serial numbers and asset identifiers from PDF invoices. Get equipment codes, device IDs, and serial numbers for inventory tracking automatically.",
+    "faqs": [
+      {
+        "question": "What serial number information can be extracted?",
+        "answer": "We extract serial numbers, asset IDs, equipment codes, device identifiers, and any unique product identifiers present in invoice line items."
+      },
+      {
+        "question": "How are serial numbers shown in the line items CSV?",
+        "answer": "Serial numbers appear in the line items CSV, associated with each relevant product. When present, they're in a dedicated column or alongside the product description."
+      },
+      {
+        "question": "Can you extract IMEI or device numbers?",
+        "answer": "Yes, IMEI numbers, device identifiers, and similar equipment codes are extracted when they appear in the invoice line items."
+      },
+      {
+        "question": "What if an invoice has multiple serial numbers per line?",
+        "answer": "When multiple serial numbers appear for a single line item (e.g., bulk equipment), we extract all of them and present them in a structured format."
+      },
+      {
+        "question": "Does the tool work with different serial number formats?",
+        "answer": "Yes, we recognise alphanumeric serial numbers, barcode-style codes, and various identifier formats commonly used in equipment and asset invoices."
+      }
+    ]
+  },
+  {
+    "slug": "batch-lot-numbers",
+    "title": "Extract Batch and Lot Numbers",
+    "description": "Extract batch numbers, lot codes, and expiry dates from invoices. Track products by batch for traceability, compliance, and inventory management.",
+    "metaTitle": "Extract Batch Numbers from Invoices | Lot Number Extraction",
+    "metaDescription": "Extract batch numbers, lot codes, and expiry dates from PDF invoices. Get traceability information for compliance and inventory management automatically.",
+    "faqs": [
+      {
+        "question": "What batch information can be extracted?",
+        "answer": "We extract batch numbers, lot codes, expiry dates, best-before dates, manufacture dates, and any traceability identifiers present in invoice line items."
+      },
+      {
+        "question": "How are batch numbers shown in the output?",
+        "answer": "Batch and lot numbers appear in the line items CSV, associated with each relevant product. Expiry and manufacture dates are shown in date format when present."
+      },
+      {
+        "question": "Can you extract expiry dates for perishables?",
+        "answer": "Yes, expiry dates, use-by dates, and best-before dates are extracted and included when they appear on the invoice, essential for food and pharmaceutical invoices."
+      },
+      {
+        "question": "What about manufacturing batch codes?",
+        "answer": "Manufacturing batch codes, production run numbers, and quality control references are extracted when they appear in the invoice line items."
+      },
+      {
+        "question": "Does the tool work with pharmaceutical invoices?",
+        "answer": "Yes, our converter handles pharmaceutical and healthcare invoices where batch and lot numbers are critical for compliance and traceability."
+      }
+    ]
+  },
+  {
+    "slug": "payment-methods",
+    "title": "Extract Payment Method Preferences",
+    "description": "Extract preferred payment methods, accepted payment types, and payment instructions from invoices. Identify how vendors prefer to receive payment.",
+    "metaTitle": "Extract Payment Methods from Invoices | Payment Preference Extraction",
+    "metaDescription": "Extract payment method preferences from PDF invoices. Get accepted payment types, preferred methods, and payment instructions automatically.",
+    "faqs": [
+      {
+        "question": "What payment method information can be extracted?",
+        "answer": "We extract accepted payment methods (bank transfer, card, cheque, etc.), preferred payment types, payment reference requirements, and any payment instructions specified on the invoice."
+      },
+      {
+        "question": "How is this different from payment terms?",
+        "answer": "Payment terms cover when to pay (e.g., Net 30), while payment methods cover how to pay (e.g., bank transfer, BACS, card). Both are extracted when present."
+      },
+      {
+        "question": "Can you extract payment reference requirements?",
+        "answer": "Yes, payment reference numbers, invoice number requirements for bank transfers, and 'please quote' instructions are extracted and included in the output."
+      },
+      {
+        "question": "What about multiple payment options?",
+        "answer": "When invoices list multiple payment options (different currencies, banks, or methods), we extract all available options and their associated details."
+      },
+      {
+        "question": "Does the tool extract cryptocurrency payment instructions?",
+        "answer": "If cryptocurrency wallet addresses or crypto payment instructions appear on the invoice, we extract them along with other payment method information."
+      }
+    ]
   }
 ]
