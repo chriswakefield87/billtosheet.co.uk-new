@@ -46,5 +46,50 @@
     "author": "BillToSheet Team",
     "readTime": "5 min read",
     "updatedDate": "2026-01-27"
+  },
+  {
+    "slug": "invoice-audit-checklist",
+    "title": "Invoice Conversion Audit Checklist: Verify Your Extracted Data",
+    "excerpt": "A practical checklist for verifying converted invoice data before importing into accounting software. Ensure accuracy and catch common extraction issues.",
+    "date": "2026-02-12",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "handling-invoice-discrepancies",
+    "title": "What to Do When Extracted Invoice Data Doesn't Match",
+    "excerpt": "Learn how to handle discrepancies between your original invoice and the extracted data. Troubleshooting tips for common mismatches.",
+    "date": "2026-02-11",
+    "category": "Troubleshooting",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "invoice-conversion-workflow-tips",
+    "title": "7 Tips for a Smooth Invoice Conversion Workflow",
+    "excerpt": "Optimise your monthly bookkeeping with these workflow tips. Batch processing, file naming, and organisation strategies for invoice conversion.",
+    "date": "2026-02-10",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "invoice-conversion-for-freelancers",
+    "title": "Invoice Conversion for Freelancers and Sole Traders",
+    "excerpt": "A guide to converting client invoices and expense receipts for freelancers. Simplify your self-assessment and record-keeping with automated extraction.",
+    "date": "2026-02-08",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "understanding-invoice-line-items",
+    "title": "Understanding Invoice Line Item Structure",
+    "excerpt": "Learn how invoice line items are structured in CSV and Excel output. Quantity, unit price, tax, and line totals explained for accurate import.",
+    "date": "2026-02-07",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
   }
 ]

@@ -1645,5 +1645,310 @@
         "answer": "Yes, upload invoices from any HubSpot portal. Use bulk conversion to process invoices from multiple portals simultaneously."
       }
     ]
+  },
+  {
+    "slug": "adyen",
+    "name": "Adyen",
+    "category": "payments",
+    "description": "Convert Adyen settlement reports and invoices to CSV or Excel format. Extract transaction details, fees, and settlement data from Adyen payment processor documents.",
+    "metaTitle": "Adyen Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Adyen invoices and settlement reports to CSV and Excel format. Extract transaction details, fees, and settlement data from Adyen automatically.",
+    "exportSteps": [
+      "Log in to your Adyen Customer Area",
+      "Navigate to Reports > Settlement details",
+      "Select the settlement period you need",
+      "Click 'Download' to export as PDF or CSV",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Adyen settlement reports combine multiple payment methods into aggregated totals",
+      "Interchange fees and scheme fees appear as separate line items",
+      "Multi-currency settlements show amounts in different currencies",
+      "Chargebacks and refunds appear as negative amounts",
+      "Reserve amounts may be held separately from settled amounts"
+    ],
+    "uniqueFields": [
+      "Adyen merchant account reference",
+      "Settlement ID and batch numbers",
+      "Payment method breakdown (card, Apple Pay, etc.)",
+      "Interchange and scheme fees",
+      "Reserve and hold amounts",
+      "Chargeback and refund adjustments",
+      "Multi-currency settlement totals"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Adyen settlement reports to CSV?",
+        "answer": "Upload your Adyen settlement report or invoice PDF and our tool will extract transaction totals, fees, and settlement details into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Adyen?",
+        "answer": "In Adyen Customer Area, go to Reports > Settlement details, select your period, and click Download. Save as PDF if needed, then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Adyen interchange fees?",
+        "answer": "Yes, our tool extracts interchange fees, scheme fees, and other payment processing costs when they appear as separate line items on Adyen documents."
+      },
+      {
+        "question": "Can I convert multi-currency Adyen settlements?",
+        "answer": "Yes, our converter handles Adyen settlements with multiple currencies, preserving currency codes and amounts for each settlement line."
+      },
+      {
+        "question": "What about Adyen chargebacks?",
+        "answer": "Chargebacks and refunds are extracted as negative amounts, making it easy to reconcile net settlement amounts against your records."
+      },
+      {
+        "question": "Does the tool work with Adyen payout reports?",
+        "answer": "Yes, payout reports and settlement summaries from Adyen are supported. Upload the PDF and we'll extract all visible transaction and fee data."
+      },
+      {
+        "question": "Can I convert Adyen reserve reports?",
+        "answer": "If reserve or hold amounts appear on your Adyen document, our converter will extract them as separate line items for reconciliation."
+      }
+    ]
+  },
+  {
+    "slug": "magento",
+    "name": "Magento (Adobe Commerce)",
+    "category": "ecommerce",
+    "description": "Convert Magento and Adobe Commerce order invoices to CSV or Excel format. Extract order details, product line items, and tax information from Magento invoices.",
+    "metaTitle": "Magento Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Magento and Adobe Commerce invoices to CSV and Excel format. Extract order details, product information, and tax data from Magento invoices automatically.",
+    "exportSteps": [
+      "Log in to your Magento admin panel",
+      "Navigate to Sales > Invoices",
+      "Select the invoice you want to export",
+      "Click 'Print' or 'Print Invoice' to generate PDF",
+      "Save as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Magento invoice templates vary by theme and customisation",
+      "Configurable products may show parent and child SKUs separately",
+      "Store credit and gift card usage appears differently",
+      "Multi-store setups may have different invoice formats",
+      "Tax calculations depend on Magento tax rules and customer location"
+    ],
+    "uniqueFields": [
+      "Magento order increment ID",
+      "Product SKUs and configurable options",
+      "Store view and website information",
+      "Customer group and tax class",
+      "Shipping method and carrier",
+      "Gift wrap and gift message details",
+      "Reward points and store credit"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Magento invoices to CSV?",
+        "answer": "Upload your Magento invoice PDF and our tool will extract order details, product line items, customer information, shipping, and tax data into CSV and Excel formats."
+      },
+      {
+        "question": "Does the converter work with Adobe Commerce?",
+        "answer": "Yes, Adobe Commerce (formerly Magento Commerce) uses the same invoice structure. Our converter works with invoices from both Magento Open Source and Adobe Commerce."
+      },
+      {
+        "question": "How do I export invoices from Magento?",
+        "answer": "In Magento admin, go to Sales > Invoices, select an invoice, and use Print or Print Invoice to generate a PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Magento configurable products?",
+        "answer": "Yes, our tool extracts configurable product options, variant SKUs, and associated line items when they appear in the invoice PDF."
+      },
+      {
+        "question": "Can I convert Magento multi-store invoices?",
+        "answer": "Yes, invoices from any Magento store view can be converted. Store-specific information is extracted when visible in the PDF."
+      },
+      {
+        "question": "What about Magento gift cards and store credit?",
+        "answer": "Our converter extracts gift card usage, store credit applied, and reward points when they appear on Magento invoices."
+      },
+      {
+        "question": "Does the tool work with Magento 2 invoices?",
+        "answer": "Yes, our converter supports Magento 2 and Adobe Commerce invoice formats, extracting all standard invoice fields and line items."
+      }
+    ]
+  },
+  {
+    "slug": "freeagent",
+    "name": "FreeAgent",
+    "category": "accounting",
+    "description": "Convert FreeAgent invoices to CSV or Excel format. Extract invoice details, client information, line items, and tax data from FreeAgent accounting software.",
+    "metaTitle": "FreeAgent Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert FreeAgent invoices to CSV and Excel format. Extract invoice details, client information, and line items from FreeAgent automatically.",
+    "exportSteps": [
+      "Log in to your FreeAgent account",
+      "Navigate to Work > Invoices",
+      "Click on the invoice you want to export",
+      "Click 'Download PDF' or 'Print'",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "FreeAgent invoice layouts vary by customisation and branding",
+      "Time-based projects may show hours and rates differently",
+      "Recurring invoices have subscription details",
+      "VAT treatment depends on FreeAgent VAT settings",
+      "Multi-currency invoices require careful handling"
+    ],
+    "uniqueFields": [
+      "FreeAgent invoice reference",
+      "Project name and client reference",
+      "Time entries with hourly rates",
+      "Expense categories and descriptions",
+      "VAT scheme (flat rate, standard, etc.)",
+      "Payment status and due dates",
+      "Client portal link information"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert FreeAgent invoices to CSV?",
+        "answer": "Upload your FreeAgent invoice PDF and our tool will extract invoice details, client information, line items, time entries, and tax data into CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from FreeAgent?",
+        "answer": "In FreeAgent, go to Work > Invoices, select your invoice, and click Download PDF or Print. Save as PDF, then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle FreeAgent time tracking?",
+        "answer": "Yes, our tool extracts time entries from FreeAgent invoices including hours worked, rates, and project descriptions when visible in the PDF."
+      },
+      {
+        "question": "Can I convert FreeAgent recurring invoices?",
+        "answer": "Yes, our converter handles both one-time and recurring FreeAgent invoices, extracting subscription details and billing cycle information."
+      },
+      {
+        "question": "Does the tool extract FreeAgent VAT information?",
+        "answer": "Yes, our converter extracts VAT amounts, VAT rates, and VAT scheme information from FreeAgent invoices for UK tax compliance."
+      },
+      {
+        "question": "What about FreeAgent expense invoices?",
+        "answer": "Expense line items and categories from FreeAgent invoices are extracted and included in the line items CSV for complete accounting records."
+      },
+      {
+        "question": "Can I convert FreeAgent estimates that became invoices?",
+        "answer": "Yes, once an estimate is converted to an invoice in FreeAgent and exported as PDF, our converter will extract all invoice data."
+      }
+    ]
+  },
+  {
+    "slug": "tiktok-ads",
+    "name": "TikTok Ads",
+    "category": "advertising",
+    "description": "Convert TikTok Ads invoices to CSV or Excel format. Extract ad spend, campaign costs, and billing details from TikTok for Business advertising invoices.",
+    "metaTitle": "TikTok Ads Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert TikTok Ads invoices to CSV and Excel format. Extract ad spend, campaign costs, and billing information from TikTok advertising automatically.",
+    "exportSteps": [
+      "Log in to TikTok Ads Manager",
+      "Click on your profile and select 'Billing'",
+      "Navigate to 'Transaction history' or 'Invoices'",
+      "Select the invoice you want to download",
+      "Click 'Download' to save as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "TikTok Ads invoices aggregate spend by billing period",
+      "Tax calculations vary by country and business registration",
+      "Currency may differ between ad account and billing",
+      "Promotional credits and top-up amounts appear separately",
+      "Multiple ad accounts may generate separate invoices"
+    ],
+    "uniqueFields": [
+      "TikTok ad account ID and invoice number",
+      "Advertising spend by billing period",
+      "Tax breakdown by jurisdiction",
+      "Campaign objective types",
+      "Billing threshold and payment terms",
+      "Promotional credits applied",
+      "Currency and conversion information"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert TikTok Ads invoices to CSV?",
+        "answer": "Upload your TikTok Ads invoice PDF and our tool will extract ad spend, tax details, and billing information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from TikTok Ads Manager?",
+        "answer": "In TikTok Ads Manager, go to Billing > Transaction history, select your invoice, and click Download. Save as PDF, then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle TikTok ad spend details?",
+        "answer": "Yes, our tool extracts advertising spend by billing period. Individual campaign breakdowns are included when TikTok provides them on the invoice."
+      },
+      {
+        "question": "Can I convert TikTok Ads invoices from multiple accounts?",
+        "answer": "Yes, upload each account's invoice separately or use bulk conversion to process invoices from multiple TikTok ad accounts simultaneously."
+      },
+      {
+        "question": "What about TikTok tax information?",
+        "answer": "Our converter extracts VAT, GST, or sales tax as shown on the invoice, with tax rates and amounts displayed separately for easy reconciliation."
+      },
+      {
+        "question": "Does the tool work with TikTok promotional credits?",
+        "answer": "Yes, promotional credits and top-up amounts that offset your ad spend are extracted and shown clearly in the CSV output."
+      },
+      {
+        "question": "Can I convert historical TikTok Ads invoices?",
+        "answer": "Yes, any TikTok Ads invoice PDF can be converted regardless of age. Download historical invoices from your billing center and upload them."
+      }
+    ]
+  },
+  {
+    "slug": "zoom",
+    "name": "Zoom",
+    "category": "software",
+    "description": "Convert Zoom subscription invoices to CSV or Excel format. Extract license costs, meeting room charges, and add-on features from Zoom billing invoices.",
+    "metaTitle": "Zoom Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Zoom invoices to CSV and Excel format. Extract subscription costs, license details, and add-on charges from Zoom automatically.",
+    "exportSteps": [
+      "Log in to the Zoom web portal as an admin",
+      "Navigate to 'Account Management' > 'Billing'",
+      "Click on 'Current Plans' or 'Billing History'",
+      "Select the invoice you want to download",
+      "Click 'Download invoice' to save as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Zoom invoices list each product (Meetings, Phone, Rooms) separately",
+      "Add-on licenses like Large Meeting or Webinar appear as separate lines",
+      "Prorated charges appear when adding or removing licenses mid-cycle",
+      "Tax calculations vary by region and business status",
+      "Annual vs monthly billing shows different structures"
+    ],
+    "uniqueFields": [
+      "Zoom account ID and invoice number",
+      "Product type (Meetings, Phone, Rooms, Webinar)",
+      "License count and per-host pricing",
+      "Add-on features (Large Meeting, Recording, etc.)",
+      "Billing period dates",
+      "Prorated charges and adjustments",
+      "Tax by jurisdiction"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Zoom invoices to CSV?",
+        "answer": "Upload your Zoom invoice PDF and our tool will extract subscription details, license counts, add-on costs, and tax information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Zoom?",
+        "answer": "In Zoom, go to Account Management > Billing > Billing History, select your invoice, and click Download invoice. Then upload the PDF to our converter."
+      },
+      {
+        "question": "Does the converter handle different Zoom products?",
+        "answer": "Yes, our tool works with Zoom Meetings, Zoom Phone, Zoom Rooms, Zoom Webinar, and other Zoom products, extracting each as separate line items."
+      },
+      {
+        "question": "Can I convert invoices with Zoom add-ons?",
+        "answer": "Yes, add-on licenses like Large Meeting, Cloud Recording, or additional phone numbers are extracted as separate line items with their individual costs."
+      },
+      {
+        "question": "What about prorated Zoom charges?",
+        "answer": "Our converter extracts prorated charges from mid-cycle license changes, showing both the proration calculation and the adjusted amount."
+      },
+      {
+        "question": "Does the tool work with Zoom annual plans?",
+        "answer": "Yes, annual subscription invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "Can I convert Zoom invoices from different accounts?",
+        "answer": "Yes, upload invoices from any Zoom account. Use bulk conversion to process multiple invoices from different Zoom accounts simultaneously."
+      }
+    ]
   }
 ]

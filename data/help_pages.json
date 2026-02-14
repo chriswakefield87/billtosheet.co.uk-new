@@ -615,5 +615,150 @@
         "answer": "No, they contain the same data but are independent files. Changes in one file don't affect the others. This lets you work with whichever format suits your workflow best."
       }
     ]
+  },
+  {
+    "slug": "invoice-quality-checklist",
+    "title": "Invoice Quality Checklist Before Conversion",
+    "description": "Ensure your PDF invoice is ready for conversion. Learn what makes a PDF ideal for extraction and how to improve conversion accuracy.",
+    "metaTitle": "Invoice Quality Checklist | Prepare PDFs for Conversion",
+    "metaDescription": "Checklist for preparing invoice PDFs for conversion. Ensure text is selectable, layout is clear, and files meet requirements for best extraction results.",
+    "faqs": [
+      {
+        "question": "What makes an invoice PDF ideal for conversion?",
+        "answer": "Text-based (not scanned) PDFs with clear structure, readable fonts, and visible line item tables convert best. Avoid password protection and ensure the file is under 10MB."
+      },
+      {
+        "question": "Should I flatten or compress my PDF before uploading?",
+        "answer": "No need to flatten. Avoid heavy compression that might reduce text quality. Standard PDF exports from accounting software or platforms work well as-is."
+      },
+      {
+        "question": "What if my invoice has complex formatting?",
+        "answer": "BillToSheet handles most standard invoice layouts. If you have unusual formatting, try converting first - our system adapts to many structures. Review the output and correct any errors."
+      },
+      {
+        "question": "Can I convert invoices with logos and images?",
+        "answer": "Yes, logos and images don't affect extraction. We extract text data. Ensure the text (vendor name, amounts, line items) is clear and not obscured by graphics."
+      },
+      {
+        "question": "How do I improve results for scanned invoices?",
+        "answer": "Use at least 300 DPI when scanning, ensure the invoice is flat and straight, and avoid shadows or blur. Higher quality scans produce more accurate OCR extraction."
+      }
+    ]
+  },
+  {
+    "slug": "handling-foreign-invoices",
+    "title": "Converting Invoices in Other Languages",
+    "description": "Learn how to convert invoices in different languages and from international suppliers. Tips for non-English invoices and foreign currency handling.",
+    "metaTitle": "Convert Foreign Language Invoices | International Invoice Conversion",
+    "metaDescription": "Convert invoices in other languages and from international suppliers. Handle non-English invoices, foreign currency, and international formats.",
+    "faqs": [
+      {
+        "question": "Can BillToSheet convert non-English invoices?",
+        "answer": "Yes, our converter works with invoices in various languages. We extract numbers, dates, and amounts regardless of language. Vendor names and descriptions are preserved as shown."
+      },
+      {
+        "question": "How are foreign currency amounts handled?",
+        "answer": "Currency codes and amounts are extracted and preserved. Each currency is clearly identified in the CSV. You may need to apply exchange rates for your base currency separately."
+      },
+      {
+        "question": "What about different date formats?",
+        "answer": "We support DD/MM/YYYY, MM/DD/YYYY, YYYY-MM-DD, and other common formats. Output dates are standardised to ISO format (YYYY-MM-DD) for consistency."
+      },
+      {
+        "question": "Do international tax formats work?",
+        "answer": "Yes, VAT, GST, IVA, and other tax formats are extracted. Tax amounts and rates are captured when visible. Tax field names may vary by region but the data is preserved."
+      },
+      {
+        "question": "What if the invoice uses different decimal separators?",
+        "answer": "We handle both comma and period as decimal separators. Amounts are extracted correctly regardless of regional number formatting in the source PDF."
+      }
+    ]
+  },
+  {
+    "slug": "conversion-failure-troubleshooting",
+    "title": "Troubleshooting Conversion Failures",
+    "description": "Detailed guide to fixing failed invoice conversions. Understand error messages and resolve common causes of conversion failure.",
+    "metaTitle": "Fix Conversion Failures | Invoice Conversion Error Guide",
+    "metaDescription": "Troubleshoot failed invoice conversions. Fix PDF upload errors, extraction failures, and understand what causes conversion to fail.",
+    "faqs": [
+      {
+        "question": "Why does my conversion fail with 'no text found'?",
+        "answer": "This usually means the PDF is image-based (scanned or photographed) with no selectable text. Try re-scanning at higher quality (300 DPI+) or request a digital PDF from the vendor."
+      },
+      {
+        "question": "What causes 'file too large' errors?",
+        "answer": "Files over 10MB are rejected. Compress your PDF using tools like Smallpdf or Adobe's compressor. Scanned invoices are often larger - consider reducing scan resolution while keeping text readable."
+      },
+      {
+        "question": "Why does conversion fail for password-protected PDFs?",
+        "answer": "We cannot process password-protected files. Remove the password using Adobe Acrobat or an online tool (if you have the password), or request an unprotected version from the sender."
+      },
+      {
+        "question": "What if conversion fails with 'unsupported format'?",
+        "answer": "Ensure you're uploading a PDF file. We don't support Word, Excel, or image-only files. Convert other formats to PDF first, then upload."
+      },
+      {
+        "question": "Do failed conversions use credits?",
+        "answer": "No, only successful conversions use credits. If a conversion fails, no credit is deducted. You can retry after fixing the issue."
+      }
+    ]
+  },
+  {
+    "slug": "organizing-converted-files",
+    "title": "Organising and Naming Converted Invoice Files",
+    "description": "Best practices for organising your converted invoice files. File naming conventions, folder structure, and workflow tips for converted CSVs and Excel files.",
+    "metaTitle": "Organise Converted Invoice Files | File Naming and Structure",
+    "metaDescription": "Learn how to organise converted invoice files. File naming conventions, folder structure, and tips for managing your CSV and Excel exports.",
+    "faqs": [
+      {
+        "question": "What file names does BillToSheet use?",
+        "answer": "We provide invoice_details.csv, line_items.csv, and combined.xlsx. You can rename files after download. Consider including vendor name and invoice number in your naming scheme."
+      },
+      {
+        "question": "How should I organise files for monthly bookkeeping?",
+        "answer": "Create folders by month (e.g. 2026-02) or by vendor. Keep the original PDF with the converted CSV/Excel for reference. Many users create a subfolder per invoice with PDF + CSVs together."
+      },
+      {
+        "question": "Can I bulk download all my conversions?",
+        "answer": "Each conversion is downloaded individually from your dashboard. For bulk organisation, download all files and organise them into your preferred folder structure on your computer."
+      },
+      {
+        "question": "How long should I keep converted files?",
+        "answer": "BillToSheet stores files for 30 days. Download and archive important conversions. Match your retention to your accounting and tax record requirements (typically 6-7 years)."
+      },
+      {
+        "question": "What naming convention works for accounting import?",
+        "answer": "Include vendor name, invoice number, and date (e.g. VendorName_INV-12345_2026-02-14.csv). This makes it easy to match imports and track what's been processed."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-data-validation",
+    "title": "Validating Extracted Invoice Data",
+    "description": "How to validate extracted invoice data before importing into accounting software. Spot checks, reconciliation tips, and accuracy verification.",
+    "metaTitle": "Validate Extracted Invoice Data | Accuracy Verification",
+    "metaDescription": "Learn how to validate extracted invoice data before import. Spot checks, reconciliation tips, and verification steps for accurate accounting.",
+    "faqs": [
+      {
+        "question": "What should I check before importing?",
+        "answer": "Verify invoice number, date, vendor name, and total amount match the original PDF. Spot-check a few line items for quantity, unit price, and line total accuracy."
+      },
+      {
+        "question": "How do I verify line item totals?",
+        "answer": "Sum the line totals in Excel and compare to the subtotal on the invoice. Check that tax amounts add up correctly. Our CSV structure makes this easy with simple SUM formulas."
+      },
+      {
+        "question": "What if amounts don't match?",
+        "answer": "Check for rounding differences (we preserve decimals). If significant variance exists, review the original PDF - the issue may be complex layout or unusual formatting. Re-convert or correct manually."
+      },
+      {
+        "question": "Should I validate every invoice?",
+        "answer": "For high-value invoices, full validation is recommended. For routine invoices, spot-check a sample. Build confidence over time - our extraction is highly accurate for standard formats."
+      },
+      {
+        "question": "Can I use Excel formulas to validate?",
+        "answer": "Yes. Use SUM to verify line items equal subtotal, check tax calculations, and compare totals. Conditional formatting can highlight variances. Our structured output supports easy validation."
+      }
+    ]
   }
 ]

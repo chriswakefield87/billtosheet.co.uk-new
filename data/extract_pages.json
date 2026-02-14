@@ -567,5 +567,150 @@
         "answer": "Our system adapts to different layouts and extracts all visible structured data. Very unusual custom formats may require manual review, but most custom fields are captured automatically."
       }
     ]
+  },
+  {
+    "slug": "warranty-information",
+    "title": "Extract Warranty Information",
+    "description": "Extract warranty details, guarantee periods, and product warranty terms from invoices. Track warranty coverage and expiry dates for inventory and customer service.",
+    "metaTitle": "Extract Warranty Information from Invoices | Warranty Data Extraction",
+    "metaDescription": "Extract warranty information from PDF invoices. Get warranty periods, guarantee terms, and coverage details automatically.",
+    "faqs": [
+      {
+        "question": "What warranty information can be extracted?",
+        "answer": "We extract warranty periods, guarantee terms, warranty start and end dates, and any warranty conditions or coverage details when they appear on the invoice."
+      },
+      {
+        "question": "How are warranty details shown in the output?",
+        "answer": "Warranty information appears in the line items or notes section, associated with the relevant products when specified. Warranty periods and dates are captured in dedicated fields when structured."
+      },
+      {
+        "question": "Can you extract extended warranty purchases?",
+        "answer": "Yes, extended warranty or protection plan purchases that appear as line items are extracted with their descriptions, costs, and coverage periods."
+      },
+      {
+        "question": "What if warranty terms are in the footer?",
+        "answer": "Warranty terms mentioned in invoice footers or terms and conditions sections are extracted and included in the notes field for reference."
+      },
+      {
+        "question": "Does the tool extract manufacturer warranty vs seller warranty?",
+        "answer": "When the invoice distinguishes between manufacturer and seller warranties, we extract both. The distinction is preserved in the description or notes when visible."
+      }
+    ]
+  },
+  {
+    "slug": "delivery-schedules",
+    "title": "Extract Delivery Schedules",
+    "description": "Extract delivery dates, shipping schedules, and expected arrival information from invoices. Track when goods or services are due for delivery.",
+    "metaTitle": "Extract Delivery Schedules from Invoices | Delivery Date Extraction",
+    "metaDescription": "Extract delivery schedules and expected delivery dates from PDF invoices automatically. Track delivery timelines for logistics and planning.",
+    "faqs": [
+      {
+        "question": "What delivery information can be extracted?",
+        "answer": "We extract expected delivery dates, delivery windows, scheduled shipment dates, estimated arrival times, and any delivery-related notes when present on the invoice."
+      },
+      {
+        "question": "How are delivery dates shown in the CSV?",
+        "answer": "Delivery dates appear in the invoice details section or in a dedicated delivery date field. When multiple delivery dates exist (e.g. per line item), they're associated with the relevant items."
+      },
+      {
+        "question": "Can you extract partial delivery schedules?",
+        "answer": "Yes, when invoices specify phased or partial delivery (e.g. 'Delivery 1: 15 Jan, Delivery 2: 22 Jan'), we extract each scheduled date and its associated items."
+      },
+      {
+        "question": "What about delivery method and carrier?",
+        "answer": "Delivery method, carrier name, and shipping service level are extracted alongside delivery dates when they appear on the invoice."
+      },
+      {
+        "question": "Does the tool handle service period delivery?",
+        "answer": "For service invoices, we extract service period dates, performance dates, and when services were or will be delivered, as shown on the document."
+      }
+    ]
+  },
+  {
+    "slug": "compliance-certifications",
+    "title": "Extract Compliance and Certification Information",
+    "description": "Extract compliance certifications, regulatory references, and quality assurance information from invoices. Track certified products and regulatory compliance.",
+    "metaTitle": "Extract Compliance Certifications from Invoices | Certification Data",
+    "metaDescription": "Extract compliance certifications, regulatory references, and quality assurance details from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What compliance information can be extracted?",
+        "answer": "We extract certification numbers, compliance standards (ISO, CE, FDA, etc.), regulatory references, quality assurance codes, and any compliance-related notes when visible on the invoice."
+      },
+      {
+        "question": "How are certifications shown in the output?",
+        "answer": "Certification and compliance data appears in line item descriptions, product codes, or the notes section depending on how it's presented in the original invoice."
+      },
+      {
+        "question": "Can you extract industry-specific compliance?",
+        "answer": "Yes, industry-specific compliance (medical device codes, food safety certifications, construction standards, etc.) is extracted when clearly labeled on the invoice."
+      },
+      {
+        "question": "What about batch or lot numbers for traceability?",
+        "answer": "Batch numbers, lot numbers, and serial numbers used for traceability and compliance are extracted and associated with the relevant line items when present."
+      },
+      {
+        "question": "Does the tool extract country of origin?",
+        "answer": "Country of origin, origin certification, and customs-related compliance information are extracted when they appear on the invoice for import/export compliance."
+      }
+    ]
+  },
+  {
+    "slug": "quantity-breakdowns",
+    "title": "Extract Quantity Breakdowns and Units of Measure",
+    "description": "Extract quantity details, units of measure, and packaging breakdowns from invoices. Track quantities in cases, pallets, or custom units for inventory and ordering.",
+    "metaTitle": "Extract Quantity Breakdowns from Invoices | UOM Extraction",
+    "metaDescription": "Extract quantity breakdowns, units of measure, and packaging details from PDF invoices automatically. Track quantities in various units.",
+    "faqs": [
+      {
+        "question": "What quantity information can be extracted?",
+        "answer": "We extract quantities, units of measure (each, case, pallet, kg, litres, etc.), packaging breakdowns, and multi-tier quantity pricing when present on the invoice."
+      },
+      {
+        "question": "How are units of measure shown in the CSV?",
+        "answer": "Units of measure appear in the line items CSV alongside quantity and unit price. Each line item includes the UOM when it's specified in the original invoice."
+      },
+      {
+        "question": "Can you extract tiered or bulk pricing?",
+        "answer": "Yes, when invoices show quantity tiers (e.g. 1-10 @ £5, 11-50 @ £4), we extract the quantity, applicable tier, and corresponding unit price for each line."
+      },
+      {
+        "question": "What about conversion between units?",
+        "answer": "When invoices show conversions (e.g. 1 case = 12 units), we extract both the primary quantity and the converted amount when clearly stated."
+      },
+      {
+        "question": "Does the tool handle partial quantities?",
+        "answer": "Yes, partial quantities, fractional amounts, and decimal quantities are extracted accurately, preserving the exact values from the invoice."
+      }
+    ]
+  },
+  {
+    "slug": "return-policies",
+    "title": "Extract Return and Refund Policy Information",
+    "description": "Extract return policy details, refund conditions, and exchange terms from invoices. Track return windows and conditions for customer service and accounting.",
+    "metaTitle": "Extract Return Policy from Invoices | Refund Terms Extraction",
+    "metaDescription": "Extract return policy, refund conditions, and exchange terms from PDF invoices automatically. Track return windows and policy details.",
+    "faqs": [
+      {
+        "question": "What return policy information can be extracted?",
+        "answer": "We extract return windows, refund conditions, exchange terms, restocking fee information, and any return-related instructions when they appear on the invoice."
+      },
+      {
+        "question": "How are return terms shown in the output?",
+        "answer": "Return policy details appear in the notes or terms section of the invoice details CSV. When associated with specific items, they're linked to the relevant line items."
+      },
+      {
+        "question": "Can you extract restocking fees?",
+        "answer": "Yes, restocking fees, return shipping charges, and other return-related costs are extracted when they appear as line items or in the terms section."
+      },
+      {
+        "question": "What about non-returnable item indicators?",
+        "answer": "When items are marked as non-returnable, final sale, or custom-made, we extract those indicators and include them in the line item description or notes."
+      },
+      {
+        "question": "Does the tool extract return authorisation numbers?",
+        "answer": "Return authorisation (RMA) numbers, return reference codes, and return instructions are extracted when present on the invoice for tracking returns."
+      }
+    ]
   }
 ]
