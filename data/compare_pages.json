@@ -707,5 +707,150 @@
         "answer": "Currently BillToSheet is web-only, but you can use Python to automate uploading PDFs and downloading CSVs via browser automation. API access for programmatic conversion may be available in future."
       }
     ]
+  },
+  {
+    "slug": "billtosheet-vs-make",
+    "title": "BillToSheet vs Make (Integromat)",
+    "description": "Compare BillToSheet with Make.com for invoice automation. See which approach is simpler for converting invoice PDFs to CSV and Excel.",
+    "metaTitle": "BillToSheet vs Make | Invoice Automation Comparison",
+    "metaDescription": "Compare BillToSheet vs Make.com for invoice PDF conversion. See which is easier for extracting invoice data to CSV and Excel.",
+    "faqs": [
+      {
+        "question": "What is Make.com?",
+        "answer": "Make (formerly Integromat) is a visual automation platform that connects apps and services. It can process documents but requires connecting to third-party extraction services or building custom workflows."
+      },
+      {
+        "question": "When is BillToSheet simpler than Make?",
+        "answer": "BillToSheet works immediately with no workflow setup - just upload and convert. Make requires creating scenarios, connecting services, and often needs paid extraction modules. For straightforward invoice conversion, BillToSheet is faster."
+      },
+      {
+        "question": "Does Make have built-in invoice extraction?",
+        "answer": "Make doesn't natively extract invoice data. You'd need to connect to an OCR or document processing service, which adds complexity and often additional costs."
+      },
+      {
+        "question": "Can they work together?",
+        "answer": "Yes! Convert invoices with BillToSheet first, then use Make to automatically move the CSV files to Google Drive, accounting software, or other destinations."
+      },
+      {
+        "question": "Which is more cost-effective for occasional use?",
+        "answer": "BillToSheet's pay-as-you-go credits (£0.10-£0.36 per invoice) are often cheaper than Make's subscription plus any document processing add-ons for occasional invoice conversion needs."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-ai-invoice-extraction",
+    "title": "BillToSheet vs AI-Powered Invoice Extraction Tools",
+    "description": "Compare BillToSheet with AI-powered invoice extraction platforms. Understand when a simple converter beats complex AI solutions.",
+    "metaTitle": "BillToSheet vs AI Invoice Extraction | Comparison Guide",
+    "metaDescription": "Compare BillToSheet with AI-powered invoice extraction tools. See when a dedicated converter is better than generic AI document processing.",
+    "faqs": [
+      {
+        "question": "What are AI invoice extraction tools?",
+        "answer": "AI extraction tools use machine learning to read and extract data from documents. They're often designed for high-volume processing with API access and custom training."
+      },
+      {
+        "question": "When is BillToSheet better than AI tools?",
+        "answer": "BillToSheet is better when you need quick, affordable conversion without setup. No API integration, no training, no minimum volumes - just upload and get CSV/Excel output."
+      },
+      {
+        "question": "Do AI tools require more setup?",
+        "answer": "Yes, most AI extraction platforms require account setup, API keys, field mapping configuration, or document type training before you can extract data."
+      },
+      {
+        "question": "Is BillToSheet less accurate than AI?",
+        "answer": "BillToSheet is purpose-built for standard invoice formats and delivers consistent results. AI tools can adapt to unusual formats but may require tuning. For typical business invoices, BillToSheet is highly accurate."
+      },
+      {
+        "question": "Which is cheaper for small businesses?",
+        "answer": "BillToSheet's pay-as-you-go model is typically more affordable. AI platforms often have monthly minimums, per-page fees, or enterprise pricing that doesn't suit occasional users."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-sage-intacct",
+    "title": "BillToSheet vs Sage Intacct Invoice Import",
+    "description": "Compare BillToSheet conversion with Sage Intacct's built-in invoice import. See which approach works best for your accounting workflow.",
+    "metaTitle": "BillToSheet vs Sage Intacct | Invoice Import Comparison",
+    "metaDescription": "Compare BillToSheet with Sage Intacct invoice import. Extract invoice data to CSV for clean import into Sage Intacct.",
+    "faqs": [
+      {
+        "question": "What is Sage Intacct?",
+        "answer": "Sage Intacct is a cloud-based accounting platform for mid-market businesses. It has invoice management features but may not convert arbitrary PDF invoices from vendors into structured data."
+      },
+      {
+        "question": "Why use BillToSheet with Sage Intacct?",
+        "answer": "BillToSheet converts any vendor invoice PDF to clean CSV format first. You get structured data ready for import, avoiding manual entry and ensuring consistent formatting."
+      },
+      {
+        "question": "Does Sage Intacct import PDF invoices directly?",
+        "answer": "Sage Intacct has bill entry and approval workflows, but converting unstructured PDF invoices from various vendors typically requires manual data entry or third-party tools."
+      },
+      {
+        "question": "Which is faster for batch processing?",
+        "answer": "BillToSheet's bulk conversion processes multiple invoices concurrently. Convert a batch to CSV, then import into Sage Intacct - often faster than entering each invoice manually."
+      },
+      {
+        "question": "Can I use both together?",
+        "answer": "Yes, BillToSheet complements Sage Intacct. Convert invoices to CSV with BillToSheet, then use Sage Intacct's import tools to bring the structured data into your accounts payable workflow."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-microsoft-dynamics",
+    "title": "BillToSheet vs Microsoft Dynamics 365 Invoice Processing",
+    "description": "Compare BillToSheet with Microsoft Dynamics 365 for invoice processing. See which approach is simpler for PDF invoice conversion.",
+    "metaTitle": "BillToSheet vs Microsoft Dynamics | Invoice Processing Comparison",
+    "metaDescription": "Compare BillToSheet with Microsoft Dynamics 365 for invoice processing. Convert PDF invoices to CSV for Dynamics import.",
+    "faqs": [
+      {
+        "question": "What is Microsoft Dynamics 365?",
+        "answer": "Microsoft Dynamics 365 is an ERP and CRM suite. It includes finance and operations modules with invoice processing, but converting arbitrary vendor PDFs may require Power Automate and AI Builder."
+      },
+      {
+        "question": "When is BillToSheet simpler?",
+        "answer": "BillToSheet requires no Dynamics license, no Power Platform setup, and no AI Builder credits. Just upload PDFs and get CSV/Excel - ideal when you need quick conversion without enterprise complexity."
+      },
+      {
+        "question": "Does Dynamics have built-in PDF conversion?",
+        "answer": "Dynamics can use Power Automate with AI Builder for document processing, but this requires configuration, connectors, and often additional licensing. It's not a simple upload-and-convert tool."
+      },
+      {
+        "question": "Which is more affordable for SMBs?",
+        "answer": "BillToSheet's pay-as-you-go credits are much cheaper than adding Dynamics 365, Power Automate, and AI Builder for invoice conversion. Use BillToSheet for conversion, then import to Dynamics."
+      },
+      {
+        "question": "Can BillToSheet output work with Dynamics?",
+        "answer": "Yes, BillToSheet's CSV output can be imported into Dynamics 365 Finance or used with Power Automate flows. The structured format works with Dynamics import templates."
+      }
+    ]
+  },
+  {
+    "slug": "billtosheet-vs-sap",
+    "title": "BillToSheet vs SAP Invoice Processing",
+    "description": "Compare BillToSheet with SAP's invoice processing solutions. See when a simple converter complements your SAP workflow.",
+    "metaTitle": "BillToSheet vs SAP | Invoice Processing Comparison",
+    "metaDescription": "Compare BillToSheet with SAP invoice processing. Convert vendor PDF invoices to CSV for SAP import or reconciliation.",
+    "faqs": [
+      {
+        "question": "What is SAP invoice processing?",
+        "answer": "SAP offers invoice processing through SAP S/4HANA, SAP Business One, or SAP Concur. These are enterprise solutions that may require configuration and integration for vendor invoice capture."
+      },
+      {
+        "question": "Why use BillToSheet with SAP?",
+        "answer": "BillToSheet provides a simple way to convert any vendor invoice PDF to structured CSV. Use it when you need quick extraction without SAP configuration, or to supplement existing SAP workflows."
+      },
+      {
+        "question": "Does SAP convert PDF invoices natively?",
+        "answer": "SAP has document capture and OCR capabilities, but full implementation often requires SAP-specific configuration, partner solutions, or add-ons. BillToSheet works immediately with any PDF."
+      },
+      {
+        "question": "Which is faster to implement?",
+        "answer": "BillToSheet has zero implementation time - start converting in seconds. SAP invoice processing typically requires project setup, configuration, and user training."
+      },
+      {
+        "question": "Can BillToSheet output integrate with SAP?",
+        "answer": "Yes, CSV output from BillToSheet can be used with SAP data import tools, middleware, or manual upload. The structured format is compatible with SAP's expected data structures for vendor invoices."
+      }
+    ]
   }
 ]

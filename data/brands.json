@@ -1645,5 +1645,310 @@
         "answer": "Yes, upload invoices from any HubSpot portal. Use bulk conversion to process invoices from multiple portals simultaneously."
       }
     ]
+  },
+  {
+    "slug": "zoom",
+    "name": "Zoom",
+    "category": "software",
+    "description": "Convert Zoom subscription invoices to CSV or Excel format. Extract license costs, meeting minutes, and add-on charges from Zoom billing invoices.",
+    "metaTitle": "Zoom Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Zoom invoices to CSV and Excel format. Extract subscription costs, license details, and add-on charges from Zoom billing automatically.",
+    "exportSteps": [
+      "Log in to your Zoom web portal",
+      "Navigate to Account Management > Billing",
+      "Click on 'Billing History' or 'Invoices'",
+      "Select the invoice you want to download",
+      "Click 'Download PDF' and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Zoom invoices show per-host pricing that varies by plan tier",
+      "Phone add-on charges appear separately from meeting licenses",
+      "Webinar and large meeting add-ons have different billing cycles",
+      "Tax calculations vary by country and business registration",
+      "Annual plans show full-year cost rather than monthly breakdown"
+    ],
+    "uniqueFields": [
+      "Zoom account ID and invoice number",
+      "License type (Pro, Business, Enterprise)",
+      "Host count and per-host pricing",
+      "Phone add-on and webinar add-on costs",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction",
+      "Credits and promotional discounts applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Zoom invoices to CSV?",
+        "answer": "Upload your Zoom invoice PDF and our tool will extract subscription details, host counts, add-on costs, and tax information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Zoom?",
+        "answer": "In Zoom, go to Account Management > Billing > Billing History, select your invoice, and click Download PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Zoom Phone add-ons?",
+        "answer": "Yes, our tool extracts Zoom Phone and webinar add-on charges as separate line items, making it easy to track costs by product."
+      },
+      {
+        "question": "Can I convert Zoom annual subscription invoices?",
+        "answer": "Yes, annual invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "What about per-host licensing?",
+        "answer": "Our converter extracts host count and per-host pricing when shown on the invoice, making it clear how costs scale with team size."
+      },
+      {
+        "question": "Does the tool work with Zoom Rooms invoices?",
+        "answer": "Yes, our converter handles Zoom Rooms and all Zoom product add-ons, extracting each as separate line items when itemized."
+      },
+      {
+        "question": "Can I convert invoices from different Zoom accounts?",
+        "answer": "Yes, upload invoices from any Zoom account. Use bulk conversion to process invoices from multiple accounts simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "category": "software",
+    "description": "Convert Dropbox subscription invoices to CSV or Excel format. Extract storage costs, team plan details, and add-on charges from Dropbox billing.",
+    "metaTitle": "Dropbox Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Dropbox invoices to CSV and Excel format. Extract storage costs, team plans, and add-on charges from Dropbox billing automatically.",
+    "exportSteps": [
+      "Log in to your Dropbox account",
+      "Click on your avatar and select 'Settings'",
+      "Navigate to 'Billing' or 'Plans'",
+      "Click on 'View billing history' or 'Invoices'",
+      "Download the invoice as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Dropbox invoices combine storage and team licenses into single line items",
+      "Overage charges for exceeding storage limits appear separately",
+      "Annual plans show full-year cost rather than monthly breakdown",
+      "Tax calculations vary by country and business status",
+      "Dropbox Business and Dropbox Professional have different invoice formats"
+    ],
+    "uniqueFields": [
+      "Dropbox account ID and invoice number",
+      "Plan type (Plus, Professional, Business)",
+      "Storage amount and per-user pricing",
+      "Overage charges for storage limits",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction",
+      "Credits and promotional discounts applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Dropbox invoices to CSV?",
+        "answer": "Upload your Dropbox invoice PDF and our tool will extract plan costs, storage details, and add-on charges into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Dropbox?",
+        "answer": "In Dropbox, go to Settings > Billing > View billing history, select your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Dropbox storage overages?",
+        "answer": "Yes, overage charges for exceeding your storage limit are extracted as separate line items when they appear on the invoice."
+      },
+      {
+        "question": "Can I convert Dropbox Business team invoices?",
+        "answer": "Yes, our converter works with Dropbox Business, Professional, and Plus invoices, extracting per-user and storage costs."
+      },
+      {
+        "question": "What about annual Dropbox subscriptions?",
+        "answer": "Annual subscription invoices are fully supported. Our converter extracts the billing period and any annual discount applied."
+      },
+      {
+        "question": "Does the tool work with Dropbox add-ons?",
+        "answer": "Yes, add-on products like Dropbox Sign or Dropbox Backup that appear on your invoice are extracted as separate line items."
+      },
+      {
+        "question": "Can I convert invoices from multiple Dropbox accounts?",
+        "answer": "Yes, upload invoices from any Dropbox account. Use bulk conversion to process invoices from different accounts at once."
+      }
+    ]
+  },
+  {
+    "slug": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud",
+    "category": "software",
+    "description": "Convert Adobe Creative Cloud subscription invoices to CSV or Excel format. Extract plan costs, app subscriptions, and add-on charges from Adobe billing.",
+    "metaTitle": "Adobe Creative Cloud Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Adobe Creative Cloud invoices to CSV and Excel format. Extract subscription costs, app licenses, and add-on charges from Adobe billing automatically.",
+    "exportSteps": [
+      "Log in to your Adobe account",
+      "Navigate to 'Account' > 'Plans & products'",
+      "Click on 'View invoice history' or 'Billing'",
+      "Select the invoice you want to download",
+      "Download as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Adobe invoices list each app or plan as separate line items",
+      "Student and teacher discounts appear as credits",
+      "Annual plans show different pricing than monthly",
+      "Tax calculations vary by region and subscription type",
+      "Adobe Stock and font add-ons appear on separate lines"
+    ],
+    "uniqueFields": [
+      "Adobe account ID and invoice number",
+      "Subscription type (Individual, Business, Enterprise)",
+      "App-specific charges (Photoshop, Illustrator, etc.)",
+      "Adobe Stock and font add-on costs",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction",
+      "Educational and promotional discounts applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Adobe Creative Cloud invoices to CSV?",
+        "answer": "Upload your Adobe invoice PDF and our tool will extract subscription details, app costs, and add-on charges into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Adobe?",
+        "answer": "In your Adobe account, go to Plans & products > Billing, select your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle multiple Adobe apps?",
+        "answer": "Yes, our tool extracts each Adobe app subscription as a separate line item when itemized on the invoice."
+      },
+      {
+        "question": "Can I convert Adobe Stock add-on invoices?",
+        "answer": "Yes, Adobe Stock credits and font add-ons are extracted as separate line items when they appear on your invoice."
+      },
+      {
+        "question": "What about Adobe educational discounts?",
+        "answer": "Educational discounts and student/teacher pricing are extracted and shown in the CSV, along with the discounted amount."
+      },
+      {
+        "question": "Does the tool work with Adobe All Apps plans?",
+        "answer": "Yes, our converter handles All Apps plans, single-app subscriptions, and any combination of Adobe products."
+      },
+      {
+        "question": "Can I convert invoices from different Adobe accounts?",
+        "answer": "Yes, upload invoices from any Adobe account. Use bulk conversion to process invoices from multiple accounts simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "adyen",
+    "name": "Adyen",
+    "category": "payments",
+    "description": "Convert Adyen settlement reports and invoices to CSV or Excel. Extract transaction details, fees, and settlement data from Adyen payment processing documents.",
+    "metaTitle": "Adyen Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Adyen invoices and settlement reports to CSV and Excel format. Extract transaction fees, settlement amounts, and payment data from Adyen automatically.",
+    "exportSteps": [
+      "Log in to your Adyen Customer Area",
+      "Navigate to 'Reports' or 'Settlements'",
+      "Select the settlement or invoice period",
+      "Click 'Download' to export as PDF",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Adyen settlement reports combine multiple currencies into single documents",
+      "Interchange and scheme fees are broken down separately",
+      "Chargebacks and refunds appear as negative line items",
+      "Multi-currency settlements require careful reconciliation",
+      "Settlement dates may differ from transaction dates"
+    ],
+    "uniqueFields": [
+      "Adyen merchant account ID and settlement ID",
+      "Transaction fees by payment method",
+      "Interchange and scheme fee breakdown",
+      "Settlement currency and amounts",
+      "Chargeback and refund adjustments",
+      "Payment method mix (card, alternative)",
+      "Reserve and hold amounts"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Adyen settlement reports to CSV?",
+        "answer": "Upload your Adyen settlement or invoice PDF and our tool will extract transaction totals, fees, and settlement details into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download reports from Adyen?",
+        "answer": "In Adyen Customer Area, go to Reports or Settlements, select your period, and click Download. Save as PDF and upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Adyen multi-currency settlements?",
+        "answer": "Yes, our tool extracts settlement amounts by currency and preserves currency codes for accurate reconciliation."
+      },
+      {
+        "question": "Can I convert Adyen chargeback reports?",
+        "answer": "Yes, chargebacks and refunds are extracted with negative amounts, making it easy to track adjustments against your settlements."
+      },
+      {
+        "question": "What about Adyen interchange fees?",
+        "answer": "Our converter extracts interchange and scheme fee breakdowns when they appear on the settlement document."
+      },
+      {
+        "question": "Does the tool work with Adyen payout reports?",
+        "answer": "Yes, payout and settlement reports are fully supported, extracting all transaction and fee data for accounting reconciliation."
+      },
+      {
+        "question": "Can I convert historical Adyen settlements?",
+        "answer": "Yes, any Adyen settlement PDF can be converted. Download historical reports from your Customer Area and upload them."
+      }
+    ]
+  },
+  {
+    "slug": "squarespace",
+    "name": "Squarespace",
+    "category": "ecommerce",
+    "description": "Convert Squarespace invoices and subscription receipts to CSV or Excel. Extract plan costs, domain renewals, and add-on charges from Squarespace billing.",
+    "metaTitle": "Squarespace Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Squarespace invoices to CSV and Excel format. Extract subscription costs, domain renewals, and add-on charges from Squarespace billing automatically.",
+    "exportSteps": [
+      "Log in to your Squarespace account",
+      "Navigate to Settings > Billing & Account",
+      "Click on 'Billing history' or 'Invoices'",
+      "Select the invoice you want to download",
+      "Download as PDF and upload to our converter above"
+    ],
+    "commonIssues": [
+      "Squarespace invoices combine website and commerce plans",
+      "Domain renewals appear on separate invoices or line items",
+      "Annual plans show different pricing than monthly",
+      "Tax calculations vary by region and plan type",
+      "Email marketing and scheduling add-ons billed separately"
+    ],
+    "uniqueFields": [
+      "Squarespace site ID and invoice number",
+      "Plan type (Personal, Business, Commerce)",
+      "Domain registration and renewal costs",
+      "Commerce and email add-on charges",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction",
+      "Promotional discounts applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Squarespace invoices to CSV?",
+        "answer": "Upload your Squarespace invoice PDF and our tool will extract plan costs, domain charges, and add-on fees into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Squarespace?",
+        "answer": "In Squarespace, go to Settings > Billing & Account > Billing history, select your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Squarespace domain renewals?",
+        "answer": "Yes, domain registration and renewal charges are extracted as separate line items when they appear on the invoice."
+      },
+      {
+        "question": "Can I convert Squarespace Commerce invoices?",
+        "answer": "Yes, our converter works with all Squarespace plans including Commerce, extracting transaction fees and plan costs."
+      },
+      {
+        "question": "What about Squarespace annual plans?",
+        "answer": "Annual subscription invoices are fully supported. Our converter extracts the billing period and any annual discount."
+      },
+      {
+        "question": "Does the tool work with Squarespace add-ons?",
+        "answer": "Yes, add-ons like email marketing, scheduling, or premium integrations are extracted as separate line items when itemized."
+      },
+      {
+        "question": "Can I convert invoices from multiple Squarespace sites?",
+        "answer": "Yes, upload invoices from any Squarespace site. Use bulk conversion to process invoices from different sites at once."
+      }
+    ]
   }
 ]

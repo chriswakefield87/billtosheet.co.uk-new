@@ -567,5 +567,150 @@
         "answer": "Our system adapts to different layouts and extracts all visible structured data. Very unusual custom formats may require manual review, but most custom fields are captured automatically."
       }
     ]
+  },
+  {
+    "slug": "warranty-information",
+    "title": "Extract Warranty Information",
+    "description": "Extract warranty terms, guarantee periods, and coverage details from invoices. Track warranty start dates and coverage conditions for products and services.",
+    "metaTitle": "Extract Warranty Information from Invoices | Warranty Data Extraction",
+    "metaDescription": "Extract warranty terms, guarantee periods, and coverage details from PDF invoices automatically. Track product and service warranties.",
+    "faqs": [
+      {
+        "question": "What warranty information can be extracted?",
+        "answer": "We extract warranty periods, start and end dates, coverage descriptions, and any warranty terms or conditions mentioned on the invoice."
+      },
+      {
+        "question": "How are warranty details shown in the output?",
+        "answer": "Warranty information appears in the invoice details or notes section, and can be associated with specific line items when warranty terms apply to individual products."
+      },
+      {
+        "question": "Can you extract extended warranty details?",
+        "answer": "Yes, extended warranty purchases, add-on coverage, and warranty extension terms are extracted when they appear on the invoice."
+      },
+      {
+        "question": "What about manufacturer warranties?",
+        "answer": "When manufacturer or supplier warranty information is stated on the invoice, we extract it along with the relevant product or line item."
+      },
+      {
+        "question": "Does the tool extract warranty registration information?",
+        "answer": "Yes, warranty registration numbers, registration deadlines, and related instructions are extracted when present in the invoice."
+      }
+    ]
+  },
+  {
+    "slug": "delivery-instructions",
+    "title": "Extract Delivery Instructions",
+    "description": "Extract delivery instructions, special handling requirements, and shipping notes from invoices. Capture delivery preferences and logistics details.",
+    "metaTitle": "Extract Delivery Instructions from Invoices | Shipping Instructions Extraction",
+    "metaDescription": "Extract delivery instructions, special handling, and shipping notes from PDF invoices automatically. Capture logistics and delivery preferences.",
+    "faqs": [
+      {
+        "question": "What delivery instructions can be extracted?",
+        "answer": "We extract delivery dates, time windows, special handling requirements, leave-at-door instructions, and any delivery-specific notes mentioned on the invoice."
+      },
+      {
+        "question": "How are delivery instructions shown in the CSV?",
+        "answer": "Delivery instructions appear in the notes or a dedicated delivery field in the invoice details section, preserving the full text as shown on the invoice."
+      },
+      {
+        "question": "Can you extract delivery address requirements?",
+        "answer": "Yes, when invoices specify delivery address details, dock requirements, or access instructions, we extract them for logistics planning."
+      },
+      {
+        "question": "What about partial delivery instructions?",
+        "answer": "Instructions for split shipments, partial deliveries, or staged delivery schedules are extracted when they appear on the invoice."
+      },
+      {
+        "question": "Does the tool extract contact details for delivery?",
+        "answer": "Yes, delivery contact names, phone numbers, and preferred contact methods for delivery coordination are extracted when present."
+      }
+    ]
+  },
+  {
+    "slug": "compliance-certifications",
+    "title": "Extract Compliance and Certification Information",
+    "description": "Extract compliance certifications, regulatory references, and quality assurance details from invoices. Track certified products and compliance documentation.",
+    "metaTitle": "Extract Compliance Certifications from Invoices | Certification Data",
+    "metaDescription": "Extract compliance certifications, regulatory references, and quality assurance details from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What compliance information can be extracted?",
+        "answer": "We extract certification numbers, compliance standards (ISO, FDA, CE, etc.), regulatory references, and quality assurance statements when they appear on the invoice."
+      },
+      {
+        "question": "How are certifications shown in the output?",
+        "answer": "Certification and compliance information appears in the invoice details or notes section, and can be linked to specific line items when certifications apply to products."
+      },
+      {
+        "question": "Can you extract industry-specific compliance?",
+        "answer": "Yes, industry-specific compliance (medical device, food safety, aerospace, etc.) is extracted when clearly stated on the invoice."
+      },
+      {
+        "question": "What about batch or lot certification?",
+        "answer": "Batch numbers, lot codes, and associated certification or test documentation references are extracted when present for traceability."
+      },
+      {
+        "question": "Does the tool extract expiry dates for certifications?",
+        "answer": "When certification validity periods or expiry dates are mentioned on the invoice, we extract them for compliance tracking."
+      }
+    ]
+  },
+  {
+    "slug": "quantity-unit-conversions",
+    "title": "Extract Quantity and Unit of Measure",
+    "description": "Extract quantity information, units of measure, and conversion factors from invoices. Track quantities in different units for inventory and procurement.",
+    "metaTitle": "Extract Quantity and UOM from Invoices | Unit of Measure Extraction",
+    "metaDescription": "Extract quantities, units of measure, and conversion factors from PDF invoices automatically. Track product quantities in various units.",
+    "faqs": [
+      {
+        "question": "What quantity information can be extracted?",
+        "answer": "We extract quantities, units of measure (each, kg, litres, boxes, pallets, etc.), and any conversion factors or equivalent quantities shown on the invoice."
+      },
+      {
+        "question": "How are quantities shown in the line items CSV?",
+        "answer": "Each line item includes quantity and unit of measure columns, making it easy to reconcile with purchase orders and inventory systems."
+      },
+      {
+        "question": "Can you extract bulk vs unit quantities?",
+        "answer": "Yes, when invoices show both bulk quantities (e.g., 10 pallets) and unit equivalents (e.g., 500 units), we extract both when present."
+      },
+      {
+        "question": "What about non-standard units?",
+        "answer": "Industry-specific units (reams, bales, linear metres, etc.) are extracted as shown on the invoice for accurate procurement tracking."
+      },
+      {
+        "question": "Does the tool handle quantity conversions?",
+        "answer": "When conversion factors or equivalent quantities are stated (e.g., 1 case = 12 units), we extract them for accurate quantity reconciliation."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-references-links",
+    "title": "Extract Invoice References and Related Documents",
+    "description": "Extract references to related invoices, quotes, contracts, and order documents. Link invoices to their source documents for audit trails.",
+    "metaTitle": "Extract Invoice References | Related Document Links",
+    "metaDescription": "Extract references to related invoices, quotes, contracts, and orders from PDF invoices automatically. Build complete document audit trails.",
+    "faqs": [
+      {
+        "question": "What references can be extracted?",
+        "answer": "We extract quote numbers, contract references, order numbers, previous invoice numbers, amendment references, and any document IDs mentioned on the invoice."
+      },
+      {
+        "question": "How are references shown in the output?",
+        "answer": "Document references appear in the invoice details section, with dedicated fields for quote ref, order ref, contract ref, and related invoice numbers when present."
+      },
+      {
+        "question": "Can you extract credit note references?",
+        "answer": "Yes, when an invoice references a credit note, adjustment, or previous invoice it relates to, we extract those references for reconciliation."
+      },
+      {
+        "question": "What about proforma or draft invoice references?",
+        "answer": "References to proforma invoices, draft numbers, or preliminary documents are extracted when they appear on the final invoice."
+      },
+      {
+        "question": "Does the tool extract portal or system references?",
+        "answer": "Yes, references to customer portals, supplier system IDs, or external document numbers are extracted when present for cross-system matching."
+      }
+    ]
   }
 ]
