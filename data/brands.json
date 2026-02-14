@@ -1645,5 +1645,310 @@
         "answer": "Yes, upload invoices from any HubSpot portal. Use bulk conversion to process invoices from multiple portals simultaneously."
       }
     ]
+  },
+  {
+    "slug": "adyen",
+    "name": "Adyen",
+    "category": "payments",
+    "description": "Convert Adyen settlement reports and invoices to CSV or Excel format. Extract payment processing fees, settlement amounts, and transaction data from Adyen merchant statements.",
+    "metaTitle": "Adyen Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Adyen invoices and settlement reports to CSV and Excel format. Extract payment processing fees, settlement data, and transaction details from Adyen automatically.",
+    "exportSteps": [
+      "Log in to your Adyen Customer Area",
+      "Navigate to Reports > Settlement details",
+      "Select the settlement period you need",
+      "Click 'Download' to export as PDF or CSV",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Adyen settlement reports combine multiple payment methods into single line items",
+      "Multi-currency settlements show amounts in different currencies",
+      "Chargebacks and refunds appear as negative amounts",
+      "Interchange fees and scheme fees are broken down separately",
+      "Settlement dates may differ from transaction dates"
+    ],
+    "uniqueFields": [
+      "Adyen merchant account reference",
+      "Settlement ID and batch numbers",
+      "Payment method breakdown (card, Apple Pay, etc.)",
+      "Interchange and scheme fees",
+      "Chargeback and refund amounts",
+      "Multi-currency settlement totals",
+      "Reserve and hold amounts"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Adyen settlement reports to CSV?",
+        "answer": "Upload your Adyen settlement report or invoice PDF and our tool will extract all settlement details, fees, and transaction summaries into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Adyen?",
+        "answer": "In Adyen Customer Area, go to Reports > Settlement details, select your period, and download the report. Upload the PDF to our converter."
+      },
+      {
+        "question": "Does the converter handle Adyen multi-currency settlements?",
+        "answer": "Yes, our tool extracts settlement amounts in each currency and preserves currency codes for accurate reconciliation across different payment currencies."
+      },
+      {
+        "question": "Can I convert Adyen chargeback reports?",
+        "answer": "Yes, chargeback and refund amounts are extracted as separate line items with negative values, making it easy to track disputes and reversals."
+      },
+      {
+        "question": "What about Adyen interchange fees?",
+        "answer": "Our converter extracts interchange fees, scheme fees, and other processing costs when they appear as line items in your Adyen documents."
+      },
+      {
+        "question": "Does the tool work with Adyen payout reports?",
+        "answer": "Yes, payout reports and settlement summaries are supported. We extract payout dates, amounts, and fee breakdowns into structured CSV format."
+      },
+      {
+        "question": "Can I convert Adyen invoices from multiple merchant accounts?",
+        "answer": "Yes, upload each settlement report separately or use bulk conversion to process invoices from multiple Adyen merchant accounts simultaneously."
+      }
+    ]
+  },
+  {
+    "slug": "magento",
+    "name": "Magento",
+    "category": "ecommerce",
+    "description": "Convert Magento order invoices to CSV or Excel format. Extract order details, product line items, shipping costs, and tax information from Magento and Adobe Commerce invoices.",
+    "metaTitle": "Magento Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Magento and Adobe Commerce invoices to CSV and Excel format. Extract order details, product information, and customer data from Magento invoices automatically.",
+    "exportSteps": [
+      "Log in to your Magento Admin panel",
+      "Navigate to Sales > Orders",
+      "Select the order and click 'Invoice'",
+      "Click 'Print' or 'Download PDF'",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Magento invoice templates vary by theme and extension",
+      "Configurable products may show parent and child SKUs separately",
+      "Multi-store setups can have different invoice formats",
+      "Tax rules vary by store view and customer group",
+      "Custom attributes may not appear in standard PDF exports"
+    ],
+    "uniqueFields": [
+      "Magento order increment ID",
+      "Product SKUs and configurable options",
+      "Store view and website information",
+      "Customer group and tax class",
+      "Shipping method and carrier",
+      "Gift wrap and gift message details",
+      "Reward points and store credit"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Magento invoices to CSV?",
+        "answer": "Upload your Magento invoice PDF and our tool will extract order details, product line items, customer information, shipping, and tax data into CSV and Excel formats."
+      },
+      {
+        "question": "Does the converter work with Adobe Commerce?",
+        "answer": "Yes, Adobe Commerce (formerly Magento Commerce) uses the same invoice structure. Our converter works with invoices from both Magento Open Source and Adobe Commerce."
+      },
+      {
+        "question": "How do I export invoices from Magento?",
+        "answer": "In Magento Admin, go to Sales > Orders, select an order, create or view the invoice, then use Print or a PDF extension to save as PDF. Upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Magento configurable products?",
+        "answer": "Yes, our tool extracts configurable product details including parent SKU, selected options, and variant-specific pricing when shown in the invoice."
+      },
+      {
+        "question": "Can I convert Magento multi-store invoices?",
+        "answer": "Yes, invoices from any Magento store view are supported. Store-specific formatting and tax rules are preserved in the extracted data."
+      },
+      {
+        "question": "What about Magento gift cards and store credit?",
+        "answer": "Gift card usage and store credit applied to orders are extracted when they appear as line items or payment methods on the invoice."
+      },
+      {
+        "question": "Does the tool work with Magento 2?",
+        "answer": "Yes, our converter works with Magento 2 and Adobe Commerce invoices. The invoice structure is consistent across Magento 2 versions."
+      }
+    ]
+  },
+  {
+    "slug": "zendesk",
+    "name": "Zendesk",
+    "category": "software",
+    "description": "Convert Zendesk subscription invoices to CSV or Excel format. Extract license costs, agent seats, add-on charges, and billing details from Zendesk invoices.",
+    "metaTitle": "Zendesk Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Zendesk invoices to CSV and Excel format. Extract subscription costs, agent seats, and add-on charges from Zendesk automatically.",
+    "exportSteps": [
+      "Log in to your Zendesk Admin Center",
+      "Navigate to Admin > Billing > Invoices",
+      "Click on the invoice you want to download",
+      "Select 'Download PDF'",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Zendesk invoices combine Support, Sell, and Suite products",
+      "Agent-based pricing changes as team size fluctuates",
+      "Add-ons like Zendesk Guide or Explore appear as separate lines",
+      "Annual vs monthly billing shows different structures",
+      "Tax calculations vary by billing address and region"
+    ],
+    "uniqueFields": [
+      "Zendesk account ID and invoice number",
+      "Product type (Support, Sell, Suite)",
+      "Agent count and per-agent pricing",
+      "Add-on products and features",
+      "Billing period and renewal date",
+      "Tax breakdown by jurisdiction",
+      "Credits and adjustments applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Zendesk invoices to CSV?",
+        "answer": "Upload your Zendesk invoice PDF and our tool will extract subscription details, agent counts, add-on costs, and tax information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Zendesk?",
+        "answer": "In Zendesk Admin Center, go to Billing > Invoices, select your invoice, and click Download PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Zendesk Suite vs Support?",
+        "answer": "Yes, our tool works with invoices from Zendesk Support, Zendesk Sell, Zendesk Suite, and other products, extracting each product's pricing and usage."
+      },
+      {
+        "question": "Can I convert Zendesk invoices with add-ons?",
+        "answer": "Yes, add-ons like Zendesk Guide, Explore, or additional agent seats are extracted as separate line items with their individual costs."
+      },
+      {
+        "question": "What about Zendesk annual billing?",
+        "answer": "Annual subscription invoices are fully supported. Our converter extracts the billing period, annual cost, and any annual payment discount."
+      },
+      {
+        "question": "Does the tool work with Zendesk multi-brand accounts?",
+        "answer": "Yes, Zendesk multi-brand invoices are supported. We extract billing details regardless of how many brands are in your account."
+      },
+      {
+        "question": "Can I convert Zendesk credit notes?",
+        "answer": "Yes, Zendesk credit notes and refund invoices are extracted with negative amounts, making it easy to track credits and adjustments."
+      }
+    ]
+  },
+  {
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "category": "software",
+    "description": "Convert Dropbox subscription invoices to CSV or Excel format. Extract storage costs, plan details, add-on charges, and billing information from Dropbox invoices.",
+    "metaTitle": "Dropbox Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Dropbox invoices to CSV and Excel format. Extract storage costs, plan details, and add-on charges from Dropbox automatically.",
+    "exportSteps": [
+      "Log in to your Dropbox account",
+      "Click on your avatar and select 'Settings'",
+      "Navigate to 'Billing' or 'Subscription'",
+      "Click on 'View invoice' or 'Download invoice'",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Dropbox invoices show plan type and storage tier",
+      "Add-on storage appears as separate line items",
+      "Team vs individual plans have different structures",
+      "Annual billing shows full-year cost",
+      "Tax varies by billing country"
+    ],
+    "uniqueFields": [
+      "Dropbox account ID and invoice number",
+      "Plan type (Plus, Professional, Business, Family)",
+      "Storage amount and add-on storage",
+      "User or seat count for team plans",
+      "Billing period dates",
+      "Tax breakdown by jurisdiction",
+      "Promotional credits applied"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Dropbox invoices to CSV?",
+        "answer": "Upload your Dropbox invoice PDF and our tool will extract plan details, storage costs, add-ons, and tax information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Dropbox?",
+        "answer": "In Dropbox Settings, go to Billing or Subscription, find your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Dropbox Business invoices?",
+        "answer": "Yes, our tool works with Dropbox Plus, Professional, Business, and Family plan invoices, extracting plan-specific details."
+      },
+      {
+        "question": "Can I convert Dropbox add-on storage charges?",
+        "answer": "Yes, additional storage beyond your plan is extracted as separate line items with storage amounts and pricing."
+      },
+      {
+        "question": "What about Dropbox annual subscriptions?",
+        "answer": "Annual billing invoices are fully supported. Our converter extracts the billing period and annual cost."
+      },
+      {
+        "question": "Does the tool work with Dropbox Team invoices?",
+        "answer": "Yes, Dropbox Team and Business invoices with multiple users are supported. We extract user counts and per-seat pricing when shown."
+      },
+      {
+        "question": "Can I convert Dropbox credit notes?",
+        "answer": "Yes, Dropbox refunds and credit notes are extracted with negative amounts for accurate accounting."
+      }
+    ]
+  },
+  {
+    "slug": "adobe",
+    "name": "Adobe",
+    "category": "software",
+    "description": "Convert Adobe Creative Cloud and Document Cloud invoices to CSV or Excel format. Extract subscription costs, product licenses, and billing details from Adobe invoices.",
+    "metaTitle": "Adobe Invoice PDF to Excel Converter — Extract Line Items | BillToSheet",
+    "metaDescription": "Convert Adobe Creative Cloud and Document Cloud invoices to CSV and Excel format. Extract subscription costs and license details from Adobe automatically.",
+    "exportSteps": [
+      "Log in to your Adobe Account",
+      "Navigate to 'Plans & products' or 'Billing'",
+      "Click on 'View invoice' or 'Billing history'",
+      "Download the invoice as PDF",
+      "Upload the PDF to our converter tool above"
+    ],
+    "commonIssues": [
+      "Adobe invoices list each product or app separately",
+      "Creative Cloud All Apps vs individual app pricing differs",
+      "Annual vs monthly plans show different structures",
+      "Education and volume discounts appear as adjustments",
+      "Tax calculations vary by region"
+    ],
+    "uniqueFields": [
+      "Adobe invoice number and account ID",
+      "Product names (Photoshop, Illustrator, Acrobat, etc.)",
+      "License type and quantity",
+      "Billing cycle (monthly or annual)",
+      "Promotional and education discounts",
+      "Tax breakdown by jurisdiction",
+      "Upgrade and proration amounts"
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert Adobe invoices to CSV?",
+        "answer": "Upload your Adobe invoice PDF and our tool will extract subscription details, product licenses, and tax information into structured CSV and Excel formats."
+      },
+      {
+        "question": "How do I download invoices from Adobe?",
+        "answer": "In your Adobe Account, go to Billing or Plans & products, select your invoice, and download as PDF. Then upload to our converter."
+      },
+      {
+        "question": "Does the converter handle Creative Cloud All Apps?",
+        "answer": "Yes, our tool works with Creative Cloud All Apps, individual app subscriptions, Document Cloud, and Adobe Stock invoices."
+      },
+      {
+        "question": "Can I convert Adobe team and enterprise invoices?",
+        "answer": "Yes, Adobe Team and Enterprise invoices with multiple licenses are supported. We extract license counts and pricing."
+      },
+      {
+        "question": "What about Adobe education discounts?",
+        "answer": "Education and student discounts are extracted when shown on the invoice, with both original and discounted amounts."
+      },
+      {
+        "question": "Does the tool work with Adobe annual plans?",
+        "answer": "Yes, annual subscription invoices are fully supported. Our converter extracts the billing period and annual cost."
+      },
+      {
+        "question": "Can I convert Adobe proration charges?",
+        "answer": "Yes, proration amounts from plan changes or upgrades are extracted and shown in the CSV output."
+      }
+    ]
   }
 ]

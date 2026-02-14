@@ -615,5 +615,150 @@
         "answer": "No, they contain the same data but are independent files. Changes in one file don't affect the others. This lets you work with whichever format suits your workflow best."
       }
     ]
+  },
+  {
+    "slug": "invoice-conversion-accuracy-tips",
+    "title": "Invoice Conversion Accuracy Tips",
+    "description": "Learn how to get the most accurate results from invoice conversion. Tips for improving extraction quality and reducing manual corrections.",
+    "metaTitle": "Invoice Conversion Accuracy | Tips for Better Results",
+    "metaDescription": "Improve invoice conversion accuracy with our tips. Learn how to prepare invoices and troubleshoot extraction issues for better CSV/Excel output.",
+    "faqs": [
+      {
+        "question": "What affects conversion accuracy?",
+        "answer": "Conversion accuracy depends on PDF quality (digital vs scanned), invoice layout clarity, and whether the invoice has a clear table structure. Digital PDFs with standard layouts typically extract best."
+      },
+      {
+        "question": "How can I improve accuracy for scanned invoices?",
+        "answer": "Use at least 300 DPI resolution, ensure the scan is straight and well-lit, and avoid shadows or blur. High-quality scans produce much better OCR results."
+      },
+      {
+        "question": "What if some fields are extracted incorrectly?",
+        "answer": "Review the CSV or Excel output and correct any errors before importing. Our tool extracts all visible data - ambiguous formats may need manual verification."
+      },
+      {
+        "question": "Does invoice layout affect accuracy?",
+        "answer": "Yes, invoices with clear table structures, labeled fields, and consistent formatting extract more accurately. Heavily customised or unusual layouts may need manual review."
+      },
+      {
+        "question": "Can I re-convert if the first result has errors?",
+        "answer": "Yes, you can re-upload and convert. Each conversion uses 1 credit. If extraction failed due to a file issue, contact support - we may refund the credit."
+      }
+    ]
+  },
+  {
+    "slug": "handling-invoices-from-different-sources",
+    "title": "Handling Invoice PDFs from Different Sources",
+    "description": "Learn how to convert invoices from various vendors, platforms, and countries. Tips for handling different formats and layouts.",
+    "metaTitle": "Invoices from Different Sources | Multi-Vendor Conversion",
+    "metaDescription": "Convert invoices from any source - vendors, marketplaces, software subscriptions. Tips for handling different formats and international invoices.",
+    "faqs": [
+      {
+        "question": "Can I convert invoices from any vendor?",
+        "answer": "Yes, BillToSheet works with PDF invoices from any source - vendors, suppliers, marketplaces, software providers, or clients. No need to configure for specific formats."
+      },
+      {
+        "question": "Do I need different settings for different invoice types?",
+        "answer": "No, our converter automatically adapts to different invoice layouts. Just upload and convert - no settings or configuration required for different sources."
+      },
+      {
+        "question": "What about international invoices?",
+        "answer": "We support invoices from any country. Currency codes, date formats, and tax information are preserved. Multi-currency invoices are fully supported."
+      },
+      {
+        "question": "Can I mix different invoice types in bulk conversion?",
+        "answer": "Yes, upload invoices from different vendors in the same batch. Each is processed independently and will extract according to its own structure."
+      },
+      {
+        "question": "Which invoice sources work best?",
+        "answer": "Digital PDFs from accounting software, ecommerce platforms, and SaaS providers typically extract best. Scanned paper invoices may need quality checks."
+      }
+    ]
+  },
+  {
+    "slug": "exporting-to-google-sheets",
+    "title": "Exporting to Google Sheets",
+    "description": "Learn how to use your converted invoice data in Google Sheets. Import CSV files and work with invoice data in the cloud.",
+    "metaTitle": "Export Invoice Data to Google Sheets | CSV Import Guide",
+    "metaDescription": "Import your converted invoice CSV files into Google Sheets. Work with invoice data in the cloud for collaboration and analysis.",
+    "faqs": [
+      {
+        "question": "How do I import CSV into Google Sheets?",
+        "answer": "In Google Sheets, go to File > Import > Upload, select your CSV file, choose 'Replace spreadsheet' or 'Insert new sheet', and configure the import options. Your invoice data will load into the sheet."
+      },
+      {
+        "question": "Which CSV file should I import?",
+        "answer": "Import invoice_details.csv for summary data (one row per invoice) or line_items.csv for detailed line items. You can import both into separate sheets in the same workbook."
+      },
+      {
+        "question": "Will my data format correctly in Google Sheets?",
+        "answer": "Yes, CSV files import cleanly into Google Sheets. Dates, numbers, and currency will typically format correctly. You may want to apply number formatting for currency columns."
+      },
+      {
+        "question": "Can I use Google Sheets for invoice analysis?",
+        "answer": "Absolutely. Once imported, you can use Google Sheets formulas, pivot tables, and charts to analyse your invoice data. Filter by vendor, date range, or amount."
+      },
+      {
+        "question": "Does BillToSheet export directly to Google Sheets?",
+        "answer": "BillToSheet exports CSV and Excel files for download. You then import these into Google Sheets manually. Direct integration may be available in future."
+      }
+    ]
+  },
+  {
+    "slug": "understanding-conversion-limits",
+    "title": "Understanding Invoice Conversion Limits",
+    "description": "Learn about file size limits, credit usage, and conversion constraints. What you need to know about BillToSheet usage limits.",
+    "metaTitle": "Invoice Conversion Limits | File Size and Credit Usage",
+    "metaDescription": "Understand BillToSheet conversion limits. File size, credit usage, storage duration, and bulk conversion constraints explained.",
+    "faqs": [
+      {
+        "question": "What is the file size limit?",
+        "answer": "Each PDF can be up to 10MB. This covers virtually all invoice PDFs. Very large files (e.g. 50+ page statements) may need to be split or compressed."
+      },
+      {
+        "question": "How many invoices can I convert at once?",
+        "answer": "You can convert as many as you have credits for. Bulk conversion processes all files concurrently - there's no batch size limit beyond your credit balance."
+      },
+      {
+        "question": "How long are converted files stored?",
+        "answer": "For logged-in users, files are stored for 30 days. After that they're automatically deleted. Download important files within the retention period."
+      },
+      {
+        "question": "Do credits have limits?",
+        "answer": "Credits never expire. You can purchase multiple packs and they stack. There's no maximum credit balance - buy as many as you need."
+      },
+      {
+        "question": "Is there a page limit per invoice?",
+        "answer": "No specific page limit. As long as the PDF is under 10MB, we process invoices of any length. Very long invoices may take slightly longer to process."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-conversion-for-accountants",
+    "title": "Invoice Conversion for Accountants",
+    "description": "A guide for accountants and bookkeepers using BillToSheet. Best practices for client work, bulk processing, and accounting software import.",
+    "metaTitle": "Invoice Conversion for Accountants | Bookkeeper Guide",
+    "metaDescription": "BillToSheet guide for accountants and bookkeepers. Process client invoices, bulk conversion, and import to QuickBooks, Xero, Sage.",
+    "faqs": [
+      {
+        "question": "Can I use BillToSheet for client work?",
+        "answer": "Yes, many accountants use BillToSheet to process client invoices. Convert batches of invoices, then import the CSV into the client's accounting software. Each conversion uses 1 credit."
+      },
+      {
+        "question": "How do I handle multiple clients?",
+        "answer": "Process each client's invoices in separate bulk conversion batches. Download and organise files by client before importing. Consider separate accounts if you need distinct billing."
+      },
+      {
+        "question": "Which accounting software does the output work with?",
+        "answer": "Our CSV format works with QuickBooks, Xero, Sage, and most accounting software. You may need to map columns during import - our structure is designed to match common fields."
+      },
+      {
+        "question": "Is bulk conversion useful for accountants?",
+        "answer": "Yes, bulk conversion is ideal for month-end processing. Upload dozens of client invoices at once, all process concurrently, then download and import - saving hours vs manual entry."
+      },
+      {
+        "question": "Can I get a receipt for credit purchases?",
+        "answer": "Yes, you receive an email receipt for every purchase. These can be used for practice expense tracking and client billing reconciliation."
+      }
+    ]
   }
 ]

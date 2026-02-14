@@ -567,5 +567,150 @@
         "answer": "Our system adapts to different layouts and extracts all visible structured data. Very unusual custom formats may require manual review, but most custom fields are captured automatically."
       }
     ]
+  },
+  {
+    "slug": "warranty-information",
+    "title": "Extract Warranty Information",
+    "description": "Extract warranty terms, guarantee periods, and product warranty details from invoices. Track warranty coverage for products and services.",
+    "metaTitle": "Extract Warranty from Invoices | Warranty Data Extraction",
+    "metaDescription": "Extract warranty information from PDF invoices. Get warranty terms, guarantee periods, and coverage details automatically.",
+    "faqs": [
+      {
+        "question": "What warranty information can be extracted?",
+        "answer": "We extract warranty periods, guarantee terms, warranty start dates, and any warranty-related notes or conditions when they appear on the invoice."
+      },
+      {
+        "question": "How are warranty details shown in the output?",
+        "answer": "Warranty information appears in the invoice details or notes section. When warranty applies to specific line items, it may be included with the relevant product description."
+      },
+      {
+        "question": "Can you extract extended warranty purchases?",
+        "answer": "Yes, extended warranty or protection plan purchases that appear as line items are extracted with their descriptions, prices, and coverage periods."
+      },
+      {
+        "question": "What about manufacturer warranties?",
+        "answer": "When manufacturer warranty terms are mentioned on the invoice, we extract that text. Standard warranty periods (e.g., 12 months, 2 years) are captured when clearly stated."
+      },
+      {
+        "question": "Does the tool extract warranty registration information?",
+        "answer": "If warranty registration numbers, URLs, or instructions appear on the invoice, we extract them and include them in the notes or relevant fields."
+      }
+    ]
+  },
+  {
+    "slug": "delivery-notes",
+    "title": "Extract Delivery Notes and Instructions",
+    "description": "Extract delivery notes, packing slip references, and special delivery instructions from invoices. Link invoices to delivery documentation.",
+    "metaTitle": "Extract Delivery Notes from Invoices | Delivery Data Parser",
+    "metaDescription": "Extract delivery notes, packing slip numbers, and delivery instructions from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What delivery information can be extracted?",
+        "answer": "We extract delivery note numbers, packing slip references, delivery instructions, requested delivery dates, and any special handling requirements when present on the invoice."
+      },
+      {
+        "question": "How are delivery notes shown in the CSV?",
+        "answer": "Delivery note numbers and references appear in the invoice details section, making it easy to match invoices with their corresponding delivery documentation."
+      },
+      {
+        "question": "Can you extract delivery address details?",
+        "answer": "Yes, when a separate delivery or shipping address is shown on the invoice, we extract it alongside the billing address for complete order tracking."
+      },
+      {
+        "question": "What about delivery time windows?",
+        "answer": "Requested delivery dates, time windows, or delivery schedule references mentioned on the invoice are extracted and included in the output."
+      },
+      {
+        "question": "Does the tool extract consignment numbers?",
+        "answer": "Yes, consignment numbers, waybill references, and other delivery tracking identifiers are extracted when they appear on the invoice."
+      }
+    ]
+  },
+  {
+    "slug": "project-codes",
+    "title": "Extract Project Codes and Job Numbers",
+    "description": "Extract project codes, job numbers, and work order references from invoices. Track costs by project for accurate job costing and client billing.",
+    "metaTitle": "Extract Project Codes from Invoices | Job Number Extraction",
+    "metaDescription": "Extract project codes, job numbers, and work order references from PDF invoices automatically. Track costs by project.",
+    "faqs": [
+      {
+        "question": "What project information can be extracted?",
+        "answer": "We extract project codes, job numbers, work order references, client project IDs, and any project-related identifiers when they appear on the invoice."
+      },
+      {
+        "question": "How are project codes shown in the output?",
+        "answer": "Project codes appear in dedicated columns in the invoice details or line items CSV when they're clearly labeled, making it easy to filter and sort by project."
+      },
+      {
+        "question": "Can you extract project codes from line items?",
+        "answer": "Yes, when individual line items have project or job codes assigned, we extract them and associate them with the relevant line item in the output."
+      },
+      {
+        "question": "What about construction or consultancy project codes?",
+        "answer": "Industry-specific project codes (construction job numbers, legal matter IDs, consultancy project codes) are extracted when clearly labeled in the invoice."
+      },
+      {
+        "question": "Does the tool work with different project code formats?",
+        "answer": "Yes, our converter recognises various project code formats including alphanumeric codes, hyphenated references, and custom numbering systems."
+      }
+    ]
+  },
+  {
+    "slug": "cost-centers",
+    "title": "Extract Cost Center and Department Codes",
+    "description": "Extract cost center codes, department codes, and budget allocation references from invoices. Allocate expenses for internal reporting and budgeting.",
+    "metaTitle": "Extract Cost Centers from Invoices | Department Code Extraction",
+    "metaDescription": "Extract cost center codes, department references, and budget codes from PDF invoices automatically. Allocate expenses for reporting.",
+    "faqs": [
+      {
+        "question": "What cost center information can be extracted?",
+        "answer": "We extract cost center codes, department numbers, budget codes, GL account references, and internal allocation codes when they appear on the invoice."
+      },
+      {
+        "question": "How are cost centers shown in the CSV?",
+        "answer": "Cost center and department codes appear in dedicated columns in the invoice details, making it easy to import into accounting software with correct allocation."
+      },
+      {
+        "question": "Can you extract cost centers per line item?",
+        "answer": "Yes, when line items have different cost center or department allocations, we extract them and include them with each relevant line item in the output."
+      },
+      {
+        "question": "What about chart of accounts references?",
+        "answer": "GL codes, account numbers, and chart of accounts references that appear on the invoice are extracted for accurate posting to the correct accounts."
+      },
+      {
+        "question": "Does the tool work with multi-department invoices?",
+        "answer": "Yes, invoices that split costs across multiple departments or cost centers are supported. Each allocation is extracted and clearly identified."
+      }
+    ]
+  },
+  {
+    "slug": "invoice-references",
+    "title": "Extract Invoice References and Related Documents",
+    "description": "Extract cross-references to related invoices, quote numbers, contract references, and amendment details from invoices. Maintain document linkage for audit trails.",
+    "metaTitle": "Extract Invoice References | Related Document Extraction",
+    "metaDescription": "Extract invoice references, quote numbers, contract IDs, and related document links from PDF invoices automatically.",
+    "faqs": [
+      {
+        "question": "What reference information can be extracted?",
+        "answer": "We extract quote numbers, order references, contract IDs, previous invoice numbers, amendment references, and any document cross-references when present on the invoice."
+      },
+      {
+        "question": "How are invoice references shown in the output?",
+        "answer": "Reference numbers and related document IDs appear in the invoice details section, making it easy to trace the document chain and maintain audit trails."
+      },
+      {
+        "question": "Can you extract quote or estimate references?",
+        "answer": "Yes, when invoices reference quotes, estimates, or proposals by number, we extract those references for easy matching with your sales documentation."
+      },
+      {
+        "question": "What about amended or revised invoice references?",
+        "answer": "Amendment references, revision numbers, and links to superseded invoices are extracted when they appear on the invoice, helping you track invoice versions."
+      },
+      {
+        "question": "Does the tool extract contract numbers?",
+        "answer": "Yes, contract numbers, framework agreement references, and master agreement IDs are extracted when they appear on the invoice for compliance and tracking."
+      }
+    ]
   }
 ]

@@ -46,5 +46,50 @@
     "author": "BillToSheet Team",
     "readTime": "5 min read",
     "updatedDate": "2026-01-27"
+  },
+  {
+    "slug": "automate-invoice-processing-small-business",
+    "title": "How to Automate Invoice Processing for Small Businesses",
+    "excerpt": "A practical guide to automating invoice data entry for small businesses. Learn which tools to use and how to set up an efficient workflow.",
+    "date": "2026-02-10",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "invoice-data-extraction-best-practices-2025",
+    "title": "Best Practices for Invoice Data Extraction in 2025",
+    "excerpt": "Stay ahead with the latest tips for accurate invoice data extraction. Learn about format handling, validation, and quality assurance.",
+    "date": "2026-02-11",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "understanding-invoice-line-items-accountants",
+    "title": "Understanding Invoice Line Items: A Guide for Accountants",
+    "excerpt": "Deep dive into invoice line item structure. Learn how to extract, validate, and reconcile line items for accurate bookkeeping.",
+    "date": "2026-02-12",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "reduce-invoice-processing-time",
+    "title": "How to Reduce Invoice Processing Time by 80%",
+    "excerpt": "Proven strategies to dramatically cut the time spent on invoice processing. From batch conversion to workflow optimisation.",
+    "date": "2026-02-13",
+    "category": "Tips",
+    "author": "BillToSheet Team",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "invoice-conversion-freelancers-guide",
+    "title": "Invoice Conversion for Freelancers: A Complete Guide",
+    "excerpt": "Everything freelancers need to know about converting client invoices to CSV for tax returns, expense tracking, and record keeping.",
+    "date": "2026-02-14",
+    "category": "Guides",
+    "author": "BillToSheet Team",
+    "readTime": "6 min read"
   }
 ]
