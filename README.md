@@ -1,6 +1,6 @@
 # BillToSheet - Invoice PDF to CSV/Excel Converter
 
-A production-quality SaaS application that converts invoice PDFs to CSV and Excel formats with automatic data extraction.
+SaaS that converts invoice PDFs to CSV/Excel with automatic data extraction.
 
 ## Features
 
