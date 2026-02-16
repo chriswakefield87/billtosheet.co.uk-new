@@ -1,5 +1,14 @@
 [
   {
+    "slug": "receipt-vs-invoice-difference",
+    "title": "Receipt vs Invoice: What's the Difference and When to Convert Each",
+    "excerpt": "Receipts and invoices look similar but serve different purposes for accounting and tax. Learn when to use each, what data to extract, and how to convert both for your records.",
+    "date": "2026-02-16",
+    "category": "Comparisons",
+    "author": "BillToSheet Team",
+    "readTime": "5–6 min read"
+  },
+  {
     "slug": "invoice-conversion-errors-fixes",
     "title": "Common Invoice Conversion Errors and How to Fix Them",
     "excerpt": "Troubleshoot PDF to CSV conversion issues with our comprehensive guide. Learn how to fix poor scan quality, missing data, formatting problems, and more.",
