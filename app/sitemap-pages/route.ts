@@ -6,6 +6,7 @@ export async function GET() {
   // Core static pages - omit lastModified since they rarely change
   const staticPages = [
     '',
+    '/about',
     '/pricing',
     '/invoice-to-csv',
     '/invoice-to-excel',
