@@ -20,6 +20,16 @@ export default function CheckoutButton({
   userId 
 }: CheckoutButtonProps) {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    // Google Analytics: track product click that opens Stripe checkout
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'stripe_product_click', {
+        pack_id: packId,
+        pack_name: packName,
+        credits: credits,
+        price: price / 100, // Convert pence to pounds
+      });
+    }
+
     // Track CheckoutStarted before form submission
     await sendSignal('CheckoutStarted', {
       packId,
