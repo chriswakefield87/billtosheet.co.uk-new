@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { sendSignal } from "@/lib/telemetry";
+import { trackError } from "@/lib/analytics-errors";
 
 export default function UploadTool() {
   const [uploading, setUploading] = useState(false);
@@ -20,12 +21,16 @@ export default function UploadTool() {
 
   const handleFileUpload = async (file: File) => {
     if (!file.type.includes("pdf")) {
-      setError("Please upload a PDF file");
+      const msg = "Please upload a PDF file";
+      trackError({ error_message: msg, error_type: "validation", source: "UploadTool" });
+      setError(msg);
       return;
     }
 
     if (file.size > 10 * 1024 * 1024) {
-      setError("File size must be less than 10MB");
+      const msg = "File size must be less than 10MB";
+      trackError({ error_message: msg, error_type: "validation", source: "UploadTool" });
+      setError(msg);
       return;
     }
 
@@ -71,11 +76,18 @@ export default function UploadTool() {
       // Redirect to results page
       router.push(`/convert/${data.conversionId}`);
     } catch (err) {
-      // Track conversion error
+      const message = err instanceof Error ? err.message : "Upload failed";
+      // Track conversion error in TelemetryDeck
       await sendSignal('Conversion.Error', {
-        error: err instanceof Error ? err.message : 'Upload failed',
+        error: message,
       });
-      setError(err instanceof Error ? err.message : "Upload failed");
+      // Track in Google Analytics
+      trackError({
+        error_message: message,
+        error_type: "conversion",
+        source: "UploadTool",
+      });
+      setError(message);
     } finally {
       setUploading(false);
     }

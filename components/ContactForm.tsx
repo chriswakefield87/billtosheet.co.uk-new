@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, FormEvent } from "react"
+import { trackError } from "@/lib/analytics-errors"
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -44,17 +45,24 @@ export default function ContactForm() {
           message: "",
         })
       } else {
-        setSubmitStatus({
-          type: "error",
-          message: data.error || "Failed to send message. Please try again.",
-        })
+        const msg = data.error || "Failed to send message. Please try again.";
+        trackError({
+          error_message: msg,
+          error_type: "contact_form",
+          source: "ContactForm",
+          status_code: response.status,
+        });
+        setSubmitStatus({ type: "error", message: msg });
       }
     } catch (error) {
-      console.error("Contact form error:", error)
-      setSubmitStatus({
-        type: "error",
-        message: "An error occurred. Please try again later.",
-      })
+      console.error("Contact form error:", error);
+      const msg = "An error occurred. Please try again later.";
+      trackError({
+        error_message: msg,
+        error_type: "contact_form",
+        source: "ContactForm",
+      });
+      setSubmitStatus({ type: "error", message: msg });
     } finally {
       setIsSubmitting(false)
     }
