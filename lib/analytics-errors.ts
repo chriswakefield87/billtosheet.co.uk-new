@@ -52,7 +52,13 @@ export function trackError(params: ErrorTrackingParams): void {
   // Include current URL for context
   safeParams.page_url = truncate(window.location.href);
 
-  gtag('event', 'app_error', safeParams);
+  try {
+    gtag('event', 'app_error', safeParams);
+  } catch (e) {
+    // Swallow gtag errors to prevent infinite loop: if gtag throws, the
+    // unhandled error would re-trigger our error handler and call trackError
+    // again, causing a recursive loop that can freeze the page.
+  }
 }
 
 /**
