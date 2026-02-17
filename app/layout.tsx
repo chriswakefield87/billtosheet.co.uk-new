@@ -6,6 +6,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import TelemetryProvider from "@/components/TelemetryProvider";
+import ErrorTrackingProvider from "@/components/ErrorTrackingProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -90,6 +91,7 @@ export default function RootLayout({
               gtag('config', 'G-K3R0K873LL');
             `}
           </Script>
+          <ErrorTrackingProvider />
           <Navigation />
           <main className="min-h-screen">
             {children}
@@ -117,6 +119,7 @@ export default function RootLayout({
               gtag('config', 'G-K3R0K873LL');
             `}
           </Script>
+          <ErrorTrackingProvider />
           <TelemetryProvider />
           <Navigation />
           <main className="min-h-screen">

@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+import { trackError } from "@/lib/analytics-errors"
 
 interface FileStatus {
   file: File
@@ -73,7 +74,12 @@ export default function BulkConvertPage() {
       // Refresh dashboard to update credits
       router.refresh()
     } catch (err) {
-      // Update status to failed
+      const message = err instanceof Error ? err.message : "Conversion failed";
+      trackError({
+        error_message: message,
+        error_type: "conversion",
+        source: "BulkConvert",
+      });
       setFileStatuses((prev) => {
         const updated = [...prev]
         updated[index] = {
@@ -81,7 +87,7 @@ export default function BulkConvertPage() {
           status: "failed",
           result: {
             success: false,
-            error: err instanceof Error ? err.message : "Conversion failed",
+            error: message,
           },
         }
         return updated
@@ -97,17 +103,19 @@ export default function BulkConvertPage() {
     )
 
     if (pdfFiles.length === 0) {
-      setError("Please select PDF files only")
-      return
+      const msg = "Please select PDF files only";
+      trackError({ error_message: msg, error_type: "validation", source: "BulkConvert" });
+      setError(msg);
+      return;
     }
 
     // Check file sizes
     const oversizedFiles = pdfFiles.filter((file) => file.size > 10 * 1024 * 1024)
     if (oversizedFiles.length > 0) {
-      setError(
-        `Some files are too large (max 10MB): ${oversizedFiles.map((f) => f.name).join(", ")}`
-      )
-      return
+      const msg = `Some files are too large (max 10MB): ${oversizedFiles.map((f) => f.name).join(", ")}`;
+      trackError({ error_message: msg, error_type: "validation", source: "BulkConvert" });
+      setError(msg);
+      return;
     }
 
     setError(null)

@@ -1,8 +1,9 @@
-"use client"
+"use client";
 
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { trackError } from "@/lib/analytics-errors";
 
 interface ConversionResult {
   vendor: string;
@@ -62,6 +63,11 @@ export default function ConversionResultPage({
       })
       .catch(err => {
         console.error('Failed to load conversion:', err);
+        trackError({
+          error_message: err instanceof Error ? err.message : "Failed to load conversion",
+          error_type: "api",
+          source: "ConversionResultPage",
+        });
         setIsAuthorized(false);
       });
   }, [params.id]);
